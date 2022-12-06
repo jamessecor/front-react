@@ -1,8 +1,12 @@
 import * as React from 'react';
-import logo from '../logo.jpg';
+
+export const NavItemHome = 'Home';
+
 const Home = () => {
     return (
-        <div>{'here'}</div>
+        <div>
+            <img src={'http://localhost:3000/shows/51/3glassbottles.jpeg'}/>
+        </div>
     );
 }
 

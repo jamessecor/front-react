@@ -15,9 +15,22 @@ import ButtonBase from '@mui/material/ButtonBase';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import { useNavigate } from 'react-router-dom';
+import { NavItemHome } from './Home';
+import { NavItemArtists } from './Artists';
 
 
-const pages = ['Home', 'Shows', 'Artists'];
+const pages: Array<string> = [NavItemHome, NavItemArtists];
+
+const getRouteFromPage = (page: string) => {
+    switch (page) {
+        case NavItemHome:
+            return '/';
+        case NavItemArtists:
+            return '/artists';
+        default:
+            return '/';
+    }
+};
 
 const Navbar = () => {
     const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(null);
@@ -44,12 +57,19 @@ const Navbar = () => {
                     >
                         <img width={'200'} src={logo} />
                     </ButtonBase>
-                    <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
+                    <Box
+                        sx={{ flexGrow: 1, mr: 6, display: { xs: 'none', md: 'flex' } }}
+                        alignItems={'center'}
+                        justifyContent={'end'}
+                    >
                         {pages.map((page) => (
                             <Button
                                 key={page}
-                                onClick={handleCloseNavMenu}
-                                sx={{ my: 2, color: 'primary', display: 'block' }}
+                                onClick={() => {
+                                    navigateTo(getRouteFromPage(page));
+                                    handleCloseNavMenu();
+                                }}
+                                sx={{ fontWeight: 'bold', m: 2, color: 'black', display: 'block' }}
                             >
                                 {page}
                             </Button>
@@ -85,8 +105,14 @@ const Navbar = () => {
                             }}
                         >
                             {pages.map((page) => (
-                                <MenuItem key={page} onClick={handleCloseNavMenu}>
-                                    <Typography color={'primary'} textAlign="center">{page}</Typography>
+                                <MenuItem
+                                    key={page}
+                                    onClick={() => {
+                                        navigateTo(getRouteFromPage(page));
+                                        handleCloseNavMenu();
+                                    }}    
+                                >
+                                    <Typography color={'black'} textAlign="center" sx={{ fontWeight: 'bold' }}>{page}</Typography>
                                 </MenuItem>
                             ))}
                         </Menu>
