@@ -19,6 +19,14 @@ export const artists: Array<IArtist> = [
         paramName: 'melora-kennedy',
         name: "Melora Kennedy",
         images: [
+            "melora-kennedy/apples-and-flowers.jpg"
+        ]
+
+    },
+    {
+        paramName: 'marjorie-kramer',
+        name: "Marjorie Kramer",
+        images: [
             "james-secor/03.JPG",
             "james-secor/04.JPG"
         ]

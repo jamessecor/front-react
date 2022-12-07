@@ -1,0 +1,7 @@
+.artists-image {
+    border-radius: 10px;
+}
+
+.artists-image:hover {
+    filter: grayscale(1);
+}

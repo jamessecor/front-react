@@ -22,12 +22,12 @@ const Stepper: React.FC<IStepperProps> = ({ images }) => {
   };
 
   return (
-    <Box sx={{m: 3}}>
+    <Box>
         <img width={'100%'} src={images[activeStep] ?? ''} />
         <MobileStepper
           variant="dots"
           steps={images.length}
-          position="bottom"
+          position="static"
           activeStep={activeStep}
           sx={{ maxWidth: 400, flexGrow: 1 }}
           nextButton={

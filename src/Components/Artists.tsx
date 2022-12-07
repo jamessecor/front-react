@@ -7,6 +7,7 @@ import Stack from '@mui/material/Stack';
 import Typography from '@mui/material/Typography';
 import { artists } from '../data/artists';
 import Stepper from './Stepper';
+import './Artists.css';
 
 export const NavItemArtists = 'Artists';
 
@@ -20,8 +21,8 @@ const Artists = () => {
                     return (
                         <Grid item={true} xs={12} md={2}>
                             <ButtonBase onClick={() => navigateTo(`/artists/${artist.paramName}`)}>
-                                <img style={{borderRadius: '10px'}} width={'100%'} src={`http://localhost:3000/images/artists/${artist.images[0]}`} />
-                                <Typography position={'fixed'} noWrap={true} sx={{color: 'white', background: 'rgba(100, 100, 100, .4)'}}>
+                                <img className={'artists-image'} width={'100%'} src={`${process.env.REACT_APP_URL}/images/artists/${artist.images[0]}`} />
+                                <Typography position={'fixed'} noWrap={true} sx={{color: 'white', borderRadius: '3px', padding: .5, background: 'rgba(100, 100, 100, .4)'}}>
                                     {artist.name}
                                 </Typography>
                             </ButtonBase>

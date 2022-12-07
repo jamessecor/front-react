@@ -30,7 +30,7 @@ const Artist = () => {
                         <Typography align={'center'} variant={'h3'}>
                             {artist.name}
                         </Typography>
-                        <Stepper images={artist.images.map((image) => `http://localhost:3000/images/artists/${image}`)} />
+                        <Stepper images={artist.images.map((image) => `${process.env.REACT_APP_URL}/images/artists/${image}`)} />
                     </Grid>
                 )}
             </Grid>
