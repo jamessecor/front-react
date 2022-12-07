@@ -75,7 +75,9 @@ const Navbar = () => {
                                     {page}
                                 </Button>
                             ))}
-                            <Insta />
+                            <MenuItem key={'insta'}>
+                                <Insta />
+                            </MenuItem>
                         </Box>
                         <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
                             <IconButton
@@ -117,7 +119,9 @@ const Navbar = () => {
                                         <Typography color={'black'} textAlign="center" sx={{ fontWeight: 'bold' }}>{page}</Typography>
                                     </MenuItem>
                                 ))}
-                                <Insta />
+                                <MenuItem key={'insta'}>
+                                    <Insta />
+                                </MenuItem>
                             </Menu>
                         </Box>
                         <ButtonBase
