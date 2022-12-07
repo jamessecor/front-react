@@ -2,7 +2,7 @@ import * as React from 'react';
 import { useTheme } from '@mui/material/styles';
 import MobileStepper from '@mui/material/MobileStepper';
 import { MdArrowBackIos, MdArrowForwardIos } from 'react-icons/md';
-import Box from '@mui/material/Box';
+import Grid from '@mui/material/Grid';
 import Button from '@mui/material/Button';
 
 interface IStepperProps {
@@ -22,12 +22,13 @@ const Stepper: React.FC<IStepperProps> = ({ images }) => {
   };
 
   return (
-    <Box>
+    <Grid container spacing={2}>
+      <Grid xs display="flex" justifyContent="center" alignItems="center">
         <img width={'100%'} src={images[activeStep] ?? ''} />
         <MobileStepper
           variant="dots"
           steps={images.length}
-          position="static"
+          position="bottom"
           activeStep={activeStep}
           sx={{ maxWidth: 400, flexGrow: 1 }}
           nextButton={
@@ -51,7 +52,8 @@ const Stepper: React.FC<IStepperProps> = ({ images }) => {
             </Button>
           }
         />
-    </Box>
+      </Grid>
+    </Grid>
   );
 }
 

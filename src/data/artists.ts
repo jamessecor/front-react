@@ -6,7 +6,8 @@ export const artists: Array<IArtist> = [
         name: "James Secor",
         images: [
             "james-secor/03.JPG",
-            "james-secor/04.JPG"
+            "james-secor/04.JPG",
+            "melora-kennedy/apples-and-flowers.jpg"
         ]
         // ,
         // showImages: [
@@ -26,10 +27,7 @@ export const artists: Array<IArtist> = [
     {
         paramName: 'marjorie-kramer',
         name: "Marjorie Kramer",
-        images: [
-            "james-secor/03.JPG",
-            "james-secor/04.JPG"
-        ]
+        images: []
 
     }
 ];
