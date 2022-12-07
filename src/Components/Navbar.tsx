@@ -15,6 +15,7 @@ import MenuItem from '@mui/material/MenuItem';
 import { useNavigate, Outlet } from 'react-router-dom';
 import { NavItemHome } from './Home';
 import { NavItemArtists } from './Artists';
+import Insta from './Insta';
 
 
 const pages: Array<string> = [NavItemHome, NavItemArtists];
@@ -74,6 +75,7 @@ const Navbar = () => {
                                     {page}
                                 </Button>
                             ))}
+                            <Insta />
                         </Box>
                         <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
                             <IconButton
@@ -115,6 +117,7 @@ const Navbar = () => {
                                         <Typography color={'black'} textAlign="center" sx={{ fontWeight: 'bold' }}>{page}</Typography>
                                     </MenuItem>
                                 ))}
+                                <Insta />
                             </Menu>
                         </Box>
                         <ButtonBase
@@ -129,7 +132,9 @@ const Navbar = () => {
                     </Toolbar>
                 </Container>
             </AppBar>
-            <Outlet />
+            <Box sx={{ m: 2 }}>
+                <Outlet />
+            </Box>
         </Box>
     );
 }
