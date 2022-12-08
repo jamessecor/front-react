@@ -64,13 +64,14 @@ export const artists: Array<IArtist> = [
             "james-secor/03.JPG",
             "james-secor/04.JPG",
             "melora-kennedy/apples-and-flowers.jpg"
+        ],
+        showImages: [
+            {
+                showName: "52",
+                src: 'james-secor/03.JPG',
+                isOnHomePage: true
+            }
         ]
-        // ,
-        // showImages: [
-        //     {
-        //         "51": "/"
-        //     }
-        // ]
     },
     {
         paramName: 'kate-fetherston',

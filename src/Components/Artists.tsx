@@ -20,12 +20,23 @@ const Artists = () => {
             <Grid justifyContent={'center'} container={true} spacing={2}>
                 {artists.map((artist) => {
                     return (
-                        <Grid item={true} alignItems={'center'} xs={12} md={2}>
+                        <Grid
+                            item={true}
+                            justifyContent={'center'}
+                            alignItems={'stretch'}
+                            xs={12}
+                            sm={4}
+                            md={2}
+                            sx={{ display: 'flex', flexDirection: 'column' }}
+                        >
                             <ButtonBase onClick={() => navigateTo(`/artists/${artist.paramName}`)}>
-                                <img className={'artists-image'} width={'100%'} src={`${process.env.REACT_APP_URL}/images/artists/${artist.images[0]}`} />
+                                <img className={'artists-image'} src={`${process.env.REACT_APP_URL}/images/artists/${artist.images[0]}`} />
                             </ButtonBase>
-                            <Button variant={'text'} onClick={() => navigateTo(`/artists/${artist.paramName}`)}>
-                                <Typography sx={{color: 'black'}}>
+                            <Button
+                                variant={'text'}
+                                onClick={() => navigateTo(`/artists/${artist.paramName}`)}
+                            >
+                                <Typography sx={{ color: 'black' }}>
                                     {artist.name}
                                 </Typography>
                             </Button>

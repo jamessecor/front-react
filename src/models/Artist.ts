@@ -1,7 +1,4 @@
-interface IShowImage {
-    name: string;
-    src: string;
-}
+import { IShowImage } from "./Show";
 
 export interface IArtist {
     paramName: string;

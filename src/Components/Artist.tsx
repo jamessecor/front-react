@@ -7,12 +7,15 @@ import { artists } from '../data/artists';
 import Stepper from './Stepper';
 import { IArtist } from '../models/Artist';
 import { useParams, useNavigate } from 'react-router-dom';
+import useImages from '../hooks/useImages';
 
 export const NavItemArtists = 'Artists';
 
 const Artist = () => {
     const { name } = useParams();
     const navigateTo = useNavigate();
+    const { getFullImagePath } = useImages();
+    
     const filteredArtists = useMemo(() => artists.filter((artist) => artist.paramName === name), [artists]);
     const artist = useMemo(() => filteredArtists.length ? filteredArtists[0] : null, [filteredArtists]);
 
@@ -30,7 +33,7 @@ const Artist = () => {
                         <Typography align={'center'} variant={'h3'}>
                             {artist.name}
                         </Typography>
-                        <Stepper images={artist.images.map((image) => `${process.env.REACT_APP_URL}/images/artists/${image}`)} />
+                        <Stepper images={artist.images.map((image) => getFullImagePath(image))} />
                     </Grid>
                 )}
             </Grid>
