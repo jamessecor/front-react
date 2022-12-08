@@ -4,6 +4,7 @@ import Navbar from './components/Navbar';
 import Home from './components/Home';
 import Artists from './components/Artists';
 import Artist from './components/Artist';
+import Shows from './components/Shows';
 import './App.css';
 
 const App = () => {
@@ -15,6 +16,7 @@ const App = () => {
             <Route element={<Home />} path={'/'} />
             <Route element={<Artists />} path={'/artists'} />
             <Route element={<Artist />} path={'/artists/:name'} />
+            <Route element={<Shows />} path={'/shows'} />
             <Route element={<Home />} path={'*'} />
           </Route>
         </Routes>

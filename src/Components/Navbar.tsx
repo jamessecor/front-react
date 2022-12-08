@@ -15,10 +15,11 @@ import MenuItem from '@mui/material/MenuItem';
 import { useNavigate, Outlet } from 'react-router-dom';
 import { NavItemHome } from './Home';
 import { NavItemArtists } from './Artists';
+import { NavItemShows } from './Shows';
 import Insta from './Insta';
 
 
-const pages: Array<string> = [NavItemHome, NavItemArtists];
+const pages: Array<string> = [NavItemHome, NavItemArtists, NavItemShows];
 
 const getRouteFromPage = (page: string) => {
     switch (page) {
@@ -26,6 +27,8 @@ const getRouteFromPage = (page: string) => {
             return '/';
         case NavItemArtists:
             return '/artists';
+        case NavItemShows:
+            return '/shows';
         default:
             return '/';
     }
