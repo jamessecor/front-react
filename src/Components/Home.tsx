@@ -1,19 +1,23 @@
 import * as React from 'react';
+import { useMemo }from 'react';
 import { useTheme } from '@mui/material/styles';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import Stepper from './Stepper';
 import useImages from '../hooks/useImages';
+import { shows } from '../data/shows';
 import './Home.css';
 
 export const NavItemHome = 'Home';
 
 const Home = () => {
-  const { currentShowImagesForHomePage, getFullImagePath } = useImages();
+  const { currentShowImagesForHomePage, getFullImagePath, getShowByName } = useImages();
+
+  const currentShow = getShowByName(process.env.REACT_APP_CURRENT_SHOW ?? '');
   return (
     <Container>
       <Typography variant={'h3'}>
-        {`${process.env.REACT_APP_CURRENT_SHOW} - on view now`}
+        {currentShow?.displayName}
       </Typography>
       {
         currentShowImagesForHomePage.length > 1 ? (

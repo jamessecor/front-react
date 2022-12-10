@@ -5,6 +5,7 @@ import Home from './components/Home';
 import Artists from './components/Artists';
 import Artist from './components/Artist';
 import Shows from './components/Shows';
+import Show from './components/Show';
 import './App.css';
 
 const App = () => {
@@ -17,6 +18,7 @@ const App = () => {
             <Route element={<Artists />} path={'/artists'} />
             <Route element={<Artist />} path={'/artists/:name'} />
             <Route element={<Shows />} path={'/shows'} />
+            <Route element={<Show />} path={'/shows/:name'} />
             <Route element={<Home />} path={'*'} />
           </Route>
         </Routes>
