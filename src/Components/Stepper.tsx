@@ -1,60 +1,33 @@
-import * as React from 'react';
-import { useTheme } from '@mui/material/styles';
-import MobileStepper from '@mui/material/MobileStepper';
-import { MdArrowBackIos, MdArrowForwardIos } from 'react-icons/md';
-import Grid from '@mui/material/Grid';
-import Button from '@mui/material/Button';
+// import Swiper core and required modules
+import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
+
+import { Swiper, SwiperSlide, useSwiper, useSwiperSlide } from 'swiper/react';
+
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/scrollbar';
 
 interface IStepperProps {
   images: Array<string>;
 }
 
 const Stepper: React.FC<IStepperProps> = ({ images }) => {
-  const theme = useTheme();
-  const [activeStep, setActiveStep] = React.useState(0);
-
-  const handleNext = () => {
-    setActiveStep((prevActiveStep) => prevActiveStep + 1);
-  };
-
-  const handleBack = () => {
-    setActiveStep((prevActiveStep) => prevActiveStep - 1);
-  };
-
   return (
-    <Grid container spacing={2}>
-      <Grid xs display="flex" justifyContent="center" alignItems="center">
-        <img width={'100%'} src={images[activeStep] ?? ''} />
-        <MobileStepper
-          variant="dots"
-          steps={images.length}
-          position="bottom"
-          activeStep={activeStep}
-          sx={{ align: 'center', maxWidth: 400, flexGrow: 1 }}
-          nextButton={
-            <Button size="small" onClick={handleNext} disabled={activeStep === images.length - 1}>
-              Next
-              {theme.direction === 'rtl' ? (
-                <MdArrowBackIos />
-              ) : (
-                <MdArrowForwardIos />
-              )}
-            </Button>
-          }
-          backButton={
-            <Button size="small" onClick={handleBack} disabled={activeStep === 0}>
-              {theme.direction === 'rtl' ? (
-                <MdArrowForwardIos />
-              ) : (
-                <MdArrowBackIos />
-              )}
-              Back
-            </Button>
-          }
-        />
-      </Grid>
-    </Grid>
+    <Swiper
+      modules={[Navigation, Pagination, Scrollbar, A11y]}
+      spaceBetween={50}
+      slidesPerView={1}
+      navigation
+      pagination={{ clickable: true }}
+      scrollbar={{ draggable: true }}
+      onSwiper={(swiper) => console.log('swiper', swiper)}
+      onSlideChange={() => console.log('slide change')}
+    >
+      {images.map((image) => <SwiperSlide><img width={'100%'} src={image} /></SwiperSlide>)}
+    </Swiper>
   );
-}
+};
 
 export default Stepper;
