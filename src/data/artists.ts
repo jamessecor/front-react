@@ -126,8 +126,15 @@ export const artists: Array<IArtist> = [
     {
         paramName: 'richard-moore',
         name: 'Richard Moore',
+        website: 'http://richardmoorephotography.com/',
+        instagram: {
+            handle: '@richard_w_moore_photography',
+            link: 'https://www.instagram.com/richard_w_moore_photography/'
+        },
         images: [
-            "melora-kennedy/apples-and-flowers.jpg"
+            "richard-moore/back-of-state-and-main.jpg",
+            "richard-moore/sarduccis.jpg",
+            "richard-moore/savoy.jpg"
         ]
     },
     {

@@ -30,7 +30,7 @@ const Stepper: React.FC<IStepperProps> = ({ images }) => {
           steps={images.length}
           position="bottom"
           activeStep={activeStep}
-          sx={{ maxWidth: 400, flexGrow: 1 }}
+          sx={{ align: 'center', maxWidth: 400, flexGrow: 1 }}
           nextButton={
             <Button size="small" onClick={handleNext} disabled={activeStep === images.length - 1}>
               Next
