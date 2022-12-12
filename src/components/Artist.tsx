@@ -11,6 +11,7 @@ import { IArtist } from '../models/Artist';
 import { useParams, useNavigate } from 'react-router-dom';
 import useImages from '../hooks/useImages';
 import { BsInstagram } from 'react-icons/bs';
+import { GoBrowser } from 'react-icons/go';
 
 export const NavItemArtists = 'Artists';
 
@@ -32,10 +33,8 @@ const Artist = () => {
         <Grid justifyContent={'center'} container={true}>
             {artist && (
                 <Container>
-                    <Typography align={'center'} variant={'h3'} sx={{ pb: 2, display: 'flex', flexDirection: 'row' }}>
-                        <Box sx={{ mr: 4 }}>
-                            {artist.name}
-                        </Box>
+                    <Typography align={'center'} variant={'h3'}>
+                        <Box>{artist.name}</Box>
                         {artist.instagram && (
                             <Button variant={'text'} onClick={() => window.open(artist.instagram?.link)}>
                                 <Typography variant={'h6'} sx={{ pr: 1 }}>
@@ -48,6 +47,9 @@ const Artist = () => {
                         )}
                         {artist.website && (
                             <Button variant={'text'} onClick={() => window.open(artist.website)}>
+                                <Typography variant={'h6'} sx={{ pr: 1 }}>
+                                    <GoBrowser />
+                                </Typography>
                                 <Typography sx={{ textTransform: 'none' }}>
                                     {artist.website}
                                 </Typography>

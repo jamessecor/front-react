@@ -50,7 +50,6 @@ const Navbar = () => {
 
     return (
         <Box>
-
             <AppBar position="static" color={'transparent'}>
                 <Container maxWidth="xl">
                     <Toolbar disableGutters>
