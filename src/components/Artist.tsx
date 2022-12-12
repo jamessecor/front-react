@@ -1,5 +1,6 @@
 import * as React from 'react';
 import { useMemo, useEffect } from 'react';
+import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
 import Grid from '@mui/material/Grid';
 import Button from '@mui/material/Button';
@@ -31,9 +32,29 @@ const Artist = () => {
         <Grid justifyContent={'center'} container={true}>
             {artist && (
                 <Container>
-                    <Typography align={'center'} variant={'h3'}>
-                        {artist.name}
+                    <Typography align={'center'} variant={'h3'} sx={{ pb: 2, display: 'flex', flexDirection: 'row' }}>
+                        <Box sx={{ mr: 4 }}>
+                            {artist.name}
+                        </Box>
+                        {artist.instagram && (
+                            <Button variant={'text'} onClick={() => window.open(artist.instagram?.link)}>
+                                <Typography variant={'h6'} sx={{ pr: 1 }}>
+                                    <BsInstagram />
+                                </Typography>
+                                <Typography sx={{ textTransform: 'none' }}>
+                                    {artist.instagram.handle}
+                                </Typography>
+                            </Button>
+                        )}
+                        {artist.website && (
+                            <Button variant={'text'} onClick={() => window.open(artist.website)}>
+                                <Typography sx={{ textTransform: 'none' }}>
+                                    {artist.website}
+                                </Typography>
+                            </Button>
+                        )}
                     </Typography>
+
                     <Grid
                         container={true}
                         xs={12}
@@ -45,20 +66,22 @@ const Artist = () => {
                             justifyContent={'center'}
                             alignItems={'stretch'}
                             xs={12}
-                            md={8}
+                            md={6}
+                            sx={{ pr: 2 }}
                         >
                             <Stepper images={artist.images.map((image) => getFullImagePath(image))} />
                         </Grid>
-                        <Grid item={true} xs={12} md={4}>
-                            {artist.instagram && (
-                                <Button variant={'text'} onClick={() => window.open(artist.instagram?.link)}>
-                                    <Typography variant={'h6'} sx={{ pr: 1 }}>
-                                        <BsInstagram />
+                        <Grid item={true} xs={12} md={6}>
+                            {artist.bio && (
+                                artist.bio.map((bioItem) => (
+                                    <Typography
+                                        sx={{ pb: 2 }}
+                                        variant={'body1'}
+                                    >
+                                        {/* ONLY HARD-CODED SAFE HTML */}
+                                        <div dangerouslySetInnerHTML={{ __html: bioItem }}></div>
                                     </Typography>
-                                    <Typography sx={{ textTransform: 'none' }}>
-                                        {artist.instagram.handle}
-                                    </Typography>
-                                </Button>
+                                ))
                             )}
                         </Grid>
                     </Grid>

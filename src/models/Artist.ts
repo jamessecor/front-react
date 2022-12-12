@@ -12,4 +12,5 @@ export interface IArtist {
     instagram?: IInstagram;
     images: Array<string>;
     showImages?: Array<IShowImage>;
+    bio?: Array<string>;
 }

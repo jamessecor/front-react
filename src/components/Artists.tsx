@@ -24,8 +24,7 @@ const Artists = () => {
                             item={true}
                             justifyContent={'center'}
                             alignItems={'stretch'}
-                            xs={12}
-                            sm={4}
+                            xs={4}
                             md={2}
                             sx={{ display: 'flex', flexDirection: 'column' }}
                         >
