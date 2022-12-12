@@ -16,10 +16,10 @@ import { useNavigate, Outlet } from 'react-router-dom';
 import { NavItemHome } from './Home';
 import { NavItemArtists } from './Artists';
 import { NavItemShows } from './Shows';
+import { NavItemVisit } from './Visit';
 import Insta from './Insta';
 
-
-const pages: Array<string> = [NavItemHome, NavItemArtists, NavItemShows];
+const pages: Array<string> = [NavItemHome, NavItemArtists, NavItemShows, NavItemVisit];
 
 const getRouteFromPage = (page: string) => {
     switch (page) {
@@ -29,6 +29,8 @@ const getRouteFromPage = (page: string) => {
             return '/artists';
         case NavItemShows:
             return '/shows';
+        case NavItemVisit:
+            return '/visit';
         default:
             return '/';
     }
@@ -117,7 +119,7 @@ const Navbar = () => {
                                         onClick={() => {
                                             navigateTo(getRouteFromPage(page));
                                             handleCloseNavMenu();
-                                        }}    
+                                        }}
                                     >
                                         <Typography color={'black'} textAlign="center" sx={{ fontWeight: 'bold' }}>{page}</Typography>
                                     </MenuItem>
