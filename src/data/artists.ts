@@ -4,15 +4,27 @@ export const artists: Array<IArtist> = [
     {
         paramName: 'anne-cobgill-rose',
         name: "Anne Cogbill Rose",
+        website: 'https://annecogbillrose.com',
         images: [
-            'anne-cogbill-rose/3glassbottles.jpeg'
+            'anne-cogbill-rose/1arose_BoyandPigeons.jpeg',
+            'anne-cogbill-rose/2arose_Cora-and-Cosmos.jpeg',
+            'anne-cogbill-rose/7aroseManandHisShadow.jpeg',
+            'anne-cogbill-rose/Pigeons.jpeg',
+            'anne-cogbill-rose/Snowman.jpeg',
+            'anne-cogbill-rose/Texting.jpeg'            
         ],
         showImages: [
             {
                 showName: '52',
-                src: 'anne-cogbill-rose/3glassbottles.jpeg',
+                src: 'anne-cogbill-rose/show-specific/3glassbottles.jpeg',
                 isOnHomePage: true
             }
+        ],
+        bio: [
+            "My work examines the strangeness of today's life focusing on the human body and the \"language\" of hands, feet and personal objects.  Each subject is alone immersed in private thought.",
+            "I paint with acrylic paint in areas of flat color and hard edges.  I studied at the Corcoran School of Art during the Washington Color School movement.  It's lasting influence on me is the subtle interaction of adjacent color.  I choose color very carefully tweaking colors constantly while working.",
+            "I spend summers on a farm in Thetford, Vermont and winters in the city of Merida Mexico.",
+            "My website is under construction:  <a href='https://annecogbillrose.com' target='_blank'>annecogbillrose.com</a>"
         ]
     },
     {
@@ -54,7 +66,7 @@ export const artists: Array<IArtist> = [
         bio: [
             "Daryl Burtnett makes photographs. Sometimes he enlarges them onto canvas and draws on them with various materials to craft mixed media works. Daryl had a five-year stint as a full-time photojournalist in the Boston area after college, and later worked as a mountaineering and rock climbing instructor in the Rocky Mountains and Southwest US. He is currently the executive director of the Northeast Wilderness Trust, a wilderness focused land trust based in Montpelier.",
             "Photography has remained his main creative outlet throughout the years, and upon moving to central Vermont in 2013, he made a shift to abstracted images as a creative focus. Subject matter is often the texture, line and shape created by erosion and decay.",
-            "Daryl also has begun making wet plate collodian (tintype) portraits, and is trying to contribute the “unflinching” school of portraiture, which he thinks he started.",
+            "Daryl also has begun making wet plate collodian (tintype) portraits, and is trying to contribute the \"unflinching\" school of portraiture, which he thinks he started.",
             "In all of these works he strives to capture the marks that time and use leave on things… even on us. He believes that broken places are beautiful and strong.",
             "See more of his work at <a target='_blank' href='www.darylburtnett.com'>www.darylburtnett.com</a>."
         ],
@@ -255,7 +267,7 @@ export const artists: Array<IArtist> = [
             "richard-moore/savoy.jpg"
         ],
         bio: [
-            "Richard Moore has practiced many kinds of photography for more than fifty years: Brownie, 35 mm, large format, archaeological, documentary, environmental, alternative process, digital, composite, and zen photography. Before moving to Vermont in 2020 he exhibited regularly at the Robert Lincoln Levy Gallery of the New Hampshire Art Association in Portsmouth, the Barn Gallery in Ogunquit, Maine, and the annual exhibits of the New Hampshire Society of Photographic Artists. In 2014 he exhibited at the Lupine Gallery on Monhegan Island, Maine, in conjunction with the publication of his book, “Monhegan Come Again.” In 2019 he had a solo exhibit at the Hellenic American University in Athens, Greece, in conjunction with the publication of “Athens Twice Seen.”"
+            "Richard Moore has practiced many kinds of photography for more than fifty years: Brownie, 35 mm, large format, archaeological, documentary, environmental, alternative process, digital, composite, and zen photography. Before moving to Vermont in 2020 he exhibited regularly at the Robert Lincoln Levy Gallery of the New Hampshire Art Association in Portsmouth, the Barn Gallery in Ogunquit, Maine, and the annual exhibits of the New Hampshire Society of Photographic Artists. In 2014 he exhibited at the Lupine Gallery on Monhegan Island, Maine, in conjunction with the publication of his book, \"Monhegan Come Again.\" In 2019 he had a solo exhibit at the Hellenic American University in Athens, Greece, in conjunction with the publication of \"Athens Twice Seen.\""
         ]
     },
     {

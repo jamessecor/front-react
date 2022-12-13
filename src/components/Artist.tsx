@@ -36,7 +36,7 @@ const Artist = () => {
                     <Grid
                         container={true}
                         item={true}
-                        sx={{ display: 'flex', flexDirection: 'row' }}
+                        sx={{ display: 'flex', flexDirection: 'row', pb: 2 }}
                     >
                         <Grid
                             item={true}
