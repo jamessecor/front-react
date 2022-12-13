@@ -1,12 +1,7 @@
-import ButtonBase from '@mui/material/ButtonBase';
-import { BsInstagram } from 'react-icons/bs';
-
-const FRONT_INSTA = 'https://www.instagram.com/gallerythefront';
+export const NavItemInsta = 'instagram';
 
 const Insta = () => (
-    <ButtonBase onClick={() => window.open(FRONT_INSTA)} >
-        <BsInstagram />
-    </ButtonBase>
+    <iframe width={'100%'} style={{ aspectRatio: 1 / 1 }} src="https://www.instagram.com/gallerythefront/embed"></iframe>
 );
 
 export default Insta;

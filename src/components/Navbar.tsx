@@ -17,7 +17,8 @@ import { NavItemHome } from './Home';
 import { NavItemArtists } from './Artists';
 import { NavItemShows } from './Shows';
 import { NavItemVisit } from './Visit';
-import Insta from './Insta';
+import Insta, { NavItemInsta } from './Insta';
+import { BsInstagram } from 'react-icons/bs';
 
 const pages: Array<string> = [NavItemHome, NavItemArtists, NavItemShows, NavItemVisit];
 
@@ -31,6 +32,8 @@ const getRouteFromPage = (page: string) => {
             return '/shows';
         case NavItemVisit:
             return '/visit';
+        case NavItemInsta:
+            return '/instagram';
         default:
             return '/';
     }
@@ -47,6 +50,18 @@ const Navbar = () => {
     const handleCloseNavMenu = () => {
         setAnchorElNav(null);
     };
+
+    const getInstaMenuItem = () => (
+        <MenuItem
+            key={'insta'}
+            onClick={() => {
+                navigateTo(getRouteFromPage(NavItemInsta));
+                handleCloseNavMenu();
+            }}
+        >
+            <BsInstagram />
+        </MenuItem>
+    );
 
     return (
         <Box>
@@ -79,9 +94,7 @@ const Navbar = () => {
                                     {page}
                                 </Button>
                             ))}
-                            <MenuItem key={'insta'}>
-                                <Insta />
-                            </MenuItem>
+                            {getInstaMenuItem()}
                         </Box>
                         <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
                             <IconButton
@@ -123,9 +136,7 @@ const Navbar = () => {
                                         <Typography color={'black'} textAlign="center" sx={{ fontWeight: 'bold' }}>{page}</Typography>
                                     </MenuItem>
                                 ))}
-                                <MenuItem key={'insta'}>
-                                    <Insta />
-                                </MenuItem>
+                                {getInstaMenuItem()}
                             </Menu>
                         </Box>
                         <ButtonBase
