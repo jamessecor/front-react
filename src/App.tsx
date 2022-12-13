@@ -14,7 +14,6 @@ const App = () => {
   return (
     <React.StrictMode>
       <AppThemeProvider>
-
         <BrowserRouter>
           <Routes>
             <Route element={<Navbar />}>
