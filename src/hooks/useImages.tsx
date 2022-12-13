@@ -9,8 +9,8 @@ const useImages = () => {
 
     const getShowByName = useCallback((name: string) => {
         return shows.filter((a) => a.name === name).length
-        ? shows.filter((a) => a.name === name)[0]
-        : null
+            ? shows.filter((a) => a.name === name)[0]
+            : null
     }, [shows]);
 
     const artistsWithImagesForCurrentShow = useMemo(() => artists.filter(
@@ -33,7 +33,10 @@ const useImages = () => {
     }, [artistsWithImagesForCurrentShow]);
 
     const getCurrentShowImages = useCallback(() => getShowImages().filter((showImage) =>
-                    showImage.showName === process.env.REACT_APP_CURRENT_SHOW), []);
+        showImage.showName === process.env.REACT_APP_CURRENT_SHOW), []);
+
+    const getShowImagesByName = useCallback((showName: string) => getShowImages().filter((showImage) =>
+        showImage.showName === showName), []);
 
     const showImages = useMemo(() => getShowImages(), [getShowImages]);
 
@@ -47,7 +50,8 @@ const useImages = () => {
         currentShowImages,
         currentShowImagesForHomePage,
         getFullImagePath,
-        getShowByName
+        getShowByName,
+        getShowImagesByName
     };
 };
 

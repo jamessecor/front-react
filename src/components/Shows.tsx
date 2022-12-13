@@ -16,12 +16,13 @@ export const NavItemShows = 'Shows';
 
 const Shows = () => {
     const navigateTo = useNavigate();
-    const { currentShowImages, getFullImagePath } = useImages();
+    const { getShowImagesByName, getFullImagePath } = useImages();
 
     return (
         <Container>
             <Grid justifyContent={'center'} container={true} spacing={2}>
                 {shows.map((show) => {
+                    const thisShowImages = getShowImagesByName(show.name);
                     return (
                         <Grid
                             item={true}
@@ -33,11 +34,9 @@ const Shows = () => {
                             sx={{ display: 'flex', flexDirection: 'column' }}
                         >
                             <ButtonBase onClick={() => navigateTo(`/shows/${show.name}`)}>
-                                {
-                                    currentShowImages.map((image) => (
-                                        <img className={'image-home'} src={getFullImagePath(image.src)} />
-                                    ))
-                                }
+                                {thisShowImages.map((image) => (
+                                    <img className={'image-home'} src={getFullImagePath(image.src)} />
+                                ))}
                             </ButtonBase>
                             <Button
                                 variant={'text'}

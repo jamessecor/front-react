@@ -17,9 +17,10 @@ import { BiArrowBack } from 'react-icons/bi';
 const Show = () => {
     const { name } = useParams();
     const navigateTo = useNavigate();
-    const { showImages, getFullImagePath, getShowByName } = useImages();
+    const { getShowImagesByName, getFullImagePath, getShowByName } = useImages();
 
     const show = getShowByName(name ?? '');
+    const thisShowImages = useMemo(() => getShowImagesByName(name ?? ''), [name]);
 
     useEffect(() => {
         if (show === null) {
@@ -43,7 +44,7 @@ const Show = () => {
                         {show?.displayName}
                     </Typography>
                     {
-                        showImages.map((image) => (
+                        thisShowImages.map((image) => (
                             <img src={getFullImagePath(image.src)} />
                         ))
                     }

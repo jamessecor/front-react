@@ -33,30 +33,60 @@ const Artist = () => {
         <Grid justifyContent={'center'} container={true}>
             {artist && (
                 <Container>
-                    <Typography align={'center'} variant={'h3'}>
-                        <Box>{artist.name}</Box>
-                        {artist.instagram && (
-                            <Button variant={'text'} onClick={() => window.open(artist.instagram?.link)}>
-                                <Typography variant={'h6'} sx={{ pr: 1 }}>
-                                    <BsInstagram />
-                                </Typography>
-                                <Typography sx={{ textTransform: 'none' }}>
-                                    {artist.instagram.handle}
-                                </Typography>
-                            </Button>
-                        )}
-                        {artist.website && (
-                            <Button variant={'text'} onClick={() => window.open(artist.website)}>
-                                <Typography variant={'h6'} sx={{ pr: 1 }}>
-                                    <GoBrowser />
-                                </Typography>
-                                <Typography sx={{ textTransform: 'none' }}>
-                                    {artist.website}
-                                </Typography>
-                            </Button>
-                        )}
-                    </Typography>
-
+                    <Grid
+                        container={true}
+                        item={true}
+                        sx={{ display: 'flex', flexDirection: 'row' }}
+                    >
+                        <Grid
+                            item={true}
+                            justifyContent={'center'}
+                            alignItems={'stretch'}
+                            xs={12}
+                            md={6}
+                            sx={{ pr: 2 }}
+                        >
+                            <Typography align={'center'} variant={'h3'}>
+                                <Box>{artist.name}</Box>
+                            </Typography>
+                        </Grid>
+                        <Grid
+                            container={true}
+                            item={true}
+                            justifyContent={'center'}
+                            alignItems={'center'}
+                            xs={12}
+                            md={6}
+                        >
+                            <Grid item={true}>
+                                {artist.instagram && (
+                                    <Button sx={{ py: 0 }} variant={'text'} onClick={() => window.open(artist.instagram?.link)}>
+                                        <Typography sx={{ textTransform: 'none' }}>
+                                            {'Instagram: '}
+                                        </Typography>
+                                        <Typography variant={'h6'} sx={{ px: 1 }}>
+                                            <BsInstagram />
+                                        </Typography>
+                                        <Typography sx={{ textTransform: 'none' }}>
+                                            {artist.instagram.handle}
+                                        </Typography>
+                                    </Button>
+                                )}
+                                <Grid item={true}>
+                                    {artist.website && (
+                                        <Button sx={{ py: 0 }} variant={'text'} onClick={() => window.open(artist.website)}>
+                                            <Typography sx={{ textTransform: 'none' }}>
+                                                {'Website: '}
+                                            </Typography>
+                                            <Typography variant={'h6'} sx={{ px: 1 }}>
+                                                <GoBrowser />
+                                            </Typography>
+                                        </Button>
+                                    )}
+                                </Grid>
+                            </Grid>
+                        </Grid>
+                    </Grid>
                     <Grid
                         container={true}
                         xs={12}
