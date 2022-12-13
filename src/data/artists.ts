@@ -2,6 +2,11 @@ import { IArtist } from "../models/Artist";
 
 export const artists: Array<IArtist> = [
     {
+        paramName: 'test-member',
+        name: 'test member',
+        images: []
+    },
+    {
         paramName: 'anne-cobgill-rose',
         name: "Anne Cogbill Rose",
         website: 'https://annecogbillrose.com',
@@ -11,7 +16,7 @@ export const artists: Array<IArtist> = [
             'anne-cogbill-rose/7aroseManandHisShadow.jpeg',
             'anne-cogbill-rose/Pigeons.jpeg',
             'anne-cogbill-rose/Snowman.jpeg',
-            'anne-cogbill-rose/Texting.jpeg'            
+            'anne-cogbill-rose/Texting.jpeg'
         ],
         showImages: [
             {
