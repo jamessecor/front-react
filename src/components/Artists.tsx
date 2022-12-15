@@ -22,10 +22,10 @@ const Artists = () => {
                     return (
                         <Grid
                             item={true}
-                            justifyContent={'center'}
-                            alignItems={'stretch'}
+                            justifyContent={'top'}
                             xs={4}
-                            md={2}
+                            md={2.25}
+                            lg={1.6}
                             sx={{ display: 'flex', flexDirection: 'column' }}
                         >
                             <ButtonBase onClick={() => navigateTo(`/artists/${artist.paramName}`)}>
