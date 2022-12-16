@@ -8,12 +8,18 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 import './Stepper.css';
+import { IImage } from '../models/Artist';
+import { Typography } from '@mui/material';
+import useImages from '../hooks/useImages';
+import { IShowImage } from '../models/Show';
 
 interface IStepperProps {
-  images: Array<string>;
+  images: Array<IImage | IShowImage>;
 }
 
 const Stepper: React.FC<IStepperProps> = ({ images }) => {
+  const { getFullImagePath } = useImages();
+
   return (
     <Swiper
       modules={[Navigation, Pagination, Scrollbar, A11y]}
@@ -27,7 +33,12 @@ const Stepper: React.FC<IStepperProps> = ({ images }) => {
     >
       {images.map((image) =>
         <SwiperSlide>
-          <img width={'100%'} src={image} />
+          <img width={'100%'} src={getFullImagePath(image.src)} />
+          {image.text && (
+            <Typography sx={{ pb: 2 }} variant={'body1'}>
+              {image.text}
+            </Typography>
+          )}
         </SwiperSlide>
       )}
     </Swiper>

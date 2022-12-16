@@ -6,12 +6,12 @@ export const artists: Array<IArtist> = [
         name: "Anne Cogbill Rose",
         website: 'https://annecogbillrose.com',
         images: [
-            'anne-cogbill-rose/1arose_BoyandPigeons.jpeg',
-            'anne-cogbill-rose/2arose_Cora-and-Cosmos.jpeg',
-            'anne-cogbill-rose/7aroseManandHisShadow.jpeg',
-            'anne-cogbill-rose/Pigeons.jpeg',
-            'anne-cogbill-rose/Snowman.jpeg',
-            'anne-cogbill-rose/Texting.jpeg'
+            { src: 'anne-cogbill-rose/1arose_BoyandPigeons.jpeg' },
+            { src: 'anne-cogbill-rose/2arose_Cora-and-Cosmos.jpeg' },
+            { src: 'anne-cogbill-rose/7aroseManandHisShadow.jpeg' },
+            { src: 'anne-cogbill-rose/Pigeons.jpeg' },
+            { src: 'anne-cogbill-rose/Snowman.jpeg' },
+            { src: 'anne-cogbill-rose/Texting.jpeg' }
         ],
         showImages: [
             {
@@ -31,7 +31,9 @@ export const artists: Array<IArtist> = [
         paramName: 'cheryl-betz',
         name: "Cheryl Betz",
         images: [
-            "melora-kennedy/apples-and-flowers.jpg"
+            {
+                src: 'melora-kennedy/apples-and-flowers.jpg'
+            }
         ],
         instagram: {
             handle: '@cm.betz',
@@ -50,14 +52,18 @@ export const artists: Array<IArtist> = [
         paramName: 'chip-haggerty',
         name: "Chip Haggerty",
         images: [
-            "melora-kennedy/apples-and-flowers.jpg"
+            {
+                src: 'melora-kennedy/apples-and-flowers.jpg'
+            }
         ]
     },
     {
         paramName: 'daryl-burtnett',
         name: "Daryl Burtnett",
         images: [
-            "melora-kennedy/apples-and-flowers.jpg"
+            {
+                src: 'melora-kennedy/apples-and-flowers.jpg'
+            }
         ],
         instagram: {
             handle: '@darylburtnett',
@@ -76,7 +82,9 @@ export const artists: Array<IArtist> = [
         paramName: 'delia-robinson',
         name: 'Delia Robinson',
         images: [
-            "melora-kennedy/apples-and-flowers.jpg"
+            {
+                src: 'melora-kennedy/apples-and-flowers.jpg'
+            }
         ],
         instagram: {
             handle: '@deliarobinsonart',
@@ -87,7 +95,9 @@ export const artists: Array<IArtist> = [
         paramName: 'diane-sophrin',
         name: 'Diane Sophrin',
         images: [
-            "melora-kennedy/apples-and-flowers.jpg"
+            {
+                src: 'melora-kennedy/apples-and-flowers.jpg'
+            }
         ],
         instagram: {
             handle: '@szofrand',
@@ -98,7 +108,9 @@ export const artists: Array<IArtist> = [
         paramName: 'elizabeth-nelson',
         name: 'Elizabeth Nelson',
         images: [
-            "melora-kennedy/apples-and-flowers.jpg"
+            {
+                src: 'melora-kennedy/apples-and-flowers.jpg'
+            }
         ],
         instagram: {
             handle: '@lizinvermont',
@@ -116,7 +128,9 @@ export const artists: Array<IArtist> = [
         paramName: 'glen-coburn-hutcheson',
         name: 'Glen Coburn Hutcheson',
         images: [
-            "melora-kennedy/apples-and-flowers.jpg"
+            {
+                src: 'melora-kennedy/apples-and-flowers.jpg'
+            }
         ],
         instagram: {
             handle: '@glencoburnhutcheson',
@@ -130,7 +144,9 @@ export const artists: Array<IArtist> = [
         paramName: 'hasso-ewing',
         name: 'Hasso Ewing',
         images: [
-            "melora-kennedy/apples-and-flowers.jpg"
+            {
+                src: 'melora-kennedy/apples-and-flowers.jpg'
+            }
         ],
         instagram: {
             handle: '@hasso.ewing',
@@ -145,9 +161,12 @@ export const artists: Array<IArtist> = [
         paramName: 'james-secor',
         name: "James Secor",
         images: [
-            "james-secor/03.JPG",
-            "james-secor/04.JPG",
-            "melora-kennedy/apples-and-flowers.jpg"
+            {
+                src: 'james-secor/03.JPG'
+            },
+            {
+                src: 'james-secor/04.JPG'
+            }
         ],
         instagram: {
             handle: '@jamessecor',
@@ -162,7 +181,9 @@ export const artists: Array<IArtist> = [
         paramName: 'kate-fetherston',
         name: 'Kate Fetherston',
         images: [
-            "melora-kennedy/apples-and-flowers.jpg"
+            {
+                src: 'melora-kennedy/apples-and-flowers.jpg'
+            }
         ],
         instagram: {
             handle: '@kate.fetherston',
@@ -173,7 +194,9 @@ export const artists: Array<IArtist> = [
         paramName: 'kathy-stark',
         name: 'Kathy Stark',
         images: [
-            "melora-kennedy/apples-and-flowers.jpg"
+            {
+                src: 'melora-kennedy/apples-and-flowers.jpg'
+            }
         ],
         instagram: {
             handle: '@kstark2102',
@@ -184,7 +207,9 @@ export const artists: Array<IArtist> = [
         paramName: 'kimberly-malloy-backus',
         name: 'Kimberly Malloy Backus',
         images: [
-            "melora-kennedy/apples-and-flowers.jpg"
+            {
+                src: 'melora-kennedy/apples-and-flowers.jpg'
+            }
         ],
         instagram: {
             handle: '@kimberly_malloy_backus_artist',
@@ -195,7 +220,9 @@ export const artists: Array<IArtist> = [
         paramName: 'marjorie-kramer',
         name: "Marjorie Kramer",
         images: [
-            "melora-kennedy/apples-and-flowers.jpg"
+            {
+                src: 'melora-kennedy/apples-and-flowers.jpg'
+            }
         ],
         instagram: {
             handle: '@kramer4265',
@@ -211,7 +238,9 @@ export const artists: Array<IArtist> = [
         paramName: 'melora-kennedy',
         name: "Melora Kennedy",
         images: [
-            "melora-kennedy/apples-and-flowers.jpg"
+            {
+                src: 'melora-kennedy/apples-and-flowers.jpg'
+            }
         ],
         bio: [
             "Melora Kennedy is a painter who has also made shadow boxes, and is currently occupied with still life. Still life makes it possible to practice her art a little every day—which  makes it like meditation. Setting up a still life is similar to arranging the elements inside a shadow box: it resembles child's play. She's drawn in by the way that plants, in particular, express human emotion in their every gesture. She tries to paint so this feeling of liveliness comes across.",
@@ -224,7 +253,9 @@ export const artists: Array<IArtist> = [
         paramName: 'monica-digiovanni',
         name: 'Monica Digiovanni',
         images: [
-            "melora-kennedy/apples-and-flowers.jpg"
+            {
+                src: 'melora-kennedy/apples-and-flowers.jpg'
+            }
         ],
         instagram: {
             handle: '@laughing_violet',
@@ -241,7 +272,9 @@ export const artists: Array<IArtist> = [
         paramName: 'ned-richardson',
         name: 'Ned Richardson',
         images: [
-            "melora-kennedy/apples-and-flowers.jpg"
+            {
+                src: 'melora-kennedy/apples-and-flowers.jpg'
+            }
         ],
         instagram: {
             handle: '@ep3lb',
@@ -262,9 +295,15 @@ export const artists: Array<IArtist> = [
             link: 'https://www.instagram.com/richard_w_moore_photography/'
         },
         images: [
-            "richard-moore/back-of-state-and-main.jpg",
-            "richard-moore/sarduccis.jpg",
-            "richard-moore/savoy.jpg"
+            {
+                src: 'richard-moore/back-of-state-and-main.jpg'
+            },
+            {
+                src: 'richard-moore/sarduccis.jpg'
+            },
+            {
+                src: 'richard-moore/savoy.jpg'
+            }
         ],
         bio: [
             "Richard Moore has practiced many kinds of photography for more than fifty years: Brownie, 35 mm, large format, archaeological, documentary, environmental, alternative process, digital, composite, and zen photography. Before moving to Vermont in 2020 he exhibited regularly at the Robert Lincoln Levy Gallery of the New Hampshire Art Association in Portsmouth, the Barn Gallery in Ogunquit, Maine, and the annual exhibits of the New Hampshire Society of Photographic Artists. In 2014 he exhibited at the Lupine Gallery on Monhegan Island, Maine, in conjunction with the publication of his book, \"Monhegan Come Again.\" In 2019 he had a solo exhibit at the Hellenic American University in Athens, Greece, in conjunction with the publication of \"Athens Twice Seen.\""
@@ -274,7 +313,26 @@ export const artists: Array<IArtist> = [
         paramName: 'sam-thurston',
         name: 'Sam Thurston',
         images: [
-            "melora-kennedy/apples-and-flowers.jpg"
+            {
+                src: 'sam-thurston/1.jpg',
+                text: 'Self Portrait Without Shirt; 22" x 18";  oil on canvas; 2022'
+            },
+            {
+                src: 'sam-thurston/2.jpeg',
+                text: 'Aspects; 12 1/2” high; basswood; 2022'
+            },
+            {
+                src: 'sam-thurston/3.JPG',
+                text: 'Two Heads; 9 1/2 x 7 x 5”;  mahogany; 2021'
+            },
+            {
+                src: 'sam-thurston/4.jpg',
+                text: 'Still Life With Paper Boxes, 15x12", o/c; 2021'
+            },
+            {
+                src: 'sam-thurston/5.jpg',
+                text: 'Adolescence; 30x24”; o/c; 2020'
+            }
         ],
         instagram: {
             handle: '@samuelthurstonpaintings_sculpture',

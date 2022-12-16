@@ -21,7 +21,7 @@ const Home = () => {
       </Typography>
       {
         currentShowImagesForHomePage.length > 1 ? (
-          <Stepper images={currentShowImagesForHomePage.map((image) => getFullImagePath(image.src))} />
+          <Stepper images={currentShowImagesForHomePage} />
         ) : (
           currentShowImagesForHomePage.map((image) => (
             <img className={'image-home'} src={getFullImagePath(image.src)} />

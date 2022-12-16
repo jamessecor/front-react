@@ -7,9 +7,7 @@ import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import { artists } from '../data/artists';
 import Stepper from './Stepper';
-import { IArtist } from '../models/Artist';
 import { useParams, useNavigate } from 'react-router-dom';
-import useImages from '../hooks/useImages';
 import { BsInstagram } from 'react-icons/bs';
 import { GoBrowser } from 'react-icons/go';
 
@@ -18,7 +16,6 @@ export const NavItemArtists = 'Artists';
 const Artist = () => {
     const { name } = useParams();
     const navigateTo = useNavigate();
-    const { getFullImagePath } = useImages();
 
     const filteredArtists = useMemo(() => artists.filter((artist) => artist.paramName === name), [artists]);
     const artist = useMemo(() => filteredArtists.length ? filteredArtists[0] : null, [filteredArtists]);
@@ -101,7 +98,7 @@ const Artist = () => {
                             md={6}
                             sx={{ pr: 2 }}
                         >
-                            <Stepper images={artist.images.map((image) => getFullImagePath(image))} />
+                            <Stepper images={artist.images} />
                         </Grid>
                         <Grid item={true} xs={12} md={6}>
                             {artist.bio && (

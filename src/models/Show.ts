@@ -9,4 +9,5 @@ export interface IShowImage {
     showName: string;
     src: string;
     isOnHomePage?: boolean;
+    text?: string;
 };

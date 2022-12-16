@@ -5,12 +5,17 @@ interface IInstagram {
     handle: string;
 }
 
+export interface IImage {
+    src: string;
+    text?: string;
+}
+
 export interface IArtist {
     paramName: string;
     name: string;
     website?: string;
     instagram?: IInstagram;
-    images: Array<string>;
+    images: Array<IImage>;
     showImages?: Array<IShowImage>;
     bio?: Array<string>;
 }

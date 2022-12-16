@@ -28,9 +28,11 @@ const Artists = () => {
                             lg={1.6}
                             sx={{ display: 'flex', flexDirection: 'column' }}
                         >
-                            <ButtonBase onClick={() => navigateTo(`/artists/${artist.paramName}`)}>
-                                <img className={'artists-image'} src={`${process.env.REACT_APP_URL}/images/artists/${artist.images[0]}`} />
-                            </ButtonBase>
+                            {artist.images.length && (
+                                <ButtonBase onClick={() => navigateTo(`/artists/${artist.paramName}`)}>
+                                    <img className={'artists-image'} src={`${process.env.REACT_APP_URL}/images/artists/${artist.images[0].src}`} />
+                                </ButtonBase>
+                            )}
                             <Button
                                 variant={'text'}
                                 onClick={() => navigateTo(`/artists/${artist.paramName}`)}
