@@ -96,13 +96,19 @@ export const artists: Array<IArtist> = [
         name: 'Diane Sophrin',
         images: [
             {
-                src: 'melora-kennedy/apples-and-flowers.jpg'
+                src: 'diane-sophrin/Two-sided_Gift__Verso.jpg',
+                text: '\'Kétoldalú ajándék - hátoldal\'. \'Two-sided Gift - Verso\'. 2022'
+            },
+            {
+                src: 'diane-sophrin/Two-sided_Gift__Recto.jpg',
+                text: '\'Kétoldalú ajándék - Recto\'. \'Two-sided Gift - Recto\'. 2022'
             }
         ],
         instagram: {
             handle: '@szofrand',
             link: 'https://www.instagram.com/szofrand/'
-        }
+        },
+        website: 'http://dianesophrin.com/'
     },
     {
         paramName: 'elizabeth-nelson',
