@@ -3,13 +3,17 @@ import { useMemo, useEffect } from 'react';
 import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
 import Grid from '@mui/material/Grid';
+import Divider from '@mui/material/Divider';
 import Button from '@mui/material/Button';
+import ButtonBase from '@mui/material/ButtonBase';
 import Typography from '@mui/material/Typography';
 import { artists } from '../data/artists';
 import Stepper from './Stepper';
 import { useParams, useNavigate } from 'react-router-dom';
 import { BsInstagram } from 'react-icons/bs';
 import { GoBrowser } from 'react-icons/go';
+import { RxOpenInNewWindow } from 'react-icons/rx';
+import Tooltip from '@mui/material/Tooltip';
 
 export const NavItemArtists = 'Artists';
 
@@ -31,58 +35,34 @@ const Artist = () => {
             {artist && (
                 <Container>
                     <Grid
-                        container={true}
                         item={true}
-                        sx={{ display: 'flex', flexDirection: 'row', pb: 2 }}
+                        justifyContent={'center'}
+                        alignItems={'stretch'}
+                        xs={12}
+                        md={6}
+                        sx={{ pr: 2, display: 'flex' }}
                     >
-                        <Grid
-                            item={true}
-                            justifyContent={'center'}
-                            alignItems={'stretch'}
-                            xs={12}
-                            md={6}
-                            sx={{ pr: 2 }}
-                        >
-                            <Typography align={'center'} variant={'h3'}>
-                                <Box>{artist.name}</Box>
-                            </Typography>
-                        </Grid>
-                        <Grid
-                            container={true}
-                            item={true}
-                            justifyContent={'center'}
-                            alignItems={'center'}
-                            xs={12}
-                            md={6}
-                        >
-                            <Grid item={true}>
-                                {artist.instagram && (
-                                    <Button sx={{ py: 0 }} variant={'text'} onClick={() => window.open(artist.instagram?.link)}>
-                                        <Typography sx={{ textTransform: 'none' }}>
-                                            {'Instagram: '}
-                                        </Typography>
-                                        <Typography variant={'h6'} sx={{ px: 1 }}>
-                                            <BsInstagram />
-                                        </Typography>
-                                        <Typography sx={{ textTransform: 'none' }}>
-                                            {artist.instagram.handle}
-                                        </Typography>
-                                    </Button>
-                                )}
-                                <Grid item={true}>
-                                    {artist.website && (
-                                        <Button sx={{ py: 0 }} variant={'text'} onClick={() => window.open(artist.website)}>
-                                            <Typography sx={{ textTransform: 'none' }}>
-                                                {'Website: '}
-                                            </Typography>
-                                            <Typography variant={'h6'} sx={{ px: 1 }}>
-                                                <GoBrowser />
-                                            </Typography>
-                                        </Button>
-                                    )}
-                                </Grid>
-                            </Grid>
-                        </Grid>
+                        <Typography align={'center'} variant={'h3'} sx={{ px: 2 }}>
+                            <Box>{artist.name}</Box>
+                        </Typography>
+                        {artist.instagram && (
+                            <ButtonBase sx={{ p: 0 }} onClick={() => window.open(artist.instagram?.link)}>
+                                <Tooltip arrow={true} title={artist.instagram.handle} placement={'top'}>
+                                    <Typography variant={'h6'} sx={{ px: 1 }}>
+                                        <BsInstagram />
+                                    </Typography>
+                                </Tooltip>
+                            </ButtonBase>
+                        )}
+                        {artist.website && (
+                            <ButtonBase onClick={() => window.open(artist.website)}>
+                                <Tooltip arrow={true} title={artist.website} placement={'top'}>
+                                    <Typography variant={'h6'} sx={{ px: 1 }}>
+                                        <GoBrowser />
+                                    </Typography>
+                                </Tooltip>
+                            </ButtonBase>
+                        )}
                     </Grid>
                     <Grid
                         container={true}
@@ -101,6 +81,7 @@ const Artist = () => {
                             <Stepper images={artist.images} />
                         </Grid>
                         <Grid item={true} xs={12} md={6}>
+                            <Box sx={{ my: 3, display: { xs: 'block', md: 'none' } }} />
                             {artist.bio && (
                                 artist.bio.map((bioItem) => (
                                     <Typography
@@ -113,6 +94,38 @@ const Artist = () => {
                                 ))
                             )}
                         </Grid>
+                    </Grid>
+                    <Grid
+                        justifyContent={'space-between'}
+                        item={true}
+                        sx={{ display: { sx: 'inline', md: 'flex' } }}
+                    >
+                        {artist.instagram && (
+                            <Button sx={{ py: 0 }} variant={'text'} onClick={() => window.open(artist.instagram?.link)}>
+                                <Typography sx={{ pr: 1, textTransform: 'none' }}>
+                                    {'Instagram:'}
+                                </Typography>
+                                <Typography sx={{ textTransform: 'none' }}>
+                                    {artist.instagram.handle}
+                                </Typography>
+                                <Typography sx={{ pl: 1 }}>
+                                    <RxOpenInNewWindow />
+                                </Typography>
+                            </Button>
+                        )}
+                        {artist.website && (
+                            <Button sx={{ py: 0 }} variant={'text'} onClick={() => window.open(artist.website)}>
+                                <Typography align={'center'} sx={{ pr: 1, textTransform: 'none' }}>
+                                    {'Website:'}
+                                </Typography>
+                                <Typography sx={{ textTransform: 'none' }}>
+                                    {artist.website}
+                                </Typography>
+                                <Typography sx={{ pl: 1 }}>
+                                    <RxOpenInNewWindow />
+                                </Typography>
+                            </Button>
+                        )}
                     </Grid>
                 </Container>
             )}

@@ -108,7 +108,20 @@ export const artists: Array<IArtist> = [
             handle: '@szofrand',
             link: 'https://www.instagram.com/szofrand/'
         },
-        website: 'http://dianesophrin.com/'
+        website: 'http://dianesophrin.com/',
+        bio: [
+            'Working within a wide context, Diane Sophrin\'s works traverse contextual boundaries of place, time and media, developing a personal visual language with which to comment, define and respond to world events and experiential realities. ',
+            'Moving from decades of engagement with European traditional two-dimensional techniques and a dedicated figural narrative, her paintings, drawings and prints began a gradual shift towards abstraction and mixed-media that accelerated in 2000 during a first year in Hungary. An idiosyncratic abstract idiom emerged and symbols of personal significance evolved, drawn partly from forms absorbed during earlier years of intense visual scrutiny. ',
+            'Process as subject has taken on significant importance in Sophrin\'s work as the construct of series acts as documentation of visual and thematic analysis.The medium itself expresses its own reality, while the work simultaneously presents itself as object(sheaf, scroll, totem, book, box, relic, etc.).The hand and eye add further voice and direction to this exploration.',
+            'The dualities of her creative life bring the work to a vital, sharp edge - crossing borders as needed, describing and defining an internal landscape while simultaneously reflecting inescapable external realities. ',
+            'Born in Brooklyn, Sophrin is the daughter of a graphic artist and a photographer. Early art studies in NYC museums and public art schools were followed by an undergraduate studio art/humanities major at Binghamton University, independent work at the Boston Museum School and graduate work at the Jan Van Eyck Akademie in the Netherlands.',
+            'After completing an MFA in painting and printmaking as a research fellow at Buffalo University, she lectured, edited, curated, mentored, and taught undergraduate and graduate studio art at the Rochester Institute of Technology, the University of Rochester, Alfred University, the University of Tennessee at Knoxville, Vermont College, Norwich University, etc.',
+            'Her work was represented by the Nancy Hoffman Gallery in Soho, has been exhibited in galleries and museums in New York City, Vermont, around the US and abroad and is in permanent national and international collections.',
+            'Diane has attended many residencies and symposiums at art colonies in central Europe, and received numerous grants in painting and writing including multiple grants from the State Arts Councils of Vermont and New York.',
+            'For over two decades she divided her time between Europe and Vermont, working and exhibiting in both places.',
+            'While Budapest remains a dwelling place of her soul and a source of aesthetic and intellectual nourishment, there has been a shift of focus over the past several years, resulting in renewed creative connections and fresh discoveries here at home, most recently with exhibitions at the Kent Museum, JLangdon, Studio Place Arts, Stella Quarta Decima Gallery, etc. Her new membership in The Front is a natural expansion of a long, ongoing artistic relationship with Vermont. ',
+            'See more of her work on her website at <a href="http://dianesophrin.com/" target="_blank">dianesophrin.com</a> and on Instagram at <a target="_blank" href="https://www.instagram.com/szofrand/">@szofrand</a>'
+        ]
     },
     {
         paramName: 'elizabeth-nelson',
