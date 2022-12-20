@@ -87,9 +87,10 @@ const Show = () => {
                         sx={{ pr: 2 }}
                     >
                         <Stepper
+                            images={show.images}
                             imageFolder='shows'
                             numberToDisplay={2.2}
-                            images={show.images}
+                            spacing={0}
                         />
                     </Grid>
                 )}

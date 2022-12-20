@@ -14,17 +14,18 @@ import useImages from '../hooks/useImages';
 
 interface IStepperProps {
   images: Array<IImage>;
-  numberToDisplay?: number;
   imageFolder?: string;
+  numberToDisplay?: number;
+  spacing?: number;
 }
 
-const Stepper: React.FC<IStepperProps> = ({ images, numberToDisplay = 1, imageFolder = 'artists' }) => {
+const Stepper: React.FC<IStepperProps> = ({ images, numberToDisplay = 1, imageFolder = 'artists', spacing = 50 }) => {
   const { getFullImagePath } = useImages();
 
   return (
     <Swiper
       modules={[Navigation, Pagination, Scrollbar, A11y]}
-      spaceBetween={50}
+      spaceBetween={spacing}
       slidesPerView={numberToDisplay}
       navigation={true}
       pagination={{ clickable: true }}
