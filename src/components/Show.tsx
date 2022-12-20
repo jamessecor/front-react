@@ -36,19 +36,57 @@ const Show = () => {
                     justifyContent={'center'}
                     alignItems={'stretch'}
                     xs={12}
-                    sm={6}
-                    md={3}
-                    sx={{ display: 'flex', flexDirection: 'column' }}
+                    sx={{ display: 'flex', flexDirection: 'column', pb: 2 }}
                 >
                     <Typography align={'center'} variant={'h3'} sx={{ color: 'black' }}>
                         {show?.displayName}
                     </Typography>
-                    {
-                        thisShowImages.map((image) => (
-                            <img src={getFullImagePath(image.src)} />
-                        ))
-                    }
                 </Grid>
+                <Grid
+                    item={true}
+                    container={true}
+                    sx={{ display: 'flex', flexDirection: 'row' }}
+                >
+                    {show?.featuredImage && (
+                        <Grid
+                            item={true}
+                            xs={12}
+                            md={4}
+                        >
+                            <img width={'100%'} src={`${process.env.PUBLIC_URL}/${show.featuredImage.src}`} />
+                        </Grid>
+                    )}
+                    {show?.description?.length && (
+                        <Grid
+                            item={true}
+                            xs={12}
+                            md={8}
+                            sx={{ pl: 3 }}
+                        >
+                            {show.description.map((paragraph) => (
+                                <Typography
+                                    variant={'body1'}
+                                    sx={{ pb: 2 }}
+                                >
+                                    {/* ONLY HARD-CODED SAFE HTML */}
+                                    <div dangerouslySetInnerHTML={{ __html: paragraph }}></div>
+                                </Typography>
+                            ))}
+                        </Grid>
+                    )}
+
+                </Grid>
+                {show?.images?.length && (
+                    <Grid
+                        item={true}
+                        justifyContent={'center'}
+                        alignItems={'stretch'}
+                        xs={12}
+                        sx={{ pr: 2, height: 200 }}
+                    >
+                        <Stepper numberToDisplay={2.2} images={show.images} />
+                    </Grid>
+                )}
             </Grid>
             <Button onClick={() => navigateTo('/shows')}>
                 <BiArrowBack />{'Back to shows'}

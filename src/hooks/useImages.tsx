@@ -5,7 +5,7 @@ import { IShowImage } from '../models/Show';
 import { shows } from '../data/shows';
 
 const useImages = () => {
-    const getFullImagePath = (relativePath: string) => `${process.env.REACT_APP_URL}/images/artists/${relativePath}`;
+    const getFullImagePath = (relativePath: string, folder = 'artists') => `${process.env.REACT_APP_URL}/images/${folder}/${relativePath}`;
 
     const getShowByName = useCallback((name: string) => {
         return shows.filter((a) => a.name === name).length
