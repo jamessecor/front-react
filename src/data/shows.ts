@@ -3,7 +3,34 @@ import { IShow } from "../models/Show";
 export const shows: Array<IShow> = [
     {
         name: '52',
-        displayName: 'Show 52'
+        displayName: 'Show 52',
+        images: [
+            { src: '2022-12/01.jpg' },
+            { src: '2022-12/02.jpg' },
+            { src: '2022-12/03.jpg' },
+            { src: '2022-12/04.jpg' },
+            { src: '2022-12/05.jpg' },
+            { src: '2022-12/06.jpg' },
+            { src: '2022-12/07.jpg' },
+            { src: '2022-12/08.jpg' },
+            { src: '2022-12/09.jpg' },
+            { src: '2022-12/10.jpg' },
+            { src: '2022-12/11.jpg' },
+            { src: '2022-12/12.jpg' },
+            { src: '2022-12/13.jpg' },
+            { src: '2022-12/14.jpg' },
+            { src: '2022-12/15.jpg' },
+            { src: '2022-12/16.jpg' },
+            { src: '2022-12/17.jpg' },
+            { src: '2022-12/18.jpg' },
+            { src: '2022-12/19.jpg' },
+            { src: '2022-12/20.jpg' },
+            { src: '2022-12/21.jpg' },
+            { src: '2022-12/22.jpg' },
+            { src: '2022-12/23.jpg' },
+            { src: '2022-12/24.jpg' },
+            { src: '2022-12/25.jpg' }
+        ]
     },
     {
         name: 'chirping-in-the-thickets',

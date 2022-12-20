@@ -13,6 +13,7 @@ const useImages = () => {
             : null
     }, [shows]);
 
+    // TODO: Remove all this ga'bage and just get show images from shows.ts
     const artistsWithImagesForCurrentShow = useMemo(() => artists.filter(
         (artist) => artist.showImages?.length
             && artist.showImages
