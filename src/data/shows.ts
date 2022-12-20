@@ -4,6 +4,9 @@ export const shows: Array<IShow> = [
     {
         name: '52',
         displayName: 'Show 52',
+        featuredImage: {
+            src: '2022-12/featured.jpeg'
+        },
         images: [
             { src: '2022-12/01.jpg' },
             { src: '2022-12/02.jpg' },
@@ -43,91 +46,37 @@ export const shows: Array<IShow> = [
             'The second portion of this show, Freedom Fries, features references to fast food, religion, consumption, energy production, and lots of American flags, as can be seen in just about any American landscape. In contrast to Creature Habits, the theme of these paintings is harder to nail down. Some seem to be critiques of nationalism (and the exceptionalist mindset that may go with it), while others focus more on climate justice. If the themes are a little everywhere in this series, what pulls the paintings together is the joy with which they are painted, the play of color and texture, as is typical in James\'s work.'
         ],
         featuredImage: {
-            src: 'images/artists/james-secor/03.JPG',
+            src: '2022-11/featured.jpg',
             text: 'Crickets, gouache on paper, 2022'
         },
         images: [
-            {
-                src: '2022-11/01.jpg'
-            },
-            {
-                src: '2022-11/02.jpg'
-            },
-            {
-                src: '2022-11/03.jpg'
-            },
-            {
-                src: '2022-11/04.jpg'
-            },
-            {
-                src: '2022-11/05.jpg'
-            },
-            {
-                src: '2022-11/06.jpg'
-            },
-            {
-                src: '2022-11/07.jpg'
-            },
-            {
-                src: '2022-11/08.jpg'
-            },
-            {
-                src: '2022-11/09.jpg'
-            },
-            {
-                src: '2022-11/10.jpg'
-            },
-            {
-                src: '2022-11/11.jpg'
-            },
-            {
-                src: '2022-11/12.jpg'
-            },
-            {
-                src: '2022-11/13.jpg'
-            },
-            {
-                src: '2022-11/14.jpg'
-            },
-            {
-                src: '2022-11/15.jpg'
-            },
-            {
-                src: '2022-11/16.jpg'
-            },
-            {
-                src: '2022-11/17.jpg'
-            },
-            {
-                src: '2022-11/18.jpg'
-            },
-            {
-                src: '2022-11/19.jpg'
-            },
-            {
-                src: '2022-11/20.jpg'
-            },
-            {
-                src: '2022-11/21.jpg'
-            },
-            {
-                src: '2022-11/22.jpg'
-            },
-            {
-                src: '2022-11/23.jpg'
-            },
-            {
-                src: '2022-11/24.jpg'
-            },
-            {
-                src: '2022-11/25.jpg'
-            },
-            {
-                src: '2022-11/26.jpg'
-            },
-            {
-                src: '2022-11/27.jpg'
-            }
+            { src: '2022-11/01.jpg' },
+            { src: '2022-11/02.jpg' },
+            { src: '2022-11/03.jpg' },
+            { src: '2022-11/04.jpg' },
+            { src: '2022-11/05.jpg' },
+            { src: '2022-11/06.jpg' },
+            { src: '2022-11/07.jpg' },
+            { src: '2022-11/08.jpg' },
+            { src: '2022-11/09.jpg' },
+            { src: '2022-11/10.jpg' },
+            { src: '2022-11/11.jpg' },
+            { src: '2022-11/12.jpg' },
+            { src: '2022-11/13.jpg' },
+            { src: '2022-11/14.jpg' },
+            { src: '2022-11/15.jpg' },
+            { src: '2022-11/16.jpg' },
+            { src: '2022-11/17.jpg' },
+            { src: '2022-11/18.jpg' },
+            { src: '2022-11/19.jpg' },
+            { src: '2022-11/20.jpg' },
+            { src: '2022-11/21.jpg' },
+            { src: '2022-11/22.jpg' },
+            { src: '2022-11/23.jpg' },
+            { src: '2022-11/24.jpg' },
+            { src: '2022-11/25.jpg' },
+            { src: '2022-11/26.jpg' },
+            { src: '2022-11/27.jpg' }
         ]
     },
     {

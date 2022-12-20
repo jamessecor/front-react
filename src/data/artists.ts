@@ -13,13 +13,6 @@ export const artists: Array<IArtist> = [
             { src: 'anne-cogbill-rose/Snowman.jpeg' },
             { src: 'anne-cogbill-rose/Texting.jpeg' }
         ],
-        showImages: [
-            {
-                showName: '52',
-                src: 'anne-cogbill-rose/show-specific/3glassbottles.jpeg',
-                isOnHomePage: true
-            }
-        ],
         bio: [
             "My work examines the strangeness of today's life focusing on the human body and the \"language\" of hands, feet and personal objects.  Each subject is alone immersed in private thought.",
             "I paint with acrylic paint in areas of flat color and hard edges.  I studied at the Corcoran School of Art during the Washington Color School movement.  It's lasting influence on me is the subtle interaction of adjacent color.  I choose color very carefully tweaking colors constantly while working.",

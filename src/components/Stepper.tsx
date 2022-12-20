@@ -11,14 +11,14 @@ import './Stepper.css';
 import { IImage } from '../models/Artist';
 import { Typography } from '@mui/material';
 import useImages from '../hooks/useImages';
-import { IShowImage } from '../models/Show';
 
 interface IStepperProps {
-  images: Array<IImage | IShowImage>;
+  images: Array<IImage>;
   numberToDisplay?: number;
+  imageFolder?: string;
 }
 
-const Stepper: React.FC<IStepperProps> = ({ images, numberToDisplay = 1 }) => {
+const Stepper: React.FC<IStepperProps> = ({ images, numberToDisplay = 1, imageFolder = 'artists' }) => {
   const { getFullImagePath } = useImages();
 
   return (
@@ -34,7 +34,7 @@ const Stepper: React.FC<IStepperProps> = ({ images, numberToDisplay = 1 }) => {
     >
       {images.map((image) =>
         <SwiperSlide>
-          <img width={'100%'} src={getFullImagePath(image.src, 'shows')} />
+          <img width={'100%'} src={getFullImagePath(image.src, imageFolder)} />
           {image.text && (
             <Typography align={'center'} sx={{ pb: 2 }} variant={'body1'}>
               {image.text}

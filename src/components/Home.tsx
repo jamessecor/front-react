@@ -11,23 +11,14 @@ import './Home.css';
 export const NavItemHome = 'Home';
 
 const Home = () => {
-  const { currentShowImagesForHomePage, getFullImagePath, getShowByName } = useImages();
+  const { getFullImagePath, currentShow, currentShowFeaturedImage } = useImages();
 
-  const currentShow = getShowByName(process.env.REACT_APP_CURRENT_SHOW ?? '');
   return (
     <Container>
       <Typography variant={'h3'}>
         {currentShow?.displayName}
       </Typography>
-      {
-        currentShowImagesForHomePage.length > 1 ? (
-          <Stepper images={currentShowImagesForHomePage} />
-        ) : (
-          currentShowImagesForHomePage.map((image) => (
-            <img className={'image-home'} src={getFullImagePath(image.src)} />
-          ))
-        )
-      }
+      <img className={'image-home'} src={getFullImagePath(currentShowFeaturedImage?.src ?? '', 'shows')} />
     </Container>
   )
 }

@@ -9,10 +9,3 @@ export interface IShow {
     images?: Array<IImage>;
     featuredImage?: IImage;
 };
-
-export interface IShowImage {
-    showName: string;
-    src: string;
-    isOnHomePage?: boolean;
-    text?: string;
-};

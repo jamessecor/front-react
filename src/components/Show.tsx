@@ -17,10 +17,9 @@ import { BiArrowBack } from 'react-icons/bi';
 const Show = () => {
     const { name } = useParams();
     const navigateTo = useNavigate();
-    const { getShowImagesByName, getFullImagePath, getShowByName } = useImages();
+    const { getFullImagePath, getShowByName } = useImages();
 
     const show = getShowByName(name ?? '');
-    const thisShowImages = useMemo(() => getShowImagesByName(name ?? ''), [name]);
 
     useEffect(() => {
         if (show === null) {
@@ -41,6 +40,9 @@ const Show = () => {
                     <Typography align={'center'} variant={'h3'} sx={{ color: 'black' }}>
                         {show?.displayName}
                     </Typography>
+                    <Button onClick={() => navigateTo('/shows')}>
+                        <BiArrowBack />{'Back to shows'}
+                    </Button>
                 </Grid>
                 <Grid
                     item={true}
@@ -53,7 +55,7 @@ const Show = () => {
                             xs={12}
                             md={4}
                         >
-                            <img width={'100%'} src={`${process.env.PUBLIC_URL}/${show.featuredImage.src}`} />
+                            <img width={'100%'} src={getFullImagePath(show.featuredImage.src, 'shows')} />
                         </Grid>
                     )}
                     {show?.description?.length && (
@@ -82,15 +84,16 @@ const Show = () => {
                         justifyContent={'center'}
                         alignItems={'stretch'}
                         xs={12}
-                        sx={{ pr: 2, height: 200 }}
+                        sx={{ pr: 2 }}
                     >
-                        <Stepper numberToDisplay={2.2} images={show.images} />
+                        <Stepper
+                            imageFolder='shows'
+                            numberToDisplay={2.2}
+                            images={show.images}
+                        />
                     </Grid>
                 )}
             </Grid>
-            <Button onClick={() => navigateTo('/shows')}>
-                <BiArrowBack />{'Back to shows'}
-            </Button>
         </Container>
     )
 
