@@ -174,16 +174,23 @@ export const artists: Array<IArtist> = [
         name: "James Secor",
         images: [
             {
-                src: 'james-secor/03.JPG'
+                src: 'james-secor/summer-porch.jpg',
+                text: 'Summer Porch, gouache on paper, 2021'
             },
             {
-                src: 'james-secor/04.JPG'
+                src: 'james-secor/hoping-for-better-water.jpg',
+                text: 'Hoping For Better Water, acrylic on panel, 2021'
+            },
+            {
+                src: 'james-secor/04.JPG',
+                text: 'Crickets, gouache on paper, 2022'
             }
         ],
         instagram: {
             handle: '@jamessecor',
             link: 'https://www.instagram.com/jamessecor/'
         },
+        website: 'jamessecor.com',
         bio: [
             "Having grown up in Kentucky, James Secor is an artist living and working in Central Vermont. He moved to Montpelier with his partner in 2012 and now works as a software developer in Montpelier. He has shown his paintings consistently throughout Vermont and the Northeast since graduating from Hobart and William Smith Colleges in Geneva, NY in 2010. James' paintings are colorful and layered. Though his sketches are done on-site, he primarily develops his works in the studio, allowing color and compositional choices to be intuitive and inventive, rather than reflective of reality.",
             "You can see more of James's work at <a href='https://jamessecor.com' target='_blank'>JamesSecor.com</a>."

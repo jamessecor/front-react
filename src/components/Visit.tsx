@@ -34,30 +34,19 @@ const Visit = () => {
                         xs={12}
                         md={6}
                     >
-                        <Typography variant={'h5'} sx={{ py: 1 }}>
-                            {'Visit Us'}
+                        <Typography variant={'h5'} sx={{ pb: 1 }}>
+                            {'Come visit us in person!'}
                         </Typography>
                         <Typography variant={'body1'}>
-                            {'If you would like to visit the gallery outside of our regular hours, and have no symptoms of illness, please contact us'}
-                            <Button
-                                onClick={() => window.open('mailto:info@thefrontvt.com')}
-                                variant={'text'}
-                                sx={{ textTransform: 'none', px: .5 }}
-                            >
-                                {'by email'}
+                            {'The Front'}
+                        </Typography>
+                        <Typography variant={'body1'}>
+                            <Button onClick={() => window.open('https://www.google.com/maps/place/The+Front/@44.2585667,-72.5762729,15z/data=!4m5!3m4!1s0x0:0x84e8aefc1ae5c0c1!8m2!3d44.2585667!4d-72.5762729')}>
+                                {'6 Barre St, Montpelier, VT 05602'}
                             </Button>
-                            {'or phone'}
-                            <Button
-                                onClick={() => window.open('tel:8025520877')}
-                                variant={'text'}
-                                sx={{ textTransform: 'none', px: .5 }}
-                            >
-                                {'(802) 552-0877'}
-                            </Button>
-                            {'to set up an appointment.'}
                         </Typography>
 
-                        <Divider sx={{ my: 5}} />
+                        <Divider sx={{ my: 5 }} />
 
                         <Typography variant={'h5'} sx={{ pb: 1 }}>
                             {'Regular Hours:'}
@@ -69,6 +58,31 @@ const Visit = () => {
                         <Typography variant={'body1'}>
                             <strong>{'Saturdays and Sundays: '}</strong>
                             {'11am - 5pm'}
+                        </Typography>
+
+                        <Divider sx={{ my: 5 }} />
+
+                        <Typography variant={'h5'} sx={{ py: 1 }}>
+                            {'Visit Us'}
+                        </Typography>
+                        <Typography variant={'body1'}>
+                            {'If you would like to visit the gallery outside of our regular hours, please contact us by email'}
+                            <Button
+                                onClick={() => window.open('mailto:info@thefrontvt.com')}
+                                variant={'text'}
+                                sx={{ textTransform: 'none', px: .5 }}
+                            >
+                                {'info@thefrontvt.com'}
+                            </Button>
+                            {'or phone'}
+                            <Button
+                                onClick={() => window.open('tel:8025520877')}
+                                variant={'text'}
+                                sx={{ textTransform: 'none', px: .5 }}
+                            >
+                                {'(802) 552-0877'}
+                            </Button>
+                            {'to set up an appointment.'}
                         </Typography>
                     </Grid>
                     <Grid
