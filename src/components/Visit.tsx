@@ -12,6 +12,7 @@ import { useParams, useNavigate } from 'react-router-dom';
 import useImages from '../hooks/useImages';
 import { BsInstagram } from 'react-icons/bs';
 import { Divider } from '@mui/material';
+import ContactForm from './ContactForm';
 
 export const NavItemVisit = 'Contact Us / Visit';
 
@@ -23,6 +24,7 @@ const Visit = () => {
                 <Typography align={'center'} variant={'h3'} sx={{ pb: 4 }}>
                     {'Contact Us / Visit'}
                 </Typography>
+                {/* TODO: Add <ContactForm /> somewhere as modal */}
                 <Grid
                     container={true}
                     xs={12}

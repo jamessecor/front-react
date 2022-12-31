@@ -154,7 +154,21 @@ const Navbar = () => {
             <Box sx={{ m: 2 }}>
                 <Outlet />
             </Box>
-        </Box>
+            {/* FOOTER */}
+            {/* TODO: FOOTER - move to separate component? */}
+            <Box
+                justifyContent={'space-between'}
+                alignItems={'center'}
+                sx={{ p: 2, display: 'flex', flexDirection: 'row', background: 'lightgray' }}
+            >
+                <div dangerouslySetInnerHTML={{ __html: '&copy; the Front 2023' }}></div>
+                <Button
+                    onClick={() => window.open('https://www.instagram.com/gallerythefront')}
+                >
+                    <BsInstagram />
+                </Button>
+            </Box>
+        </Box >
     );
 }
 
