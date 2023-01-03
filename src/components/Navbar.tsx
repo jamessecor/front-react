@@ -17,7 +17,8 @@ import { NavItemHome } from './Home';
 import { NavItemArtists } from './Artists';
 import { NavItemShows } from './Shows';
 import { NavItemVisit } from './Visit';
-import Insta, { NavItemInsta } from './Insta';
+import { NavItemInsta } from './Insta';
+import Footer from './Footer';
 import { BsInstagram } from 'react-icons/bs';
 
 const pages: Array<string> = [NavItemHome, NavItemArtists, NavItemShows, NavItemVisit];
@@ -64,7 +65,10 @@ const Navbar = () => {
     );
 
     return (
-        <Box>
+        <Box
+            justifyContent={'space-between'}
+            sx={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}
+        >
             <AppBar position="static" color={'transparent'}>
                 <Container maxWidth="xl">
                     <Toolbar disableGutters>
@@ -154,19 +158,8 @@ const Navbar = () => {
             <Box sx={{ m: 2 }}>
                 <Outlet />
             </Box>
-            {/* FOOTER */}
-            {/* TODO: FOOTER - move to separate component? */}
-            <Box
-                justifyContent={'space-between'}
-                alignItems={'center'}
-                sx={{ p: 2, display: 'flex', flexDirection: 'row', background: 'lightgray' }}
-            >
-                <div dangerouslySetInnerHTML={{ __html: '&copy; the Front 2023' }}></div>
-                <Button
-                    onClick={() => window.open('https://www.instagram.com/gallerythefront')}
-                >
-                    <BsInstagram />
-                </Button>
+            <Box sx={{ width: '100%' }}>
+                <Footer />
             </Box>
         </Box >
     );

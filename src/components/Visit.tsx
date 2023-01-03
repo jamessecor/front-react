@@ -12,7 +12,7 @@ import { useParams, useNavigate } from 'react-router-dom';
 import useImages from '../hooks/useImages';
 import { BsInstagram } from 'react-icons/bs';
 import { Divider } from '@mui/material';
-import ContactForm from './ContactForm';
+import ContactForm from './modals/ContactForm';
 
 export const NavItemVisit = 'Contact Us / Visit';
 
@@ -65,7 +65,7 @@ const Visit = () => {
                         <Divider sx={{ my: 5 }} />
 
                         <Typography variant={'h5'} sx={{ py: 1 }}>
-                            {'Visit Us'}
+                            {'Unable to Visit During Regular Hours?'}
                         </Typography>
                         <Typography variant={'body1'}>
                             {'If you would like to visit the gallery outside of our regular hours, please contact us by email'}
