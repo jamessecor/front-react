@@ -1,30 +1,23 @@
-import * as React from 'react';
-import { useMemo, useEffect } from 'react';
+import { useState } from 'react';
 import Container from '@mui/material/Container';
 import Grid from '@mui/material/Grid';
 import Button from '@mui/material/Button';
-import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
-import { artists } from '../data/artists';
-import Stepper from './Stepper';
-import { IArtist } from '../models/Artist';
-import { useParams, useNavigate } from 'react-router-dom';
-import useImages from '../hooks/useImages';
-import { BsInstagram } from 'react-icons/bs';
 import { Divider } from '@mui/material';
 import ContactForm from './modals/ContactForm';
 
 export const NavItemVisit = 'Contact Us / Visit';
 
 const Visit = () => {
+    const [isContactFormOpen, setIsContactFormOpen] = useState(false);
 
     return (
         <Grid justifyContent={'center'} container={true}>
+            <ContactForm isOpen={isContactFormOpen} setIsOpen={setIsContactFormOpen} />
             <Container>
                 <Typography align={'center'} variant={'h3'} sx={{ pb: 4 }}>
                     {'Contact Us / Visit'}
                 </Typography>
-                {/* TODO: Add <ContactForm /> somewhere as modal */}
                 <Grid
                     container={true}
                     xs={12}
@@ -42,11 +35,9 @@ const Visit = () => {
                         <Typography variant={'body1'}>
                             {'The Front'}
                         </Typography>
-                        <Typography variant={'body1'}>
-                            <Button onClick={() => window.open('https://www.google.com/maps/place/The+Front/@44.2585667,-72.5762729,15z/data=!4m5!3m4!1s0x0:0x84e8aefc1ae5c0c1!8m2!3d44.2585667!4d-72.5762729')}>
-                                {'6 Barre St, Montpelier, VT 05602'}
-                            </Button>
-                        </Typography>
+                        <Button onClick={() => window.open('https://www.google.com/maps/place/The+Front/@44.2585667,-72.5762729,15z/data=!4m5!3m4!1s0x0:0x84e8aefc1ae5c0c1!8m2!3d44.2585667!4d-72.5762729')}>
+                            {'6 Barre St, Montpelier, VT 05602'}
+                        </Button>
 
                         <Divider sx={{ my: 5 }} />
 
@@ -61,6 +52,9 @@ const Visit = () => {
                             <strong>{'Saturdays and Sundays: '}</strong>
                             {'11am - 5pm'}
                         </Typography>
+                        <Button onClick={() => setIsContactFormOpen(true)}>
+                            {'Join our mailing list'}
+                        </Button>
 
                         <Divider sx={{ my: 5 }} />
 

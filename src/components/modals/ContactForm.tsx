@@ -81,9 +81,14 @@ const ContactForm: React.FC<IContactFormProps> = ({ isOpen, setIsOpen }) => {
                         </ButtonBase>
                     </Grid>
                     {isSubmitted ? (
-                        <Typography variant={'body1'}>
-                            {'Thank you for reaching out. We will be in touch'}
-                        </Typography>
+                        <React.Fragment>
+                            <Typography variant={'body1'}>
+                                {'Thanks for joining the mailing list. We\'ll keep you up to date on all our happenings!'}
+                            </Typography>
+                            <Typography color={'blue'} variant={'body2'}>
+                                {'If you added a note, we\'ll respond in the next few days.'}
+                            </Typography>
+                        </React.Fragment>
                     ) : (
                         <Grid container alignItems={'center'} justifyContent={'center'} item>
                             <form style={{ width: '100%' }} ref={formRef} noValidate onSubmit={(e) => handleSubmit(e)}>
