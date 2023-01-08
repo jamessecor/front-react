@@ -253,7 +253,7 @@ export const artists: Array<IArtist> = [
                 text: 'Blue Sky pre Spring, 18" x 12"'
             },
             {
-                src: 'marjorie-kramer/trees-uphill.jpg',
+                src: 'marjorie-kramer/trees-walking-uphill.jpg',
                 text: 'Trees Walking Uphill, 8"x9"'
             },
             {
