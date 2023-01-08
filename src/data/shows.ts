@@ -98,6 +98,14 @@ export const shows: Array<IShow> = [
     },
     {
         name: '51',
-        displayName: 'Show 51'
+        displayName: 'Show 51',
+        featuredImage: {
+            src: '2022-10/featured.png',
+            text: 'Kate Fetherston - Woodsqueer (detail)'
+        },
+        description: [
+            'The Front presents Show 51 for the month of October.',
+            'This group show will open with a reception on October 7th from 4-8pm. It will run through October 30th. Stop by and take a look at works by members of the gallery.'
+        ]
     }
 ];
