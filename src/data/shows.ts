@@ -2,6 +2,23 @@ import { IShow } from "../models/Show";
 
 export const shows: Array<IShow> = [
     {
+        name: 'richard-moore-urban-revision',
+        displayName: 'RICHARD MOORE: Urban Revision',
+        description: [
+            '<strong>Jan 6 - 29, 2023</strong>',
+            'Opening reception: Friday, Jan 6, 4-7pm',
+            'Bright light in a cold time',
+            'Richard Moore\'s solo show at The Front in Montpelier, "Urban Revision," features inkjet photographic prints on birchbark. The medium of birchbark—fragile, ephemeral, and textural—revises the planar photographic image, and how we might see our home places.',
+            '"Sometimes it is like looking into the future," said Daryl Burtnett, another artist in the cooperative gallery, "with our familiar places aging and the natural world taking over. These tangible images change the way we see the world."',
+            'The show opens 4-7pm, January 6. The Front will be open Fridays 4-7, weekends 11-5, and by appointment through the month of January. There will also be an artist\'s talk in the gallery January 12, 6:30-7:30, and a poetry reading with local guest poets January 19, 6:30-7:30.'
+        ],
+        featuredImage: {
+            src: '2023-01/featured.jpg',
+            text: 'Richard Moore, Back of State and Main, inkjet on birchbark, 2022'
+        },
+        // images: []
+    },
+    {
         name: '52',
         displayName: 'Show 52',
         featuredImage: {

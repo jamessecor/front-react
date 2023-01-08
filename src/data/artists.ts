@@ -241,7 +241,32 @@ export const artists: Array<IArtist> = [
         name: "Marjorie Kramer",
         images: [
             {
-                src: 'melora-kennedy/apples-and-flowers.jpg'
+                src: 'marjorie-kramer/secret-peek.jpeg',
+                text: 'Secret Peek Landscape, 14"x30", 2021'
+            },
+            {
+                src: 'marjorie-kramer/heifers.jpeg',
+                text: 'Dexter\'s Sons Heifers, 7 1/2" x 7 1/2", 2022'
+            },
+            {
+                src: 'marjorie-kramer/blue-sky.jpg',
+                text: 'Blue Sky pre Spring, 18" x 12"'
+            },
+            {
+                src: 'marjorie-kramer/trees-uphill.jpg',
+                text: 'Trees Walking Uphill, 8"x9"'
+            },
+            {
+                src: 'marjorie-kramer/house-from-car.jpeg',
+                text: 'View from Parked Car in Newport, 2014'
+            },
+            {
+                src: 'marjorie-kramer/tomato.jpg',
+                text: 'Tomato, 6" x 6", 2020'
+            },
+            {
+                src: 'marjorie-kramer/kitchen-view.jpeg',
+                text: 'View from Manhattan Kitchen, 9" x 11 1/2", 2022'
             }
         ],
         instagram: {
@@ -249,10 +274,13 @@ export const artists: Array<IArtist> = [
             link: 'https://www.instagram.com/kramer4265'
         },
         bio: [
-            "Marjorie Kramer has been living in the wild North East Kingdom of Vermont for many decades. She finds wonderful things to paint there. Trees for example; they grow relating to other trees, to their experiences, to the space, and light in that particular place but keep their species rhythms, i.e. Elms and Maples have different forms. There is an element of community among the trees. ",
-            "She is a proud member of the Front Gallery in Montpelier, also in the historic Blue Mountain Gallery in New York both artist-run cooperatives. Marjorie lived in NYC for 20 years where she earned a BFA at The Cooper Union and studied with Mercedes Matter and Charles Cajori, at the NY Studio School both wonderful,(but she still resisted everything she was told ). She was a founding student there.The friends she made were perhaps the best part ~that and the museum and gallery shows. The Redstockings Women's Movement and organizing open women artist shows influenced her politics. The country life beckoned, the rents skyrocketed, her little family arrived in Vermont in the 80's for keeps. She paints recognizable images in a natural style that is hopefully neither conservative nor gimmicky but sincere. Direct experience.",
-            "See more images of her work at <a target='_blank' href='https://samuelthurston.com/marjorie-kramer-s-paintings/1'>https://samuelthurston.com/marjorie-kramer-s-paintings/1</a>"
+            'Marjorie Kramer, born 1943, originally from Connecticut, moved to NYC in 1961 to study art at Cooper Union Art School and New York Studio School, moved to Lowell, Vermont 1978. A painter who paints from life, in oil paint, watercolor and charcoal.'
         ]
+        // bio: [
+        //     "Marjorie Kramer has been living in the wild North East Kingdom of Vermont for many decades. She finds wonderful things to paint there. Trees for example; they grow relating to other trees, to their experiences, to the space, and light in that particular place but keep their species rhythms, i.e. Elms and Maples have different forms. There is an element of community among the trees. ",
+        //     "She is a proud member of the Front Gallery in Montpelier, also in the historic Blue Mountain Gallery in New York both artist-run cooperatives. Marjorie lived in NYC for 20 years where she earned a BFA at The Cooper Union and studied with Mercedes Matter and Charles Cajori, at the NY Studio School both wonderful,(but she still resisted everything she was told ). She was a founding student there.The friends she made were perhaps the best part ~that and the museum and gallery shows. The Redstockings Women's Movement and organizing open women artist shows influenced her politics. The country life beckoned, the rents skyrocketed, her little family arrived in Vermont in the 80's for keeps. She paints recognizable images in a natural style that is hopefully neither conservative nor gimmicky but sincere. Direct experience.",
+        //     "See more images of her work at <a target='_blank' href='https://samuelthurston.com/marjorie-kramer-s-paintings/1'>https://samuelthurston.com/marjorie-kramer-s-paintings/1</a>"
+        // ]
     },
     {
         paramName: 'melora-kennedy',
@@ -326,7 +354,8 @@ export const artists: Array<IArtist> = [
             }
         ],
         bio: [
-            "Richard Moore has practiced many kinds of photography for more than fifty years: Brownie, 35 mm, large format, archaeological, documentary, environmental, alternative process, digital, composite, and zen photography. Before moving to Vermont in 2020 he exhibited regularly at the Robert Lincoln Levy Gallery of the New Hampshire Art Association in Portsmouth, the Barn Gallery in Ogunquit, Maine, and the annual exhibits of the New Hampshire Society of Photographic Artists. In 2014 he exhibited at the Lupine Gallery on Monhegan Island, Maine, in conjunction with the publication of his book, \"Monhegan Come Again.\" In 2019 he had a solo exhibit at the Hellenic American University in Athens, Greece, in conjunction with the publication of \"Athens Twice Seen.\""
+            // "Richard Moore has practiced many kinds of photography for more than fifty years: Brownie, 35 mm, large format, archaeological, documentary, environmental, alternative process, digital, composite, and zen photography. Before moving to Vermont in 2020 he exhibited regularly at the Robert Lincoln Levy Gallery of the New Hampshire Art Association in Portsmouth, the Barn Gallery in Ogunquit, Maine, and the annual exhibits of the New Hampshire Society of Photographic Artists. In 2014 he exhibited at the Lupine Gallery on Monhegan Island, Maine, in conjunction with the publication of his book, \"Monhegan Come Again.\" In 2019 he had a solo exhibit at the Hellenic American University in Athens, Greece, in conjunction with the publication of \"Athens Twice Seen.\"",
+            'Here is a bio statement:  Richard Moore has pursued photography for fifty years, from film to pixel, from large format to smart phone. He remains devoted to the physical print and is currently making inkjet prints on birch bark.'
         ]
     },
     {
