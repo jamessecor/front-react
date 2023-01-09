@@ -14,6 +14,7 @@ import { BsInstagram } from 'react-icons/bs';
 import { GoBrowser } from 'react-icons/go';
 import { RxOpenInNewWindow } from 'react-icons/rx';
 import Tooltip from '@mui/material/Tooltip';
+import { BiArrowBack } from 'react-icons/bi';
 
 export const NavItemArtists = 'Artists';
 
@@ -31,39 +32,46 @@ const Artist = () => {
     });
 
     return (
-        <Grid justifyContent={'center'} container={true}>
+        <Container>
             {artist && (
-                <Container>
+                <React.Fragment>
                     <Grid
-                        item={true}
+                        container={true}
                         justifyContent={'center'}
                         alignItems={'stretch'}
                         xs={12}
-                        md={6}
-                        sx={{ pr: 2, display: 'flex' }}
+                        sx={{ pr: 2, display: 'flex', flexDirection: 'column' }}
                     >
-                        <Typography align={'center'} variant={'h3'} sx={{ px: 2 }}>
-                            <Box>{artist.name}</Box>
-                        </Typography>
-                        {artist.instagram && (
-                            <ButtonBase sx={{ p: 0 }} onClick={() => window.open(artist.instagram?.link)}>
-                                <Tooltip arrow={true} title={artist.instagram.handle} placement={'top'}>
-                                    <Typography variant={'h6'} sx={{ px: 1 }}>
-                                        <BsInstagram />
-                                    </Typography>
-                                </Tooltip>
-                            </ButtonBase>
-                        )}
-                        {artist.website && (
-                            <ButtonBase onClick={() => window.open(artist.website)}>
-                                <Tooltip arrow={true} title={artist.website} placement={'top'}>
-                                    <Typography variant={'h6'} sx={{ px: 1 }}>
-                                        <GoBrowser />
-                                    </Typography>
-                                </Tooltip>
-                            </ButtonBase>
-                        )}
+                        <Grid item justifyContent={'center'} sx={{ display: 'flex' }}>
+                            <Typography align={'center'} variant={'h3'} sx={{ px: 2 }}>
+                                <Box>{artist.name}</Box>
+                            </Typography>
+                            {artist.instagram && (
+                                <ButtonBase sx={{ p: 0 }} onClick={() => window.open(artist.instagram?.link)}>
+                                    <Tooltip arrow={true} title={artist.instagram.handle} placement={'top'}>
+                                        <Typography variant={'h6'} sx={{ px: 1 }}>
+                                            <BsInstagram />
+                                        </Typography>
+                                    </Tooltip>
+                                </ButtonBase>
+                            )}
+                            {artist.website && (
+                                <ButtonBase onClick={() => window.open(artist.website)}>
+                                    <Tooltip arrow={true} title={artist.website} placement={'top'}>
+                                        <Typography variant={'h6'} sx={{ px: 1 }}>
+                                            <GoBrowser />
+                                        </Typography>
+                                    </Tooltip>
+                                </ButtonBase>
+                            )}
+                        </Grid>
+                        <Grid item justifyContent={'center'} sx={{ display: 'flex' }}>
+                            <Button onClick={() => navigateTo('/artists')}>
+                                <BiArrowBack />{'Back to artists'}
+                            </Button>
+                        </Grid>
                     </Grid>
+                    <Divider sx={{ mb: 2 }} />
                     <Grid
                         container={true}
                         xs={12}
@@ -96,6 +104,7 @@ const Artist = () => {
                         </Grid>
                     </Grid>
                     <Grid
+                        container={true}
                         justifyContent={'space-between'}
                         item={true}
                         sx={{ display: { sx: 'inline', md: 'flex' } }}
@@ -127,9 +136,9 @@ const Artist = () => {
                             </Button>
                         )}
                     </Grid>
-                </Container>
+                </React.Fragment>
             )}
-        </Grid>
+        </Container>
     )
 };
 
