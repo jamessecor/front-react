@@ -388,8 +388,11 @@ export const artists: Array<IArtist> = [
             link: 'https://www.instagram.com/samuelthurstonpaintings_sculpture'
         },
         bio: [
-            "Sam Thurston attended Cooper Union in NYC, where he was also a member of Bowery Gallery, also a cooperative. He moved to Vermont in his 30's. He has had solo shows at the Bowery Gallery, Blue Mountain Gallery and 55Mercer Gallery in NYC and Red Mill Gallery and Julian Scott Gallery (Johnson, Vt.), River Arts (Morrisville, Vt), Greek Institute (Cambridge, Ma.), Washington Art Association (Washington Depot, Ct) to name a few.",
-            "He worked as a housepainter, taught art at CCV (Newport, Morrisville, St. Johnsbury) for about 10 years and currently works part-time at an elder care facility in Morrisville."
+            "Sam Thurston attended Cooper Union. Living in NYC, he was a member of Bowery Gallery, which, like the Front, was also an artist run coop. He moved to Vermont in his 30's. He has had solo shows at the Bowery Gallery, Blue Mountain Gallery and 55Mercer Gallery in NYC, the Red Mill Gallery and Julian Scott Gallery in Johnson, VT, River Arts in Morrisville, VT, The Greek Institute in Cambridge, MA, and the Washington Art Association in Washington Depot, CT, and elsewhere. He was born in 1943."
         ]
+        // bio: [
+        //     "Sam Thurston attended Cooper Union in NYC, where he was also a member of Bowery Gallery, also a cooperative. He moved to Vermont in his 30's. He has had solo shows at the Bowery Gallery, Blue Mountain Gallery and 55Mercer Gallery in NYC and Red Mill Gallery and Julian Scott Gallery (Johnson, Vt.), River Arts (Morrisville, Vt), Greek Institute (Cambridge, Ma.), Washington Art Association (Washington Depot, Ct) to name a few.",
+        //     "He worked as a housepainter, taught art at CCV (Newport, Morrisville, St. Johnsbury) for about 10 years and currently works part-time at an elder care facility in Morrisville."
+        // ]
     }
 ];
