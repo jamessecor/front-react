@@ -7,7 +7,7 @@ import Grid from '@mui/material/Grid';
 import Modal from '@mui/material/Modal';
 import Typography from '@mui/material/Typography';
 import emailjs from '@emailjs/browser';
-import { FaWindowClose } from "react-icons/fa";
+import { IoMdCloseCircle } from "react-icons/io";
 import { ButtonBase } from "@mui/material";
 
 interface IContactFormProps {
@@ -20,7 +20,7 @@ const modalContentsStyle = {
     top: '50%',
     left: '50%',
     transform: 'translate(-50%, -50%)',
-    width: { xs: '90%', sm: 400 },
+    width: { xs: '75%', sm: 400 },
     bgcolor: 'background.paper',
     border: '2px solid #ccc',
     borderRadius: '6px',
@@ -76,7 +76,7 @@ const ContactForm: React.FC<IContactFormProps> = ({ isOpen, setIsOpen }) => {
                         </Typography>
                         <ButtonBase onClick={closeModal} sx={{ position: 'fixed', right: 0, top: 0 }}>
                             <h1 style={{ margin: 1 }}>
-                                <FaWindowClose />
+                                <IoMdCloseCircle />
                             </h1>
                         </ButtonBase>
                     </Grid>

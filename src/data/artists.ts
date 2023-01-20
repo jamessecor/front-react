@@ -355,7 +355,7 @@ export const artists: Array<IArtist> = [
         ],
         bio: [
             // "Richard Moore has practiced many kinds of photography for more than fifty years: Brownie, 35 mm, large format, archaeological, documentary, environmental, alternative process, digital, composite, and zen photography. Before moving to Vermont in 2020 he exhibited regularly at the Robert Lincoln Levy Gallery of the New Hampshire Art Association in Portsmouth, the Barn Gallery in Ogunquit, Maine, and the annual exhibits of the New Hampshire Society of Photographic Artists. In 2014 he exhibited at the Lupine Gallery on Monhegan Island, Maine, in conjunction with the publication of his book, \"Monhegan Come Again.\" In 2019 he had a solo exhibit at the Hellenic American University in Athens, Greece, in conjunction with the publication of \"Athens Twice Seen.\"",
-            'Here is a bio statement:  Richard Moore has pursued photography for fifty years, from film to pixel, from large format to smart phone. He remains devoted to the physical print and is currently making inkjet prints on birch bark.'
+            'Richard Moore has pursued photography for fifty years, from film to pixel, from large format to smart phone. He remains devoted to the physical print and is currently making inkjet prints on birch bark.'
         ]
     },
     {
