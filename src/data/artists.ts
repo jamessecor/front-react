@@ -341,7 +341,24 @@ export const artists: Array<IArtist> = [
         name: 'Ned Richardson',
         images: [
             {
-                src: 'melora-kennedy/apples-and-flowers.jpg'
+                src: 'ned-richardson/4_squares_1.jpg',
+                text: 'untitled [4 squares 1]<br />mixed media: pigment print, cold wax, pigments, plywood<br />4" squares, 9" x 9" overall<br/>2021'
+            },
+            {
+                src: 'ned-richardson/glasswax_1071.jpg',
+                text: 'untitled [glass wax netG_1071]<br />mixed media - pigment print,glass beads, cold wax, pigments<br />7" x 7"<br />2020'
+            },
+            {
+                src: 'ned-richardson/meshdot_2020.2.jpg',
+                text: 'untitled [meshdot_2020.2]<br />Ink on paper<br />9.5" x 9.5"<br />2020'
+            },
+            {
+                src: 'ned-richardson/meshdot_2020.4.jpg',
+                text: 'untitled [meshdot_2020.4]<br />Ink on paper<br />9.5" x 9.5"<br />2020'
+            },
+            {
+                src: 'ned-richardson/untitled_with_3phrases.jpg',
+                text: 'untitled [netG_001 with 3 phrases]<br />mixed media – pigment print on canvas, cold wax, pigments,text:<br />"the sun it will burn and the clouds will roll in"<br />"the red dot of calamity and the blue dot of night"<br />"the writing under the wall"<br />18" x 18"<br />2020'
             }
         ],
         instagram: {
@@ -349,10 +366,18 @@ export const artists: Array<IArtist> = [
             link: 'https://www.instagram.com/ep3lb/'
         },
         bio: [
-            "I am not in any one tradition, and tend to work in series, with each series a somewhat self contained 'micro-practice,' with its own sometimes involved process and statement.",
-            "Before moving to Vermont, I was interested in technology in the landscape, and networks generally. Smokestacks by highways were one preoccupation. Now I live surrounded by forest, and have come to see a connection between the forest network and the human/non-human/digital network. This has been the subject, or starting point of my most recent explorations.",
-            "See more of Ned's work at <a href='lightblack.org' target='_blank'>lightblack.org</a>."
-        ]
+            'Born Boston, MA, US 1959',
+            'BA in Creative Writing Residential College, University of Michigan circa 1982; Studied at Art Students League, NYC (1991) and various continuing education programs for drawing and painting techniques since then. Self taught: Image Magick and Photoshop digital image creation and manipulation, open source shell scripting. Online courses in Python and Creative Applications of Deep Learning (2018).',
+            'My work is not in any one tradition. Influences range from the conceptual art of Lawrence Weiner and poems and objects of Carl Andre to the comic art of George Herriman, cellular automata, and beyond. In Boston around 2000 I learned the Mische oil and egg tempera painting technique which led to a brief foray into miniature landscape painting. The US invasion of Iraq shifted my focus to text based drawings as well as digital and video explorations. I used open source image software (GIMP) until some illustration work pushed me inevitably into Photoshop.',
+            'An early background in stage carpentry and lighting led to my strong connection with the work of Samuel Beckett.  Beckett is an ongoing influence and informs the name lightblack, an LLC I created initially for video and film co-productions with the late Michael H. Shamberg, which is now a container for my own efforts. lightblack ceased being an active production company with Michael\'s illness though we continued to collaborate as his health allowed, up until the time of his death in 2014. During that time I was very involved in his care.',
+            'I moved to Vermont with my family in 2013, and we live surrounded by forest. Around 2017 I began to see the forest as a network, an idea borne out by subsequent reading. It occurred to me that since the forest/network is often considered a landscape, digital and technological networks might be considered a landscape as well. I decided to try to see these landscapes as one. In 2018 I managed to learn enough Python to tinker with source code for a Generative Adversarial Network (GAN) which I found on Github, and have been exploring this avenue ever since. GAN generated images, using training sets assembled from my own work and photos, have been the basis for much of my work since then.',
+            'Coincidental with the recent emergence of text to image generators such as DALL-E (also GAN based) I have become focused less on image generation, and more on sequencing images and the possibilities for narration, code, and multidimensional structures. The large image generators such as DALL-E translate complete words into complete pictures. I am interested in interactions with \'the machine\' at a more cellular level.',
+            'Since 2018 I have been a member/co-owner of the Front Gallery in Montpelier, Vermont.'
+            // "I am not in any one tradition, and tend to work in series, with each series a somewhat self contained 'micro-practice,' with its own sometimes involved process and statement.",
+            // "Before moving to Vermont, I was interested in technology in the landscape, and networks generally. Smokestacks by highways were one preoccupation. Now I live surrounded by forest, and have come to see a connection between the forest network and the human/non-human/digital network. This has been the subject, or starting point of my most recent explorations.",
+            // "See more of Ned's work at <a href='lightblack.org' target='_blank'>lightblack.org</a>."
+        ],
+        website: 'lightblack.org'
     },
     {
         paramName: 'richard-moore',
