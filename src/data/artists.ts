@@ -45,9 +45,23 @@ export const artists: Array<IArtist> = [
         paramName: 'chip-haggerty',
         name: "Chip Haggerty",
         images: [
-            {
-                src: 'melora-kennedy/apples-and-flowers.jpg'
-            }
+            { src: 'chip-haggerty/chip1.jpg' },
+            { src: 'chip-haggerty/chip2.jpg' },
+            { src: 'chip-haggerty/chip3.jpg' },
+            { src: 'chip-haggerty/chip4.jpg' },
+            { src: 'chip-haggerty/chip5.jpg' },
+            { src: 'chip-haggerty/chip6.jpeg' },
+            { src: 'chip-haggerty/chip7.jpeg' }
+        ],
+        bio: [
+            'One of my earliest memories is standing on a stool at an old porcelain utility sink in murky fluoresence holding paintbrushes under running water as a pre-schooler at City&Country in Greenwich Village in the late 50\'s. It took me six decades of to get back to painting, but back to it I got.',
+            'I remember filing by the Mona Lisa in the Louvre and the Pieta at the World\'s Fair in Flushing Meadows as a kid and getting the whole big reverent thing, but really being completely unmoved. Viewed famous art. Check. Then after satisfying the barebones high school art requirement, which involved completely useless, GPA-lowering stuff like drawing an old shoe and a cow skull, I was done with dumb boring difficult art forever. Or so I thought.',
+            'If you consider Bennington College formal art training, then I did get a few semesters of something that would help jazz up the artbio (I never in a million years expected to be writing), though, I went there (don\'t ask me to explain it) intending to study nutrition after becoming an Adele Davis freak while recuperating from a reckless teen type accident 10 days in at Boston University. I danced, I sculpted, I wrote, I drew. Somehow painting was the only art I didn\'t dip my toe into at Bennington. In other words, I am not the least bit offended by the double-edged label "self-taught", if that\'s how somebody wants to hype me, another thing I have no objection to.',
+            'Eventually I hippied my way up to northern Vermont, where I\'ve been ever since. The paintings I do now morphed out of funky one-of-a-kind art books I made over the years that started out mostly writing, but then got less and less verbal, more and more image-oriented.',
+            'Finally we come to a couple of proper resume items: Sleeping Bag book won the Burlington Art Hop contest the first year it happened. Rug book got displayed in the Brattleboro Museum. But complete lack of sales stalled production.',
+            'People wonder about the brown bag paper I paint on. The pages of the books I did were grocery bags and cardboard and bedsheets and junk mail etc, "found materials" is the term I employ now, as a self-taught art bio statement writer.',
+            'Washing brushes in a porcelain sink again, sans stool, looking out a window at country instead of a city now.',
+            'Empty nest = wading all the way in.'
         ]
     },
     {
