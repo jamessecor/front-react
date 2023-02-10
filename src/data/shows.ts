@@ -16,7 +16,18 @@ export const shows: Array<IShow> = [
             src: '2023-01/featured.jpg',
             text: 'Richard Moore, Back of State and Main, inkjet on birchbark, 2022'
         },
-        // images: []
+        images: [
+            { src: '2023-01/01.jpg' },
+            { src: '2023-01/02.jpg' },
+            { src: '2023-01/03.jpg' },
+            { src: '2023-01/04.jpg' },
+            { src: '2023-01/05.jpg' },
+            { src: '2023-01/06.jpg' },
+            { src: '2023-01/07.jpg' },
+            { src: '2023-01/08.jpg' },
+            { src: '2023-01/09.jpg' },
+            { src: '2023-01/10.jpg' },
+        ]
     },
     {
         name: '52',
