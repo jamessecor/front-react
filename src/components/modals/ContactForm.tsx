@@ -6,9 +6,9 @@ import TextField from '@mui/material/TextField';
 import Grid from '@mui/material/Grid';
 import Modal from '@mui/material/Modal';
 import Typography from '@mui/material/Typography';
-import emailjs from '@emailjs/browser';
 import { IoMdCloseCircle } from "react-icons/io";
-import { ButtonBase } from "@mui/material";
+import { ButtonBase, CircularProgress } from "@mui/material";
+import axios from "axios";
 
 interface IContactFormProps {
     isOpen: boolean;
@@ -33,8 +33,8 @@ const ContactForm: React.FC<IContactFormProps> = ({ isOpen, setIsOpen }) => {
     const [lastname, setLastname] = useState('');
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
-    const formRef = useRef<HTMLFormElement>(null);
     const [isSubmitted, setIsSubmitted] = useState(false);
+    const [response, setResponse] = useState('');
 
     const closeModal = () => {
         setIsSubmitted(false);
@@ -43,22 +43,22 @@ const ContactForm: React.FC<IContactFormProps> = ({ isOpen, setIsOpen }) => {
 
     const handleChange = (e: React.ChangeEvent<HTMLTextAreaElement | HTMLInputElement>) => {
         console.log('change', e.target.value);
-        if (e.target.id === "first-name") setFirstname(e.target.value);
-        if (e.target.id === "last-name") setLastname(e.target.value);
+        if (e.target.id === "firstname") setFirstname(e.target.value);
+        if (e.target.id === "lastname") setLastname(e.target.value);
         if (e.target.id === "email") setEmail(e.target.value);
         if (e.target.id === "message") setMessage(e.target.value);
     };
 
-    const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
         setIsSubmitted(true);
-        console.log('submit', formRef.current);
-        // emailjs.sendForm(process.env.REACT_APP_EMAILJS_SERVICE_ID ?? '', process.env.REACT_APP_EMAILJS_TEMPLATE_ID ?? '', formRef.current ?? '', process.env.REACT_APP_EMAILJS_PUBLIC_KEY ?? '')
-        //     .then((result) => {
-        //         console.log(result.text);
-        //     }, (error) => {
-        //         console.log(error.text);
-        //     });
+        const emailResponse = await axios.post(`${process.env.REACT_APP_API_BASE_URL}/api/front-email`, {
+            firstname: firstname,
+            lastname: lastname,
+            email: email,
+            message: message
+        });
+        setResponse(emailResponse.data.message);
     }
 
     return (
@@ -80,22 +80,32 @@ const ContactForm: React.FC<IContactFormProps> = ({ isOpen, setIsOpen }) => {
                             </h1>
                         </ButtonBase>
                     </Grid>
-                    {isSubmitted ? (
+                    {response ? (
                         <React.Fragment>
-                            <Typography variant={'body1'}>
-                                {'Thanks for joining the mailing list. We\'ll keep you up to date on all our happenings!'}
-                            </Typography>
-                            <Typography color={'blue'} variant={'body2'}>
-                                {'If you added a note, we\'ll respond in the next few days.'}
-                            </Typography>
+                            {response.indexOf('failed') <= 0
+                                ? (
+                                    <React.Fragment>
+                                        <Typography variant={'body1'}>
+                                            {'Thanks for joining the mailing list. We\'ll keep you up to date on all our happenings!'}
+                                        </Typography>
+                                        <Typography color={'blue'} variant={'body2'}>
+                                            {'If you added a note, we\'ll respond in the next few days.'}
+                                        </Typography>
+                                    </React.Fragment>
+                                )
+                                : (
+                                    <Typography variant={'body1'}>
+                                        'We were unable to collect your info. Please refresh and try again. Thanks!'
+                                    </Typography>
+                                )}
                         </React.Fragment>
                     ) : (
                         <Grid container alignItems={'center'} justifyContent={'center'} item>
-                            <form style={{ width: '100%' }} ref={formRef} noValidate onSubmit={(e) => handleSubmit(e)}>
+                            <form style={{ width: '100%' }} onSubmit={(e) => handleSubmit(e)}>
                                 <Grid item sx={{ pb: 2 }}>
                                     <TextField
                                         fullWidth
-                                        id="first-name"
+                                        id="firstname"
                                         label="First Name"
                                         value={firstname}
                                         onChange={(e) => handleChange(e)}
@@ -104,7 +114,7 @@ const ContactForm: React.FC<IContactFormProps> = ({ isOpen, setIsOpen }) => {
                                 <Grid item sx={{ pb: 2 }}>
                                     <TextField
                                         fullWidth
-                                        id="last-name"
+                                        id="lastname"
                                         label="Last Name"
                                         value={lastname}
                                         onChange={(e) => handleChange(e)}
@@ -117,6 +127,7 @@ const ContactForm: React.FC<IContactFormProps> = ({ isOpen, setIsOpen }) => {
                                         label="Email"
                                         value={email}
                                         onChange={(e) => handleChange(e)}
+                                        required
                                     />
                                 </Grid>
                                 <Grid item sx={{ pb: 2 }}>
@@ -130,7 +141,9 @@ const ContactForm: React.FC<IContactFormProps> = ({ isOpen, setIsOpen }) => {
                                         onChange={(e) => handleChange(e)}
                                     />
                                 </Grid>
-                                <Button sx={{ width: '100%' }} type={'submit'} disabled={isSubmitted}>Submit</Button>
+                                <Button sx={{ width: '100%' }} type={'submit'} disabled={isSubmitted}>
+                                    {isSubmitted ? <CircularProgress /> : 'Submit'}
+                                </Button>
                             </form>
                         </Grid>
                     )}
