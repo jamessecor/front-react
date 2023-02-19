@@ -2,7 +2,28 @@ import { IShow } from "../models/Show";
 
 export const shows: Array<IShow> = [
     {
+        name: '53',
+        number: 53,
+        displayName: 'Show 53',
+        featuredImage: {
+            src: '2023-02/featured.jpg'
+        },
+        images: [
+            { src: '2023-02/01.jpg' },
+            { src: '2023-02/02.jpg' },
+            { src: '2023-02/03.jpg' },
+            { src: '2023-02/04.jpg' },
+            { src: '2023-02/05.jpg' },
+            { src: '2023-02/06.jpg' },
+            { src: '2023-02/07.jpg' },
+            { src: '2023-02/08.jpg' },
+            { src: '2023-02/09.jpg' },
+            { src: '2023-02/10.jpg' }
+        ]
+    },
+    {
         name: 'richard-moore-urban-revision',
+        number: 52.1,
         displayName: 'RICHARD MOORE: Urban Revision',
         description: [
             '<strong>Jan 6 - 29, 2023</strong>',
@@ -31,6 +52,7 @@ export const shows: Array<IShow> = [
     },
     {
         name: '52',
+        number: 52,
         displayName: 'Show 52',
         featuredImage: {
             src: '2022-12/featured.jpeg'
@@ -65,6 +87,7 @@ export const shows: Array<IShow> = [
     },
     {
         name: 'chirping-in-the-thickets',
+        number: 51.1,
         displayName: 'Chirping in the Thickets',
         description: [
             '<strong>Nov 4 - Nov 27, 2022</strong>',
@@ -109,6 +132,7 @@ export const shows: Array<IShow> = [
     },
     {
         name: '51',
+        number: 51,
         displayName: 'Show 51',
         featuredImage: {
             src: '2022-10/featured.png',

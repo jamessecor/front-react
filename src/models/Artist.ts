@@ -15,4 +15,5 @@ export interface IArtist {
     instagram?: IInstagram;
     images: Array<IImage>;
     bio?: Array<string>;
+    isNotMember?: boolean;
 }

@@ -10,8 +10,7 @@ const useImages = () => {
             : null
     }, [shows]);
 
-    const getCurrentShow = useCallback(() => shows.filter((show) =>
-        show.name === process.env.REACT_APP_CURRENT_SHOW)[0] ?? {}, []);
+    const getCurrentShow = useCallback(() => shows.sort((a, b) => b.number - a.number)[0] ?? {}, []);
 
 
     const currentShow = useMemo(() => getCurrentShow(), [getCurrentShow]);

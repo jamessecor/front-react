@@ -23,11 +23,7 @@ export const artists: Array<IArtist> = [
     {
         paramName: 'cheryl-betz',
         name: "Cheryl Betz",
-        images: [
-            {
-                src: 'melora-kennedy/apples-and-flowers.jpg'
-            }
-        ],
+        images: [],
         instagram: {
             handle: '@cm.betz',
             link: 'http://www.instagram.com/cm.betz'
@@ -67,11 +63,7 @@ export const artists: Array<IArtist> = [
     {
         paramName: 'daryl-burtnett',
         name: "Daryl Burtnett",
-        images: [
-            {
-                src: 'melora-kennedy/apples-and-flowers.jpg'
-            }
-        ],
+        images: [],
         instagram: {
             handle: '@darylburtnett',
             link: 'http://www.instagram.com/darylburtnett'
@@ -88,11 +80,7 @@ export const artists: Array<IArtist> = [
     {
         paramName: 'delia-robinson',
         name: 'Delia Robinson',
-        images: [
-            {
-                src: 'melora-kennedy/apples-and-flowers.jpg'
-            }
-        ],
+        images: [],
         instagram: {
             handle: '@deliarobinsonart',
             link: 'https://www.instagram.com/deliarobinsonart/'
@@ -133,11 +121,7 @@ export const artists: Array<IArtist> = [
     {
         paramName: 'elizabeth-nelson',
         name: 'Elizabeth Nelson',
-        images: [
-            {
-                src: 'melora-kennedy/apples-and-flowers.jpg'
-            }
-        ],
+        images: [],
         instagram: {
             handle: '@lizinvermont',
             link: 'https://www.instagram.com/lizinvermont/'
@@ -153,11 +137,7 @@ export const artists: Array<IArtist> = [
     {
         paramName: 'glen-coburn-hutcheson',
         name: 'Glen Coburn Hutcheson',
-        images: [
-            {
-                src: 'melora-kennedy/apples-and-flowers.jpg'
-            }
-        ],
+        images: [],
         instagram: {
             handle: '@glencoburnhutcheson',
             link: 'http://www.instagram.com/glencoburnhutcheson'
@@ -169,11 +149,7 @@ export const artists: Array<IArtist> = [
     {
         paramName: 'hasso-ewing',
         name: 'Hasso Ewing',
-        images: [
-            {
-                src: 'melora-kennedy/apples-and-flowers.jpg'
-            }
-        ],
+        images: [],
         instagram: {
             handle: '@hasso.ewing',
             link: 'https://www.instagram.com/hasso.ewing'
@@ -220,11 +196,7 @@ export const artists: Array<IArtist> = [
     {
         paramName: 'kate-fetherston',
         name: 'Kate Fetherston',
-        images: [
-            {
-                src: 'melora-kennedy/apples-and-flowers.jpg'
-            }
-        ],
+        images: [],
         instagram: {
             handle: '@kate.fetherston',
             link: 'https://www.instagram.com/kate.fetherston'
@@ -233,24 +205,17 @@ export const artists: Array<IArtist> = [
     {
         paramName: 'kathy-stark',
         name: 'Kathy Stark',
-        images: [
-            {
-                src: 'melora-kennedy/apples-and-flowers.jpg'
-            }
-        ],
+        images: [],
         instagram: {
             handle: '@kstark2102',
             link: 'https://www.instagram.com/kstark2102/'
         }
     },
     {
+        isNotMember: true,
         paramName: 'kimberly-malloy-backus',
         name: 'Kimberly Malloy Backus',
-        images: [
-            {
-                src: 'melora-kennedy/apples-and-flowers.jpg'
-            }
-        ],
+        images: [],
         instagram: {
             handle: '@kimberly_malloy_backus_artist',
             link: 'https://www.instagram.com/kimberly_malloy_backus_artist/'
@@ -318,6 +283,7 @@ export const artists: Array<IArtist> = [
         ]
     },
     {
+        isNotMember: true,
         paramName: 'monica-digiovanni',
         name: 'Monica Digiovanni',
         images: [

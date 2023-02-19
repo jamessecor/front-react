@@ -34,7 +34,7 @@ const ContactForm: React.FC<IContactFormProps> = ({ isOpen, setIsOpen }) => {
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
     const [isSubmitted, setIsSubmitted] = useState(false);
-    const [response, setResponse] = useState('');
+    const [responseStatus, setResponseStatus] = useState<number | null>(null);
 
     const closeModal = () => {
         setIsSubmitted(false);
@@ -58,7 +58,7 @@ const ContactForm: React.FC<IContactFormProps> = ({ isOpen, setIsOpen }) => {
             email: email,
             message: message
         });
-        setResponse(emailResponse.data.message);
+        setResponseStatus(emailResponse.status);
     }
 
     return (
@@ -80,9 +80,9 @@ const ContactForm: React.FC<IContactFormProps> = ({ isOpen, setIsOpen }) => {
                             </h1>
                         </ButtonBase>
                     </Grid>
-                    {response ? (
+                    {responseStatus ? (
                         <React.Fragment>
-                            {response.indexOf('failed') <= 0
+                            {responseStatus === 200
                                 ? (
                                     <React.Fragment>
                                         <Typography variant={'body1'}>
