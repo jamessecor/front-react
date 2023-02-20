@@ -173,13 +173,50 @@ export const artists: Array<IArtist> = [
     {
         paramName: 'glen-coburn-hutcheson',
         name: 'Glen Coburn Hutcheson',
-        images: [],
+        images: [
+            {
+                src: 'glen-coburn-hutcheson/22.12josieinthecoldsun912.jpg',
+                text: 'Josie in the Cold Sun, oil on panel, 9x12, 2022'
+            },
+            {
+                src: 'glen-coburn-hutcheson/21.8awningchairfortdock12x9.jpg',
+                text: 'The Awning from a Chair Fort on the Dock, gouache on paper, 12x9, 2021'
+            },
+            {
+                src: 'glen-coburn-hutcheson/21.08flowersporchkatetable12x9.jpg',
+                text: 'Flowers on the Porch Steps with Kate Reading, from under a Table, 12x9, gouache on paper, 2021'
+            },
+            {
+                src: 'glen-coburn-hutcheson/20.08briefs1angle2h18.jpg',
+                text: 'Brief, cotton underpants and cornstarch, 18" h, 2020'
+            },
+            {
+                src: 'glen-coburn-hutcheson/20.02boxersone8x14x8.jpg',
+                text: 'Boxers 1, cotton underpants and cornstarch, 14" h, 2020'
+            },
+            {
+                src: 'glen-coburn-hutcheson/20.03boxerstwo10x12x8.jpg',
+                text: 'Boxers 2, cotton underpants and cornstarch, 12" h, 2020'
+            },
+            {
+                src: 'glen-coburn-hutcheson/20.04boxersthree10x12x6.jpg',
+                text: 'Boxers 3, linen underpants and cornstarch, 12" h, 2020'
+            },
+            {
+                src: 'glen-coburn-hutcheson/20.08wadeandsplash8x10.jpg',
+                text: 'Wade and Splash, 10x8, oil on panel, 2020'
+            },
+            {
+                src: 'glen-coburn-hutcheson/20.08glenrightleftglen8x10.jpg',
+                text: 'Glen Left Right Glen, 10x8, oil on panel, 2020'
+            }
+        ],
         instagram: {
             handle: '@glencoburnhutcheson',
             link: 'http://www.instagram.com/glencoburnhutcheson'
         },
         bio: [
-            "Glen Coburn Hutcheson makes paintings, drawings and sculpture with various materials. He studied with Bruce Gagnier and Garth Evans at the New York Studio School (MFA Sculpture 2009) and with Ying Li at Haverford College (BA Studio Art/Painting 2001). His work tends to be medium-sized and lively, and is tied with metaphorical granny knots to something he's seen or done. Glen lives and works in Montpelier, Vermont."
+            'Glen Coburn Hutcheson is an artist, cooperative gallery owner, picture framer and former city councilor in Montpelier. He studied painting at Haverford College and sculpture at the New York Studio School, earning a Master\'s degree in 2009. He maintains a studio practice at home in Montpelier, works at The Drawing Board framing shop, and helps run The Front gallery with around twenty co-owners. His work aims to bring traditional materials and techniques to bear on personal and universal themes.'
         ]
     },
     {
