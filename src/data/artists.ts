@@ -121,17 +121,53 @@ export const artists: Array<IArtist> = [
     {
         paramName: 'elizabeth-nelson',
         name: 'Elizabeth Nelson',
-        images: [],
+        images: [
+            {
+                src: 'elizabeth-nelson/fast-freeze.jpg',
+                text: 'Fast Freeze 24x24'
+            },
+            {
+                src: 'elizabeth-nelson/river-slice.jpg',
+                text: 'River Slice 12x48'
+            },
+            {
+                src: 'elizabeth-nelson/fast-stream.jpg',
+                text: 'Fast Stream 30x24'
+            },
+            {
+                src: 'elizabeth-nelson/winter-coming.jpg',
+                text: 'Winter Coming 36x36'
+            },
+            {
+                src: 'elizabeth-nelson/to-the-hot-river.jpg',
+                text: 'To The Hot River (Sveitarfélagio Olfus) 36x36'
+            },
+            {
+                src: 'elizabeth-nelson/peninsula.jpg',
+                text: 'Peninsula 11x14'
+            },
+            {
+                src: 'elizabeth-nelson/blizzard.jpg',
+                text: 'Blizzard, 36x24'
+            },
+            {
+                src: 'elizabeth-nelson/fjord.jpg',
+                text: 'Fjord #6 20x20'
+            },
+            {
+                src: 'elizabeth-nelson/night-passage.jpg',
+                text: 'Night Passage 30x48 (framed 36x54)'
+            },
+        ],
         instagram: {
             handle: '@lizinvermont',
             link: 'https://www.instagram.com/lizinvermont/'
         },
         website: 'https://www.elizabeth-nelson.com/',
         bio: [
-            "Elizabeth Nelson has always painted. When she moved to northern Vermont she became part of the working landscape for more than forty years, working on and managing her dairy farm with her husband. They started with ten heifers and ended with three hundred cows twenty seven years later. Before, during and after her work as a mother, a teacher, a farmer, and a museum curator, she has always painted.",
-            "Born in New York City, she graduated from Rhode Island School of Design and received a master's degree at the University of North Carolina at Chapel Hill.",
-            "Her paintings in many venues in Vermont, New Hampshire, Pennsylvania, New York and Massachusetts, and is represented in galleries and permanent private and public collections in Vermont, New Hampshire, Massachusetts, New York, Oregon and California. She has won two Vermont Public Art commissions of eight paintings and her work is part of the Vermont State Art Collection.",
-            "She was granted an artist's residency in Iceland for two months in 2017 and 2018. This experience expanded her vision and deepened her commitment to the beauty of the northern landscape in particular."
+            'Northern Vermont has been the base, the foundation, for fifty years as Elizabeth Nelson explores the colder climate and landscapes of Vermont, Iceland and Norway in her paintings. The paintings are comments on the beauty and fragility of these harsh environments in this time of climate and environmental change. Storms, immense peace and sometimes unearthly beauty are expressed in a call to protect the fragile balance of our lives with the changing earth.',
+            'Elizabeth Nelson was born in New York City and moved to Connecticut with her family. She began painting when she was eight. She graduated from Rhode Island School of Design and then lived in Guatemala for a year. She received a Master\'s degree at the University of North Carolina at Chapel Hill, and she has lived in northern Vermont for over fifty years where she raised her children. She has been a teacher, dairy farmer, museum curator and always a painter.',
+            'She has exhibited throughout Vermont and New England as well as in juried shows in Reykjavik, Iceland, Wisconsin, Oregon, New York, Kentucky and Pennsylvania. Her work was featured prominently in the “Art of Vermont” exhibit which toured state-wide. As part of a three person show, Burlington City Arts exhibited her work and she was also in two “Of Land and Local” exhibits at BCA which included a residency in Elmore State Park, VT. She has had two solo shows at the Vermont Supreme Court. Her work is in many private collections and in the Vermont State Art Collection. Four paintings are a permanent installation of public art at the State Police Barracks in Derby VT and four paintings are also installed at the Royalton Department of Public Safety, She was a resident at the Vermont Artist Week at The Vermont Studio Center in Johnson VT, and a resident for a month each in 2017 and 2018 at the SÍM (Association of Icelandic Artists) in Reykjavik Iceland.'
         ]
     },
     {

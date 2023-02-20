@@ -6,6 +6,7 @@ import Grid from '@mui/material/Grid';
 import Divider from '@mui/material/Divider';
 import Button from '@mui/material/Button';
 import ButtonBase from '@mui/material/ButtonBase';
+import Stack from '@mui/material/Stack';
 import Typography from '@mui/material/Typography';
 import { artists } from '../data/artists';
 import Stepper from './Stepper';
@@ -43,32 +44,34 @@ const Artist = () => {
                         sx={{ pr: 2, display: 'flex', flexDirection: 'column' }}
                     >
                         <Grid item justifyContent={'center'} sx={{ display: 'flex' }}>
-                            <Typography align={'center'} variant={'h3'} sx={{ px: 2 }}>
-                                <Box>{artist.name}</Box>
-                            </Typography>
-                            {artist.instagram && (
-                                <ButtonBase sx={{ p: 0 }} onClick={() => window.open(artist.instagram?.link)}>
-                                    <Tooltip arrow={true} title={artist.instagram.handle} placement={'top'}>
-                                        <Typography variant={'h6'} sx={{ px: 1 }}>
-                                            <BsInstagram />
-                                        </Typography>
-                                    </Tooltip>
-                                </ButtonBase>
-                            )}
-                            {artist.website && (
-                                <ButtonBase onClick={() => window.open(artist.website)}>
-                                    <Tooltip arrow={true} title={artist.website} placement={'top'}>
-                                        <Typography variant={'h6'} sx={{ px: 1 }}>
-                                            <GoBrowser />
-                                        </Typography>
-                                    </Tooltip>
-                                </ButtonBase>
-                            )}
-                        </Grid>
-                        <Grid item justifyContent={'center'} sx={{ display: 'flex' }}>
                             <Button onClick={() => navigateTo('/artists')}>
                                 <BiArrowBack />{'Back to artists'}
                             </Button>
+                        </Grid>
+                        <Grid item justifyContent={'center'} sx={{ display: 'flex', flexDirection: 'column' }}>
+                            <Typography align={'center'} variant={'h3'} sx={{ px: 2 }}>
+                                <Box>{artist.name}</Box>
+                            </Typography>
+                            <Stack alignSelf={'center'} direction={'row'}>
+                                {artist.instagram && (
+                                    <ButtonBase sx={{ p: 0 }} onClick={() => window.open(artist.instagram?.link)}>
+                                        <Tooltip arrow={true} title={artist.instagram.handle} placement={'top'}>
+                                            <Typography variant={'h6'} sx={{ px: 1 }}>
+                                                <BsInstagram />
+                                            </Typography>
+                                        </Tooltip>
+                                    </ButtonBase>
+                                )}
+                                {artist.website && (
+                                    <ButtonBase onClick={() => window.open(artist.website)}>
+                                        <Tooltip arrow={true} title={artist.website} placement={'top'}>
+                                            <Typography variant={'h6'} sx={{ px: 1 }}>
+                                                <GoBrowser />
+                                            </Typography>
+                                        </Tooltip>
+                                    </ButtonBase>
+                                )}
+                            </Stack>
                         </Grid>
                     </Grid>
                     <Divider sx={{ mb: 2 }} />
@@ -97,7 +100,7 @@ const Artist = () => {
                                         variant={'body1'}
                                     >
                                         {/* ONLY HARD-CODED SAFE HTML */}
-                                        <div dangerouslySetInnerHTML={{ __html: bioItem }}></div>
+                                        <div dangerouslySetInnerHTML={{ __html: bioItem }} />
                                     </Typography>
                                 ))
                             )}

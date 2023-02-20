@@ -38,7 +38,7 @@ const Stepper: React.FC<IStepperProps> = ({ images, numberToDisplay = 1, imageFo
           <img width={'100%'} src={getFullImagePath(image.src, imageFolder)} />
           {image.text && (
             <Typography align={'center'} sx={{ pb: 2 }} variant={'body1'}>
-              {image.text}
+              <div dangerouslySetInnerHTML={{ __html: image.text}} />
             </Typography>
           )}
         </SwiperSlide>
