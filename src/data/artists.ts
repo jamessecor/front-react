@@ -80,11 +80,47 @@ export const artists: Array<IArtist> = [
     {
         paramName: 'delia-robinson',
         name: 'Delia Robinson',
-        images: [],
+        images: [
+            {
+                src: 'delia-robinson/MoonBowsDownNativity.jpeg',
+                text: 'Nativity:  The Moon Bows Down'
+            },
+            {
+                src: 'delia-robinson/FlightIntoEgypt.jpeg',
+                text: 'Mishears Stories". The Flight into Eqypt'
+            },
+            {
+                src: 'delia-robinson/OBEDriveby.jpg',
+                text: 'In a Posthumous Drive-by The Queen Delivers My OBE'
+            },
+            {
+                src: 'delia-robinson/sheep.jpg',
+                text: 'Night Snacking Sheep Nibbles a Pawpaw Leaf'
+            },
+            {
+                src: 'delia-robinson/openingAtMet.jpg',
+                text: 'My Opening at the Met'
+            },
+            {
+                src: 'delia-robinson/HereThenGone.jpeg',
+                text: 'Here Then Gone'
+            },
+            {
+                src: 'delia-robinson/AngelsBringLadders.jpg',
+                text: 'Angels Bring Ladders'
+            },
+            {
+                src: 'delia-robinson/LastCandleLit.jpg',
+                text: 'The Last Candle Lit'
+            },
+        ],
         instagram: {
             handle: '@deliarobinsonart',
             link: 'https://www.instagram.com/deliarobinsonart/'
-        }
+        },
+        bio: [
+            'Speculative Realism Painter, maker of Clay Whistles, and Crankie Theater'
+        ]
     },
     {
         paramName: 'diane-sophrin',
