@@ -87,7 +87,7 @@ export const artists: Array<IArtist> = [
             },
             {
                 src: 'delia-robinson/FlightIntoEgypt.jpeg',
-                text: 'Mishears Stories". The Flight into Eqypt'
+                text: 'Misheard Stories &mdash; The Flight into Egypt'
             },
             {
                 src: 'delia-robinson/OBEDriveby.jpg',
