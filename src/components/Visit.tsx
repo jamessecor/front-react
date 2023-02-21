@@ -80,6 +80,25 @@ const Visit = () => {
                             </Button>
                             {'to set up an appointment.'}
                         </Typography>
+
+                        <Divider sx={{ my: 5 }} />
+
+                        <Typography variant={'h5'} sx={{ py: 1 }}>
+                            {'Donate'}
+                        </Typography>
+                        <Typography variant={'body1'} alignItems={'center'} sx={{ display: 'flex', flexDirection: 'column' }}>
+                            {'If you would like to make a donation to The Front, use the link below. We appreciate your generosity and look forward to seeing you soon. Thank you!'}
+                            <Button
+                                onClick={() => window.open('https://www.paypal.com/donate/?hosted_button_id=QRX486T87D45G')}
+                                variant={'contained'}
+                                sx={{
+                                    width: '50%',
+                                    mt: 1
+                                }}
+                            >
+                                {'Donate'}
+                            </Button>
+                        </Typography>
                     </Grid>
                     <Grid
                         item={true}
