@@ -42,7 +42,6 @@ const ContactForm: React.FC<IContactFormProps> = ({ isOpen, setIsOpen }) => {
     }
 
     const handleChange = (e: React.ChangeEvent<HTMLTextAreaElement | HTMLInputElement>) => {
-        console.log('change', e.target.value);
         if (e.target.id === "firstname") setFirstname(e.target.value);
         if (e.target.id === "lastname") setLastname(e.target.value);
         if (e.target.id === "email") setEmail(e.target.value);

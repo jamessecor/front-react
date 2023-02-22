@@ -30,8 +30,6 @@ const Stepper: React.FC<IStepperProps> = ({ images, numberToDisplay = 1, imageFo
       navigation={true}
       pagination={{ clickable: true }}
       scrollbar={{ horizontalClass: 'stepper-scrollbar', draggable: true }}
-      onSwiper={(swiper) => console.log('swiper', swiper)}
-      onSlideChange={() => console.log('slide change')}
     >
       {images.map((image) =>
         <SwiperSlide>
