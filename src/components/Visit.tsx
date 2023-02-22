@@ -99,6 +99,7 @@ const Visit = () => {
                                 {'Donate'}
                             </Button>
                         </Typography>
+                        <Divider sx={{ display: { md: 'none' }, my: 5 }} />
                     </Grid>
                     <Grid
                         item={true}

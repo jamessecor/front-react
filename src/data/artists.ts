@@ -416,12 +416,16 @@ export const artists: Array<IArtist> = [
         name: 'Ned Richardson',
         images: [
             {
-                src: 'ned-richardson/4_squares_1.jpg',
-                text: 'untitled [4 squares 1]<br />mixed media: pigment print, cold wax, pigments, plywood<br />4" squares, 9" x 9" overall<br/>2021'
+                src: 'ned-richardson/untitled_with_3phrases.jpg',
+                text: 'untitled [netG_001 with 3 phrases]<br />mixed media – pigment print on canvas, cold wax, pigments,text:<br />"the sun it will burn and the clouds will roll in"<br />"the red dot of calamity and the blue dot of night"<br />"the writing under the wall"<br />18" x 18"<br />2020'
             },
             {
                 src: 'ned-richardson/glasswax_1071.jpg',
                 text: 'untitled [glass wax netG_1071]<br />mixed media - pigment print,glass beads, cold wax, pigments<br />7" x 7"<br />2020'
+            },
+            {
+                src: 'ned-richardson/4_squares_1.jpg',
+                text: 'untitled [4 squares 1]<br />mixed media: pigment print, cold wax, pigments, plywood<br />4" squares, 9" x 9" overall<br/>2021'
             },
             {
                 src: 'ned-richardson/meshdot_2020.2.jpg',
@@ -430,10 +434,6 @@ export const artists: Array<IArtist> = [
             {
                 src: 'ned-richardson/meshdot_2020.4.jpg',
                 text: 'untitled [meshdot_2020.4]<br />Ink on paper<br />9.5" x 9.5"<br />2020'
-            },
-            {
-                src: 'ned-richardson/untitled_with_3phrases.jpg',
-                text: 'untitled [netG_001 with 3 phrases]<br />mixed media – pigment print on canvas, cold wax, pigments,text:<br />"the sun it will burn and the clouds will roll in"<br />"the red dot of calamity and the blue dot of night"<br />"the writing under the wall"<br />18" x 18"<br />2020'
             }
         ],
         instagram: {
@@ -503,6 +503,7 @@ export const artists: Array<IArtist> = [
                 text: 'Adolescence; 30x24”; o/c; 2020'
             }
         ],
+        website: 'http://samuelthurston.com',
         instagram: {
             handle: '@samuelthurstonpaintings_sculpture',
             link: 'https://www.instagram.com/samuelthurstonpaintings_sculpture'
