@@ -23,18 +23,54 @@ export const artists: Array<IArtist> = [
     {
         paramName: 'cheryl-betz',
         name: "Cheryl Betz",
-        images: [],
+        images: [
+            {
+                src: 'cheryl-betz/flowers-fall-II.jpg',
+                text: 'Flowers Fall II, mixed media on panel, 2022'
+            },
+            {
+                src: 'cheryl-betz/like-travelers-in-the-night-2.jpg',
+                text: 'Like Travelers in a Night\'s Lodginghouse II, mixed media on panel, 2021'
+            },
+            {
+                src: 'cheryl-betz/like-travelers-in-the-night-5.jpg',
+                text: 'Like Travelers in a Night\'s Lodginghouse V, mixed media on panel, 2021'
+            },
+            {
+                src: 'cheryl-betz/like-travelers-in-the-night-8.jpg',
+                text: 'Like Travelers in a Night\'s Lodginghouse VIII, mixed media on panel, 2021'
+            },
+            {
+                src: 'cheryl-betz/hairbreadth-5.jpg',
+                text: 'Hairbreadth/V\'s Gate (Swampland) V, mixed media on panel, 2022'
+            },
+            {
+                src: 'cheryl-betz/hairbreadth-6.jpg',
+                text: 'Hairbreadth/V\'s Gate (Swampland) VI, mixed media on panel, 2022'
+            },
+            {
+                src: 'cheryl-betz/short-story-XLIV.jpg',
+                text: 'Short Story XLIV, mixed media on panel, 2022'
+            },
+            {
+                src: 'cheryl-betz/short-story-XLII.jpg',
+                text: 'Short Story XLII, mixed media on panel, 2022'
+            },
+            {
+                src: 'cheryl-betz/short-story-XLV.jpg',
+                text: 'Short Story XLV, mixed media on panel, 2022'
+            }
+        ],
         instagram: {
             handle: '@cm.betz',
             link: 'http://www.instagram.com/cm.betz'
         },
         website: 'https://cherylbetzartist.com/',
         bio: [
-            "Cheryl Betz has been exhibiting her work in New England for over two decades, after moving to Vermont from Chicago. She holds a BFA in painting, and has completed post-undergraduate work at NVU and at the Vermont Studio Center.",
-            "In Vermont, her work has appeared at venues such as the Vermont College of Fine Arts, the Helen Day Art Center, UVM's Fleming Museum, Sterling College, Northern Vermont University, Trinity College, Catamount Arts, Studio Place Arts, Burlington City Arts, Castleton University, Chaffee Center for the Visual Arts, the Vermont Arts Council, and the former Doll-Arnstadt Gallery in Burlington.",
-            "Other East-Coast locations include the AVA Gallery in New Hampshire, the Stamford Museum in Connecticut, the Chautauqua Institution in New York, as well as commercial galleries in Vermont, Connecticut, New Jersey, and New York.",
-            "Her work has received awards in Vermont, Connecticut, and New York, including the Remington Arthur Award for Contemporary Art from the Chautauqua Institution.",
-            "Betz's work is in numerous private and corporate collections, and has been carried by Morpeth Contemporary in New Jersey since 1996. See more of her work on instagram at <a target='_blank' href='http://www.instagram.com/cm.betz'>@cm.betz</a> while her website <a target='_blank' href='https://cherylbetzartist.com'>cherylbetzartist.com</a> is under construction."
+            'Cheryl Betz was born in Milwaukee, Wisconsin, and spent her youth in small towns in the midwest.',
+            'She studied visual art at Northern Illinois University, followed by a 10-year career in publishing in Chicago. After moving to Vermont, Betz continued her study of art at Northern Vermont University and at the Vermont Studio Center, where she also participated in numerous residency programs. She holds a BFA in painting.',
+            'In Vermont, her work has appeared at venues such as the Vermont College of Fine Arts, the Current, UVM\'s Fleming Museum, Sterling College, Northern Vermont University, TW Wood Art Gallery, Trinity College, Catamount Arts Center, Studio Place Arts, Burlington City Arts, Castleton University, Chaffee Center for the Visual Arts, the Vermont Arts Council, Highland Center for the Arts, and the Doll-Anstadt Gallery. Other East-Coast locations include the AVA Gallery in New Hampshire, the Stamford Museum in Connecticut, the Chautauqua Institution in New York, as well as commercial galleries in Vermont, Connecticut, New Jersey, and New York.',
+            'Betz\'s work has received awards in Vermont, Connecticut, and New York, including the Remington Arthur Award for Contemporary Art from the Chautauqua Institution. Her work is in numerous private, public, and corporate collections, and has been carried by Morpeth Contemporary in New Jersey since 1996 and by the Front Gallery in Vermont since 2018.'
         ]
     },
     {
