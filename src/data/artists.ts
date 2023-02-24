@@ -239,7 +239,7 @@ export const artists: Array<IArtist> = [
         bio: [
             'Northern Vermont has been the base, the foundation, for fifty years as Elizabeth Nelson explores the colder climate and landscapes of Vermont, Iceland and Norway in her paintings. The paintings are comments on the beauty and fragility of these harsh environments in this time of climate and environmental change. Storms, immense peace and sometimes unearthly beauty are expressed in a call to protect the fragile balance of our lives with the changing earth.',
             'Elizabeth Nelson was born in New York City and moved to Connecticut with her family. She began painting when she was eight. She graduated from Rhode Island School of Design and then lived in Guatemala for a year. She received a Master\'s degree at the University of North Carolina at Chapel Hill, and she has lived in northern Vermont for over fifty years where she raised her children. She has been a teacher, dairy farmer, museum curator and always a painter.',
-            'She has exhibited throughout Vermont and New England as well as in juried shows in Reykjavik, Iceland, Wisconsin, Oregon, New York, Kentucky and Pennsylvania. Her work was featured prominently in the “Art of Vermont” exhibit which toured state-wide. As part of a three person show, Burlington City Arts exhibited her work and she was also in two “Of Land and Local” exhibits at BCA which included a residency in Elmore State Park, VT. She has had two solo shows at the Vermont Supreme Court. Her work is in many private collections and in the Vermont State Art Collection. Four paintings are a permanent installation of public art at the State Police Barracks in Derby VT and four paintings are also installed at the Royalton Department of Public Safety, She was a resident at the Vermont Artist Week at The Vermont Studio Center in Johnson VT, and a resident for a month each in 2017 and 2018 at the SÍM (Association of Icelandic Artists) in Reykjavik Iceland.'
+            'She has exhibited throughout Vermont and New England as well as in juried shows in Reykjavik, Iceland, Wisconsin, Oregon, New York, Kentucky and Pennsylvania. Her work was featured prominently in the “Art of Vermont" exhibit which toured state-wide. As part of a three person show, Burlington City Arts exhibited her work and she was also in two “Of Land and Local" exhibits at BCA which included a residency in Elmore State Park, VT. She has had two solo shows at the Vermont Supreme Court. Her work is in many private collections and in the Vermont State Art Collection. Four paintings are a permanent installation of public art at the State Police Barracks in Derby VT and four paintings are also installed at the Royalton Department of Public Safety, She was a resident at the Vermont Artist Week at The Vermont Studio Center in Johnson VT, and a resident for a month each in 2017 and 2018 at the SÍM (Association of Icelandic Artists) in Reykjavik Iceland.'
         ]
     },
     {
@@ -341,11 +341,58 @@ export const artists: Array<IArtist> = [
     {
         paramName: 'kate-fetherston',
         name: 'Kate Fetherston',
-        images: [],
+        images: [
+            {
+                src: 'kate-fetherston/IMG_0563.jpg',
+                text: 'A Dream You Had :12" x 12" mixed media on board 2022'
+            },
+            {
+                src: 'kate-fetherston/IMG_0561.jpg',
+                text: 'Field Notes #3 12" x 12" mixed media on board 2022'
+            },
+            {
+                src: 'kate-fetherston/IMG_0326.jpg',
+                text: 'Spring on Little River 88" x 60" acrylic, oil on paper 2022'
+            },
+            {
+                src: 'kate-fetherston/IMG_7347.jpg',
+                text: 'Beginning: 30" x 30" acrylic, cold wax and oil on board 2021'
+            },
+            {
+                src: 'kate-fetherston/IMG_6694.jpg',
+                text: 'Landscape in A Mnor: 24" x 36" cold wax/oil on board 2021'
+            },
+            {
+                src: 'kate-fetherston/IMG_6981.jpg',
+                text: 'Llano: 30" x 40" acrylic on board 2021'
+            },
+            {
+                src: 'kate-fetherston/IMG_4149.jpg',
+                text: 'Winter Light #1: 22" x 30" acrylic on paper 2021'
+            },
+            {
+                src: 'kate-fetherston/IMG_3362.jpg',
+                text: 'Summer Garden: 22" x 30" cold wax/oil on multimedia art board 2020'
+            },
+            {
+                src: 'kate-fetherston/IMG_4161.jpg',
+                text: 'Revelation: 36" x 48" acrylic on canvas 2021'
+            },
+            {
+                src: 'kate-fetherston/IMG_1564.jpg',
+                text: 'On the Rio Grande: 30" x 40" acrylic, cold wax/oil on board 2023'
+            }
+        ],
         instagram: {
             handle: '@kate.fetherston',
             link: 'https://www.instagram.com/kate.fetherston'
-        }
+        },
+        bio: [
+            'Raised in New Mexico, Kate Fetherston migrated to northern California for many years before relocating to Vermont in 1998. Her work is influenced by the light and seasons of three river valleys---the Rio Grande, the Sacramento, and the Winooski. Kate\'s interest is in the interactive nature of being-and-seeing connected to a particular moment. Her congenital visual impairment brings with it a sensitivity to the unique and quixotic nature of seeing. The Japanese aesthetic of wabi-sabi with its emphasis on imperfection and the fleeting, bittersweet nature of life is a guiding principle in Kate\'s work.',
+            'Kate\'s academic background is in music, philosophy, women\'s studies, and poetry. She has a B.A. in Philosophy and an MSW from California State University, and an MFA in poetry from Vermont College of Fine Arts.',
+            'She\'s the author of two books of poems, <u>Until Nothing More Can Break</u> (2012) and <u>This Far from Perfect</u> (2020). Kate co-edited <u>Manthology</u>, (2006) an anthology about male experience, and <u>Open Book</u>, (2006) a book of craft essays. Her writing has appeared in numerous journals, including <em>North American Review</em>, <em>Nimrod</em>, and <em>Hunger Mountain</em>. Kate\'s received numerous Pushcart nominations, as well as grants from Vermont Council on the Arts and residencies at Vermont Studio Center for both poetry and visual art.',
+            'Kate\'s visual art has shown in solo and group shows throughout Vermont and California. Her work is in private collections throughout the United States and Canada.'
+        ]
     },
     {
         paramName: 'kathy-stark',
@@ -524,11 +571,11 @@ export const artists: Array<IArtist> = [
             },
             {
                 src: 'sam-thurston/2.jpeg',
-                text: 'Aspects; 12 1/2” high; basswood; 2022'
+                text: 'Aspects; 12 1/2" high; basswood; 2022'
             },
             {
                 src: 'sam-thurston/3.JPG',
-                text: 'Two Heads; 9 1/2 x 7 x 5”;  mahogany; 2021'
+                text: 'Two Heads; 9 1/2 x 7 x 5";  mahogany; 2021'
             },
             {
                 src: 'sam-thurston/4.jpg',
@@ -536,7 +583,7 @@ export const artists: Array<IArtist> = [
             },
             {
                 src: 'sam-thurston/5.jpg',
-                text: 'Adolescence; 30x24”; o/c; 2020'
+                text: 'Adolescence; 30x24"; o/c; 2020'
             }
         ],
         website: 'http://samuelthurston.com',
