@@ -465,7 +465,48 @@ export const artists: Array<IArtist> = [
         name: "Melora Kennedy",
         images: [
             {
-                src: 'melora-kennedy/apples-and-flowers.jpg'
+                src: 'melora-kennedy/2020-12-13_10.44.29.jpg',
+                text: ''
+            },
+            {
+                src: 'melora-kennedy/2020-12-13_10.45.14_4000.jpg',
+                text: ''
+            },
+            {
+                src: 'melora-kennedy/2020-12-13_10.46.05.jpg',
+                text: ''
+            },
+            {
+                src: 'melora-kennedy/2020-12-13_10.46.48_3900.jpg',
+                text: ''
+            },
+            {
+                src: 'melora-kennedy/2020-12-13_10.51.24.jpg',
+                text: ''
+            },
+            {
+                src: 'melora-kennedy/ApplesInBlue.jpg',
+                text: ''
+            },
+            {
+                src: 'melora-kennedy/cactus.jpg',
+                text: ''
+            },
+            {
+                src: 'melora-kennedy/chairWithApples.jpg',
+                text: ''
+            },
+            {
+                src: 'melora-kennedy/EastmanPond.jpg',
+                text: ''
+            },
+            {
+                src: 'melora-kennedy/onions.jpg',
+                text: ''
+            },
+            {
+                src: 'melora-kennedy/Ukraine_CropSignature.jpg',
+                text: ''
             }
         ],
         bio: [
