@@ -2,6 +2,33 @@ import { IShow } from "../models/Show";
 
 export const shows: Array<IShow> = [
     {
+        name: 'elizabeth-nelson-north',
+        number: 53,
+        displayName: 'Elizabeth Nelson: NORTH',
+        featuredImage: {
+            src: '2023-03/featured.jpg'
+        },
+        images: [
+            { src: '2023-03/01.jpg' },
+            { src: '2023-03/02.jpg' },
+            { src: '2023-03/03.jpg' },
+            { src: '2023-03/04.jpg' },
+            { src: '2023-03/05.jpg' },
+            { src: '2023-03/06.jpg' },
+            { src: '2023-03/07.jpg' },
+            { src: '2023-03/08.jpg' },
+        ],
+        description: [
+            '<strong>March 3 - April 2, 2023</strong>',
+            '<strong>Opening Reception:</strong> Friday March 3, 4-7 PM',
+            '<strong>Artist\'s Talk:</strong> Thursday March 16, 5-6 PM',
+            'Northern Vermont has been her base, her foundation, for fifty years as Elizabeth Nelson explores the colder climate and landscapes of Vermont, Iceland and Norway in her paintings. The paintings are comments on the beauty and fragility of these harsh environments in this time of climate and environmental change. Storms, immense peace and sometimes unearthly beauty are expressed in a call to protect the fragile balance of our lives with the changing earth.',
+            'Elizabeth Nelson began painting when she was eight. She graduated from Rhode Island School of Design and then lived in Guatemala for a year. She received a Master\'s degree at the University of North Carolina at Chapel Hill, and she has lived in northern Vermont for over fifty years where she raised her children. She has been a teacher, dairy farmer, museum curator and always a painter.',
+            'She has exhibited throughout Vermont and New England as well as in juried shows in Reykjavik, Iceland, Wisconsin, Oregon, New York, Kentucky and Pennsylvania. Her work was featured prominently in the “Art of Vermont” exhibit which toured state-wide. As part of a three person show, Burlington City Arts exhibited her work and she was also in two “Of Land and Local” exhibits at BCA which included a residency in Elmore State Park, VT. She has had two solo shows at the Vermont Supreme Court. Her work is in many private collections and in the Vermont State Art Collection. Four paintings are a permanent installation of public art at the State Police Barracks in Derby VT and four paintings are also installed at the Royalton Department of Public Safety, She was a resident at the Vermont Artist Week at The Vermont Studio Center in Johnson VT, and a resident for a month each in 2017 and 2018 at the SÍM (Association of Icelandic Artists) in Reykjavik Iceland.',
+            'The show opens 4-7pm, Friday March 3. The Front is open Fridays 4-7, weekends 11-5, and by appointment. There will also be an artist\'s talk in the gallery Thursday March 16, 5-6 PM.'
+        ]
+    },
+    {
         name: '53',
         number: 53,
         displayName: 'Show 53',
