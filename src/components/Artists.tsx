@@ -28,7 +28,16 @@ const Artists = () => {
                     >
                         <ButtonBase onClick={() => navigateTo(`/artists/${artist.paramName}`)}>
                             {artist.images.length
-                                ? <img className={'artists-image'} alt={'no image available'} src={`${process.env.REACT_APP_URL}/images/artists/${artist.images[0].src}`} />
+                                ? (
+                                    <Box className={'artists-image-wrapper'}>
+                                        <img
+                                            className={'artists-image'}
+                                            style={{ transform: artist.images[0].scale ? `scale(${artist.images[0].scale})` : '' }}
+                                            alt={'no image available'}
+                                            src={`${process.env.REACT_APP_URL}/images/artists/${artist.images[0].src}`}
+                                        />
+                                    </Box>
+                                )
                                 : <Box className={`artists-image`} sx={{ backgroundColor: 'lightblue' }} />
                             }
                         </ButtonBase>

@@ -542,7 +542,8 @@ export const artists: Array<IArtist> = [
         images: [
             {
                 src: 'ned-richardson/untitled_with_3phrases.jpg',
-                text: 'untitled [netG_001 with 3 phrases]<br />mixed media – pigment print on canvas, cold wax, pigments,text:<br />"the sun it will burn and the clouds will roll in"<br />"the red dot of calamity and the blue dot of night"<br />"the writing under the wall"<br />18" x 18"<br />2020'
+                text: 'untitled [netG_001 with 3 phrases]<br />mixed media - pigment print on canvas, cold wax, pigments,text:<br />"the sun it will burn and the clouds will roll in"<br />"the red dot of calamity and the blue dot of night"<br />"the writing under the wall"<br />18" x 18"<br />2020',
+                scale: 1.5
             },
             {
                 src: 'ned-richardson/glasswax_1071.jpg',

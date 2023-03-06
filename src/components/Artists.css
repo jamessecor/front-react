@@ -1,10 +1,15 @@
 .artists-image {
+    border-radius: 100%;
     width: 100%;
     aspect-ratio: 1 / 1;
-    border-radius: 100%;
     object-fit: cover;
 }
 
 .artists-image:hover {
     filter: grayscale(1);
+}
+
+.artists-image-wrapper {
+    border-radius: 100%;
+    overflow: hidden;
 }
