@@ -32,7 +32,10 @@ const Artists = () => {
                                     <Box className={'artists-image-wrapper'}>
                                         <img
                                             className={'artists-image'}
-                                            style={{ transform: artist.images[0].scale ? `scale(${artist.images[0].scale})` : '' }}
+                                            style={{ 
+                                                transform: artist.images[0].scale ? `scale(${artist.images[0].scale})` : '',
+                                                objectPosition: artist.images[0].position ?? '' 
+                                            }}
                                             alt={'no image available'}
                                             src={`${process.env.REACT_APP_URL}/images/artists/${artist.images[0].src}`}
                                         />

@@ -7,6 +7,7 @@ export interface IImage {
     src: string;
     text?: string;
     scale?: number;
+    position?: string;
 }
 
 export interface IArtist {

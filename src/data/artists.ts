@@ -6,7 +6,10 @@ export const artists: Array<IArtist> = [
         name: "Anne Cogbill Rose",
         website: 'https://annecogbillrose.com',
         images: [
-            { src: 'anne-cogbill-rose/1arose_BoyandPigeons.jpeg' },
+            {
+                src: 'anne-cogbill-rose/1arose_BoyandPigeons.jpeg',
+                position: 'bottom'
+            },
             { src: 'anne-cogbill-rose/2arose_Cora-and-Cosmos.jpeg' },
             { src: 'anne-cogbill-rose/7aroseManandHisShadow.jpeg' },
             { src: 'anne-cogbill-rose/Pigeons.jpeg' },
@@ -610,7 +613,8 @@ export const artists: Array<IArtist> = [
         images: [
             {
                 src: 'sam-thurston/1.jpg',
-                text: 'Self Portrait Without Shirt; 22" x 18";  oil on canvas; 2022'
+                text: 'Self Portrait Without Shirt; 22" x 18";  oil on canvas; 2022',
+                position: 'top'
             },
             {
                 src: 'sam-thurston/2.jpeg',
