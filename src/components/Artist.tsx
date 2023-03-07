@@ -16,12 +16,14 @@ import { GoBrowser } from 'react-icons/go';
 import { RxOpenInNewWindow } from 'react-icons/rx';
 import Tooltip from '@mui/material/Tooltip';
 import { BiArrowBack } from 'react-icons/bi';
+import useImages from '../hooks/useImages';
 
 export const NavItemArtists = 'Artists';
 
 const Artist = () => {
     const { name } = useParams();
     const navigateTo = useNavigate();
+    const { getFullImagePath } = useImages();
 
     const filteredArtists = useMemo(() => artists.filter((artist) => artist.paramName === name), [artists]);
     const artist = useMemo(() => filteredArtists.length ? filteredArtists[0] : null, [filteredArtists]);
@@ -93,17 +95,33 @@ const Artist = () => {
                         </Grid>
                         <Grid item={true} xs={12} md={6}>
                             <Box sx={{ my: 3, display: { xs: 'block', md: 'none' } }} />
-                            {artist.bio && (
-                                artist.bio.map((bioItem) => (
-                                    <Typography
-                                        sx={{ pb: 2 }}
-                                        variant={'body1'}
-                                    >
-                                        {/* ONLY HARD-CODED SAFE HTML */}
-                                        <div dangerouslySetInnerHTML={{ __html: bioItem }} />
-                                    </Typography>
-                                ))
-                            )}
+                            <Stack>
+                                {artist.bio && (
+                                    artist.bio.map((bioItem) => (
+                                        <Typography
+                                            key={bioItem}
+                                            sx={{ pb: 2 }}
+                                            variant={'body1'}
+                                        >
+                                            {/* ONLY HARD-CODED SAFE HTML */}
+                                            <div dangerouslySetInnerHTML={{ __html: bioItem }} />
+                                        </Typography>
+                                    ))
+                                )}
+                                {artist.videos && (
+                                    artist.videos.map((video) => (
+                                        <Box key={video.src}>
+                                            <video
+                                                src={getFullImagePath(video.src, 'artists')}
+                                                width={'100%'}
+                                                autoPlay={true}
+                                                loop={true}
+                                                muted={true}
+                                            />
+                                        </Box>
+                                    ))
+                                )}
+                            </Stack>
                         </Grid>
                     </Grid>
                     <Grid

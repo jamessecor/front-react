@@ -32,7 +32,7 @@ const Stepper: React.FC<IStepperProps> = ({ images, numberToDisplay = 1, imageFo
       scrollbar={{ horizontalClass: 'stepper-scrollbar', draggable: true }}
     >
       {images.map((image) =>
-        <SwiperSlide>
+        <SwiperSlide key={image.src}>
           <img width={'100%'} src={getFullImagePath(image.src, imageFolder)} />
           {image.text && (
             <Typography align={'center'} sx={{ pb: 2 }} variant={'body1'}>

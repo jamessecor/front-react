@@ -328,8 +328,8 @@ export const artists: Array<IArtist> = [
                 text: 'bust'
             },
             {
-                src: 'hasso-ewing/green-caped-swimmer.jpg',
-                text: 'green caped swimmer'
+                src: 'hasso-ewing/green-capped-swimmer.jpg',
+                text: 'green capped swimmer'
             },
             {
                 src: 'hasso-ewing/farmer.jpg',
