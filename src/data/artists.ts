@@ -297,7 +297,57 @@ export const artists: Array<IArtist> = [
     {
         paramName: 'hasso-ewing',
         name: 'Hasso Ewing',
-        images: [],
+        videos: [
+            {
+                src: 'hasso-ewing/video.mov'
+            }
+        ],
+        images: [
+            {
+                src: 'hasso-ewing/dancers.jpg',
+                text: 'dancers'
+            },
+            {
+                src: 'hasso-ewing/swimmers.jpg',
+                text: 'swimmers'
+            },
+            {
+                src: 'hasso-ewing/detail2.jpg',
+                text: 'swimmers (detail)'
+            },
+            {
+                src: 'hasso-ewing/swimmer.jpg',
+                text: 'swimmer'
+            },
+            {
+                src: 'hasso-ewing/bird.jpg',
+                text: 'bird'
+            },
+            {
+                src: 'hasso-ewing/bust.jpg',
+                text: 'bust'
+            },
+            {
+                src: 'hasso-ewing/green-caped-swimmer.jpg',
+                text: 'green caped swimmer'
+            },
+            {
+                src: 'hasso-ewing/farmer.jpg',
+                text: 'farmer'
+            },
+            {
+                src: 'hasso-ewing/lobsterman.jpg',
+                text: 'lobsterman'
+            },
+            {
+                src: 'hasso-ewing/menorah.jpg',
+                text: 'menorah'
+            },
+            {
+                src: 'hasso-ewing/diorama.jpg',
+                text: 'diorama'
+            }
+        ],
         instagram: {
             handle: '@hasso.ewing',
             link: 'https://www.instagram.com/hasso.ewing'

@@ -10,12 +10,18 @@ export interface IImage {
     position?: string;
 }
 
+export interface IVideo {
+    src: string;
+    text?: string;
+}
+
 export interface IArtist {
     paramName: string;
     name: string;
     website?: string;
     instagram?: IInstagram;
     images: Array<IImage>;
+    videos?: Array<IVideo>;
     bio?: Array<string>;
     isNotMember?: boolean;
 }
