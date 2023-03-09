@@ -1,7 +1,9 @@
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
 import { useState } from "react";
+import { BiDonateHeart } from "react-icons/bi";
 import { BsEnvelopeOpen, BsInstagram } from 'react-icons/bs';
+import { PAYPAL_DONATE_LINK } from "../models/Paypal";
 import ContactForm from "./modals/ContactForm";
 
 const footerStyle = {
@@ -30,6 +32,10 @@ const Footer = () => {
                 <Button onClick={() => setIsContactFormOpen(!isContactFormOpen)}>
                     <BsEnvelopeOpen />
                     <Box sx={{ pl: 1 }}>{'Join Mailing List'}</Box>
+                </Button>
+                <Button onClick={() => window.open(PAYPAL_DONATE_LINK)}>
+                    <BiDonateHeart />
+                    <Box sx={{ pl: 1 }}>{'Donate'}</Box>
                 </Button>
             </Box>
             <Box justifyContent={'right'}>

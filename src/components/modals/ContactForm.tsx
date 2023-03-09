@@ -140,7 +140,12 @@ const ContactForm: React.FC<IContactFormProps> = ({ isOpen, setIsOpen }) => {
                                         onChange={(e) => handleChange(e)}
                                     />
                                 </Grid>
-                                <Button sx={{ width: '100%' }} type={'submit'} disabled={isSubmitted}>
+                                <Button
+                                    variant={'contained'}
+                                    sx={{ width: '100%' }}
+                                    type={'submit'}
+                                    disabled={isSubmitted}
+                                >
                                     {isSubmitted ? <CircularProgress /> : 'Submit'}
                                 </Button>
                             </form>

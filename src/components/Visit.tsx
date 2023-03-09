@@ -3,8 +3,10 @@ import Container from '@mui/material/Container';
 import Grid from '@mui/material/Grid';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
-import { Divider } from '@mui/material';
+import { Box, Divider } from '@mui/material';
 import ContactForm from './modals/ContactForm';
+import { PAYPAL_DONATE_LINK } from '../models/Paypal';
+import { BiDonateHeart } from 'react-icons/bi';
 
 export const NavItemVisit = 'Contact Us / Visit';
 
@@ -52,7 +54,14 @@ const Visit = () => {
                             <strong>{'Saturdays and Sundays: '}</strong>
                             {'11am - 5pm'}
                         </Typography>
-                        <Button onClick={() => setIsContactFormOpen(true)}>
+                        <Button
+                            onClick={() => setIsContactFormOpen(true)}
+                            variant={'contained'}
+                            sx={{
+                                width: { xs: '100%', sm: '50%' },
+                                mt: 1
+                            }}
+                        >
                             {'Join our mailing list'}
                         </Button>
 
@@ -89,14 +98,15 @@ const Visit = () => {
                         <Typography variant={'body1'} alignItems={'center'} sx={{ display: 'flex', flexDirection: 'column' }}>
                             {'If you would like to make a donation to The Front, use the link below. We appreciate your generosity and look forward to seeing you soon. Thank you!'}
                             <Button
-                                onClick={() => window.open('https://www.paypal.com/donate/?hosted_button_id=QRX486T87D45G')}
+                                onClick={() => window.open(PAYPAL_DONATE_LINK)}
                                 variant={'contained'}
                                 sx={{
-                                    width: '50%',
+                                    width: { xs: '100%', sm: '50%' },
                                     mt: 1
                                 }}
                             >
-                                {'Donate'}
+                                <BiDonateHeart />
+                                <Box sx={{ pl: 1 }}>{'Donate'}</Box>
                             </Button>
                         </Typography>
                         <Divider sx={{ display: { md: 'none' }, my: 5 }} />
