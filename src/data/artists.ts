@@ -590,7 +590,11 @@ export const artists: Array<IArtist> = [
             "Melora has been living in Vermont since 1998. She teaches at a nursery school and lives with her partner on some land that they garden together.",
             "Janet Wormser, a local artist, taught her the basics of oil painting and through her example the way an artist can work carefully to give the art emotional energy.",
             "Melora has shown her work in Montpelier at The Drawing Board, and J Langdon, as well as the Front."
-        ]
+        ],
+        instagram: {
+            handle: '@melorakennedy',
+            link: 'https://www.instagram.com/melorakennedy/'
+        }
     },
     {
         isNotMember: true,
