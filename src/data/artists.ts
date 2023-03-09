@@ -454,7 +454,9 @@ export const artists: Array<IArtist> = [
         images: [
             {
                 src: 'kathy-stark/connection-with-past.jpg',
-                text: 'A Loss of Connection with the Past'
+                text: 'A Loss of Connection with the Past',
+                scale: 3,
+                position: '90% 0%'
             },
             {
                 src: 'kathy-stark/moment-rich-possibilities.jpg',
