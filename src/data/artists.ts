@@ -451,11 +451,34 @@ export const artists: Array<IArtist> = [
     {
         paramName: 'kathy-stark',
         name: 'Kathy Stark',
-        images: [],
+        images: [
+            {
+                src: 'kathy-stark/connection-with-past.jpg',
+                text: 'A Loss of Connection with the Past'
+            },
+            {
+                src: 'kathy-stark/moment-rich-possibilities.jpg',
+                text: 'The Moment Was Rich with Possibilities'
+            },
+            {
+                src: 'kathy-stark/stories-from-heart.jpg',
+                text: 'Stories From the Heart'
+            },
+            {
+                src: 'kathy-stark/take-breath-away.jpg',
+                text: 'You Take My Breathe Away'
+            }
+        ],
         instagram: {
             handle: '@kstark2102',
             link: 'https://www.instagram.com/kstark2102/'
-        }
+        },
+        bio: [
+            'I am an abstract artist. I grew up in a small town along the Hudson River. As soon as possible I moved to New York City.I lived in New York City until 1988 when I moved to Nantucket Island then on to the Northeast Kingdom of Vermont in 2000.',
+            'I had an established career as an artist in New York City. I was represented in numerous public and private collections; I exhibited in the SOHO Center and was represented in the O.K. Harris Warehouse. While on Nantucket I was represented by the Sun Gallery and later the Main Street Gallery both of which no longer exist. Currently on Nantucket I am represented by the India Street Gallery. In New York I am represented by SOHO 20 Gallery.',
+            'Since the 1970\'s I have been using repeat imagery and repeat marks to create my paintings. I have used a variety of mediums in my work, ink, watercolor, collage, oi paint, acrylic, encaustic, rice paper and markers. My repeat marks have been made with rubber stamps, words, runic symbols, lines, checker boards and dots. ',
+            'Since moving to Vermont I have continued to show regionally and nationally; National Association of Women Artists, SOHO 20, India Street Gallery, AVA, the Southern Vermont Art Center, SPA, Miller\'s Thumb, the Current, the Front.'
+        ]
     },
     {
         isNotMember: true,
