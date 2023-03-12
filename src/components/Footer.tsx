@@ -9,7 +9,7 @@ import ContactForm from "./modals/ContactForm";
 const footerStyle = {
     p: 2,
     display: 'flex',
-    flexDirection: 'row',
+    flexDirection: { xs: 'column', sm: 'row' },
     background: 'lightgray'
 };
 
@@ -22,7 +22,7 @@ const Footer = () => {
             alignItems={'center'}
             sx={footerStyle}
         >
-            <Box justifyContent={'left'}>
+            <Box>
                 <Button
                     onClick={() => window.open('https://www.instagram.com/gallerythefront')}
                 >

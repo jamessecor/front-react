@@ -7,6 +7,7 @@ import { Box, Divider } from '@mui/material';
 import ContactForm from './modals/ContactForm';
 import { PAYPAL_DONATE_LINK } from '../models/Paypal';
 import { BiDonateHeart } from 'react-icons/bi';
+import Hours from './Hours';
 
 export const NavItemVisit = 'Contact Us / Visit';
 
@@ -42,18 +43,8 @@ const Visit = () => {
                         </Button>
 
                         <Divider sx={{ my: 5 }} />
+                        <Hours />
 
-                        <Typography variant={'h5'} sx={{ pb: 1 }}>
-                            {'Regular Hours:'}
-                        </Typography>
-                        <Typography variant={'body1'}>
-                            <strong>{'Fridays: '}</strong>
-                            {'4-7pm'}
-                        </Typography>
-                        <Typography variant={'body1'}>
-                            <strong>{'Saturdays and Sundays: '}</strong>
-                            {'11am - 5pm'}
-                        </Typography>
                         <Button
                             onClick={() => setIsContactFormOpen(true)}
                             variant={'contained'}

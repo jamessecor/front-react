@@ -1,15 +1,14 @@
 import * as React from 'react';
-import { useMemo } from 'react';
-import { useTheme } from '@mui/material/styles';
+
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
-import Stepper from './Stepper';
 import useImages from '../hooks/useImages';
-import { shows } from '../data/shows';
-import './Home.css';
 import { useNavigate } from 'react-router-dom';
 import ButtonBase from '@mui/material/ButtonBase';
 import Stack from '@mui/material/Stack';
+import './Home.css';
+import Link from '@mui/material/Link';
+import Hours from './Hours';
 
 export const NavItemHome = 'Home';
 
@@ -28,8 +27,12 @@ const Home = () => {
             {currentShow?.displayName}
           </Typography>
           <img className={'image-home'} src={getFullImagePath(currentShowFeaturedImage?.src ?? '', 'shows')} />
+          <Link textAlign={'center'} variant={'body1'} sx={{ py: 1 }}>
+            {'Click to see more'}
+          </Link>
         </Stack>
       </ButtonBase>
+      <Hours alignment={'center'} />
     </Container>
   )
 }
