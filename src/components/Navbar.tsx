@@ -18,10 +18,11 @@ import { NavItemArtists } from './Artists';
 import { NavItemShows } from './Shows';
 import { NavItemVisit } from './Visit';
 import { NavItemInsta } from './Insta';
+import { NavItemAboutUs } from './AboutUs';
 import Footer from './Footer';
 import { BsInstagram } from 'react-icons/bs';
 
-const pages: Array<string> = [NavItemHome, NavItemArtists, NavItemShows, NavItemVisit];
+const pages: Array<string> = [NavItemHome, NavItemArtists, NavItemShows, NavItemVisit, NavItemAboutUs];
 
 const getRouteFromPage = (page: string) => {
     switch (page) {
@@ -35,6 +36,8 @@ const getRouteFromPage = (page: string) => {
             return '/visit';
         case NavItemInsta:
             return '/instagram';
+        case NavItemAboutUs:
+            return '/about';
         default:
             return '/';
     }
