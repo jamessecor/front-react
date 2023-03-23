@@ -543,11 +543,11 @@ export const artists: Array<IArtist> = [
         name: "Melora Kennedy",
         images: [
             {
-                src: 'melora-kennedy/2020-12-13_10.44.29.jpg',
+                src: 'melora-kennedy/2020-12-13_10.45.14_4000.jpg',
                 text: ''
             },
             {
-                src: 'melora-kennedy/2020-12-13_10.45.14_4000.jpg',
+                src: 'melora-kennedy/2020-12-13_10.44.29.jpg',
                 text: ''
             },
             {
