@@ -27,17 +27,17 @@ const Artists = () => {
                         sx={{ display: 'flex', flexDirection: 'column' }}
                     >
                         <ButtonBase onClick={() => navigateTo(`/artists/${artist.paramName}`)}>
-                            {artist.images.length
+                            {artist.thumbnail
                                 ? (
                                     <Box className={'artists-image-wrapper'}>
                                         <img
                                             className={'artists-image'}
                                             style={{ 
-                                                transform: artist.images[0].scale ? `scale(${artist.images[0].scale})` : '',
-                                                objectPosition: artist.images[0].position ?? '' 
+                                                transform: artist.thumbnail.scale ? `scale(${artist.thumbnail.scale})` : '',
+                                                objectPosition: artist.thumbnail.position ?? ''
                                             }}
                                             alt={'no image available'}
-                                            src={`${process.env.REACT_APP_URL}/images/artists/${artist.images[0].src}`}
+                                            src={`${process.env.REACT_APP_URL}/images/artists/${artist.thumbnail.src}`}
                                         />
                                     </Box>
                                 )

@@ -5,6 +5,10 @@ export const artists: Array<IArtist> = [
         paramName: 'anne-cobgill-rose',
         name: "Anne Cogbill Rose",
         website: 'https://annecogbillrose.com',
+        thumbnail: {
+            src: 'anne-cogbill-rose/1arose_BoyandPigeons (Phone).jpeg',
+            position: 'bottom'
+        },
         images: [
             {
                 src: 'anne-cogbill-rose/1arose_BoyandPigeons.jpeg',
@@ -26,6 +30,9 @@ export const artists: Array<IArtist> = [
     {
         paramName: 'cheryl-betz',
         name: "Cheryl Betz",
+        thumbnail: {
+            src: 'cheryl-betz/flowers-fall-II (Phone).jpg'
+        },
         images: [
             {
                 src: 'cheryl-betz/flowers-fall-II.jpg',
@@ -79,6 +86,10 @@ export const artists: Array<IArtist> = [
     {
         paramName: 'chip-haggerty',
         name: "Chip Haggerty",
+        thumbnail: {
+            src: 'chip-haggerty/chip1 (Phone).jpg',
+            position: 'left'
+        },
         images: [
             { src: 'chip-haggerty/chip1.jpg' },
             { src: 'chip-haggerty/chip2.jpg' },
@@ -119,6 +130,9 @@ export const artists: Array<IArtist> = [
     {
         paramName: 'delia-robinson',
         name: 'Delia Robinson',
+        thumbnail: {
+            src: 'delia-robinson/MoonBowsDownNativity (Phone).jpeg',
+        },
         images: [
             {
                 src: 'delia-robinson/MoonBowsDownNativity.jpeg',
@@ -164,6 +178,9 @@ export const artists: Array<IArtist> = [
     {
         paramName: 'diane-sophrin',
         name: 'Diane Sophrin',
+        thumbnail: {
+            src: 'diane-sophrin/Two-sided_Gift__Verso (Phone).jpg',
+        },
         images: [
             {
                 src: 'diane-sophrin/Two-sided_Gift__Verso.jpg',
@@ -196,6 +213,9 @@ export const artists: Array<IArtist> = [
     {
         paramName: 'elizabeth-nelson',
         name: 'Elizabeth Nelson',
+        thumbnail: {
+            src: 'elizabeth-nelson/fast-freeze (Phone).jpg',
+        },
         images: [
             {
                 src: 'elizabeth-nelson/fast-freeze.jpg',
@@ -248,6 +268,9 @@ export const artists: Array<IArtist> = [
     {
         paramName: 'glen-coburn-hutcheson',
         name: 'Glen Coburn Hutcheson',
+        thumbnail: {
+            src: 'glen-coburn-hutcheson/22.12josieinthecoldsun912 (Phone).jpg',
+        },
         images: [
             {
                 src: 'glen-coburn-hutcheson/22.12josieinthecoldsun912.jpg',
@@ -302,6 +325,9 @@ export const artists: Array<IArtist> = [
                 src: 'hasso-ewing/video.mov'
             }
         ],
+        thumbnail: {
+            src: 'hasso-ewing/dancers (Phone).jpg',
+        },
         images: [
             {
                 src: 'hasso-ewing/dancers.jpg',
@@ -366,14 +392,34 @@ export const artists: Array<IArtist> = [
     {
         paramName: 'james-secor',
         name: "James Secor",
+        thumbnail: {
+            src: 'james-secor/92 (Phone).jpg',
+            position: 'bottom'
+        },
         images: [
             {
-                src: 'james-secor/summer-porch.jpg',
-                text: 'Summer Porch, gouache on paper, 2021'
+                src: 'james-secor/92.jpg',
+                text: 'animal mug, dish, and glass XI, gouache on paper, 2019'
             },
             {
                 src: 'james-secor/hoping-for-better-water.jpg',
                 text: 'Hoping For Better Water, acrylic on panel, 2021'
+            },
+            {
+                src: 'james-secor/hold_us_apart.jpg',
+                text: 'Intricate Purposeful Structures Hold Us Apart, acrylic on panel, 2021'
+            },
+            {
+                src: 'james-secor/FadingLight2016.jpg',
+                text: 'Fading Light, acrylic on panel, 2016'
+            },
+            {
+                src: 'james-secor/selfieSeries.jpg',
+                text: 'Documenting (Selfie Series) - [detail 3], graphite on matboard, 2017'
+            },
+            {
+                src: 'james-secor/summer-porch.jpg',
+                text: 'Summer Porch, gouache on paper, 2021'
             },
             {
                 src: 'james-secor/04.JPG',
@@ -394,6 +440,9 @@ export const artists: Array<IArtist> = [
     {
         paramName: 'kate-fetherston',
         name: 'Kate Fetherston',
+        thumbnail: {
+            src: 'kate-fetherston/IMG_0563 (Phone).jpg',
+        },
         images: [
             {
                 src: 'kate-fetherston/IMG_0563.jpg',
@@ -451,6 +500,11 @@ export const artists: Array<IArtist> = [
     {
         paramName: 'kathy-stark',
         name: 'Kathy Stark',
+        thumbnail: {
+            src: 'kathy-stark/connection-with-past (Phone).jpg',
+            scale: 3,
+            position: '90% 0%'
+        },
         images: [
             {
                 src: 'kathy-stark/connection-with-past.jpg',
@@ -495,6 +549,9 @@ export const artists: Array<IArtist> = [
     {
         paramName: 'marjorie-kramer',
         name: "Marjorie Kramer",
+        thumbnail: {
+            src: 'marjorie-kramer/secret-peek (Phone).jpeg',
+        },
         images: [
             {
                 src: 'marjorie-kramer/secret-peek.jpeg',
@@ -541,6 +598,9 @@ export const artists: Array<IArtist> = [
     {
         paramName: 'melora-kennedy',
         name: "Melora Kennedy",
+        thumbnail: {
+            src: 'melora-kennedy/2020-12-13_10.45.14_4000 (Phone).jpg',
+        },
         images: [
             {
                 src: 'melora-kennedy/2020-12-13_10.45.14_4000.jpg',
@@ -602,11 +662,7 @@ export const artists: Array<IArtist> = [
         isNotMember: true,
         paramName: 'monica-digiovanni',
         name: 'Monica Digiovanni',
-        images: [
-            {
-                src: 'melora-kennedy/apples-and-flowers.jpg'
-            }
-        ],
+        images: [],
         instagram: {
             handle: '@laughing_violet',
             link: 'https://www.instagram.com/laughing_violet'
@@ -621,6 +677,10 @@ export const artists: Array<IArtist> = [
     {
         paramName: 'ned-richardson',
         name: 'Ned Richardson',
+        thumbnail: {
+            src: 'ned-richardson/untitled_with_3phrases (Phone).jpg',
+            scale: 1.5
+        },
         images: [
             {
                 src: 'ned-richardson/untitled_with_3phrases.jpg',
@@ -670,6 +730,9 @@ export const artists: Array<IArtist> = [
             handle: '@richard_w_moore_photography',
             link: 'https://www.instagram.com/richard_w_moore_photography/'
         },
+        thumbnail: {
+            src: 'richard-moore/back-of-state-and-main (Phone).jpg',
+        },
         images: [
             {
                 src: 'richard-moore/back-of-state-and-main.jpg'
@@ -689,6 +752,10 @@ export const artists: Array<IArtist> = [
     {
         paramName: 'sam-thurston',
         name: 'Sam Thurston',
+        thumbnail: {
+            src: 'sam-thurston/1 (Phone).jpg',
+            position: 'top'
+        },
         images: [
             {
                 src: 'sam-thurston/1.jpg',

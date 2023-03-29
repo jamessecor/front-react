@@ -20,6 +20,7 @@ export interface IArtist {
     name: string;
     website?: string;
     instagram?: IInstagram;
+    thumbnail?: IImage;
     images: Array<IImage>;
     videos?: Array<IVideo>;
     bio?: Array<string>;
