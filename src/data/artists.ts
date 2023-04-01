@@ -430,7 +430,7 @@ export const artists: Array<IArtist> = [
             handle: '@jamessecor',
             link: 'https://www.instagram.com/jamessecor/'
         },
-        website: 'jamessecor.com',
+        website: 'https://jamessecor.com',
         bio: [
             "I grew up in Eastern Kentucky and have lived in Montpelier, VT for the last 10 years. Most of my painting experience over the years has been exploring color relationships and developing my own vocabulary of form, using sketches as a starting point. More recently, I have found more of my voice in terms of subject matter as well. For example, I spent over a year thinking about our interactions with cell phones, making paintings and drawings, which culminated in a show called #nomophobia.",
             "My work comes alive through juxtaposition; it's about the interplay of forces on a flat surface. The search for beauty and variation within that premise is what keeps me painting. Inside the four walls of the rectangle, lines, colors, and shapes all interact with one another to create a whole. For me, the intrigue of each of my works stems from the harmony, conflict, or interplay of each of these elements. ",
