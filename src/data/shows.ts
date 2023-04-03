@@ -2,6 +2,24 @@ import { IShow } from "../models/Show";
 
 export const shows: Array<IShow> = [
     {
+        name: '54',
+        number: 54,
+        displayName: 'Show 54',
+        featuredImage: {
+            src: '2023-04/featured.jpg',
+            text: 'Delia Robinson - Moose on the Roof'
+        },
+        description: [
+            '<strong>Opening: Friday, April 7th, 4-8 PM</strong>',
+            'Join us for Show 54 at The Front this month, opening for Montpelier Art Walk on Friday, April 7th, from 4 to 8 PM. Show 54 will be open through Sunday, April 30th, every Friday from 4 to 7 and Saturday-Sunday 11 to 5, or by appointment.',
+            'Thanks to everyone who came out to see March\'s solo show, Elizabeth Nelson: North, including the lively crowd at the artist\'s talk.',
+            'This month we\'ll be hosting several more events on Thursday evenings:',
+            '- Rabbit&Wolf monthly poetry reading featuring Bob Messing and Vini K.D., Thursday 4/13, 6:30 - 8:00',
+            '- Rick Agran\'s poetry and art event Ekphrasis, Thursday 4/20, 6:30 - 8:00',
+            '- Delia Robinson\'s double-feature Crankie show, Thursday 4/27, 7:00 - 8:00'
+        ]
+    },
+    {
         name: 'elizabeth-nelson-north',
         number: 53,
         displayName: 'Elizabeth Nelson: NORTH',

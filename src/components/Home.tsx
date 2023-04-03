@@ -21,17 +21,25 @@ const Home = () => {
       <Typography textAlign={'center'} variant={'h6'}>
         {'Currently on view at the Front: '}
       </Typography>
-      <ButtonBase onClick={() => navigateTo(`/shows/${currentShow.name}`)}>
-        <Stack direction={'column'}>
-          <Typography textAlign={'center'} variant={'h3'}>
-            {currentShow?.displayName}
-          </Typography>
-          <img className={'image-home'} src={getFullImagePath(currentShowFeaturedImage?.src ?? '', 'shows')} />
-          <Link textAlign={'center'} variant={'body1'} sx={{ py: 1 }}>
-            {'Click to see more'}
-          </Link>
-        </Stack>
-      </ButtonBase>
+      <Stack alignItems={'center'} direction={'column'}>
+        <ButtonBase onClick={() => navigateTo(`/shows/${currentShow.name}`)}>
+          <Stack alignItems={'center'} direction={'column'}>
+            <Typography textAlign={'center'} variant={'h3'}>
+              {currentShow?.displayName}
+            </Typography>
+            <img className={'image-home'} src={getFullImagePath(currentShowFeaturedImage?.src ?? '', 'shows')} />
+            {currentShowFeaturedImage?.text
+              ? (
+                <Typography variant={'body2'}>
+                  {currentShowFeaturedImage.text}
+                </Typography>
+              ) : null}
+            <Link textAlign={'center'} variant={'body1'} sx={{ py: 1 }}>
+              {'Click to see more'}
+            </Link>
+          </Stack>
+        </ButtonBase>
+      </Stack>
       <Hours alignment={'center'} />
     </Container>
   )
