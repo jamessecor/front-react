@@ -5,6 +5,7 @@ export const shows: Array<IShow> = [
         name: '54',
         number: 54,
         displayName: 'Show 54',
+        startDate: new Date(new Date('2023-04-07').setHours(24,0,0,0)),
         featuredImage: {
             src: '2023-04/featured.jpg',
             text: 'Delia Robinson - Moose on the Roof'

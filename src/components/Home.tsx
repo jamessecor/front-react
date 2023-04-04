@@ -1,5 +1,3 @@
-import * as React from 'react';
-
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import useImages from '../hooks/useImages';
@@ -15,11 +13,14 @@ export const NavItemHome = 'Home';
 const Home = () => {
   const { getFullImagePath, currentShow, currentShowFeaturedImage } = useImages();
   const navigateTo = useNavigate();
+  const today = new Date();
 
   return (
     <Container>
       <Typography textAlign={'center'} variant={'h6'}>
-        {'Currently on view at the Front: '}
+        {currentShow.startDate && currentShow.startDate <= today
+          ? 'Currently on view at the Front: '
+          : `Opening ${currentShow.startDate?.toLocaleDateString('en-us', { weekday: 'long', month: 'long', day: 'numeric' })}`}
       </Typography>
       <Stack alignItems={'center'} direction={'column'}>
         <ButtonBase onClick={() => navigateTo(`/shows/${currentShow.name}`)}>
