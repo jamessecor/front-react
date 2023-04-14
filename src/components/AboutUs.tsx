@@ -33,7 +33,7 @@ const AboutUs = () => (
                         {'The Front is an artist-run cooperative gallery in Montpelier, Vermont. Through exhibitions, events, and activities, members provoke curiosity and community engagement with visual art.'}
                     </Typography>
 
-                    <Divider sx={{ my: 5 }} />
+                    {/* <Divider sx={{ my: 5 }} />
 
                     <Typography textAlign={'center'} variant={'h5'} sx={{ pb: 1 }}>
                         {'Equity'}
@@ -58,7 +58,7 @@ const AboutUs = () => (
                             {'Action:'}
                         </Typography>
                         {'We have formed an Equity Committee to continue to look at the ways the Front can increase our equitable impact at large. We continue to discern what we have to offer our community in terms of our membership policies and procedures, addressing visibility of artists of color and partnering with other art organizations to increase outreach towards marginalized communities and create offerings which address reparation and equity for all.'}
-                    </Typography>
+                    </Typography> */}
                 </Grid>
             </Grid>
         </Container>
