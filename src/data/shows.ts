@@ -10,6 +10,17 @@ export const shows: Array<IShow> = [
             src: '2023-04/featured.jpg',
             text: 'Delia Robinson - Moose on the Roof'
         },
+        images: [
+            { src: '2023-04/01.jpg' },
+            { src: '2023-04/02.jpg' },
+            { src: '2023-04/03.jpg' },
+            { src: '2023-04/04.jpg' },
+            { src: '2023-04/05.jpg' },
+            { src: '2023-04/06.jpg' },
+            { src: '2023-04/07.jpg' },
+            { src: '2023-04/08.jpg' },
+            { src: '2023-04/09.jpg' }
+        ],
         description: [
             '<strong>Opening: Friday, April 7th, 4-8 PM</strong>',
             'Join us for Show 54 at The Front this month, opening for Montpelier Art Walk on Friday, April 7th, from 4 to 8 PM. Show 54 will be open through Sunday, April 30th, every Friday from 4 to 7 and Saturday-Sunday 11 to 5, or by appointment.',
@@ -35,7 +46,7 @@ export const shows: Array<IShow> = [
             { src: '2023-03/05.jpg' },
             { src: '2023-03/06.jpg' },
             { src: '2023-03/07.jpg' },
-            { src: '2023-03/08.jpg' },
+            { src: '2023-03/08.jpg' }
         ],
         description: [
             '<strong>March 3 - April 2, 2023</strong>',

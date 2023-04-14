@@ -67,6 +67,7 @@ const Show = () => {
                         >
                             {show.description.map((paragraph) => (
                                 <Typography
+                                    key={paragraph.substring(10)}
                                     variant={'body1'}
                                     sx={{ pb: 2 }}
                                 >
@@ -90,7 +91,7 @@ const Show = () => {
                             images={show.images}
                             imageFolder='shows'
                             numberToDisplay={2.2}
-                            spacing={0}
+                            spacing={45}
                         />
                     </Grid>
                 )}
