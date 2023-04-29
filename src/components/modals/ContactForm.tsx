@@ -93,9 +93,23 @@ const ContactForm: React.FC<IContactFormProps> = ({ isOpen, setIsOpen }) => {
                                     </React.Fragment>
                                 )
                                 : (
-                                    <Typography variant={'body1'}>
-                                        'We were unable to collect your info. Please refresh and try again. Thanks!'
-                                    </Typography>
+                                    <Grid>
+                                        <Typography variant={'body1'}>
+                                            {'We were unable to collect your info. Please refresh and try again. Thanks!'}
+                                        </Typography>
+                                        <Typography variant={'body1'}>
+                                            <Button
+                                                variant={'contained'}
+                                                sx={{ width: '100%' }}
+                                                onClick={() => {
+                                                    setResponseStatus(null);
+                                                    setIsSubmitted(false);
+                                                }}
+                                            >
+                                                {'Retry'}
+                                            </Button>
+                                        </Typography>
+                                    </Grid>
                                 )}
                         </React.Fragment>
                     ) : (
