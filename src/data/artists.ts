@@ -111,6 +111,7 @@ export const artists: Array<IArtist> = [
         ]
     },
     {
+        isNotMember: true,
         paramName: 'daryl-burtnett',
         name: "Daryl Burtnett",
         images: [],

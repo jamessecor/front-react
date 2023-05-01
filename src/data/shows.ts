@@ -2,10 +2,27 @@ import { IShow } from "../models/Show";
 
 export const shows: Array<IShow> = [
     {
+        name: 'chip-haggerty-thank-you-notes',
+        number: 54.1,
+        displayName: 'Chip Haggerty: Thank You Notes',
+        startDate: new Date(new Date('2023-05-05').setHours(24, 0, 0, 0)),
+        featuredImage: {
+            src: '2023-05/featured.jpg'
+        },
+        description: [
+            '<strong>May 5-May 28, 2023</strong>',
+            '<strong>Opening Reception: Friday May 5, 4-7 PM</strong>',
+            '<strong>Artist\'s Talk:, May 25, 6-7 PM</strong',
+            'Stowe artist Chip Haggerty sends really big thank you notes. His series of “Thank You Notes” is being shown through the month of May at The Front in Montpelier. The notes, often six feet long or tall, are exuberantly painted and scrawled on brown bag paper.',
+            'The series began with a note to a relative “to thank her for putting us up and putting up with us.” That first note, full of color and wit, also began his career as a painter.',
+            'Haggerty grew up on Long Island and went to school in New England, which led him to Stowe, where he has lived for the past 45 years. “I have mostly waited on tables,” Haggerty says, "but did do a short stint preparing meals for Maria Von Trapp and her companion, as well as making granola at the health food store."'
+        ]
+    },
+    {
         name: '54',
         number: 54,
         displayName: 'Show 54',
-        startDate: new Date(new Date('2023-04-07').setHours(24,0,0,0)),
+        startDate: new Date(new Date('2023-04-07').setHours(24, 0, 0, 0)),
         featuredImage: {
             src: '2023-04/featured.jpg',
             text: 'Delia Robinson - Moose on the Roof'
@@ -33,7 +50,7 @@ export const shows: Array<IShow> = [
     },
     {
         name: 'elizabeth-nelson-north',
-        number: 53,
+        number: 53.1,
         displayName: 'Elizabeth Nelson: NORTH',
         featuredImage: {
             src: '2023-03/featured.jpg'
