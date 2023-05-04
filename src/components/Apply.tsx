@@ -17,7 +17,7 @@ export const NavItemApply = 'Apply';
 const Apply = () => (
     <Container>
         <Stack justifyContent={'center'} sx={{ marginX: { xs: 1, sm: 2, md: 28 } }}>
-            <Typography align={'center'} variant={'h3'} sx={{ pb: 4 }}>
+            <Typography align={'center'} variant={'h3'} sx={{ pb: 1 }}>
                 {'Join Us!'}
             </Typography>
             <Typography align={'center'} variant={'h6'}>
@@ -116,7 +116,10 @@ const Apply = () => (
                     </ListItem>
                 </List>
                 <Typography align={'left'} variant={'body1'}>
-                    {'Tell us what excites you most about gallery membership, and what concerns you most. Do you think you can fulfill the expectations above? (Note that we will not turn away applicants for lack of ability to pay dues; you DO NOT need to tell us about your finances.)'}
+                    {'Tell us what excites you most about gallery membership, and what concerns you most. Do you think you can fulfill the expectations above?'}
+                </Typography>
+                <Typography align={'left'} variant={'body2'}>
+                    {'(Note that we will not turn away applicants for lack of ability to pay dues; you DO NOT need to tell us about your finances.)'}
                 </Typography>
             </Stack>
 
@@ -131,8 +134,12 @@ const Apply = () => (
                     </Typography>
                 </Stack>
             </Stack>
-            
-            <Divider sx={{ paddingTop: 3 }} />
+
+            <Typography align={'center'} variant={'h4'} sx={{ paddingTop: 3 }}>
+                {'After applying...'}
+            </Typography>
+
+            <Divider sx={{ paddingTop: 1 }} />
             <Stack direction={'row'}>
                 <Stack direction={'column'}>
                     <Typography align={'left'} variant={'h6'}>
@@ -143,7 +150,7 @@ const Apply = () => (
                     </Typography>
                 </Stack>
             </Stack>
-            
+
             <Divider sx={{ paddingTop: 3 }} />
             <Stack direction={'row'}>
                 <Stack direction={'column'}>
@@ -166,23 +173,44 @@ const Apply = () => (
                         <Typography align={'left'} variant={'body2'}>
                             {'The Front is an artist-run cooperative, structured as an L3C. That means members contribute the time, energy, and most of the funds to run everything. Being a member of the gallery means you are a part-owner of the Front. Nominal dues are $50/month, and the gallery takes a 15% commission on sales. The Front is committed to equity and inclusivity, and because of that we encourage all to apply for membership regardless of ability to pay. We gratefully accept additional donations from those with means to help us meet expenses.'}
                         </Typography>
-                        {/* <Typography align={'left'} variant={'body1'}>
-                            {'Our show schedule for 2023:
-    Chip Haggerty opening May 5, 4-7pm
-    Group Show #55 opening June 2, 4-8pm
-    Diane Sophrin opening July 7, 4-7pm
-    Group Show #56 opening August 4, 4-8pm
-    Marjorie Kramer opening September 1, 4-7pm
-    Group Show #57 opening October 6, 4-8pm
-    Delia Robinson opening November  3, 4-7pm
-    Group Show #58 opening Dec 1, 4-8pm
-    '}
-                        </Typography> */}
                     </Stack>
                 </Stack>
             </Stack>
+
+            <Divider sx={{ paddingTop: 3 }} />
+            <Stack>
+                <Typography align={'left'} variant={'h6'}>
+                    {'Our show schedule for 2023:'}
+                </Typography>
+                <List>
+                    <ListItem disableGutters>
+                        <ListItemText>{'Spend at least one 3-hour shift staffing the gallery every month'}</ListItemText>
+                    </ListItem>
+                    <ListItem disableGutters>
+                        <ListItemText>{'Group Show #55 opening June 2, 4-8pm'}</ListItemText>
+                    </ListItem>
+                    <ListItem disableGutters>
+                        <ListItemText>{'Diane Sophrin opening July 7, 4-7pm'}</ListItemText>
+                    </ListItem>
+                    <ListItem disableGutters>
+                        <ListItemText>{'Group Show #56 opening August 4, 4-8pm'}</ListItemText>
+                    </ListItem>
+                    <ListItem disableGutters>
+                        <ListItemText>{'Marjorie Kramer opening September 1, 4-7pm'}</ListItemText>
+                    </ListItem>
+                    <ListItem disableGutters>
+                        <ListItemText>{'Group Show #57 opening October 6, 4-8pm'}</ListItemText>
+                    </ListItem>
+                    <ListItem disableGutters>
+                        <ListItemText>{'Delia Robinson opening November  3, 4-7pm'}</ListItemText>
+                    </ListItem>
+                    <ListItem disableGutters>
+                        <ListItemText>{'Group Show #58 opening Dec 1, 4-8pm'}</ListItemText>
+                    </ListItem>
+                </List>
+            </Stack>
         </Stack>
-    </Container>
+    </Container >
 );
 
 export default Apply;
