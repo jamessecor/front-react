@@ -7,7 +7,8 @@ export const shows: Array<IShow> = [
         displayName: 'Chip Haggerty: Thank You Notes',
         startDate: new Date(new Date('2023-05-05').setHours(24, 0, 0, 0)),
         featuredImage: {
-            src: '2023-05/featured.jpg'
+            src: '2023-05/featured.jpg',
+            text: 'Chip Haggerty, Big Maize, acrylic and crayon on paper, 8.5\' x 4.5\', 2019'
         },
         description: [
             '<strong>May 5-May 28, 2023</strong>',
