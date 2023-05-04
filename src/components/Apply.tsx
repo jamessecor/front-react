@@ -67,7 +67,10 @@ const Apply = () => (
                         {'Statement'}
                     </Typography>
                     <Typography align={'left'} variant={'body1'}>
-                        {'Tell us briefly about your art practice. If you don\'t have a statement ready to go, feel free to use these prompts: What do you make? Why?'}
+                        {'Tell us briefly about your art practice. If you don\'t have a statement ready to go, feel free to use these prompts:'}
+                    </Typography>
+                    <Typography align={'left'} variant={'body1'}>
+                        {'What do you make? Why?'}
                     </Typography>
                 </Stack>
             </Stack>
@@ -79,7 +82,10 @@ const Apply = () => (
                         {'Bio'}
                     </Typography>
                     <Typography align={'left'} variant={'body1'}>
-                        {'Tell us a little about yourself. If you don\'t have a bio ready to go, feel free to use these prompts: Who are you? Who are your people?'}
+                        {'Tell us a little about yourself. If you don\'t have a bio ready to go, feel free to use these prompts:'}
+                    </Typography>
+                    <Typography align={'left'} variant={'body1'}>
+                        {'Who are you? Who are your people?'}
                     </Typography>
                 </Stack>
             </Stack>
@@ -168,7 +174,10 @@ const Apply = () => (
                             {'The Front Gallery started in its present form in May 2015 as an artist-run co-op gallery. Before then the space was shared by [current member] Glen Coburn Hutcheson\'s studio and a visual art space called Gallery 6, both of which gave way to The Front. At first, there were only group shows, first every six weeks, then every month. Then in the spring of 2020 we started alternating one-person shows with group shows.'}
                         </Typography>
                         <Typography align={'left'} variant={'body2'}>
-                            {'The space features two large street-facing windows and plenty of walk-in traffic, and is always lively during Montpelier Art Walks. Since the early days of the pandemic, we\'ve put up a new show every month, featuring all members\' work in six group exhibitions alternating with six solo shows each year. With membership ranging between 12 and 24 members, we schedule solo shows up to 3 years out. Members also use the gallery as desired for events including artist talks, performances, movie nights, and critiques.'}
+                            {'The space features two large street-facing windows and plenty of walk-in traffic, and is always lively during Montpelier Art Walks. Since the early days of the pandemic, we\'ve put up a new show every month, featuring all members\' work in six group exhibitions alternating with six solo shows each year. With membership ranging between 12 and 24 members, we schedule solo shows up to 3 years out. Members also use the gallery as desired for events including artist talks, performances, movie nights, and critiques. New members meet soon after admission to schedule their one-person shows, which may be booked 1-3 years out.'}
+                        </Typography>
+                        <Typography align={'left'} variant={'body2'}>
+                            {'The gallery is well integrated into the area arts world and solo shows are well received.'}
                         </Typography>
                         <Typography align={'left'} variant={'body2'}>
                             {'The Front is an artist-run cooperative, structured as an L3C. That means members contribute the time, energy, and most of the funds to run everything. Being a member of the gallery means you are a part-owner of the Front. Nominal dues are $50/month, and the gallery takes a 15% commission on sales. The Front is committed to equity and inclusivity, and because of that we encourage all to apply for membership regardless of ability to pay. We gratefully accept additional donations from those with means to help us meet expenses.'}
@@ -184,7 +193,7 @@ const Apply = () => (
                 </Typography>
                 <List>
                     <ListItem disableGutters>
-                        <ListItemText>{'Spend at least one 3-hour shift staffing the gallery every month'}</ListItemText>
+                        <ListItemText>{'Chip Haggerty opening May 5, 4-7pm'}</ListItemText>
                     </ListItem>
                     <ListItem disableGutters>
                         <ListItemText>{'Group Show #55 opening June 2, 4-8pm'}</ListItemText>
