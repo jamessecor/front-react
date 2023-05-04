@@ -9,8 +9,9 @@ import Shows from './components/Shows';
 import Visit from './components/Visit';
 import Insta from './components/Insta';
 import Show from './components/Show';
-import './App.css';
 import AboutUs from './components/AboutUs';
+import Apply from './components/Apply';
+import './App.css';
 
 const App = () => {
   return (
@@ -27,6 +28,7 @@ const App = () => {
               <Route element={<Visit />} path={'/visit'} />
               <Route element={<AboutUs />} path={'/about'} />
               <Route element={<Insta />} path={'/instagram'} />
+              <Route element={<Apply />} path={'/apply'} />
               <Route element={<Home />} path={'*'} />
             </Route>
           </Routes>
