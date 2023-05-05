@@ -17,19 +17,26 @@ export const NavItemApply = 'Apply';
 const Apply = () => (
     <Container>
         <Stack justifyContent={'center'} sx={{ marginX: { xs: 1, sm: 2, md: 28 } }}>
-            <Typography align={'center'} variant={'h3'} sx={{ pb: 1 }}>
-                {'Join Us!'}
-            </Typography>
-            <Typography align={'center'} variant={'h6'}>
-                {'Thanks for considering membership at The Front!'}
-            </Typography>
-            <Typography align={'center'} variant={'h6'} sx={{ pb: 4 }}>
-                {'To apply, please send an email to'}
-                <Button variant={'text'} onClick={() => window.open('mailto:apply@thefrontvt.com')}>
-                    {'apply@thefrontvt.com'}
-                </Button>
-                {'with the following information:'}
-            </Typography>
+            <Stack direction={'row'} alignItems={'center'}>
+                <Box>
+                    <Typography align={'center'} variant={'h3'} sx={{ pb: 1 }}>
+                        {'Join Us!'}
+                    </Typography>
+                    <Typography align={'center'} variant={'h6'}>
+                        {'Thanks for considering membership at The Front!'}
+                    </Typography>
+                    <Typography align={'center'} variant={'h6'} sx={{ pb: 4 }}>
+                        {'To apply, please send an email to'}
+                        <Button variant={'text'} onClick={() => window.open('mailto:apply@thefrontvt.com')}>
+                            {'apply@thefrontvt.com'}
+                        </Button>
+                        {'with the following information:'}
+                    </Typography>
+                </Box>
+                <Box sx={{ width: '100%' }}>
+                    <img width={'100%'} src={`${process.env.REACT_APP_URL}/images/apply/sunnywindow.jpg`} />
+                </Box>
+            </Stack>
 
             <Divider />
             <Stack direction={'column'}>
@@ -67,10 +74,7 @@ const Apply = () => (
                         {'Statement'}
                     </Typography>
                     <Typography align={'left'} variant={'body1'}>
-                        {'Tell us briefly about your art practice. If you don\'t have a statement ready to go, feel free to use these prompts:'}
-                    </Typography>
-                    <Typography align={'left'} variant={'body1'}>
-                        {'What do you make? Why?'}
+                        {'Tell us briefly about your art practice.'}
                     </Typography>
                 </Stack>
             </Stack>
@@ -82,10 +86,7 @@ const Apply = () => (
                         {'Bio'}
                     </Typography>
                     <Typography align={'left'} variant={'body1'}>
-                        {'Tell us a little about yourself. If you don\'t have a bio ready to go, feel free to use these prompts:'}
-                    </Typography>
-                    <Typography align={'left'} variant={'body1'}>
-                        {'Who are you? Who are your people?'}
+                        {'Tell us a little about yourself.'}
                     </Typography>
                 </Stack>
             </Stack>
