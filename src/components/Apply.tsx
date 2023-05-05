@@ -17,11 +17,14 @@ export const NavItemApply = 'Apply';
 const Apply = () => (
     <Container>
         <Stack justifyContent={'center'} sx={{ marginX: { xs: 1, sm: 2, md: 28 } }}>
-            <Stack direction={'row'} alignItems={'center'}>
+            <Typography align={'center'} variant={'h3'} sx={{ pb: 1 }}>
+                {'Join Us!'}
+            </Typography>
+            <Stack direction={{ xs: 'column', md: 'row' }} alignItems={'center'}>
+                <Box sx={{ width: '100%' }}>
+                    <img width={'100%'} src={`${process.env.REACT_APP_URL}/images/apply/sunnywindow.jpg`} />
+                </Box>
                 <Box>
-                    <Typography align={'center'} variant={'h3'} sx={{ pb: 1 }}>
-                        {'Join Us!'}
-                    </Typography>
                     <Typography align={'center'} variant={'h6'}>
                         {'Thanks for considering membership at The Front!'}
                     </Typography>
@@ -32,9 +35,6 @@ const Apply = () => (
                         </Button>
                         {'with the following information:'}
                     </Typography>
-                </Box>
-                <Box sx={{ width: '100%' }}>
-                    <img width={'100%'} src={`${process.env.REACT_APP_URL}/images/apply/sunnywindow.jpg`} />
                 </Box>
             </Stack>
 
