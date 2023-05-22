@@ -152,9 +152,14 @@ const Apply = () => (
                     <Typography align={'left'} variant={'h6'}>
                         {'Follow-up'}
                     </Typography>
-                    <Typography align={'left'} variant={'body1'}>
-                        {'We\'ll send a confirmation of receipt within a day of your email submission. Once all applications are in, current members will meet in person to select invitees. A minimum of ¾ of current members must vote in favor for an applicant to be admitted. Since we have a broad variety of preference, this means it\'s difficult - and unpredictable - for any given applicant to be accepted. You can expect a final response by July 8th; successful applicants will be encouraged to submit work for our Group Show opening August 4th. Thanks very much for your interest and the time spent applying; we really appreciate the work and feeling that goes in.'}
-                    </Typography>
+                    <Stack spacing={1}>
+                        <Typography align={'left'} variant={'body1'}>
+                            <div dangerouslySetInnerHTML={{ __html: 'We\'ll send a confirmation of receipt within a day of your email submission. If you don\'t see a confirmation, contact Glen at <a target="_blank" href="mailto:glen@glencoburnhutcheson.com">glen@glencoburnhutcheson.com</a> to check in. Please don\'t assume your application has been received without confirmation.' }} />
+                        </Typography>
+                        <Typography align={'left'} variant={'body1'}>
+                            {'Once all applications are in, current members will meet in person to select invitees. A minimum of ¾ of current members must vote in favor for an applicant to be admitted. Since we have a broad variety of preference, this means it\'s difficult - and unpredictable - for any given applicant to be accepted. You can expect a final response by July 8th; successful applicants will be encouraged to submit work for our Group Show opening August 4th. Thanks very much for your interest and the time spent applying; we really appreciate the work and feeling that goes in.'}
+                        </Typography>
+                    </Stack>
                 </Stack>
             </Stack>
 
