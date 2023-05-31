@@ -2,6 +2,23 @@ import { IShow } from "../models/Show";
 
 export const shows: Array<IShow> = [
     {
+        name: '55',
+        number: 55,
+        displayName: 'Show 55',
+        startDate: new Date(new Date('2023-06-02').setHours(24, 0, 0, 0)),
+        featuredImage: {
+            src: '2023-06/featured.jpg',
+            text: 'Cheryl Betz, Short Story XLIV, mixed media, 12" x 12"'
+        },
+        description: [
+            '<strong>June 2 - July 2</strong>',
+            '<strong>Opening: Friday, June 2nd, 4-8 PM (Art Walk)</strong>',
+            'Join us for Show 55 at The Front this month, opening for Montpelier Art Walk on Friday, June 2nd, from 4 to 8 PM.',
+            'Show 55 will be open through Sunday, July 2nd, every Friday from 4 to 7 and Saturday-Sunday 11 to 5, or by appointment.',
+            'Thanks to everyone who came out to see Chip Haggerty\'s solo show last month.'
+        ]
+    },
+    {
         name: 'chip-haggerty-thank-you-notes',
         number: 54.1,
         displayName: 'Chip Haggerty: Thank You Notes',
