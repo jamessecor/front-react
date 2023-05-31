@@ -33,7 +33,10 @@ const Apply = () => (
                         <Button variant={'text'} onClick={() => window.open('mailto:apply@thefrontvt.com')}>
                             {'apply@thefrontvt.com'}
                         </Button>
-                        {'with the following information:'}
+                        {'with the information below.'}
+                    </Typography>
+                    <Typography align={'center'} variant={'body1'} sx={{ pb: 4 }}>
+                        {'The deadline to apply is June 17th.'}
                     </Typography>
                 </Box>
             </Stack>
