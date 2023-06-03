@@ -27,6 +27,18 @@ export const shows: Array<IShow> = [
             src: '2023-05/featured.jpg',
             text: 'Chip Haggerty, Big Maize, acrylic and crayon on paper, 8.5\' x 4.5\', 2019'
         },
+        images: [
+            { src: '2023-05/01.jpg' },
+            { src: '2023-05/02.jpg' },
+            { src: '2023-05/03.jpg' },
+            { src: '2023-05/04.jpg' },
+            { src: '2023-05/05.jpg' },
+            { src: '2023-05/06.jpg' },
+            { src: '2023-05/07.jpg' },
+            { src: '2023-05/08.jpg' },
+            { src: '2023-05/09.jpg' },
+            { src: '2023-05/10.jpg' }
+        ],
         description: [
             '<strong>May 5-May 28, 2023</strong>',
             '<strong>Opening Reception: Friday May 5, 4-7 PM</strong>',
