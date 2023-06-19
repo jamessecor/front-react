@@ -23,7 +23,7 @@ import { NavItemApply } from './Apply';
 import Footer from './Footer';
 import { BsInstagram } from 'react-icons/bs';
 
-const pages: Array<string> = [NavItemHome, NavItemArtists, NavItemShows, NavItemVisit, NavItemAboutUs, NavItemApply];
+const pages: Array<string> = [NavItemHome, NavItemArtists, NavItemShows, NavItemVisit, NavItemAboutUs];
 
 const getRouteFromPage = (page: string) => {
     switch (page) {
