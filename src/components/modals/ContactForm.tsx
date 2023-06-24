@@ -51,7 +51,7 @@ const ContactForm: React.FC<IContactFormProps> = ({ isOpen, setIsOpen }) => {
     const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
         setIsSubmitted(true);
-        const emailResponse = await axios.post(`${process.env.REACT_APP_API_BASE_URL}/api/front-email`, {
+        const emailResponse = await axios.post(`${import.meta.env.VITE_API_BASE_URL}/api/front-email`, {
             firstname: firstname,
             lastname: lastname,
             email: email,

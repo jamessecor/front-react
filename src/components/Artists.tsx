@@ -37,7 +37,7 @@ const Artists = () => {
                                                 objectPosition: artist.thumbnail.position ?? ''
                                             }}
                                             alt={'no image available'}
-                                            src={`${process.env.REACT_APP_URL}/images/artists/${artist.thumbnail.src}`}
+                                            src={`${import.meta.env.VITE_URL}/images/artists/${artist.thumbnail.src}`}
                                         />
                                     </Box>
                                 )

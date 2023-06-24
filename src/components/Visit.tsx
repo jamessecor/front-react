@@ -110,7 +110,7 @@ const Visit = () => {
                         md={6}
                         sx={{ px: 2 }}
                     >
-                        <img width={'100%'} src={`${process.env.PUBLIC_URL}/images/gallery/gallery-view.jpeg`} alt={'Visit Us'} />
+                        <img width={'100%'} src={`${import.meta.env.PUBLIC_URL}/images/gallery/gallery-view.jpeg`} alt={'Visit Us'} />
                     </Grid>
                 </Grid>
             </Container>

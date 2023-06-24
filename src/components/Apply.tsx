@@ -22,7 +22,7 @@ const Apply = () => (
             </Typography>
             <Stack direction={{ xs: 'column', md: 'row' }} alignItems={'center'}>
                 <Box sx={{ width: '100%' }}>
-                    <img width={'100%'} src={`${process.env.REACT_APP_URL}/images/apply/sunnywindow.jpg`} />
+                    <img width={'100%'} src={`${import.meta.env.VITE_URL}/images/apply/sunnywindow.jpg`} />
                 </Box>
                 <Box>
                     <Typography align={'center'} variant={'h6'}>

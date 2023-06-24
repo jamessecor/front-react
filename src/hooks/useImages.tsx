@@ -2,7 +2,7 @@ import { useCallback, useMemo, useState } from 'react';
 import { shows } from '../data/shows';
 
 const useImages = () => {
-    const getFullImagePath = (relativePath: string, folder = 'artists') => `${process.env.REACT_APP_URL}/images/${folder}/${relativePath}`;
+    const getFullImagePath = (relativePath: string, folder = 'artists') => `${import.meta.env.VITE_URL}/images/${folder}/${relativePath}`;
 
     const getShowByName = useCallback((name: string) => {
         return shows.filter((a) => a.name === name).length
