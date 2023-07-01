@@ -2,6 +2,26 @@ import { IShow } from "../models/Show";
 
 export const shows: Array<IShow> = [
     {
+        name: 'diane-sophrin-extrapolations-and-commentary',
+        number: 55.1,
+        displayName: 'Diane Sophrin: EXTRAPOLATIONS & COMMENTARY',
+        startDate: new Date(new Date('2023-07-07').setHours(24, 0, 0, 0)),
+        featuredImage: {
+            src: '2023-07/featured.jpg',
+            text: 'Diane Sophrin - Extrapolation and Commentary'
+        },
+        description: [
+            '<strong>July 7 - July 30, 2023</strong>',
+            '<strong>Opening: Friday, July 7th, 4-7 PM</strong>',
+            '<strong>Artist\'s Talk: Thursday, July 20, 6-7 PM</strong>',
+            'Diane Sophrin&#39;s work traverses broad contexts of geographies, cultures and artistic boundaries, developing a personal visual language with which to define and respond to world events and life&#39;s multiple realities. Her recent abstract mixed-media works on prepared papers are often stained, stitched and layered, sometimes presenting as movable assemblages, often exploring elements of collage or text, frequently double-sided!',
+            'The daughter of a graphic artist and a photographer, Sophrin&#39;s early art studies in New York City  were followed by a studio art/humanities major at Binghamton University, intensive studies in traditional techniques at the Boston Museum School and independent graduate work at the Jan Van Eyck Akademie in the Netherlands. After completing an MFA in painting and printmaking as a research fellow at Buffalo University, she lectured, curated and taught studio art at the Rochester Institute of Technology, the University of Rochester, Alfred University, the University of Tennessee at Knoxville, Vermont College, Union Institute, and Norwich University.',
+            'Sophrin divides her time between Europe and Vermont. Having exhibited and attended art residencies in Central Europe for nearly two decades, her work can be found in many public and private European collections. The autumn of 2023 saw a return to Budapest with her solo exhibition/residency at the Budapest 9th District Historical Museum and a solo show at the Open Workshop Art Center. She is an active and long-standing member of the Society of Hungarian Painters.',
+            'Over the decades Sophrin&#39;s work has been shown in galleries and museums in New York, Massachusetts, Vermont and around the US, and can be found in permanent national collections. These venues include the Nancy Hoffman Gallery and the National Academy of Design in New York City; the Williams College Museum of Art and the Bromfield Gallery in Massachusetts; the Albright Knox Gallery Art Museum, the Memorial Art Gallery and the Hudson River Museum in New York State, the San Francisco Museum of Art, the Art Institute of Chicago. She was awarded multiple grants in painting and writing from the State Arts Councils of Vermont and New York.',
+            'Diane is currently an artist member of the Front Gallery in Montpelier, participating in the cooperative gallery&#39;s bimonthly group shows. She has had solo exhibits in Vermont at the Helen Day Art Center, the Wood Gallery and Arts Center, Lyndon State College, St. Michael&#39;s College, Norwich University, Southern Vermont College, as well as Studio Place Arts, and J.Langdon. Her work has been featured in group exhibitions at the Kent Museum, the Brattleboro Museum, the Stella Quarta Decima Gallery, and other galleries around the state.'
+        ]
+    },
+    {
         name: '55',
         number: 55,
         displayName: 'Show 55',
