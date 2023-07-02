@@ -19,6 +19,7 @@ const Artists = () => {
             <Grid justifyContent={'center'} container={true} spacing={2}>
                 {artists.filter(artist => !artist.isNotMember).map((artist) => (
                     <Grid
+                        key={artist.paramName}
                         item={true}
                         justifyContent={'center'}
                         xs={4}
