@@ -37,12 +37,12 @@ const Show = () => {
                     xs={12}
                     sx={{ display: 'flex', flexDirection: 'column', pb: 2 }}
                 >
-                    <Typography align={'center'} variant={'h3'} sx={{ color: 'black' }}>
-                        {show?.displayName}
-                    </Typography>
                     <Button onClick={() => navigateTo('/shows')}>
                         <BiArrowBack />{'Back to shows'}
                     </Button>
+                    <Typography align={'center'} variant={'h4'} sx={{ color: 'black' }}>
+                        {show?.displayName}
+                    </Typography>
                 </Grid>
                 <Grid
                     item={true}
