@@ -36,6 +36,22 @@ export const shows: Array<IShow> = [
             'Join us for Show 55 at The Front this month, opening for Montpelier Art Walk on Friday, June 2nd, from 4 to 8 PM.',
             'Show 55 will be open through Sunday, July 2nd, every Friday from 4 to 7 and Saturday-Sunday 11 to 5, or by appointment.',
             'Thanks to everyone who came out to see Chip Haggerty\'s solo show last month.'
+        ],
+        images: [
+            { src: '2023-06/01.jpg' },
+            { src: '2023-06/02.jpg' },
+            { src: '2023-06/03.jpg' },
+            { src: '2023-06/04.jpg' },
+            { src: '2023-06/05.jpg' },
+            { src: '2023-06/06.jpg' },
+            { src: '2023-06/07.jpg' },
+            { src: '2023-06/08.jpg' },
+            { src: '2023-06/09.jpg' },
+            { src: '2023-06/10.jpg' },
+            { src: '2023-06/11.jpg' },
+            { src: '2023-06/12.jpg' },
+            { src: '2023-06/13.jpg' },
+            { src: '2023-06/14.jpg' }
         ]
     },
     {
