@@ -25,8 +25,8 @@ const Home = () => {
       <Stack alignItems={'center'} direction={'column'}>
         <ButtonBase onClick={() => navigateTo(`/shows/${currentShow.name}`)}>
           <Stack alignItems={'center'} direction={'column'}>
-            <Typography textAlign={'center'} variant={'h3'}>
-              {currentShow?.displayName}
+            <Typography textAlign={'center'} variant={'h4'}>
+              {currentShow.displayName}
             </Typography>
             <img className={'image-home'} src={getFullImagePath(currentShowFeaturedImage?.src ?? '', 'shows')} />
             {currentShowFeaturedImage?.text

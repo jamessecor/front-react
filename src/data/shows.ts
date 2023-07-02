@@ -4,11 +4,11 @@ export const shows: Array<IShow> = [
     {
         name: 'diane-sophrin-extrapolations-and-commentary',
         number: 55.1,
-        displayName: 'Diane Sophrin: EXTRAPOLATIONS & COMMENTARY',
+        displayName: 'Diane Sophrin: Extrapolations & Commentary',
         startDate: new Date(new Date('2023-07-07').setHours(24, 0, 0, 0)),
         featuredImage: {
             src: '2023-07/featured.jpg',
-            text: 'Diane Sophrin - Extrapolation and Commentary'
+            text: 'Winter Extrapolations #28, 2023, acrylic on paper, 37x21 / Split Commentary Revisited 5 (Verso), 2021, acrylic on paper, 41x21'
         },
         description: [
             '<strong>July 7 - July 30, 2023</strong>',
