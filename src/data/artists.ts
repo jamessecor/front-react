@@ -2,6 +2,18 @@ import { IArtist } from "../models/Artist";
 
 export const artists: Array<IArtist> = [
     {
+        paramName: 'alexandra-bottinelli',
+        name: 'Alexandra Bottinelli',
+        thumbnail: {
+            src: 'alexandra-bottinelli/bottinelli-02.jpeg'
+        },
+        images: [
+            { src: 'alexandra-bottinelli/bottinelli-01.jpeg' },
+            { src: 'alexandra-bottinelli/bottinelli-02.jpeg' },
+            { src: 'alexandra-bottinelli/bottinelli-03.jpeg' }
+        ]
+    },
+    {
         paramName: 'anne-cobgill-rose',
         name: "Anne Cogbill Rose",
         website: 'https://annecogbillrose.com',
@@ -209,6 +221,30 @@ export const artists: Array<IArtist> = [
             'For over two decades she divided her time between Europe and Vermont, working and exhibiting in both places.',
             'While Budapest remains a dwelling place of her soul and a source of aesthetic and intellectual nourishment, there has been a shift of focus over the past several years, resulting in renewed creative connections and fresh discoveries here at home, most recently with exhibitions at the Kent Museum, JLangdon, Studio Place Arts, Stella Quarta Decima Gallery, etc. Her new membership in The Front is a natural expansion of a long, ongoing artistic relationship with Vermont. ',
             'See more of her work on her website at <a href="http://dianesophrin.com/" target="_blank">dianesophrin.com</a> and on Instagram at <a target="_blank" href="https://www.instagram.com/szofrand/">@szofrand</a>'
+        ]
+    },
+    {
+        paramName: 'elisabeth-mazzilli',
+        name: 'Elisabeth Mazzilli',
+        thumbnail: {
+            src: 'elisabeth-mazzilli/mazzilli-01.jpg',
+            scale: 1.1
+        },
+        images: [
+            { src: 'elisabeth-mazzilli/mazzilli-01.jpg' },
+            { src: 'elisabeth-mazzilli/mazzilli-02.jpg' },
+            { src: 'elisabeth-mazzilli/mazzilli-03.jpg' },
+            { src: 'elisabeth-mazzilli/mazzilli-04.jpg' },
+            { src: 'elisabeth-mazzilli/mazzilli-05.jpg' },
+            { src: 'elisabeth-mazzilli/mazzilli-06.jpg' },
+            { src: 'elisabeth-mazzilli/mazzilli-07.jpg' },
+            { src: 'elisabeth-mazzilli/mazzilli-08.jpg' },
+            { src: 'elisabeth-mazzilli/mazzilli-09.jpg' },
+            { src: 'elisabeth-mazzilli/mazzilli-10.jpg' }
+        ],
+        bio: [
+            'I am a self taught rug hooker living in the Mad River Valley who stumbled upon my craft by fortunate circumstance and practicality. I had for years made woven and braided rugs for my home and was encouraged to try rug hooking by a pattern maker and hooker from the islands. I knew when I first dipped my tool into the linen that I was hooked.',
+            'There\'s a special type of explosive creativity when you not only design a pattern, but then choose colors of wools with which to design your rug. The vibrancy and texture of woolen fabrics is endless and I developed a chunky, rustic way of hooking that not only suits my personality, but also allows me to use a variety of woolen fabrics, creating a special texturing to my designs. Over the thousands of hours I have spent hooking, I have honed my technique and learned skills that allow me fully express my art through my work.'
         ]
     },
     {
