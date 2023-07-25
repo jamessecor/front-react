@@ -4,6 +4,11 @@ export const artists: Array<IArtist> = [
     {
         paramName: 'alexandra-bottinelli',
         name: 'Alexandra Bottinelli',
+        website: 'http://alexandrabottinelli.blogspot.com',
+        instagram: {
+            handle: '@love.the.dirt',
+            link: 'http://www.instagram.com/love.the.dirt'
+        },
         thumbnail: {
             src: 'alexandra-bottinelli/bottinelli-02.jpeg'
         },
@@ -123,6 +128,27 @@ export const artists: Array<IArtist> = [
         ]
     },
     {
+        name: 'Daniel Marcus',
+        paramName: 'daniel-marcus',
+        bio: [
+            'Daniel Marcus has been making art for a long time. His first show was an outdoor exhibit in New Rochelle, NY in 1968. He studied at Bensalem College, a part of Fordham University, then moved to Provincetown, Cape Cod, to pursue art full time. Following a number of solo and group shows, he was featured in the Provincetown Group Gallery, which began as an artist’s coop in the 1960s. He worked productively in Provincetown, enjoying the company of other artists in its lively art scene. Then he moved to New York to experience the even more lively art scene there.',
+            'As the decades rolled on, he continued to make art and show when opportunity and desire coincided. Today he has an audience online and shows locally in Vermont, where he lives on a Biodynamic homestead with his wife, Amba, and the cat, Pip.',
+            '"My work involves a descent into the Imaginal Realm, dropping into the unconscious to find the archetypal images and stories that speak to me. Whether in the image of the Sacred Mountain or in the person of the Lost Child, these symbols call out to be represented. Using pastel, collage, or a combination of both, or even digital images, I assemble them into small scale theaters, endeavoring to create worlds of delight, beauty and wonder, snapshots of the larger stories we’re all a part of."'
+        ],
+        thumbnail: {
+            src: 'daniel-marcus/featured.jpg'
+        },
+        images: [
+            { src: 'daniel-marcus/01.jpg' },
+            { src: 'daniel-marcus/02.jpg' },
+            { src: 'daniel-marcus/03.jpg' },
+            { src: 'daniel-marcus/04.jpg' },
+            { src: 'daniel-marcus/05.jpg' },
+            { src: 'daniel-marcus/06.jpg' }
+        ],
+        website: 'http://artimaginalrealm.com/'
+    },
+    {
         isNotMember: true,
         paramName: 'daryl-burtnett',
         name: "Daryl Burtnett",
@@ -226,6 +252,10 @@ export const artists: Array<IArtist> = [
     {
         paramName: 'elisabeth-mazzilli',
         name: 'Elisabeth Mazzilli',
+        instagram: {
+            handle: '@elliejay68',
+            link: 'http://www.instagram.com/elliejay68'
+        },
         thumbnail: {
             src: 'elisabeth-mazzilli/mazzilli-01.jpg',
             scale: 1.1
