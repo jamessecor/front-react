@@ -16,6 +16,11 @@ export const artists: Array<IArtist> = [
             { src: 'alexandra-bottinelli/bottinelli-01.jpeg' },
             { src: 'alexandra-bottinelli/bottinelli-02.jpeg' },
             { src: 'alexandra-bottinelli/bottinelli-03.jpeg' }
+        ],
+        bio: [
+            'Alexandra Bottinelli graduated from Connecticut College with a minor in art and went on to do residencies at the Vermont Studio Center and Small Point Maine. Her original medium of collage painting led to other styles, assemblages of found objects and color field painting. The first breakthrough in visibility came when she was invited to show at the T.W. Wood Art Center & Gallery in a gala event showcasing 8 Vermont artists in 1993. This was followed by representation by the Doll-Anstadt in Burlington; here the artist had three one-person shows and became known for her signature work as a collage artist. Primarily showing in New England, the artist has also become known for her sculptures with wood found washed up onto Seawald Beach at Morse Mountain Preserve in Maine; these wooden sculptures are saturated in beeswax and echo the cairns of Ireland -- their purpose being to honor earth water wind and sun and our sense of place on this planet. The years have included many invitational shows at such art spaces as the renowned Leighton Gallery in Blue Hill, the Elan Gallery in Rockland, Studio Place Arts in Barre, the Kent Museum in Calais, and University shows at Norwich University, Goddard College, and Castleton and Johnson State Colleges.',
+            'The artist currently lives and works in Hardwick, Vermont.',
+            '<em>"I have found that paint, color and composition are tools that can transmute found objects into a new intriguing beauty and meaning. Finding magical things that already exist and recycling them back into the world anew is what I love to do."</em> -Alexandra Bottinelli 2023'
         ]
     },
     {
