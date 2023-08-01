@@ -13,8 +13,9 @@ export const shows: Array<IShow> = [
         description: [
             '<strong>August 4-27</strong>',
             '<strong>Opening: Friday, Aug 4, 4-8 PM</strong>',
-            'Join us this Friday, August 4th, for the opening reception of Show 56, a group exhibit featuring work by all active members at The Front. Sadly, Montpelier Art Walk is cancelled this month because so many of the hosting venues were hit hard by the flood. Since The Front was just barely unscathed, we\'re keeping the First Friday opening schedule until Art Walk can start up again. Show 56 will be open through Sunday, August 27th, every Friday from 4 to 7 and Saturday-Sunday 11 to 5, or by appointment.',
-            'Thanks to everyone who came out to see Diane Sophrin\'s solo show and artist talk last month.'
+            'Join us this Friday, August 4th, for the opening reception of Show 56, a group exhibit featuring work by all active members at The Front. This month we\'re thrilled to welcome EIGHT NEW MEMBERS to the group: Alexandra Bottinelli, Ben Barnes, Daniel Marcus, Elisabeth Mazzilli, Jonathan Rose, Kate Ruddle, Mark Lorah, and Rob Hitzig.',
+            'Montpelier Art Walk is cancelled this month because so many of the hosting venues were hit hard by the flood. Since The Front was just barely unscathed, we\'re keeping the First Friday energy up until Art Walk can start up again. Show 56 will stay up through Sunday, August 27th, every Friday from 4 to 7 and Saturday-Sunday 11 to 5, or by appointment.',
+            'Thanks to everyone who came out to see Diane Sophrin\'s solo show and artist talk last month. Stay tuned for our next solo show featuring Marjorie Kramer, opening in September.'
         ]
     },
     {
