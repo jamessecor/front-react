@@ -510,6 +510,25 @@ export const artists: Array<IArtist> = [
         ]
     },
     {
+        paramName: 'jonathan-rose',
+        name: 'Jonathan Rose',
+        website: 'https://jonathanhrose.com/',
+        thumbnail: {
+            src: 'jonathan-rose/thumbnail.JPG'
+        },
+        images: [
+            { src: 'jonathan-rose/01.JPG' },
+            { src: 'jonathan-rose/02.JPG' },
+            { src: 'jonathan-rose/03.JPG' },
+            { src: 'jonathan-rose/04.JPG' },
+            { src: 'jonathan-rose/05.JPG' },
+            { src: 'jonathan-rose/06.JPG' },
+        ],
+        bio: [
+            'My work is loosely representational and almost always springs from what I see around me. I am not driven by detail. I really enjoy more the development of an idea or feeling and when the painting has a life of its own. Anne and I live in North Thetford VT and in Merida, Yucatan, mx. I find I can paint easily most anywhere. I am not preoccupied with medium or technique. I use soft pastel on sanded paper and acrylic paint on canvas. I work quickly to start. And I try to maintain the freshness and immediacy I feel at the beginning right through the process. My website, <a target="_blank" href="https://jonathanhrose.com">jonathanhrose.com</a> offers more detail and shows work completed over the years.'
+        ]
+    },
+    {
         paramName: 'kate-fetherston',
         name: 'Kate Fetherston',
         thumbnail: {
@@ -819,6 +838,30 @@ export const artists: Array<IArtist> = [
         bio: [
             // "Richard Moore has practiced many kinds of photography for more than fifty years: Brownie, 35 mm, large format, archaeological, documentary, environmental, alternative process, digital, composite, and zen photography. Before moving to Vermont in 2020 he exhibited regularly at the Robert Lincoln Levy Gallery of the New Hampshire Art Association in Portsmouth, the Barn Gallery in Ogunquit, Maine, and the annual exhibits of the New Hampshire Society of Photographic Artists. In 2014 he exhibited at the Lupine Gallery on Monhegan Island, Maine, in conjunction with the publication of his book, \"Monhegan Come Again.\" In 2019 he had a solo exhibit at the Hellenic American University in Athens, Greece, in conjunction with the publication of \"Athens Twice Seen.\"",
             'Richard Moore has pursued photography for fifty years, from film to pixel, from large format to smart phone. He remains devoted to the physical print and is currently making inkjet prints on birch bark.'
+        ]
+    },
+    {
+        paramName: 'rob-hitzig',
+        name: 'Rob Hitzig',
+        thumbnail: {
+            src: 'rob-hitzig/thumbnail.jpg',
+            scale: 1.1,
+            position: '50% 50%'
+        },
+        images: [
+            { src: 'rob-hitzig/01.jpg' },
+            { src: 'rob-hitzig/02.jpg' },
+            { src: 'rob-hitzig/03.jpg' },
+            { src: 'rob-hitzig/04.jpg' },
+            { src: 'rob-hitzig/05.jpg' }
+        ],
+        website: 'https://roberthitzig.com/',
+        instagram: {
+            handle: '@robhitzig',
+            link: 'https://www.instagram.com/robhitzig/'
+        },
+        bio: [
+            'Rob Hitzig (b. 1964, New York, New York) is a self-taught artist whose work evolved out of a furniture making practice he developed while working for the U.S. Environmental Protection Agency in Washington, DC. Though starting with his love of the natural beauty of wood, his work has evolved to include paintings and painted sculpture where he explores color and movement through linear patterns. Consistent through his years of making furniture and art is his use of shellac to create depth and radiance on a flat surface. He has exhibited widely across the east coast with shows as far south as Virginia, including a review by the Washington Post. Regionally, his work has been exhibited at Vermont Studio Center, Johnson, VT; Spruce Peak Performing Arts Center, Stowe, VT; Helen Day Art Center (presently The Current), Stowe, Vermont; Rokeby Museum, Ferrisburgh, VT; AVA Gallery, Lebanon, NH; Bennington Museum, Bennington, VT; and Studio Place Arts, Barre, VT. His work is held in collections in the City of Montpelier, VT; Johns Hopkins University, Baltimore, MD; and The Waskow Study Collection. He has received several awards, including residencies at the Vermont Studio Center and a Vermont Arts Council grant. Currently, Hitzig resides in Montpelier, VT.'
         ]
     },
     {
