@@ -2,6 +2,28 @@ import { IArtist } from "../models/Artist";
 
 export const artists: Array<IArtist> = [
     {
+        paramName: 'alexandra-bottinelli',
+        name: 'Alexandra Bottinelli',
+        website: 'http://alexandrabottinelli.blogspot.com',
+        instagram: {
+            handle: '@love.the.dirt',
+            link: 'http://www.instagram.com/love.the.dirt'
+        },
+        thumbnail: {
+            src: 'alexandra-bottinelli/bottinelli-02.jpeg'
+        },
+        images: [
+            { src: 'alexandra-bottinelli/bottinelli-01.jpeg' },
+            { src: 'alexandra-bottinelli/bottinelli-02.jpeg' },
+            { src: 'alexandra-bottinelli/bottinelli-03.jpeg' }
+        ],
+        bio: [
+            'Alexandra Bottinelli graduated from Connecticut College with a minor in art and went on to do residencies at the Vermont Studio Center and Small Point Maine. Her original medium of collage painting led to other styles, assemblages of found objects and color field painting. The first breakthrough in visibility came when she was invited to show at the T.W. Wood Art Center & Gallery in a gala event showcasing 8 Vermont artists in 1993. This was followed by representation by the Doll-Anstadt in Burlington; here the artist had three one-person shows and became known for her signature work as a collage artist. Primarily showing in New England, the artist has also become known for her sculptures with wood found washed up onto Seawald Beach at Morse Mountain Preserve in Maine; these wooden sculptures are saturated in beeswax and echo the cairns of Ireland -- their purpose being to honor earth water wind and sun and our sense of place on this planet. The years have included many invitational shows at such art spaces as the renowned Leighton Gallery in Blue Hill, the Elan Gallery in Rockland, Studio Place Arts in Barre, the Kent Museum in Calais, and University shows at Norwich University, Goddard College, and Castleton and Johnson State Colleges.',
+            'The artist currently lives and works in Hardwick, Vermont.',
+            '<em>"I have found that paint, color and composition are tools that can transmute found objects into a new intriguing beauty and meaning. Finding magical things that already exist and recycling them back into the world anew is what I love to do."</em> -Alexandra Bottinelli 2023'
+        ]
+    },
+    {
         paramName: 'anne-cobgill-rose',
         name: "Anne Cogbill Rose",
         website: 'https://annecogbillrose.com',
@@ -111,6 +133,27 @@ export const artists: Array<IArtist> = [
         ]
     },
     {
+        name: 'Daniel Marcus',
+        paramName: 'daniel-marcus',
+        bio: [
+            'Daniel Marcus has been making art for a long time. His first show was an outdoor exhibit in New Rochelle, NY in 1968. He studied at Bensalem College, a part of Fordham University, then moved to Provincetown, Cape Cod, to pursue art full time. Following a number of solo and group shows, he was featured in the Provincetown Group Gallery, which began as an artist’s coop in the 1960s. He worked productively in Provincetown, enjoying the company of other artists in its lively art scene. Then he moved to New York to experience the even more lively art scene there.',
+            'As the decades rolled on, he continued to make art and show when opportunity and desire coincided. Today he has an audience online and shows locally in Vermont, where he lives on a Biodynamic homestead with his wife, Amba, and the cat, Pip.',
+            '"My work involves a descent into the Imaginal Realm, dropping into the unconscious to find the archetypal images and stories that speak to me. Whether in the image of the Sacred Mountain or in the person of the Lost Child, these symbols call out to be represented. Using pastel, collage, or a combination of both, or even digital images, I assemble them into small scale theaters, endeavoring to create worlds of delight, beauty and wonder, snapshots of the larger stories we’re all a part of."'
+        ],
+        thumbnail: {
+            src: 'daniel-marcus/featured.jpg'
+        },
+        images: [
+            { src: 'daniel-marcus/01.jpg' },
+            { src: 'daniel-marcus/02.jpg' },
+            { src: 'daniel-marcus/03.jpg' },
+            { src: 'daniel-marcus/04.jpg' },
+            { src: 'daniel-marcus/05.jpg' },
+            { src: 'daniel-marcus/06.jpg' }
+        ],
+        website: 'http://artimaginalrealm.com/'
+    },
+    {
         isNotMember: true,
         paramName: 'daryl-burtnett',
         name: "Daryl Burtnett",
@@ -209,6 +252,34 @@ export const artists: Array<IArtist> = [
             'For over two decades she divided her time between Europe and Vermont, working and exhibiting in both places.',
             'While Budapest remains a dwelling place of her soul and a source of aesthetic and intellectual nourishment, there has been a shift of focus over the past several years, resulting in renewed creative connections and fresh discoveries here at home, most recently with exhibitions at the Kent Museum, JLangdon, Studio Place Arts, Stella Quarta Decima Gallery, etc. Her new membership in The Front is a natural expansion of a long, ongoing artistic relationship with Vermont. ',
             'See more of her work on her website at <a href="http://dianesophrin.com/" target="_blank">dianesophrin.com</a> and on Instagram at <a target="_blank" href="https://www.instagram.com/szofrand/">@szofrand</a>'
+        ]
+    },
+    {
+        paramName: 'elisabeth-mazzilli',
+        name: 'Elisabeth Mazzilli',
+        instagram: {
+            handle: '@elliejay68',
+            link: 'http://www.instagram.com/elliejay68'
+        },
+        thumbnail: {
+            src: 'elisabeth-mazzilli/mazzilli-01.jpg',
+            scale: 1.1
+        },
+        images: [
+            { src: 'elisabeth-mazzilli/mazzilli-01.jpg' },
+            { src: 'elisabeth-mazzilli/mazzilli-02.jpg' },
+            { src: 'elisabeth-mazzilli/mazzilli-03.jpg' },
+            { src: 'elisabeth-mazzilli/mazzilli-04.jpg' },
+            { src: 'elisabeth-mazzilli/mazzilli-05.jpg' },
+            { src: 'elisabeth-mazzilli/mazzilli-06.jpg' },
+            { src: 'elisabeth-mazzilli/mazzilli-07.jpg' },
+            { src: 'elisabeth-mazzilli/mazzilli-08.jpg' },
+            { src: 'elisabeth-mazzilli/mazzilli-09.jpg' },
+            { src: 'elisabeth-mazzilli/mazzilli-10.jpg' }
+        ],
+        bio: [
+            'I am a self taught rug hooker living in the Mad River Valley who stumbled upon my craft by fortunate circumstance and practicality. I had for years made woven and braided rugs for my home and was encouraged to try rug hooking by a pattern maker and hooker from the islands. I knew when I first dipped my tool into the linen that I was hooked.',
+            'There\'s a special type of explosive creativity when you not only design a pattern, but then choose colors of wools with which to design your rug. The vibrancy and texture of woolen fabrics is endless and I developed a chunky, rustic way of hooking that not only suits my personality, but also allows me to use a variety of woolen fabrics, creating a special texturing to my designs. Over the thousands of hours I have spent hooking, I have honed my technique and learned skills that allow me fully express my art through my work.'
         ]
     },
     {
@@ -436,6 +507,25 @@ export const artists: Array<IArtist> = [
             "I grew up in Eastern Kentucky and have lived in Montpelier, VT for the last 10 years. Most of my painting experience over the years has been exploring color relationships and developing my own vocabulary of form, using sketches as a starting point. More recently, I have found more of my voice in terms of subject matter as well. For example, I spent over a year thinking about our interactions with cell phones, making paintings and drawings, which culminated in a show called #nomophobia.",
             "My work comes alive through juxtaposition; it's about the interplay of forces on a flat surface. The search for beauty and variation within that premise is what keeps me painting. Inside the four walls of the rectangle, lines, colors, and shapes all interact with one another to create a whole. For me, the intrigue of each of my works stems from the harmony, conflict, or interplay of each of these elements. ",
             "I relish each step of the painting process. Getting started is an exciting prospect. I choose a composition, translate it to a larger surface, and quickly block it in color. The slower portion then takes hold. From the beginning, each new mark is a response to the set of marks already present. A bold, nearly-neon, pink sky might require a light and bright blue for the water, which then means the pattern of triangles in the foreground needs to become stronger to hold it all together. Each force in the work is there for the beauty of itself and also to keep the balance with every other force in a sort of equilibrium."
+        ]
+    },
+    {
+        paramName: 'jonathan-rose',
+        name: 'Jonathan Rose',
+        website: 'https://jonathanhrose.com/',
+        thumbnail: {
+            src: 'jonathan-rose/thumbnail.JPG'
+        },
+        images: [
+            { src: 'jonathan-rose/01.JPG' },
+            { src: 'jonathan-rose/02.JPG' },
+            { src: 'jonathan-rose/03.JPG' },
+            { src: 'jonathan-rose/04.JPG' },
+            { src: 'jonathan-rose/05.JPG' },
+            { src: 'jonathan-rose/06.JPG' },
+        ],
+        bio: [
+            'My work is loosely representational and almost always springs from what I see around me. I am not driven by detail. I really enjoy more the development of an idea or feeling and when the painting has a life of its own. Anne and I live in North Thetford VT and in Merida, Yucatan, mx. I find I can paint easily most anywhere. I am not preoccupied with medium or technique. I use soft pastel on sanded paper and acrylic paint on canvas. I work quickly to start. And I try to maintain the freshness and immediacy I feel at the beginning right through the process. My website, <a target="_blank" href="https://jonathanhrose.com">jonathanhrose.com</a> offers more detail and shows work completed over the years.'
         ]
     },
     {
@@ -748,6 +838,30 @@ export const artists: Array<IArtist> = [
         bio: [
             // "Richard Moore has practiced many kinds of photography for more than fifty years: Brownie, 35 mm, large format, archaeological, documentary, environmental, alternative process, digital, composite, and zen photography. Before moving to Vermont in 2020 he exhibited regularly at the Robert Lincoln Levy Gallery of the New Hampshire Art Association in Portsmouth, the Barn Gallery in Ogunquit, Maine, and the annual exhibits of the New Hampshire Society of Photographic Artists. In 2014 he exhibited at the Lupine Gallery on Monhegan Island, Maine, in conjunction with the publication of his book, \"Monhegan Come Again.\" In 2019 he had a solo exhibit at the Hellenic American University in Athens, Greece, in conjunction with the publication of \"Athens Twice Seen.\"",
             'Richard Moore has pursued photography for fifty years, from film to pixel, from large format to smart phone. He remains devoted to the physical print and is currently making inkjet prints on birch bark.'
+        ]
+    },
+    {
+        paramName: 'rob-hitzig',
+        name: 'Rob Hitzig',
+        thumbnail: {
+            src: 'rob-hitzig/thumbnail.jpg',
+            scale: 1.1,
+            position: '50% 50%'
+        },
+        images: [
+            { src: 'rob-hitzig/01.jpg' },
+            { src: 'rob-hitzig/02.jpg' },
+            { src: 'rob-hitzig/03.jpg' },
+            { src: 'rob-hitzig/04.jpg' },
+            { src: 'rob-hitzig/05.jpg' }
+        ],
+        website: 'https://roberthitzig.com/',
+        instagram: {
+            handle: '@robhitzig',
+            link: 'https://www.instagram.com/robhitzig/'
+        },
+        bio: [
+            'Rob Hitzig (b. 1964, New York, New York) is a self-taught artist whose work evolved out of a furniture making practice he developed while working for the U.S. Environmental Protection Agency in Washington, DC. Though starting with his love of the natural beauty of wood, his work has evolved to include paintings and painted sculpture where he explores color and movement through linear patterns. Consistent through his years of making furniture and art is his use of shellac to create depth and radiance on a flat surface. He has exhibited widely across the east coast with shows as far south as Virginia, including a review by the Washington Post. Regionally, his work has been exhibited at Vermont Studio Center, Johnson, VT; Spruce Peak Performing Arts Center, Stowe, VT; Helen Day Art Center (presently The Current), Stowe, Vermont; Rokeby Museum, Ferrisburgh, VT; AVA Gallery, Lebanon, NH; Bennington Museum, Bennington, VT; and Studio Place Arts, Barre, VT. His work is held in collections in the City of Montpelier, VT; Johns Hopkins University, Baltimore, MD; and The Waskow Study Collection. He has received several awards, including residencies at the Vermont Studio Center and a Vermont Arts Council grant. Currently, Hitzig resides in Montpelier, VT.'
         ]
     },
     {
