@@ -589,6 +589,26 @@ export const artists: Array<IArtist> = [
         ]
     },
     {
+        paramName: 'kate-ruddle',
+        name: 'Kate Ruddle',
+        thumbnail: {
+            src: 'kate-ruddle/01.jpg'
+        },
+        website: 'https://kateruddle.com',
+        images: [
+            { src: 'kate-ruddle/01.jpg' },
+            { src: 'kate-ruddle/02.jpg' },
+            { src: 'kate-ruddle/03.jpg' },
+            { src: 'kate-ruddle/04.jpg' },
+            { src: 'kate-ruddle/05.jpg' },
+            { src: 'kate-ruddle/06.jpg' },
+            { src: 'kate-ruddle/07.jpg' },
+            { src: 'kate-ruddle/08.jpg' },
+            { src: 'kate-ruddle/09.jpg' },
+            { src: 'kate-ruddle/10.jpg' }
+        ]
+    },
+    {
         paramName: 'kathy-stark',
         name: 'Kathy Stark',
         thumbnail: {
