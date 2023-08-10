@@ -592,7 +592,7 @@ export const artists: Array<IArtist> = [
         paramName: 'kate-ruddle',
         name: 'Kate Ruddle',
         thumbnail: {
-            src: 'kate-ruddle/01.jpg'
+            src: 'kate-ruddle/thumbnail.jpg'
         },
         website: 'https://kateruddle.com',
         images: [
