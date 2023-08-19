@@ -595,6 +595,10 @@ export const artists: Array<IArtist> = [
             src: 'kate-ruddle/thumbnail.jpg'
         },
         website: 'https://kateruddle.com',
+        bio: [
+            'Kate Ruddle is a conceptual fabric sculptor living in East Montpelier, Vermont. Ruddle has taught drawing and fabric sculpture to adults and graduate students for over fourteen years, exhibited across the United States and in Europe, and most recently received an Artist Development Grant from the Vermont Arts Council in 2022.',
+            'Ruddle became interested in using fabric for large-scale installations while working at a boat loft in Alameda, CA. Her sculpture and installations use fabric and architectural elements to play with trappings that serve to wrap people into social hierarchies. Her works draw from multilayered historical sources and explore socially formative norms that are almost invisible.'
+        ],
         images: [
             { src: 'kate-ruddle/01.jpg' },
             { src: 'kate-ruddle/02.jpg' },
