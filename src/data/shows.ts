@@ -2,6 +2,27 @@ import { IShow } from "../models/Show";
 
 export const shows: Array<IShow> = [
     {
+        name: 'marjorie-kramer-paintings',
+        number: 56.1,
+        displayName: 'Marjorie Kramer - Paintings',
+        startDate: new Date(new Date('2023-09-01').setHours(24, 0, 0, 0)),
+        featuredImage: {
+            src: '2023-09/featured.jpg',
+            text: 'Self in Studio, 2023, oil on linen, 23" x 24"'
+        },
+        description: [
+            '<strong>September 1-October 1, 2023</strong>',
+            '<strong>Opening Reception: Friday September 1, 4-7 PM</strong>',
+            '<strong>Poetry Reading: Thursday September 7, 6-8:30</strong>',
+            '<strong>Artist\'s Talk: September 21, 6-7 PM</strong>',
+            '<small><em>Presented in collaboration and solidarity with the Susan Calza Gallery and Hexum Gallery in downtown Montpelier.</em></small>',
+            'For most of her life, Marjorie Kramer has been a Vermonter, but her artistic career began in New York City in the 60s and 70s. She has a BFA from Cooper Union Art School, where she met her husband, the sculptor and painter Samuel Thurston. For more than a decade they lived and worked in New York but spent their summers at their home in Lowell, Vermont.',
+            'Today, sitting in the old farmhouse up high in Lowell, Marjorie looks more like a Vermont painter spending time in New York when possible. Many of the portraits in her show at The Front reflect her history of advocacy for women painters and cooperative galleries. (Her favorite show was the First Open Show of Feminist Art at MUSEUM in 1971—“free, non-curated, fabulous!”) The landscapes in her show at The Front are pure Vermont.',
+            'Marjorie was a student founder of the New York Studio School of Drawing, Painting, and Sculpture. She has a very long list of solo and group shows from New York City through New England and beyond and has taught students at Johnson State University and Vermont Community College as well as art programs in small Vermont elementary schools. Her work has been called “plucky and lyrical,” with a “delicate sense of touch,” and “remarkable neomodernist observational rigor.”',
+            'Painting, teaching, organizing; summers in Vermont, building a house, having a child. “It was all great fun,” she says. “I painted most days through all this.”'
+        ]
+    },
+    {
         name: '56',
         number: 56,
         displayName: 'Show 56',
