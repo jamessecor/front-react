@@ -28,8 +28,7 @@ export const shows: Array<IShow> = [
         displayName: 'Show 56',
         startDate: new Date(new Date('2023-08-04').setHours(24, 0, 0, 0)),
         featuredImage: {
-            src: '2023-08/featured.jpg',
-            // text: 'Rob Hitzig, Daydream Wednesday'
+            src: '2023-08/featured.jpg'
         },
         description: [
             '<strong>August 4-27</strong>',
@@ -37,6 +36,13 @@ export const shows: Array<IShow> = [
             'Join us this Friday, August 4th, for the opening reception of Show 56, a group exhibit featuring work by all active members at The Front. This month we\'re thrilled to welcome EIGHT NEW MEMBERS to the group: Alexandra Bottinelli, Ben Barnes, Daniel Marcus, Elisabeth Mazzilli, Jonathan Rose, Kate Ruddle, Mark Lorah, and Rob Hitzig.',
             'Montpelier Art Walk is cancelled this month because so many of the hosting venues were hit hard by the flood. Since The Front was just barely unscathed, we\'re keeping the First Friday energy up until Art Walk can start up again. Show 56 will stay up through Sunday, August 27th, every Friday from 4 to 7 and Saturday-Sunday 11 to 5, or by appointment.',
             'Thanks to everyone who came out to see Diane Sophrin\'s solo show and artist talk last month. Stay tuned for our next solo show featuring Marjorie Kramer, opening in September.'
+        ],
+        images: [
+            { src: '2023-08/01.jpg' },
+            { src: '2023-08/02.jpg' },
+            { src: '2023-08/03.jpg' },
+            { src: '2023-08/04.jpg' },
+            { src: '2023-08/05.jpg' }
         ]
     },
     {
@@ -48,6 +54,13 @@ export const shows: Array<IShow> = [
             src: '2023-07/featured.jpg',
             text: 'Winter Extrapolations #28, 2023, acrylic on paper, 37x21 / Split Commentary Revisited 5 (Verso), 2021, acrylic on paper, 41x21'
         },
+        images: [
+            { src: '2023-07/01.webp' },
+            { src: '2023-07/02.webp' },
+            { src: '2023-07/03.webp' },
+            { src: '2023-07/04.webp' },
+            { src: '2023-07/05.webp' }
+        ],
         description: [
             '<strong>July 7 - July 30, 2023</strong>',
             '<strong>Opening: Friday, July 7th, 4-7 PM</strong>',
