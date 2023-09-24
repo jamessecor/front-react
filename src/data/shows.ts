@@ -10,6 +10,17 @@ export const shows: Array<IShow> = [
             src: '2023-09/featured.jpg',
             text: 'Self in Studio, 2023, oil on linen, 23" x 24"'
         },
+        images: [
+            { src: '2023-09/01.jpg' },
+            { src: '2023-09/02.jpg' },
+            { src: '2023-09/03.jpg' },
+            { src: '2023-09/04.jpg' },
+            { src: '2023-09/05.jpg' },
+            { src: '2023-09/06.jpg' },
+            { src: '2023-09/07.jpg' },
+            { src: '2023-09/08.jpg' },
+            { src: '2023-09/09.jpg' }
+        ],
         description: [
             '<strong>September 1-October 1, 2023</strong>',
             '<strong>Opening Reception: Friday September 1, 4-7 PM</strong>',
