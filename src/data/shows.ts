@@ -2,6 +2,21 @@ import { IShow } from "../models/Show";
 
 export const shows: Array<IShow> = [
     {
+        name: '57',
+        number: 57,
+        displayName: 'Show 57',
+        startDate: new Date(new Date('2023-10-06').setHours(24, 0, 0, 0)),
+        featuredImage: {
+            src: '2023-10/featured.jpg',
+            text: 'Jonathan Rose, Harvest Time, pastel, 14" x 15"'
+        },
+        description: [
+            '<strong>October 6-29</strong>',
+            '<strong>Opening: Friday, Oct 6, 4-8 PM</strong>',
+            'Join us this Friday, October 6, for the opening reception of Show 57, a group exhibit featuring work by all active members at The Front.'
+        ]
+    },
+    {
         name: 'marjorie-kramer-paintings',
         number: 56.1,
         displayName: 'Marjorie Kramer - Paintings',
