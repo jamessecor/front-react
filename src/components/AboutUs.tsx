@@ -8,6 +8,8 @@ import ContactForm from './modals/ContactForm';
 import { PAYPAL_DONATE_LINK } from '../models/Paypal';
 import { BiDonateHeart } from 'react-icons/bi';
 import Hours from './Hours';
+import Stepper from './Stepper';
+import { historyImages } from '../data/history';
 
 export const NavItemAboutUs = 'About Us';
 
@@ -33,6 +35,21 @@ const AboutUs = () => (
                         {'The Front is an artist-run cooperative gallery in Montpelier, Vermont. Through exhibitions, events, and activities, members provoke curiosity and community engagement with visual art.'}
                     </Typography>
 
+                    <Divider sx={{ my: 5 }} />
+
+                    <Typography
+                        variant={'body1'}
+                        sx={{ mb: 2 }}
+                    >
+                        {'The Front was established in 2015 and continues to evolve as members come and go over the years. Here are some images from our early years.'}
+                    </Typography>
+
+                    <Stepper
+                        images={historyImages}
+                        imageFolder='gallery/history'
+                        numberToDisplay={2.2}
+                        spacing={45}
+                    />
                     {/* <Divider sx={{ my: 5 }} />
 
                     <Typography textAlign={'center'} variant={'h5'} sx={{ pb: 1 }}>

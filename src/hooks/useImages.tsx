@@ -12,7 +12,6 @@ const useImages = () => {
 
     const getCurrentShow = useCallback(() => shows.sort((a, b) => b.number - a.number)[0] ?? {}, []);
 
-
     const currentShow = useMemo(() => getCurrentShow(), [getCurrentShow]);
     const currentShowImages = useMemo(() => currentShow.images, [currentShow]);
     const currentShowFeaturedImage = useMemo(() => currentShow.featuredImage, [currentShow]);
