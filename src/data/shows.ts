@@ -2,6 +2,22 @@ import { IShow } from "../models/Show";
 
 export const shows: Array<IShow> = [
     {
+        name: 'delia-robinson-then-and-now',
+        number: 57.1,
+        displayName: 'Delia Robinson - Then and Now',
+        startDate: new Date(new Date('2023-11-03').setHours(24, 0, 0, 0)),
+        featuredImage: {
+            src: '2023-11/featured.jpg',
+            text: 'Juggling while Riding Tigers at the Geezer\'s Circus, 2023, acrylic on canvas, 12x12'
+        },
+        description: [
+            '<strong>November 3-26, 2023</strong>',
+            '<strong>Opening Reception: Friday November 3, 4-7 PM</strong>',
+            '<strong>Rabbit & Wolf Poetry Reading: Thursday September 9, 6-8:30</strong>',
+            '<strong>Artist\'s Talk: November 16, 7 PM</strong>'
+        ]
+    },
+    {
         name: '57',
         number: 57,
         displayName: 'Show 57',
@@ -14,6 +30,18 @@ export const shows: Array<IShow> = [
             '<strong>October 6-29</strong>',
             '<strong>Opening: Friday, Oct 6, 4-8 PM</strong>',
             'Join us this Friday, October 6, for the opening reception of Show 57, a group exhibit featuring work by all active members at The Front.'
+        ],
+        images: [
+            { src: '2023-10/01.jpg' },
+            { src: '2023-10/02.jpg' },
+            { src: '2023-10/03.jpg' },
+            { src: '2023-10/04.jpg' },
+            { src: '2023-10/05.jpg' },
+            { src: '2023-10/06.jpg' },
+            { src: '2023-10/07.jpg' },
+            { src: '2023-10/08.jpg' },
+            { src: '2023-10/09.jpg' },
+            { src: '2023-10/10.jpg' }
         ]
     },
     {
