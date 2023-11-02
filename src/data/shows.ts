@@ -14,7 +14,9 @@ export const shows: Array<IShow> = [
             '<strong>November 3-26, 2023</strong>',
             '<strong>Opening Reception: Friday November 3, 4-7 PM</strong>',
             '<strong>Rabbit & Wolf Poetry Reading: Thursday September 9, 6-8:30</strong>',
-            '<strong>Artist\'s Talk: November 16, 7 PM</strong>'
+            '<strong>Artist\'s Talk: November 16, 7 PM</strong>',
+            'Recently Delia Robinson discovered a stack of her own paintings, forgotten for 20 years in a distant gallery. Her current show opening at The Front in Montpelier features the new-found work beside her current work&mdash;tracing many of the same interests and themes of the earlier work. The show offers a view into tentative ideas becoming clarified over time.',
+            'Robinson\'s engaging work is often comical or salty, as well as sweet, and almost always reveals an ironic twist. Her work in both clay and paint has received far-ranging attention and praise. Some of her clay whistles are in major collections, and her paintings were exhibited this summer in solo shows at the Highland Arts Center in Greensboro, The Gallery in the Woods in Brattleboro, and at the Central Vermont Medical Center.'
         ]
     },
     {
