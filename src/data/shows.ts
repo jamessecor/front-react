@@ -2,6 +2,22 @@ import { IShow } from "../models/Show";
 
 export const shows: Array<IShow> = [
     {
+        name: '58',
+        number: 58,
+        displayName: 'Show 58',
+        startDate: new Date(new Date('2023-12-01').setHours(24, 0, 0, 0)),
+        featuredImage: {
+            src: '2023-12/featured.jpg',
+            text: 'Daniel Marcus, "The Black Barn", 2023, pastel'
+        },
+        description: [
+            '<strong>December 1 - 31</strong>',
+            '<strong>Opening (Montpelier Art Walk): Friday, Dec 1, 4-8 PM</strong>',
+            'Featuring small works in a special Holiday Sale.',
+            'Join us this Friday, December 1, for the opening reception of Show 58, a group exhibit of work by all active members at The Front.'
+        ]
+    },
+    {
         name: 'delia-robinson-then-and-now',
         number: 57.1,
         displayName: 'Delia Robinson - Then and Now',
@@ -17,6 +33,16 @@ export const shows: Array<IShow> = [
             '<strong>Artist\'s Talk: November 16, 7 PM</strong>',
             'Recently Delia Robinson discovered a stack of her own paintings, forgotten for 20 years in a distant gallery. Her current show opening at The Front in Montpelier features the new-found work beside her current work&mdash;tracing many of the same interests and themes of the earlier work. The show offers a view into tentative ideas becoming clarified over time.',
             'Robinson\'s engaging work is often comical or salty, as well as sweet, and almost always reveals an ironic twist. Her work in both clay and paint has received far-ranging attention and praise. Some of her clay whistles are in major collections, and her paintings were exhibited this summer in solo shows at the Highland Arts Center in Greensboro, The Gallery in the Woods in Brattleboro, and at the Central Vermont Medical Center.'
+        ],
+        images: [
+            { src: '2023-11/01.jpg' },
+            { src: '2023-11/02.jpg' },
+            { src: '2023-11/03.jpg' },
+            { src: '2023-11/04.jpg' },
+            { src: '2023-11/05.jpg' },
+            { src: '2023-11/06.jpg' },
+            { src: '2023-11/07.jpg' },
+            { src: '2023-11/08.jpg' }
         ]
     },
     {
