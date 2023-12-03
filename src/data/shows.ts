@@ -15,6 +15,16 @@ export const shows: Array<IShow> = [
             '<strong>Opening (Montpelier Art Walk): Friday, Dec 1, 4-8 PM</strong>',
             'Featuring small works in a special Holiday Sale.',
             'Join us this Friday, December 1, for the opening reception of Show 58, a group exhibit of work by all active members at The Front.'
+        ],
+        images: [
+            { src: '2023-12/01.jpg' },
+            { src: '2023-12/02.jpg' },
+            { src: '2023-12/03.jpg' },
+            { src: '2023-12/04.jpg' },
+            { src: '2023-12/05.jpg' },
+            { src: '2023-12/06.jpg' },
+            { src: '2023-12/07.jpg' },
+            { src: '2023-12/08.jpg' }
         ]
     },
     {
