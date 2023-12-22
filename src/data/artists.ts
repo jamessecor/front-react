@@ -4,7 +4,7 @@ export const artists: Array<IArtist> = [
     {
         paramName: 'alexandra-bottinelli',
         name: 'Alexandra Bottinelli',
-        website: 'http://alexandrabottinelli.blogspot.com',
+        website: 'https://www.alexandrabottinelli.com',
         instagram: {
             handle: '@love.the.dirt',
             link: 'http://www.instagram.com/love.the.dirt'
