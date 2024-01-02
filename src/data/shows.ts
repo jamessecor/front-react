@@ -2,6 +2,21 @@ import { IShow } from "../models/Show";
 
 export const shows: Array<IShow> = [
     {
+        name: 'elisabeth-mazzilli-passage',
+        number: 58.1,
+        displayName: 'Elisabeth Mazzilli: Passage',
+        startDate: new Date(new Date('2024-01-05').setHours(24, 0, 0, 0)),
+        featuredImage: {
+            src: '2024-01/featured.jpg',
+            text: 'Elisabeth Mazzilli, Magician, 2023, woolen fiber on linen, 24" x 36"'
+        },
+        description: [
+            '<strong>January 5-28, 2024</strong>',
+            '<strong>Opening Reception: Friday Jan 5, 4-7 PM</strong>',
+            '<strong>Artist\'s Talk: January 18, 6:30 PM</strong>'
+        ]
+    },
+    {
         name: '58',
         number: 58,
         displayName: 'Show 58',
