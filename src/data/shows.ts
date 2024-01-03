@@ -13,7 +13,10 @@ export const shows: Array<IShow> = [
         description: [
             '<strong>January 5-28, 2024</strong>',
             '<strong>Opening Reception: Friday Jan 5, 4-7 PM</strong>',
-            '<strong>Artist\'s Talk: January 18, 6:30 PM</strong>'
+            '<strong>Artist\'s Talk: January 18, 6:30 PM</strong>',
+            'Elisabeth Mazzilli is a fabric artist working in the painstaking tradition of hooking. Her solo exhibit at The Front in January consists mainly of large hooked images of animals and personal symbols that constitute a Tarot -- a set of images, originally on playing cards, used for divination or gaining insight into past, present, and future.',
+            'Her imagery comes out of a life off the grid. "I live very close to the land," she says, "and over the last 20 years I have developed a strong personal companionship with the forest and animals I live with." She collaborated with her son, also an artist, on the original design, and completed the hooking over the last winter.',
+            'In the past she has developed annual series on themes including depression, immigration, the Me Too movement, and the mountains she loves. Her Tarot images represent the passage of every stage of life in the cycles of death and rebirth.'
         ]
     },
     {
