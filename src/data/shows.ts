@@ -17,6 +17,12 @@ export const shows: Array<IShow> = [
             'Elisabeth Mazzilli is a fabric artist working in the painstaking tradition of hooking. Her solo exhibit at The Front in January consists mainly of large hooked images of animals and personal symbols that constitute a Tarot -- a set of images, originally on playing cards, used for divination or gaining insight into past, present, and future.',
             'Her imagery comes out of a life off the grid. "I live very close to the land," she says, "and over the last 20 years I have developed a strong personal companionship with the forest and animals I live with." She collaborated with her son, also an artist, on the original design, and completed the hooking over the last winter.',
             'In the past she has developed annual series on themes including depression, immigration, the Me Too movement, and the mountains she loves. Her Tarot images represent the passage of every stage of life in the cycles of death and rebirth.'
+        ],
+        images: [
+            { src: '2024-01/01.jpeg' },
+            { src: '2024-01/02.jpeg' },
+            { src: '2024-01/03.jpeg' },
+            { src: '2024-01/04.jpeg' }
         ]
     },
     {
@@ -48,7 +54,7 @@ export const shows: Array<IShow> = [
     {
         name: 'delia-robinson-then-and-now',
         number: 57.1,
-        displayName: 'Delia Robinson - Then and Now',
+        displayName: 'Delia Robinson: Then and Now',
         startDate: new Date(new Date('2023-11-03').setHours(24, 0, 0, 0)),
         featuredImage: {
             src: '2023-11/featured.jpg',
@@ -103,7 +109,7 @@ export const shows: Array<IShow> = [
     {
         name: 'marjorie-kramer-paintings',
         number: 56.1,
-        displayName: 'Marjorie Kramer - Paintings',
+        displayName: 'Marjorie Kramer: Paintings',
         startDate: new Date(new Date('2023-09-01').setHours(24, 0, 0, 0)),
         featuredImage: {
             src: '2023-09/featured.jpg',
@@ -389,7 +395,7 @@ export const shows: Array<IShow> = [
     {
         name: 'chirping-in-the-thickets',
         number: 51.1,
-        displayName: 'Chirping in the Thickets',
+        displayName: 'James Secor: Chirping in the Thickets',
         description: [
             '<strong>Nov 4 - Nov 27, 2022</strong>',
             'Opening reception: Friday, Nov 4, 4-7pm',
