@@ -2,6 +2,25 @@ import { IShow } from "../models/Show";
 
 export const shows: Array<IShow> = [
     {
+        name: 'show-59',
+        number: 59,
+        displayName: 'Show 59',
+        startDate: new Date(new Date('2024-02-02').setHours(24, 0, 0, 0)),
+        featuredImage: {
+            src: '2024-02/featured.jpg',
+            text: 'Richard Moore, RWM Lake Front Property'
+        },
+        description: [
+            '<strong>February 2-25, 2024</strong>',
+            '<strong>Opening & Art Walk Reception: Friday Feb 2, 4-8 PM</strong>',
+            'The Front\'s Group Show 59 runs Friday, February 2 through Sunday, February 25',
+            'Join us this Friday, February 2nd, for the opening reception of Show 59, featuring work by all members at The Front gallery.',
+            'Make an evening of it: Montpelier Art Walk runs this Friday between 4:00 and 8:00. Pick up a guidebook at any venue or see <a href="https://montpelieralive.com/artwalk" target="_blank">https://montpelieralive.com/artwalk</a>',
+            'If you can\'t be there on opening day, Show 59 will continue through Sunday, February 25th, every Friday from 4 to 7 and Saturday-Sunday 11 to 5, or by appointment. Email us at <a href="mailto:info@thefrontvt.com" target="_blank">info@thefrontvt.com</a> or leave a voicemail at <a href="tel:(802) 552-0877">(802) 552-0877</a>.',
+            'Thanks to everyone who came out to see Elisabeth Mazzilli\'s solo show and artist talk last month. Stay tuned for our next solo show featuring work by Alexandra Bottinelli, opening in March.'
+        ]
+    },
+    {
         name: 'elisabeth-mazzilli-passage',
         number: 58.1,
         displayName: 'Elisabeth Mazzilli: Passage',
