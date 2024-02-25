@@ -2,6 +2,22 @@ import { IShow } from "../models/Show";
 
 export const shows: Array<IShow> = [
     {
+        name: 'alexandra-bottinelli-art-is-process',
+        number: 59.1,
+        displayName: 'Alexandra Bottinelli: art is process',
+        startDate: new Date(new Date('2024-03-01').setHours(24, 0, 0, 0)),
+        featuredImage: {
+            src: '2024-03/featured.jpg',
+            text: 'Alexandra Bottinelli - vessel twenty-two, 2024'
+        },
+        description: [
+            '<strong>March 1-31, 2024</strong>',
+            '<strong>Opening Reception: Friday March 1, 4-7 PM</strong>',
+            '<strong>Artist\'s Talk: March 22, 5PM</strong>',
+            '<em>art is process</em> is beeswax and encaustic in 3- &amp; 2- dimensions'
+        ]
+    },
+    {
         name: 'show-59',
         number: 59,
         displayName: 'Show 59',
