@@ -14,7 +14,11 @@ export const shows: Array<IShow> = [
             '<strong>March 1-31, 2024</strong>',
             '<strong>Opening Reception: Friday March 1, 4-7 PM</strong>',
             '<strong>Artist\'s Talk: March 22, 5PM</strong>',
-            '<em>art is process</em> is beeswax and encaustic in 3- &amp; 2- dimensions'
+            'Alexandra Bottinelli\'s sculptures of found wood from a tidal reef in Maine are hand finished with richly pigmented beeswax. Her encaustic paintings are mysterious and layered. The sculptures and paintings will be on view together at The Front in Montpelier through March 31.',
+            'Bottinelli grew up in New England during the 40s and 50s in a rural neighborhood surrounded by woods, a pond, and a salt water river. As a child, she played outdoors in all seasons, collected stamps, and cut images from the Sears & Roebuck catalog to make domestic dioramas.',
+            'In the mid-80s, she made the decision to return to college. Feeling at home in the art department, she says it was there she "decided she could be an artist," drawing upon the things she loved as a child - collecting, scissors, and nature.',
+            'In the 90s, at the Vermont Studio Center, Bottinelli discovered encaustics (beeswax, resin, pigment) and began using this medium for her collage work. At the same time, she was collecting Maine driftwood each summer, "not always clear what I would do with them." Eventually the beeswax melded into the wood work. Principles that guide her process are "drawing on iconic memories, enough of nothing, serenity amid chaos."',
+            'For more than three decades Bottinelli has become known for her collage paintings and found-wood assemblages. Her work has been shown in Maine, from the Leighton gallery in Blue Hill, and the Elan Gallery in Rockport; to Studio Place Arts in Barre, the Kent Museum in Calais, and university shows at Norwich University, Goddard College, and Castleton and Johnson State Colleges. She lives and works in Hardwick, Vermont.'
         ]
     },
     {
