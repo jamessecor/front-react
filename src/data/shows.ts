@@ -26,7 +26,8 @@ export const shows: Array<IShow> = [
             { src: '2024-03/03.jpeg' },
             { src: '2024-03/04.jpeg' },
             { src: '2024-03/05.jpeg' },
-            { src: '2024-03/06.jpeg' }
+            { src: '2024-03/06.jpeg' },
+            { src: '2024-03/07.jpeg' }
         ]
     },
     {
