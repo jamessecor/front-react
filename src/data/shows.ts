@@ -19,6 +19,14 @@ export const shows: Array<IShow> = [
             'In the mid-80s, she made the decision to return to college. Feeling at home in the art department, she says it was there she "decided she could be an artist," drawing upon the things she loved as a child - collecting, scissors, and nature.',
             'In the 90s, at the Vermont Studio Center, Bottinelli discovered encaustics (beeswax, resin, pigment) and began using this medium for her collage work. At the same time, she was collecting Maine driftwood each summer, "not always clear what I would do with them." Eventually the beeswax melded into the wood work. Principles that guide her process are "drawing on iconic memories, enough of nothing, serenity amid chaos."',
             'For more than three decades Bottinelli has become known for her collage paintings and found-wood assemblages. Her work has been shown in Maine, from the Leighton gallery in Blue Hill, and the Elan Gallery in Rockport; to Studio Place Arts in Barre, the Kent Museum in Calais, and university shows at Norwich University, Goddard College, and Castleton and Johnson State Colleges. She lives and works in Hardwick, Vermont.'
+        ],
+        images: [
+            { src: '2024-03/01.jpeg' },
+            { src: '2024-03/02.jpeg' },
+            { src: '2024-03/03.jpeg' },
+            { src: '2024-03/04.jpeg' },
+            { src: '2024-03/05.jpeg' },
+            { src: '2024-03/06.jpeg' }
         ]
     },
     {
@@ -38,6 +46,20 @@ export const shows: Array<IShow> = [
             'Make an evening of it: Montpelier Art Walk runs this Friday between 4:00 and 8:00. Pick up a guidebook at any venue or see <a href="https://montpelieralive.com/artwalk" target="_blank">https://montpelieralive.com/artwalk</a>',
             'If you can\'t be there on opening day, Show 59 will continue through Sunday, February 25th, every Friday from 4 to 7 and Saturday-Sunday 11 to 5, or by appointment. Email us at <a href="mailto:info@thefrontvt.com" target="_blank">info@thefrontvt.com</a> or leave a voicemail at <a href="tel:(802) 552-0877">(802) 552-0877</a>.',
             'Thanks to everyone who came out to see Elisabeth Mazzilli\'s solo show and artist talk last month. Stay tuned for our next solo show featuring work by Alexandra Bottinelli, opening in March.'
+        ],
+        images: [
+            { src: '2024-02/01.jpg' },
+            { src: '2024-02/02.jpg' },
+            { src: '2024-02/03.jpg' },
+            { src: '2024-02/04.jpg' },
+            { src: '2024-02/05.jpg' },
+            { src: '2024-02/06.jpg' },
+            { src: '2024-02/07.jpg' },
+            { src: '2024-02/08.jpg' },
+            { src: '2024-02/09.jpg' },
+            { src: '2024-02/10.jpg' },
+            { src: '2024-02/11.jpg' },
+            { src: '2024-02/12.jpg' }
         ]
     },
     {
