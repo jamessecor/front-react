@@ -2,6 +2,24 @@ import { IShow } from "../models/Show";
 
 export const shows: Array<IShow> = [
     {
+        name: 'show-60',
+        number: 60,
+        displayName: 'Show 60',
+        startDate: new Date(new Date('2024-04-05').setHours(24, 0, 0, 0)),
+        featuredImage: {
+            src: '2024-04/featured.jpg',
+            text: 'Chip Haggerty, Bridge, 41 x 65 acrylic, crayon, brown bag paper, duct tape'
+        },
+        description: [
+            '<strong>April 5-28, 2024</strong>',
+            '<strong>Opening & Art Walk Reception: Friday April 5, 4-8 PM</strong>',
+            'Join us this Friday, April 5th, for the opening reception of Show 60, featuring work by all members at The Front.',
+            'Make an evening of it: Montpelier Art Walk runs this Friday between 4:00 and 8:00. Pick up a guidebook at any venue or see <a target="_blank" href="https://www.facebook.com/MontpelierArtWalk">facebook.com/MontpelierArtWalk</a>',
+            'If you can\'t be there on opening day, Show 60 will continue through Sunday, April 28th, every Friday from 4 to 7 and Saturday-Sunday 11 to 5, or by appointment. <a href="/visit">Contact Us</a>',
+            'Thanks to everyone who came out to see Alexandra Bottinelli\'s solo show and artist talk last month. Stay tuned for our next solo show featuring work by Kate Fetherston, opening in May.'
+        ]
+    },
+    {
         name: 'alexandra-bottinelli-art-is-process',
         number: 59.1,
         displayName: 'Alexandra Bottinelli: art is process',
