@@ -1,6 +1,7 @@
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
 import { useState } from "react";
+import { useSearchParams } from 'react-router-dom';
 import { BiDonateHeart } from "react-icons/bi";
 import { BsEnvelopeOpen, BsInstagram } from 'react-icons/bs';
 import { PAYPAL_DONATE_LINK } from "../models/Paypal";
@@ -14,7 +15,8 @@ const footerStyle = {
 };
 
 const Footer = () => {
-    const [isContactFormOpen, setIsContactFormOpen] = useState(false);
+    const [searchParams, setSearchParams] = useSearchParams();
+    const [isContactFormOpen, setIsContactFormOpen] = useState(searchParams.get('open-contact-form') ?? false);
 
     return (
         <Box

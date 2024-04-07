@@ -15,7 +15,7 @@ export const shows: Array<IShow> = [
             '<strong>Opening & Art Walk Reception: Friday April 5, 4-8 PM</strong>',
             'Join us this Friday, April 5th, for the opening reception of Show 60, featuring work by all members at The Front.',
             'Make an evening of it: Montpelier Art Walk runs this Friday between 4:00 and 8:00. Pick up a guidebook at any venue or see <a target="_blank" href="https://www.facebook.com/MontpelierArtWalk">facebook.com/MontpelierArtWalk</a>',
-            'If you can\'t be there on opening day, Show 60 will continue through Sunday, April 28th, every Friday from 4 to 7 and Saturday-Sunday 11 to 5, or by appointment. <a href="/visit">Contact Us</a>',
+            'If you can\'t be there on opening day, Show 60 will continue through Sunday, April 28th, every Friday from 4 to 7 and Saturday-Sunday 11 to 5, or by appointment. <a href="/shows/show-60?open-contact-form=true">Contact Us</a>',
             'Thanks to everyone who came out to see Alexandra Bottinelli\'s solo show and artist talk last month. Stay tuned for our next solo show featuring work by Kate Fetherston, opening in May.'
         ]
     },
