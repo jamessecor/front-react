@@ -2,6 +2,25 @@ import { IShow } from "../models/Show";
 
 export const shows: Array<IShow> = [
     {
+        name: 'kate-fetherston-field-notes-an-essay',
+        number: 60.1,
+        displayName: 'Kate Fetherston - Field Notes: An Essay',
+        startDate: new Date(new Date('2024-05-03').setHours(24, 0, 0, 0)),
+        featuredImage: {
+            src: '2024-05/featured.jpg',
+            text: 'Confluence, mixed media on canvas, 36" x 56" 2024'
+        },
+        description: [
+            '<strong>May 3-26, 2024</strong>',
+            '<strong>Opening Reception: Friday May 3, 4-7 PM</strong>',
+            '<strong>Artist\'s Talk: May 17, 5:30-7:00 PM</strong>',
+            'The month of May opens with birdsong at The Front in Montpelier.',
+            'Kate Fetherston\'s exhibit of brilliant color and energy—“Field Notes”—focuses on birdsong and the patterns and landscapes of spring, “a confluence of memory, shape, and movement.”',
+            'Don\'t expect pictures of birds and flowers, however. “My method is abstraction,” Fetherston says, “which is as close to the bone-truth as I can bear to get.”Nevertheless, her abstract images sing, and they fly. They suggest many layers of experience as well as layers of texture and technique.',
+            'Her work is influenced by the Japanese aesthetic of wabi-sabi, which leans into the imperfection, temporality, and bittersweet nature of life. She has a BA in Philosophy, an MSW, and an MFA in Poetry, with two books of poetry published and a third on the way. She has shown her visual art throughout New Hampshire and Vermont and has received grants in both poetry and visual art from the Vermont Studio Center and the Vermont Council on the Arts. She is a clinical social worker in private practice in Montpelier, Vermont.'
+        ]
+    },
+    {
         name: 'show-60',
         number: 60,
         displayName: 'Show 60',
