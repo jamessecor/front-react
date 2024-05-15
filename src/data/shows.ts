@@ -11,7 +11,7 @@ export const shows: Array<IShow> = [
             text: 'Confluence, mixed media on canvas, 36" x 56" 2024'
         },
         description: [
-            '<strong>May 3-26, 2024</strong>',
+            '<strong>May 3 - June 2, 2024</strong>',
             '<strong>Opening Reception: Friday May 3, 4-7 PM</strong>',
             '<strong>Artist\'s Talk: May 17, 5:30-7:00 PM</strong>',
             'The month of May opens with birdsong at The Front in Montpelier.',
