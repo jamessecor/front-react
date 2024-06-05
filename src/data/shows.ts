@@ -2,6 +2,23 @@ import { IShow } from "../models/Show";
 
 export const shows: Array<IShow> = [
     {
+        name: 'show-61',
+        number: 61,
+        displayName: 'Show 61',
+        startDate: new Date(new Date('2024-06-07').setHours(24, 0, 0, 0)),
+        featuredImage: {
+            src: '2024-06/featured.jpg'
+        },
+        description: [
+            '<strong>June 7-30, 2024</strong>',
+            '<strong>Opening & Art Walk Reception: Friday June 7, 4-8 PM</strong>',
+            'Join us this Friday, June 7th, for the opening reception of Show 61, featuring work by all members at The Front.',
+            'Make an evening of it: Montpelier Art Walk runs this Friday between 4:00 and 8:00. Pick up a guidebook at any venue -- see <a href="https://www.facebook.com/MontpelierArtWalk" target="_blank">Montpelier Art Walk\'s Facebook page</a> for details!',
+            'If you can\'t be there on opening day, Show 61 will continue through Sunday, June 30th, every Friday from 4 to 7 and Saturday-Sunday 11 to 5, or by appointment. <a href="/shows/show-61?open-contact-form=true">Contact Us</a>',
+            'Thanks to everyone who came out to see <a href="/shows/kate-fetherston-field-notes-an-essay" target="_blank">Kate Fetherston\'s solo show</a> and artist talk last month. Stay tuned for our next solo show featuring work by <a href="/artists/sam-thurston" target="_blank">Sam Thurston</a>, opening in July.'
+        ]
+    },
+    {
         name: 'kate-fetherston-field-notes-an-essay',
         number: 60.1,
         displayName: 'Kate Fetherston - Field Notes: An Essay',
