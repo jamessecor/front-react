@@ -35,6 +35,15 @@ export const shows: Array<IShow> = [
             'Kate Fetherston\'s exhibit of brilliant color and energy—“Field Notes”—focuses on birdsong and the patterns and landscapes of spring, “a confluence of memory, shape, and movement.”',
             'Don\'t expect pictures of birds and flowers, however. “My method is abstraction,” Fetherston says, “which is as close to the bone-truth as I can bear to get.”Nevertheless, her abstract images sing, and they fly. They suggest many layers of experience as well as layers of texture and technique.',
             'Her work is influenced by the Japanese aesthetic of wabi-sabi, which leans into the imperfection, temporality, and bittersweet nature of life. She has a BA in Philosophy, an MSW, and an MFA in Poetry, with two books of poetry published and a third on the way. She has shown her visual art throughout New Hampshire and Vermont and has received grants in both poetry and visual art from the Vermont Studio Center and the Vermont Council on the Arts. She is a clinical social worker in private practice in Montpelier, Vermont.'
+        ],
+        images: [
+            { src: '2024-05/01.jpeg' },
+            { src: '2024-05/02.jpeg' },
+            { src: '2024-05/03.jpeg' },
+            { src: '2024-05/04.jpeg' },
+            { src: '2024-05/05.jpeg' },
+            { src: '2024-05/06.jpeg' },
+            { src: '2024-05/07.jpeg' }
         ]
     },
     {
