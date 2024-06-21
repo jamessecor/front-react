@@ -16,6 +16,17 @@ export const shows: Array<IShow> = [
             'Make an evening of it: Montpelier Art Walk runs this Friday between 4:00 and 8:00. Pick up a guidebook at any venue -- see <a href="https://www.facebook.com/MontpelierArtWalk" target="_blank">Montpelier Art Walk\'s Facebook page</a> for details!',
             'If you can\'t be there on opening day, Show 61 will continue through Sunday, June 30th, every Friday from 4 to 7 and Saturday-Sunday 11 to 5, or by appointment. <a href="/shows/show-61?open-contact-form=true">Contact Us</a>',
             'Thanks to everyone who came out to see <a href="/shows/kate-fetherston-field-notes-an-essay" target="_blank">Kate Fetherston\'s solo show</a> and artist talk last month. Stay tuned for our next solo show featuring work by <a href="/artists/sam-thurston" target="_blank">Sam Thurston</a>, opening in July.'
+        ],
+        images: [
+            { src: '2024-06/01.jpg' },
+            { src: '2024-06/02.jpg' },
+            { src: '2024-06/03.jpg' },
+            { src: '2024-06/04.jpg' },
+            { src: '2024-06/05.jpg' },
+            { src: '2024-06/06.jpg' },
+            { src: '2024-06/07.jpg' },
+            { src: '2024-06/08.jpg' },
+            { src: '2024-06/09.jpg' }
         ]
     },
     {

@@ -28,7 +28,7 @@ const Home = () => {
             <Typography textAlign={'center'} variant={'h4'}>
               {currentShow.displayName}
             </Typography>
-            <img className={'image-home'} src={getFullImagePath(currentShowFeaturedImage?.src ?? '', 'shows')} />
+            <img className={'image-home image-rounded'} src={getFullImagePath(currentShowFeaturedImage?.src ?? '', 'shows')} />
             {currentShowFeaturedImage?.text
               ? (
                 <Typography variant={'body2'}>

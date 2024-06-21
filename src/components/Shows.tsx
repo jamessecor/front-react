@@ -34,7 +34,7 @@ const Shows = () => {
                         >
                             {show.featuredImage && (
                                 <ButtonBase onClick={() => navigateTo(`/shows/${show.name}`)}>
-                                    <img className={'image-home'} src={getFullImagePath(show.featuredImage.src ?? '', 'shows')} />
+                                    <img className={'image-home image-rounded'} src={getFullImagePath(show.featuredImage.src ?? '', 'shows')} />
                                 </ButtonBase>
                             )}
                             <Button

@@ -55,7 +55,7 @@ const Show = () => {
                             xs={12}
                             md={4}
                         >
-                            <img width={'100%'} src={getFullImagePath(show.featuredImage.src, 'shows')} />
+                            <img className={'image-rounded'} width={'100%'} src={getFullImagePath(show.featuredImage.src, 'shows')} />
                         </Grid>
                     )}
                     {show?.description?.length && (
