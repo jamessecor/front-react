@@ -73,6 +73,27 @@ export const shows: Array<IShow> = [
             'Make an evening of it: Montpelier Art Walk runs this Friday between 4:00 and 8:00. Pick up a guidebook at any venue or see <a target="_blank" href="https://www.facebook.com/MontpelierArtWalk">facebook.com/MontpelierArtWalk</a>',
             'If you can\'t be there on opening day, Show 60 will continue through Sunday, April 28th, every Friday from 4 to 7 and Saturday-Sunday 11 to 5, or by appointment. <a href="/shows/show-60?open-contact-form=true">Contact Us</a>',
             'Thanks to everyone who came out to see Alexandra Bottinelli\'s solo show and artist talk last month. Stay tuned for our next solo show featuring work by Kate Fetherston, opening in May.'
+        ],
+        images: [
+            { src: '2024-04/01.jpeg' },
+            { src: '2024-04/02.jpeg' },
+            { src: '2024-04/03.jpeg' },
+            { src: '2024-04/04.jpeg' },
+            { src: '2024-04/05.jpeg' },
+            { src: '2024-04/06.jpeg' },
+            { src: '2024-04/07.jpeg' },
+            { src: '2024-04/08.jpeg' },
+            { src: '2024-04/09.jpeg' },
+            { src: '2024-04/10.jpeg' },
+            { src: '2024-04/11.jpeg' },
+            { src: '2024-04/12.jpeg' },
+            { src: '2024-04/13.jpeg' },
+            { src: '2024-04/14.jpeg' },
+            { src: '2024-04/15.jpeg' },
+            { src: '2024-04/16.jpeg' },
+            { src: '2024-04/17.jpeg' },
+            { src: '2024-04/18.jpeg' },
+            { src: '2024-04/19.jpeg' }
         ]
     },
     {
