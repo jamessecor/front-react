@@ -2,6 +2,25 @@ import { IShow } from "../models/Show";
 
 export const shows: Array<IShow> = [
     {
+        name: 'sam-thurston-various-works',
+        number: 61.1,
+        displayName: 'Sam Thurston - Various Works',
+        startDate: new Date(new Date('2024-07-05').setHours(24, 0, 0, 0)),
+        featuredImage: {
+            src: '2024-07/featured.jpg',
+            text: 'Woman with Hair Down," basswood, 2023, 14.5" x 12" x 6"'
+        },
+        description: [
+            '<strong>July 5 - 28, 2024</strong>',
+            '<strong>Opening Reception: Friday July 5, 4-7 PM</strong>',
+            '<strong>Artist\'s Talk: Thursday, July 18, 6-7 PM</strong>',
+            '“Various” is the word for Sam Thurston’s solo show at The Front in July: carved basswood heads and figures, painted still lifes, small ceramics, even his long fascination with architectural detail. Half of the work is from the last three years, and the rest recalls earlier years beginning in a small NYC apartment, “having quit art school.”',
+            '“This show could be called an older person bringing their past into focus while still concentrating on the present,” Sam says. “I’m 81 now,” he adds. The work represents the range and diversity of experience in a life well-lived in the arts, back and forth from 14th Street in NYC to a farmhouse in Lowell VT, with his wife, the painter Marjorie Kramer.',
+            'The bold sculpted heads, his current work, are approximately life-size but feel larger than life, with a still formality that feels as much like a totem as a portrait. Details reveal Sam’s wit: a hair clasp on the back of a head becomes a garden spade; a scar in the wood of another head becomes a featured birth mark.',
+            'Earlier works in two dimensions or in bas relief have a related stillness. Even the figures on a city corner (or in a rocking boat) have the same formality and composure. For the artist, this appears to be life-long.'
+        ]
+    },
+    {
         name: 'show-61',
         number: 61,
         displayName: 'Show 61',
