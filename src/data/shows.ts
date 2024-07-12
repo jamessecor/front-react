@@ -13,7 +13,7 @@ export const shows: Array<IShow> = [
         description: [
             '<strong>July 5 - 28, 2024</strong>',
             '<strong>Opening Reception: Friday July 5, 4-7 PM</strong>',
-            '<strong>Artist\'s Talk: Thursday, July 18, 6-7 PM</strong>',
+            '<strong>Artist\'s Talk: Thursday, July 18, 6-7 PM</strong> - Personal Mythology and Social Mythology in Art. I will start with something about my life and context but will try to keep the talk more on ideas.',
             '“Various” is the word for Sam Thurston’s solo show at The Front in July: carved basswood heads and figures, painted still lifes, small ceramics, even his long fascination with architectural detail. Half of the work is from the last three years, and the rest recalls earlier years beginning in a small NYC apartment, “having quit art school.”',
             '“This show could be called an older person bringing their past into focus while still concentrating on the present,” Sam says. “I’m 81 now,” he adds. The work represents the range and diversity of experience in a life well-lived in the arts, back and forth from 14th Street in NYC to a farmhouse in Lowell VT, with his wife, the painter Marjorie Kramer.',
             'The bold sculpted heads, his current work, are approximately life-size but feel larger than life, with a still formality that feels as much like a totem as a portrait. Details reveal Sam’s wit: a hair clasp on the back of a head becomes a garden spade; a scar in the wood of another head becomes a featured birth mark.',
