@@ -2,6 +2,23 @@ import { IShow } from "../models/Show";
 
 export const shows: Array<IShow> = [
     {
+        name: 'show-62',
+        number: 62,
+        displayName: 'Show 62',
+        startDate: new Date(new Date('2024-08-02').setHours(24, 0, 0, 0)),
+        featuredImage: {
+            src: '2024-08/featured.jpg',
+            text: 'Elisabeth Mazzilli - Night and Day'
+        },
+        description: [
+            '<strong>August 2 - September 1, 2024</strong>',
+            '<strong>Opening & Art Walk Reception: Friday August 2, 4-8 PM</strong>',
+            'Join us this Friday, August 2nd, for the opening reception of Show 62, featuring work by all members at The Front.',
+            'Make an evening of it: Montpelier Art Walk runs this Friday between 4:00 and 8:00. Pick up a guidebook at any venue -- see <a href="https://www.facebook.com/MontpelierArtWalk" target="_blank">Montpelier Art Walk\'s Facebook page</a> for details!',
+            'If you can\'t be there on opening day, Show 62 will continue through Sunday, September 1st, every Friday from 4 to 7 and Saturday-Sunday 11 to 5, or by appointment. <a href="/shows/show-61?open-contact-form=true">Contact Us</a>'
+        ]
+    },
+    {
         name: 'sam-thurston-various-works',
         number: 61.1,
         displayName: 'Sam Thurston - Various Works',
@@ -18,6 +35,15 @@ export const shows: Array<IShow> = [
             '“This show could be called an older person bringing their past into focus while still concentrating on the present,” Sam says. “I’m 81 now,” he adds. The work represents the range and diversity of experience in a life well-lived in the arts, back and forth from 14th Street in NYC to a farmhouse in Lowell VT, with his wife, the painter Marjorie Kramer.',
             'The bold sculpted heads, his current work, are approximately life-size but feel larger than life, with a still formality that feels as much like a totem as a portrait. Details reveal Sam’s wit: a hair clasp on the back of a head becomes a garden spade; a scar in the wood of another head becomes a featured birth mark.',
             'Earlier works in two dimensions or in bas relief have a related stillness. Even the figures on a city corner (or in a rocking boat) have the same formality and composure. For the artist, this appears to be life-long.'
+        ],
+        images: [
+            { src: '2024-07/01.jpg' },
+            { src: '2024-07/02.jpg' },
+            { src: '2024-07/03.jpg' },
+            { src: '2024-07/04.jpg' },
+            { src: '2024-07/05.jpg' },
+            { src: '2024-07/06.jpg' },
+            { src: '2024-07/07.jpg' }
         ]
     },
     {
