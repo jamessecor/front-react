@@ -2,10 +2,30 @@ import { IShow } from "../models/Show";
 
 export const shows: Array<IShow> = [
     {
+        name: 'anne-cogbill-rose-paintings-2020-2024',
+        number: 62.1,
+        displayName: 'ANNE COGBILL ROSE: Paintings 2020-2024',
+        startDate: new Date('2024-09-06T08:00:00'),
+        endDate: new Date('2024-09-29T17:00:00'),
+        featuredImage: {
+            src: '2024-09/featured.jpg',
+            text: 'Unwanted Kiss, acrylic, 34"x34", 2024'
+        },
+        description: [
+            '<strong>Opening Reception: Friday September 6, 4-8 PM</strong>',
+            '<strong>Artist\'s Talk: Thursday September 19, 5:30-6:00 PM</strong>',
+            'There are two sides to Anne Cogbill Rose\'s paintings during the era of Covid 19: the fragile but critical fabric of family, friends, and love; and the persistent intrusions of external fear, anger, and loss.',
+            'Rose does not shy away from the extremes. The same intensity and intimacy are found in a portrait of a grand-daughter, achingly sweet, and a heart-stopping tableau of George Floyd’s killing. Both are rendered with the same artistic vocabulary of large fields of color and simple figurative shapes. The paintings themselves—and one mobile —are too large and strong to walk by casually.',
+            'It takes courage to mount a show like this. “I\'m feeling vulnerable,” Rose says. But her openness to both love and fear may allow the viewer as well to open up to the beauty and pain of our times.',
+            'Rose is married to the painter Jonathan Rose. “We both paint,” she says, “but we try not to comment on each other’s work unless asked.” (Both smile.) They have kept at it for nearly 60 years. For 20 years they ran a B and B in the West Indies, leading art retreats and classes. Today they live in Thetford, Vermont and winter in Merida, Mexico, on the Yucatan peninsula.'
+        ]
+    },
+    {
         name: 'show-62',
         number: 62,
         displayName: 'Show 62',
-        startDate: new Date(new Date('2024-08-02').setHours(24, 0, 0, 0)),
+        startDate: new Date('2024-08-02T12:00:00'),
+        endDate: new Date('2024-09-01T17:00:00'),
         featuredImage: {
             src: '2024-08/featured.jpg',
             text: 'Elisabeth Mazzilli - Night and Day'

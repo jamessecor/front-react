@@ -10,9 +10,12 @@ const useImages = () => {
             : null
     }, [shows]);
 
-    const getCurrentShow = useCallback(() => shows.sort((a, b) => b.number - a.number)[0] ?? {}, []);
+    const getCurrentShow = useCallback(() => shows.find((show) => (show.endDate && show.endDate >= new Date())
+        && (show.startDate && show.startDate <= new Date())), []);
 
-    const currentShow = useMemo(() => getCurrentShow(), [getCurrentShow]);
+    const getHighestNumberedShow = useCallback(() => shows.sort((a, b) => b.number - a.number)[0] ?? {}, []);
+
+    const currentShow = useMemo(() => getCurrentShow() ?? getHighestNumberedShow(), [getCurrentShow]);
     const currentShowImages = useMemo(() => currentShow.images, [currentShow]);
     const currentShowFeaturedImage = useMemo(() => currentShow.featuredImage, [currentShow]);
 
