@@ -711,6 +711,19 @@ export const artists: Array<IArtist> = [
         // ]
     },
     {
+        paramName: 'mark-lorah',
+        name: "Mark Lorah",
+        // thumbnail: {
+        //     src: 'mark-lorah/thumbnail.jpg',
+        // },
+        images: [],
+        // bio: [],
+        // instagram: {
+
+        // },
+        // website: ''
+    },
+    {
         paramName: 'melora-kennedy',
         name: "Melora Kennedy",
         thumbnail: {
