@@ -36,6 +36,21 @@ export const shows: Array<IShow> = [
             'Join us this Friday, August 2nd, for the opening reception of Show 62, featuring work by all members at The Front.',
             'Make an evening of it: Montpelier Art Walk runs this Friday between 4:00 and 8:00. Pick up a guidebook at any venue -- see <a href="https://www.facebook.com/MontpelierArtWalk" target="_blank">Montpelier Art Walk\'s Facebook page</a> for details!',
             'If you can\'t be there on opening day, Show 62 will continue through Sunday, September 1st, every Friday from 4 to 7 and Saturday-Sunday 11 to 5, or by appointment. <a href="/shows/show-61?open-contact-form=true">Contact Us</a>'
+        ],
+        images: [
+            { src: '2024-08/01.jpg' },
+            { src: '2024-08/02.jpg' },
+            { src: '2024-08/03.jpg' },
+            { src: '2024-08/04.jpg' },
+            { src: '2024-08/05.jpg' },
+            { src: '2024-08/06.jpg' },
+            { src: '2024-08/07.jpg' },
+            { src: '2024-08/08.jpg' },
+            { src: '2024-08/09.jpg' },
+            { src: '2024-08/10.jpg' },
+            { src: '2024-08/11.jpg' },
+            { src: '2024-08/12.jpg' },
+            { src: '2024-08/13.jpg' }
         ]
     },
     {
