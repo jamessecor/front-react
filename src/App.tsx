@@ -3,6 +3,7 @@ import { Route, Routes, BrowserRouter } from 'react-router-dom';
 import AppThemeProvider from './AppThemeProvider';
 import Navbar from './components/Navbar';
 import Home from './components/Home';
+import Events from './components/Events';
 import Artists from './components/Artists';
 import Artist from './components/Artist';
 import Shows from './components/Shows';
@@ -21,6 +22,7 @@ const App = () => {
           <Routes>
             <Route element={<Navbar />}>
               <Route element={<Home />} path={'/'} />
+              <Route element={<Events />} path={'/events'} />
               <Route element={<Artists />} path={'/artists'} />
               <Route element={<Artist />} path={'/artists/:name'} />
               <Route element={<Shows />} path={'/shows'} />
