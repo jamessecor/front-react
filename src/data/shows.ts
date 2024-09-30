@@ -2,6 +2,29 @@ import { IShow } from "../models/Show";
 
 export const shows: Array<IShow> = [
     {
+        name: 'show-63',
+        number: 63,
+        displayName: 'Show 63',
+        startDate: new Date('2024-10-04T12:00:00'),
+        endDate: new Date('2024-10-27T17:00:00'),
+        featuredImage: {
+            src: '2024-10/featured.jpeg',
+            text: 'Alexandra Bottinelli - vessel twenty-four'
+        },
+        description: [
+            '<strong>October 4 - 27, 2024</strong>',
+            '<strong>Opening & Art Walk Reception: Friday October 4, 4-8 PM</strong>',
+            'Join us this Friday, October 4th, for the opening reception of Show 63, featuring work by all members at The Front.',
+            'Make an evening of it: Montpelier Art Walk runs this Friday between 4:00 and 8:00. Pick up a guidebook at any venue -- see <a href="https://www.facebook.com/MontpelierArtWalk" target="_blank">Montpelier Art Walk\'s Facebook page</a> for details!',
+            'If you can\'t be there on opening day, Show 63 will continue through Sunday, October 27th, every Friday from 4 to 7 and Saturday-Sunday 11 to 5, or by appointment. <a href="/shows/show-61?open-contact-form=true">Contact Us</a>'
+        ],
+        images: [
+            { src: '2024-10/01.jpeg' },
+            { src: '2024-10/02.jpeg' },
+            { src: '2024-10/03.jpeg' }
+        ]
+    },
+    {
         name: 'anne-cogbill-rose-paintings-2020-2024',
         number: 62.1,
         displayName: 'ANNE COGBILL ROSE: Paintings 2020-2024',
