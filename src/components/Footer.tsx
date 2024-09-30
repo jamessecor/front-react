@@ -16,7 +16,7 @@ const footerStyle = {
 
 const Footer = () => {
     const [searchParams, setSearchParams] = useSearchParams();
-    const [isContactFormOpen, setIsContactFormOpen] = useState(searchParams.get('open-contact-form') ?? false);
+    const [isContactFormOpen, setIsContactFormOpen] = useState(Boolean(searchParams.get('open-contact-form')));
 
     return (
         <Box
@@ -41,7 +41,7 @@ const Footer = () => {
                 </Button>
             </Box>
             <Box justifyContent={'right'}>
-                <div dangerouslySetInnerHTML={{ __html: '&copy; the Front 2023' }}></div>
+                <div>{'© the Front 2024'}</div>
             </Box>
             <ContactForm
                 isOpen={isContactFormOpen}
