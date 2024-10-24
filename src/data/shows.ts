@@ -2,6 +2,25 @@ import { IShow } from "../models/Show";
 
 export const shows: Array<IShow> = [
     {
+        name: 'human-family-works-2013-2024',
+        number: 63.1,
+        displayName: 'Human Family: Works 2013-2024',
+        startDate: new Date('2024-11-01T00:00:00'),
+        endDate: new Date('2024-12-01T17:00:00'),
+        description: [
+            '<strong>Opening Reception Friday November 1, 4-8 PM</strong>',
+            '<strong>Artist\'s Talk Monday November 25, 5:30-6:30 PM</strong>',
+            'Melora Kennedy\'s November show at The Front in Montpelier covers a vast range—the Human Family—but in familiar terrain:  back yards, streets and houses, apples and petunias. Her bright and free paintings of landscapes and people are mixed with occasional sculptural constructions of found objects,',
+            'Each of her works has its original title, but Kennedy has matched each with a phrase or idea from the 1948 UN Declaration of Human Rights—a kind of found poetry that gives the show a wholly unexpected unity and force in the current cultural context. For example: Joe Pie Weed and Onions:  “Right to Marry.”  Glass Table: “Privacy of Family, Home, and Correspondence.” I Went to the River: “Life, Liberty, and Security of Person.”',
+            'In a corner of the gallery one may listen to a recording of different voices and nationalities reading passages from the Declaration of Human Rights, set to music by Max Richter.',
+            'Kennedy describes her experience of creating as a quiet thrill,“like having a fish on the line.” It\'s an experience to be shared—and worth getting hooked.'
+        ],
+        featuredImage: {
+            src: '2024-11/featured.jpg',
+            text: 'Shed, oil, 2024'
+        }
+    },
+    {
         name: 'show-63',
         number: 63,
         displayName: 'Show 63',
