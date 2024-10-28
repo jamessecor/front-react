@@ -2,6 +2,25 @@ import { IShow } from "../models/Show";
 
 export const shows: Array<IShow> = [
     {
+        name: 'human-family-works-2013-2024',
+        number: 63.1,
+        displayName: 'Human Family: Works 2013-2024',
+        startDate: new Date('2024-11-01T00:00:00'),
+        endDate: new Date('2024-12-01T17:00:00'),
+        description: [
+            '<strong>Opening Reception Friday November 1, 4-8 PM</strong>',
+            '<strong>Artist\'s Talk Monday November 25, 5:30-6:30 PM</strong>',
+            'Melora Kennedy\'s November show at The Front in Montpelier covers a vast range—the Human Family—but in familiar terrain:  back yards, streets and houses, apples and petunias. Her bright and free paintings of landscapes and people are mixed with occasional sculptural constructions of found objects,',
+            'Each of her works has its original title, but Kennedy has matched each with a phrase or idea from the 1948 UN Declaration of Human Rights—a kind of found poetry that gives the show a wholly unexpected unity and force in the current cultural context. For example: Joe Pie Weed and Onions:  “Right to Marry.”  Glass Table: “Privacy of Family, Home, and Correspondence.” I Went to the River: “Life, Liberty, and Security of Person.”',
+            'In a corner of the gallery one may listen to a recording of different voices and nationalities reading passages from the Declaration of Human Rights, set to music by Max Richter.',
+            'Kennedy describes her experience of creating as a quiet thrill,“like having a fish on the line.” It\'s an experience to be shared—and worth getting hooked.'
+        ],
+        featuredImage: {
+            src: '2024-11/featured.jpg',
+            text: 'Shed, oil, 2024'
+        }
+    },
+    {
         name: 'show-63',
         number: 63,
         displayName: 'Show 63',
@@ -19,9 +38,19 @@ export const shows: Array<IShow> = [
             'If you can\'t be there on opening day, Show 63 will continue through Sunday, October 27th, every Friday from 4 to 7 and Saturday-Sunday 11 to 5, or by appointment. <a href="/shows/show-61?open-contact-form=true">Contact Us</a>'
         ],
         images: [
-            { src: '2024-10/01.jpeg' },
-            { src: '2024-10/02.jpeg' },
-            { src: '2024-10/03.jpeg' }
+            { src: '2024-10/01.jpg' },
+            { src: '2024-10/02.jpg' },
+            { src: '2024-10/03.jpg' },
+            { src: '2024-10/04.jpg' },
+            { src: '2024-10/05.jpg' },
+            { src: '2024-10/06.jpg' },
+            { src: '2024-10/07.jpg' },
+            { src: '2024-10/08.jpg' },
+            { src: '2024-10/09.jpg' },
+            { src: '2024-10/10.jpg' },
+            { src: '2024-10/11.jpeg' },
+            { src: '2024-10/12.jpeg' },
+            { src: '2024-10/13.jpeg' }
         ]
     },
     {
@@ -41,6 +70,12 @@ export const shows: Array<IShow> = [
             'Rose does not shy away from the extremes. The same intensity and intimacy are found in a portrait of a grand-daughter, achingly sweet, and a heart-stopping tableau of George Floyd’s killing. Both are rendered with the same artistic vocabulary of large fields of color and simple figurative shapes. The paintings themselves—and one mobile —are too large and strong to walk by casually.',
             'It takes courage to mount a show like this. “I\'m feeling vulnerable,” Rose says. But her openness to both love and fear may allow the viewer as well to open up to the beauty and pain of our times.',
             'Rose is married to the painter Jonathan Rose. “We both paint,” she says, “but we try not to comment on each other’s work unless asked.” (Both smile.) They have kept at it for nearly 60 years. For 20 years they ran a B and B in the West Indies, leading art retreats and classes. Today they live in Thetford, Vermont and winter in Merida, Mexico, on the Yucatan peninsula.'
+        ],
+        images: [
+            { src: '2024-09/01.jpeg' },
+            { src: '2024-09/02.jpeg' },
+            { src: '2024-09/03.jpeg' },
+            { src: '2024-09/04.jpeg' }
         ]
     },
     {
