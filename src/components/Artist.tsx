@@ -99,7 +99,7 @@ const Artist = () => {
                                 {artist.bio && (
                                     artist.bio.map((bioItem) => (
                                         <Typography
-                                            key={bioItem}
+                                            key={bioItem.substring(0, 15)}
                                             sx={{ pb: 2 }}
                                             variant={'body1'}
                                         >
