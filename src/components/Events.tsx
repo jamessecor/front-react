@@ -3,6 +3,7 @@ import { Box, Container, Divider, Stack, Typography } from '@mui/material';
 import { MdFestival } from "react-icons/md";
 import Event from './Event';
 import { events } from '../data/events';
+import useImages from '../hooks/useImages';
 
 export const NavItemEvents = 'Events';
 
@@ -11,8 +12,23 @@ const Events = () => {
     const futureEvents = sortedEvents.filter((event) => event.date >= new Date());
     const pastEvents = sortedEvents.filter((event) => event.date < new Date());
 
+    const { getFullImagePath } = useImages();
+
     return (
-        <Container maxWidth={'sm'}>
+        <Container maxWidth={'md'}>
+            <img
+                src={getFullImagePath('featured.jpg', 'events')}
+                style={{
+                    width: '100vw',
+                    height: '100vh',
+                    position: 'fixed',
+                    top: 0,
+                    left: 0,
+                    zIndex: -1,
+                    opacity: 0.1,
+                    objectFit: 'contain'
+                }}
+            />
             <Stack alignItems={'center'}>
                 <MdFestival size={133} />
                 <Typography
