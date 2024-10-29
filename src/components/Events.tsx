@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Divider, Stack, Typography } from '@mui/material';
+import { Box, Container, Divider, Stack, Typography } from '@mui/material';
 import { MdFestival } from "react-icons/md";
 import Event from './Event';
 import { events } from '../data/events';
@@ -7,6 +7,10 @@ import { events } from '../data/events';
 export const NavItemEvents = 'Events';
 
 const Events = () => {
+    const sortedEvents = events.sort((a, b) => a.date.getSeconds() - b.date.getSeconds());
+    const futureEvents = sortedEvents.filter((event) => event.date >= new Date());
+    const pastEvents = sortedEvents.filter((event) => event.date < new Date());
+
     return (
         <Container maxWidth={'sm'}>
             <Stack alignItems={'center'}>
@@ -20,17 +24,47 @@ const Events = () => {
                     {'Events'}
                 </Typography>
                 <Typography variant={'body1'}>
-                    {'The Front gallery holds opening receptions every first Friday of the month. Other events including artists\' talks, poetry readings, celebrations, etc. will be listed below.'}
+                    {'The Front gallery holds opening receptions every first Friday of the month. Other events including artist talks, poetry readings, celebrations, etc. will be listed below.'}
                 </Typography>
-                <Divider sx={{ my: 3 }} />
+                <Divider sx={{ mb: 2 }} />
                 <Stack>
-                    {events.map((event) => (
-                        <Event
-                            title={event.title}
-                            description={event.description}
-                            images={event.images}
-                            link={event.link}
-                        />
+                    {futureEvents.length
+                        ? (
+                            <Typography variant={'h6'}>
+                                {'Upcoming events'}
+                            </Typography>
+                        )
+                        : null}
+                    {futureEvents.map((event) => (
+                        <Box key={event.title}>
+                            <Divider sx={{ mb: 2 }} />
+                            <Event
+                                title={event.title}
+                                date={event.date}
+                                description={event.description}
+                                image={event.image}
+                                link={event.link}
+                            />
+                        </Box>
+                    ))}
+                    {pastEvents.length
+                        ? (
+                            <Typography variant={'h6'}>
+                                {'Past events:'}
+                            </Typography>
+                        )
+                        : null}
+                    {pastEvents.map((event) => (
+                        <Box key={event.title}>
+                            <Divider sx={{ mb: 2 }} />
+                            <Event
+                                title={event.title}
+                                date={event.date}
+                                description={event.description}
+                                image={event.image}
+                                link={event.link}
+                            />
+                        </Box>
                     ))}
                 </Stack>
             </Stack>
