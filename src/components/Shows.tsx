@@ -8,17 +8,20 @@ import Typography from '@mui/material/Typography';
 import { shows } from '../data/shows';
 import './Artists.css';
 import useImages from '../hooks/useImages';
+import { useState } from 'react';
+import { Stack } from '@mui/material';
 
 export const NavItemShows = 'Shows';
 
 const Shows = () => {
     const navigateTo = useNavigate();
     const { getFullImagePath } = useImages();
+    const [displayTotal, setDisplayTotal] = useState(8);
 
     return (
         <Container>
             <Grid justifyContent={'center'} container={true} spacing={2}>
-                {shows.map((show) => {
+                {shows.slice(0, displayTotal).map((show) => {
                     return (
                         <Grid
                             key={show.number}
@@ -50,6 +53,24 @@ const Shows = () => {
                         </Grid>
                     );
                 })}
+                {displayTotal < shows.length
+                    ? (
+                        <Stack direction={'row'} gap={1}>
+                            <Button
+                                variant={'outlined'}
+                                onClick={() => setDisplayTotal(displayTotal + 8)}
+                            >
+                                {'Load More'}
+                            </Button>
+                            <Button
+                                variant={'contained'}
+                                onClick={() => setDisplayTotal(shows.length)}
+                            >
+                                {'Show All'}
+                            </Button>
+                        </Stack>
+                    )
+                    : null}
             </Grid>
         </Container>
     )
