@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { useState } from 'react';
 import Container from '@mui/material/Container';
-import Grid from '@mui/material/Grid';
+import Grid from '@mui/material/Grid2';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import { Box, Divider } from '@mui/material';
@@ -24,14 +24,14 @@ const Visit = () => {
                 </Typography>
                 <Grid
                     container={true}
-                    xs={12}
-                    item={true}
+                    size={12}
                     sx={{ display: 'flex', flexDirection: 'row' }}
                 >
                     <Grid
-                        item={true}
-                        xs={12}
-                        md={6}
+                        size={{
+                            xs: 12,
+                            md: 6
+                        }}
                     >
                         <Typography variant={'h5'} sx={{ pb: 1 }}>
                             {'Come visit us in person!'}
@@ -104,11 +104,12 @@ const Visit = () => {
                         <Divider sx={{ display: { md: 'none' }, my: 5 }} />
                     </Grid>
                     <Grid
-                        item={true}
                         justifyContent={'center'}
                         alignItems={'stretch'}
-                        xs={12}
-                        md={6}
+                        size={{
+                            xs: 12,
+                            md: 6
+                        }}
                         sx={{ px: 2 }}
                     >
                         <img width={'100%'} src={`${import.meta.env.VITE_URL}/images/gallery/gallery-view.jpeg`} alt={'Visit Us'} />

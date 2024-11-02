@@ -2,7 +2,7 @@ import * as React from 'react';
 import { useMemo, useEffect } from 'react';
 import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
-import Grid from '@mui/material/Grid';
+import Grid from '@mui/material/Grid2';
 import Divider from '@mui/material/Divider';
 import Button from '@mui/material/Button';
 import ButtonBase from '@mui/material/ButtonBase';
@@ -42,15 +42,15 @@ const Artist = () => {
                         container={true}
                         justifyContent={'center'}
                         alignItems={'stretch'}
-                        xs={12}
+                        size={12}
                         sx={{ pr: 2, display: 'flex', flexDirection: 'column' }}
                     >
-                        <Grid item justifyContent={'center'} sx={{ display: 'flex' }}>
+                        <Grid justifyContent={'center'} sx={{ display: 'flex' }}>
                             <Button onClick={() => navigateTo('/artists')}>
                                 <BiArrowBack />{'Back to artists'}
                             </Button>
                         </Grid>
-                        <Grid item justifyContent={'center'} sx={{ display: 'flex', flexDirection: 'column' }}>
+                        <Grid justifyContent={'center'} sx={{ display: 'flex', flexDirection: 'column' }}>
                             <Typography align={'center'} variant={'h3'} sx={{ px: 2 }}>
                                 <Box>{artist.name}</Box>
                             </Typography>
@@ -79,21 +79,26 @@ const Artist = () => {
                     <Divider sx={{ mb: 2 }} />
                     <Grid
                         container={true}
-                        xs={12}
-                        item={true}
+                        size={12}
                         sx={{ display: 'flex', flexDirection: 'row' }}
                     >
                         <Grid
-                            item={true}
                             justifyContent={'center'}
                             alignItems={'stretch'}
-                            xs={12}
-                            md={6}
+                            size={{
+                                xs: 12,
+                                md: 6
+                            }}
                             sx={{ pr: 2 }}
                         >
                             <Stepper images={artist.images} />
                         </Grid>
-                        <Grid item={true} xs={12} md={6}>
+                        <Grid
+                            size={{
+                                xs: 12,
+                                md: 6
+                            }}
+                        >
                             <Box sx={{ my: 3, display: { xs: 'block', md: 'none' } }} />
                             <Stack>
                                 {artist.bio && (
@@ -127,7 +132,6 @@ const Artist = () => {
                     <Grid
                         container={true}
                         justifyContent={'space-between'}
-                        item={true}
                         sx={{ display: { sx: 'inline', md: 'flex' } }}
                     >
                         {artist.instagram && (

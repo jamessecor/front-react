@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
 import ButtonBase from '@mui/material/ButtonBase';
-import Grid from '@mui/material/Grid';
+import Grid from '@mui/material/Grid2';
 import Typography from '@mui/material/Typography';
 import { shows } from '../data/shows';
 import './Artists.css';
@@ -22,13 +22,17 @@ const Shows = () => {
                     return (
                         <Grid
                             key={show.number}
-                            item={true}
                             justifyContent={'center'}
                             alignItems={'stretch'}
-                            xs={12}
-                            sm={6}
-                            md={3}
-                            sx={{ display: 'flex', flexDirection: 'column' }}
+                            size={{
+                                xs: 12,
+                                sm: 6,
+                                md: 3
+                            }}
+                            sx={{
+                                display: 'flex',
+                                flexDirection: 'column'
+                            }}
                         >
                             {show.featuredImage && (
                                 <ButtonBase onClick={() => navigateTo(`/shows/${show.name}`)}>

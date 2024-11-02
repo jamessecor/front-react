@@ -3,7 +3,7 @@ import { useEffect } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
-import Grid from '@mui/material/Grid';
+import Grid from '@mui/material/Grid2';
 import Typography from '@mui/material/Typography';
 import Stepper from './Stepper';
 import './Artists.css';
@@ -27,10 +27,9 @@ const Show = () => {
         <Container>
             <Grid justifyContent={'center'} container={true} spacing={2}>
                 <Grid
-                    item={true}
                     justifyContent={'center'}
                     alignItems={'stretch'}
-                    xs={12}
+                    size={12}
                     sx={{ display: 'flex', flexDirection: 'column', pb: 2 }}
                 >
                     <Button onClick={() => navigateTo('/shows')}>
@@ -41,24 +40,25 @@ const Show = () => {
                     </Typography>
                 </Grid>
                 <Grid
-                    item={true}
                     container={true}
                     sx={{ display: 'flex', flexDirection: 'row' }}
                 >
                     {show?.featuredImage && (
                         <Grid
-                            item={true}
-                            xs={12}
-                            md={4}
+                            size={{
+                                xs: 12,
+                                md: 4
+                            }}
                         >
                             <img className={'image-rounded'} width={'100%'} src={getFullImagePath(show.featuredImage.src, 'shows')} />
                         </Grid>
                     )}
                     {show?.description?.length && (
                         <Grid
-                            item={true}
-                            xs={12}
-                            md={8}
+                            size={{
+                                xs: 12,
+                                md: 8
+                            }}
                             sx={{ pl: 3 }}
                         >
                             {show.description.map((paragraph) => (
@@ -77,10 +77,9 @@ const Show = () => {
                 </Grid>
                 {show?.images?.length && (
                     <Grid
-                        item={true}
                         justifyContent={'center'}
                         alignItems={'stretch'}
-                        xs={12}
+                        size={12}
                         sx={{ pr: 2 }}
                     >
                         <Stepper

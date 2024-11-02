@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
 import ButtonBase from '@mui/material/ButtonBase';
-import Grid from '@mui/material/Grid';
+import Grid from '@mui/material/Grid2';
 import Typography from '@mui/material/Typography';
 import { artists } from '../data/artists';
 import './Artists.css';
@@ -20,11 +20,12 @@ const Artists = () => {
                 {artists.filter(artist => !artist.isNotMember).map((artist) => (
                     <Grid
                         key={artist.paramName}
-                        item={true}
                         justifyContent={'center'}
-                        xs={4}
-                        md={2.25}
-                        lg={1.6}
+                        size={{
+                            xs: 4,
+                            md: 2.25,
+                            lg: 1.6
+                        }}
                         sx={{ display: 'flex', flexDirection: 'column' }}
                     >
                         <ButtonBase onClick={() => navigateTo(`/artists/${artist.paramName}`)}>
@@ -33,7 +34,7 @@ const Artists = () => {
                                     <Box className={'artists-image-wrapper'}>
                                         <img
                                             className={'artists-image'}
-                                            style={{ 
+                                            style={{
                                                 transform: artist.thumbnail.scale ? `scale(${artist.thumbnail.scale})` : '',
                                                 objectPosition: artist.thumbnail.position ?? ''
                                             }}

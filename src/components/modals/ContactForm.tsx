@@ -3,7 +3,7 @@ import { useState } from "react";
 import Button from '@mui/material/Button';
 import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
-import Grid from '@mui/material/Grid';
+import Grid from '@mui/material/Grid2';
 import Modal from '@mui/material/Modal';
 import Typography from '@mui/material/Typography';
 import { IoMdCloseCircle } from "react-icons/io";
@@ -68,8 +68,14 @@ const ContactForm: React.FC<IContactFormProps> = ({ isOpen, setIsOpen }) => {
             aria-describedby={'modal-modal-description'}
         >
             <Box sx={modalContentsStyle}>
-                <Grid sx={{ display: 'flex' }} direction={'column'} alignItems={'center'} justifyContent={'center'} container>
-                    <Grid xs={12} item>
+                <Grid
+                    sx={{ display: 'flex' }}
+                    direction={'column'}
+                    alignItems={'center'}
+                    justifyContent={'center'}
+                    container
+                >
+                    <Grid size={12}>
                         <Typography variant={'h6'} sx={{ pb: 2 }}>
                             {'Join Mailing List / Contact Us'}
                         </Typography>
@@ -113,9 +119,13 @@ const ContactForm: React.FC<IContactFormProps> = ({ isOpen, setIsOpen }) => {
                                 )}
                         </React.Fragment>
                     ) : (
-                        <Grid container alignItems={'center'} justifyContent={'center'} item>
+                        <Grid
+                            container
+                            alignItems={'center'}
+                            justifyContent={'center'}
+                        >
                             <form style={{ width: '100%' }} onSubmit={(e) => handleSubmit(e)}>
-                                <Grid item sx={{ pb: 2 }}>
+                                <Grid sx={{ pb: 2 }}>
                                     <TextField
                                         fullWidth
                                         id="firstname"
@@ -124,7 +134,7 @@ const ContactForm: React.FC<IContactFormProps> = ({ isOpen, setIsOpen }) => {
                                         onChange={(e) => handleChange(e)}
                                     />
                                 </Grid>
-                                <Grid item sx={{ pb: 2 }}>
+                                <Grid sx={{ pb: 2 }}>
                                     <TextField
                                         fullWidth
                                         id="lastname"
@@ -133,7 +143,7 @@ const ContactForm: React.FC<IContactFormProps> = ({ isOpen, setIsOpen }) => {
                                         onChange={(e) => handleChange(e)}
                                     />
                                 </Grid>
-                                <Grid item sx={{ pb: 2 }}>
+                                <Grid sx={{ pb: 2 }}>
                                     <TextField
                                         fullWidth
                                         id="email"
@@ -143,7 +153,7 @@ const ContactForm: React.FC<IContactFormProps> = ({ isOpen, setIsOpen }) => {
                                         required
                                     />
                                 </Grid>
-                                <Grid item sx={{ pb: 2 }}>
+                                <Grid sx={{ pb: 2 }}>
                                     <TextField
                                         multiline
                                         fullWidth

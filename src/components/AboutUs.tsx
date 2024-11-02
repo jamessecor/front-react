@@ -1,29 +1,29 @@
 import React from 'react';
 import Container from '@mui/material/Container';
 import Typography from '@mui/material/Typography';
-import { Divider, Grid } from '@mui/material';
+import { Divider, Grid2 } from '@mui/material';
 import Stepper from './Stepper';
 import { historyImages } from '../data/history';
 
 export const NavItemAboutUs = 'About Us';
 
 const AboutUs = () => (
-    <Grid justifyContent={'center'} container={true}>
+    <Grid2 justifyContent={'center'} container={true}>
         <Container>
             <Typography align={'center'} variant={'h3'} sx={{ pb: 4 }}>
                 {'About Us'}
             </Typography>
-            <Grid
+            <Grid2
                 container={true}
-                xs={12}
-                item={true}
                 justifyContent={'center'}
+                size={12}
                 sx={{ display: 'flex', flexDirection: 'row' }}
             >
-                <Grid
-                    item={true}
-                    xs={12}
-                    md={7}
+                <Grid2
+                    size={{
+                        xs: 12,
+                        md: 7
+                    }}
                 >
                     <Typography variant={'body1'}>
                         {'The Front is an artist-run cooperative gallery in Montpelier, Vermont. Through exhibitions, events, and activities, members provoke curiosity and community engagement with visual art.'}
@@ -70,10 +70,10 @@ const AboutUs = () => (
                         </Typography>
                         {'We have formed an Equity Committee to continue to look at the ways the Front can increase our equitable impact at large. We continue to discern what we have to offer our community in terms of our membership policies and procedures, addressing visibility of artists of color and partnering with other art organizations to increase outreach towards marginalized communities and create offerings which address reparation and equity for all.'}
                     </Typography> */}
-                </Grid>
-            </Grid>
+                </Grid2>
+            </Grid2>
         </Container>
-    </Grid>
+    </Grid2>
 );
 
 export default AboutUs;
