@@ -4,11 +4,8 @@ import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
 import ButtonBase from '@mui/material/ButtonBase';
 import Grid from '@mui/material/Grid';
-import Stack from '@mui/material/Stack';
 import Typography from '@mui/material/Typography';
-import { artists } from '../data/artists';
 import { shows } from '../data/shows';
-import Stepper from './Stepper';
 import './Artists.css';
 import useImages from '../hooks/useImages';
 
@@ -24,6 +21,7 @@ const Shows = () => {
                 {shows.map((show) => {
                     return (
                         <Grid
+                            key={show.number}
                             item={true}
                             justifyContent={'center'}
                             alignItems={'stretch'}

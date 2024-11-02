@@ -118,7 +118,7 @@ const Navbar = () => {
                                 onClick={handleOpenNavMenu}
                                 color="inherit"
                             >
-                                {Boolean(anchorElNav) ? <SlClose /> : <BiMenu />}
+                                {anchorElNav ? <SlClose /> : <BiMenu />}
                             </IconButton>
                             <Menu
                                 id="menu-appbar"

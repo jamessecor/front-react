@@ -1,14 +1,10 @@
 import * as React from 'react';
-import { useEffect, useMemo } from 'react';
+import { useEffect } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
-import ButtonBase from '@mui/material/ButtonBase';
 import Grid from '@mui/material/Grid';
-import Stack from '@mui/material/Stack';
 import Typography from '@mui/material/Typography';
-import { artists } from '../data/artists';
-import { shows } from '../data/shows';
 import Stepper from './Stepper';
 import './Artists.css';
 import useImages from '../hooks/useImages';

@@ -19,7 +19,7 @@ export interface IEvent {
 }
 
 
-const Event: React.FC<IEvent> = ({ title, date, description, image, link }) => {
+const Event: React.FC<IEvent> = ({ title, description, image, link }) => {
     const navigateTo = useNavigate();
     const { getFullImagePath } = useImages();
 

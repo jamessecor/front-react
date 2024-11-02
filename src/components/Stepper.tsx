@@ -1,3 +1,5 @@
+
+import React from 'react';
 // import Swiper core and required modules
 import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -36,7 +38,7 @@ const Stepper: React.FC<IStepperProps> = ({ images, numberToDisplay = 1, imageFo
           <img className={'image-rounded'} width={'100%'} src={getFullImagePath(image.src, imageFolder)} />
           {image.text && (
             <Typography align={'center'} sx={{ pb: 2 }} variant={'body1'}>
-              <div dangerouslySetInnerHTML={{ __html: image.text}} />
+              <div dangerouslySetInnerHTML={{ __html: image.text }} />
             </Typography>
           )}
         </SwiperSlide>

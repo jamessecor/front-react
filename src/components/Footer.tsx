@@ -1,3 +1,4 @@
+import React from 'react';
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
 import { useState } from "react";
@@ -15,7 +16,7 @@ const footerStyle = {
 };
 
 const Footer = () => {
-    const [searchParams, setSearchParams] = useSearchParams();
+    const [searchParams,] = useSearchParams();
     const [isContactFormOpen, setIsContactFormOpen] = useState(Boolean(searchParams.get('open-contact-form')));
 
     return (

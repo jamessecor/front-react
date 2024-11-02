@@ -1,14 +1,10 @@
-import { useState } from 'react';
+import React from 'react';
 import Container from '@mui/material/Container';
 import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import { Box, Divider, List, ListItem, ListItemIcon, ListItemText } from '@mui/material';
-import ContactForm from './modals/ContactForm';
-import { PAYPAL_DONATE_LINK } from '../models/Paypal';
-import { BiDonateHeart } from 'react-icons/bi';
-import Hours from './Hours';
-import { BsBrushFill, BsBuilding, BsCash, BsEnvelopeFill, BsHouseFill, BsInstagram, BsPeopleFill, BsPersonBadgeFill, BsPersonFill, BsPhoneFill, BsTelephoneFill } from 'react-icons/bs';
+import { BsBrushFill, BsBuilding, BsCash, BsEnvelopeFill, BsHouseFill, BsInstagram, BsPersonFill, BsTelephoneFill } from 'react-icons/bs';
 import { FaPeopleCarry } from 'react-icons/fa';
 import { IoIosPeople } from 'react-icons/io';
 

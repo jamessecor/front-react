@@ -1,13 +1,7 @@
-import { useState } from 'react';
+import React from 'react';
 import Container from '@mui/material/Container';
-import Grid from '@mui/material/Grid';
-import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
-import { Box, Divider } from '@mui/material';
-import ContactForm from './modals/ContactForm';
-import { PAYPAL_DONATE_LINK } from '../models/Paypal';
-import { BiDonateHeart } from 'react-icons/bi';
-import Hours from './Hours';
+import { Divider, Grid } from '@mui/material';
 import Stepper from './Stepper';
 import { historyImages } from '../data/history';
 
