@@ -18,7 +18,13 @@ export const shows: Array<IShow> = [
         featuredImage: {
             src: '2024-11/featured.jpg',
             text: 'Shed, oil, 2024'
-        }
+        },
+        images: [
+            { src: '2024-11/01.jpg' },
+            { src: '2024-11/02.jpg' },
+            { src: '2024-11/03.jpg' },
+            { src: '2024-11/04.jpg' }
+        ]
     },
     {
         name: 'show-63',
