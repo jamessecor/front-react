@@ -2,6 +2,22 @@ import { IEvent } from "../components/Event";
 
 export const events: Array<IEvent> = [
     {
+        title: 'Intuitive Cartography by Rob Hitzig Opens',
+        date: new Date('2024-11-25T17:30:00'),
+        description: [
+            '<em>Intuitive Cartography</em> opens at the Central Vermont Medical Center (CVMC). Amoung other works, the show features a number of works created at the beginning of COVID and yet to be seen.',
+            'The opening reception is this Thursday, November 21, from 4:00 to 5:30 PM. The work will remain on view until January 11, 2025.'
+        ],
+        image: {
+            src: '2024/hitzig_cvmc.jpg'
+        },
+        link: {
+            type: 'external',
+            text: '(CVMC website)',
+            url: 'https://roberthitzig.us10.list-manage.com/track/click?u=ff85ab4384764bcfc7a83b25b&id=baf4138ca8&e=cbcece7c22'
+        }
+    },
+    {
         title: 'Artist Talk - Melora Kennedy',
         date: new Date('2024-11-25T17:30:00'),
         description: [
