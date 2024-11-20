@@ -14,7 +14,7 @@ export const events: Array<IEvent> = [
         link: {
             type: 'external',
             text: '(CVMC website)',
-            url: 'https://roberthitzig.us10.list-manage.com/track/click?u=ff85ab4384764bcfc7a83b25b&id=baf4138ca8&e=cbcece7c22'
+            url: 'https://www.cvmc.org/departments-programs'
         }
     },
     {
