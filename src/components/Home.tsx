@@ -5,7 +5,6 @@ import useImages from '../hooks/useImages';
 import { useNavigate } from 'react-router-dom';
 import ButtonBase from '@mui/material/ButtonBase';
 import Stack from '@mui/material/Stack';
-import './Home.css';
 import Link from '@mui/material/Link';
 import Hours from './Hours';
 
@@ -17,7 +16,7 @@ const Home = () => {
   const today = new Date();
 
   return (
-    <Container>
+    <Container maxWidth={'md'}>
       <Typography textAlign={'center'} variant={'h6'}>
         {currentShow.startDate && currentShow.startDate <= today
           ? 'Currently on view at the Front: '
@@ -29,7 +28,13 @@ const Home = () => {
             <Typography textAlign={'center'} variant={'h4'}>
               {currentShow.displayName}
             </Typography>
-            <img className={'image-home image-rounded'} src={getFullImagePath(currentShowFeaturedImage?.src ?? '', 'shows')} />
+            <img
+              className={'image-rounded'}
+              src={getFullImagePath(currentShowFeaturedImage?.src ?? '', 'shows')}
+              style={{
+                width: '100%'
+              }}
+            />
             {currentShowFeaturedImage?.text
               ? (
                 <Typography variant={'body2'}>

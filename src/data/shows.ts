@@ -2,6 +2,25 @@ import { IShow } from "../models/Show";
 
 export const shows: Array<IShow> = [
     {
+        name: 'show-64',
+        number: 64,
+        displayName: 'Show 64',
+        startDate: new Date('2024-12-06T12:00:00'),
+        endDate: new Date('2024-12-29T17:00:00'),
+        featuredImage: {
+            src: '2024-12/featured.jpg',
+            text: 'Vessel, Hasso Ewing, clay, 2024'
+        },
+        description: [
+            '<strong>December 6 - 29, 2024</strong>',
+            '<strong>Opening & Art Walk Reception: Friday December 6, 4-8 PM</strong>',
+            'Join us this Friday, December 6th, for the opening reception of Show 64, featuring work by all members at The Front.',
+            'Make an evening of it: Montpelier Art Walk runs this Friday between 4:00 and 8:00. Pick up a guidebook at any venue -- see <a href="https://www.facebook.com/MontpelierArtWalk" target="_blank">Montpelier Art Walk\'s Facebook page</a> for details!',
+            'If you can\'t be there on opening day, Show 64 will continue through Sunday, December 29th, every Friday from 4 to 7 and Saturday-Sunday 11 to 5, or by appointment. <a href="/shows/show-64?open-contact-form=true">Contact Us</a>'
+        ],
+        images: []
+    },
+    {
         name: 'human-family-works-2013-2024',
         number: 63.1,
         displayName: 'Human Family: Works 2013-2024',
@@ -41,7 +60,7 @@ export const shows: Array<IShow> = [
             '<strong>Opening & Art Walk Reception: Friday October 4, 4-8 PM</strong>',
             'Join us this Friday, October 4th, for the opening reception of Show 63, featuring work by all members at The Front.',
             'Make an evening of it: Montpelier Art Walk runs this Friday between 4:00 and 8:00. Pick up a guidebook at any venue -- see <a href="https://www.facebook.com/MontpelierArtWalk" target="_blank">Montpelier Art Walk\'s Facebook page</a> for details!',
-            'If you can\'t be there on opening day, Show 63 will continue through Sunday, October 27th, every Friday from 4 to 7 and Saturday-Sunday 11 to 5, or by appointment. <a href="/shows/show-61?open-contact-form=true">Contact Us</a>'
+            'If you can\'t be there on opening day, Show 63 will continue through Sunday, October 27th, every Friday from 4 to 7 and Saturday-Sunday 11 to 5, or by appointment. <a href="/shows/show-63?open-contact-form=true">Contact Us</a>'
         ],
         images: [
             { src: '2024-10/01.jpg' },
@@ -99,7 +118,7 @@ export const shows: Array<IShow> = [
             '<strong>Opening & Art Walk Reception: Friday August 2, 4-8 PM</strong>',
             'Join us this Friday, August 2nd, for the opening reception of Show 62, featuring work by all members at The Front.',
             'Make an evening of it: Montpelier Art Walk runs this Friday between 4:00 and 8:00. Pick up a guidebook at any venue -- see <a href="https://www.facebook.com/MontpelierArtWalk" target="_blank">Montpelier Art Walk\'s Facebook page</a> for details!',
-            'If you can\'t be there on opening day, Show 62 will continue through Sunday, September 1st, every Friday from 4 to 7 and Saturday-Sunday 11 to 5, or by appointment. <a href="/shows/show-61?open-contact-form=true">Contact Us</a>'
+            'If you can\'t be there on opening day, Show 62 will continue through Sunday, September 1st, every Friday from 4 to 7 and Saturday-Sunday 11 to 5, or by appointment. <a href="/shows/show-62?open-contact-form=true">Contact Us</a>'
         ],
         images: [
             { src: '2024-08/01.jpg' },
