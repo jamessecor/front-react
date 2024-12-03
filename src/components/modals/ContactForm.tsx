@@ -121,6 +121,10 @@ const ContactForm: React.FC<IContactFormProps> = ({ isOpen, setIsOpen }) => {
                     ) : (
                         <Grid
                             container
+                            width={{
+                                xs: '100%',
+                                lg: '75%'
+                            }}
                             alignItems={'center'}
                             justifyContent={'center'}
                         >
