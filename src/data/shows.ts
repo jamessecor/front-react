@@ -2,6 +2,25 @@ import { IShow } from "../models/Show";
 
 export const shows: Array<IShow> = [
     {
+        name: 'chaos-and-catharsis',
+        number: 64.1,
+        displayName: 'CHAOS AND CATHARSIS: Works on a Continuum by Diane Sophrin',
+        startDate: new Date('2025-01-03T12:00:00'),
+        endDate: new Date('2025-02-02T17:00:00'),
+        featuredImage: {
+            src: '2025-01/featured.jpg'
+        },
+        description: [
+            '<strong>January 3 - February 2, 2025</strong>',
+            '<strong>Opening Reception: Friday, January 3, 4-7 PM</strong>',
+            '<strong>Artist\'s Talk: Saturday January 18, 2:00 - 4:00 PM</strong>',
+            'Diane Sophrin\'s tall vertical panels are dark and weathered, wooden and warm, patched together with tiny pieces of tape. They invoke or echo her time living and working in central Europe, among the Hungarian and Polish artists who came of age in the post-WWII, socialist era.',
+            'The tall dark panels contrast with light and color in other pieces made along her journey: painted collages with bright leaves of paper, enigmatic small boxes, fold-out books and antique books that have been remade as artist\'s sketchbooks.  Some pieces reflect a dialog with József Attila, a 20th century Hungarian poet. The contrast of light and dark suggests movement on the continuum between chaos and catharsis.',
+            'Sophrin\'s materials are simple and reused. Nothing is cut; everything is torn. She has come to favor a backing of paper bags, carefully unfolded, joined and gessoed. The stitched pieces imply the temporal nature of a whole created from many parts. Visually, the figural form stands stark against the light background, a mute testimony to the 21st century. Sophrin\'s work reflects fragmentation and reassemblage; her use of collage is allegorical. It is an act of remembrance and saving; repairing the world.',
+            'The daughter of a graphic artist and a photographer, Sophrin\'s early art studies in NYC were followed by undergraduate and graduate work in the US and Europe. After an MFA fellowship she lectured, curated, and taught studio art for more than twenty years. She has been awarded multiple grants in painting and writing from the State Arts Councils of Vermont and New York. Her work can be found in many public and private European collections. The autumn of 2023 she returned to Budapest with a residency at the Budapest 9th District Historical Museum and a solo show at the Open Workshop Art Center. She is an active and long-standing member of both the Society of Hungarian Painters and the Front Gallery here in Vermont.'
+        ]
+    },
+    {
         name: 'show-64',
         number: 64,
         displayName: 'Show 64',
@@ -17,8 +36,7 @@ export const shows: Array<IShow> = [
             'Join us this Friday, December 6th, for the opening reception of Show 64, featuring work by all members at The Front.',
             'Make an evening of it: Montpelier Art Walk runs this Friday between 4:00 and 8:00. Pick up a guidebook at any venue -- see <a href="https://www.facebook.com/MontpelierArtWalk" target="_blank">Montpelier Art Walk\'s Facebook page</a> for details!',
             'If you can\'t be there on opening day, Show 64 will continue through Sunday, December 29th, every Friday from 4 to 7 and Saturday-Sunday 11 to 5, or by appointment. <a href="/shows/show-64?open-contact-form=true">Contact Us</a>'
-        ],
-        images: []
+        ]
     },
     {
         name: 'human-family-works-2013-2024',
