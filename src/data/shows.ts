@@ -10,6 +10,12 @@ export const shows: Array<IShow> = [
         featuredImage: {
             src: '2025-01/featured.jpg'
         },
+        videos: [
+            {
+                src: 'https://storage.googleapis.com/front-the/Diane%20Sophrin\'s%20talk%20(1.18.25)%20-%20Trim.mp4',
+                text: 'Diane Sophrin\'s artist talk'
+            }
+        ],
         description: [
             '<strong>January 3 - February 2, 2025</strong>',
             '<strong>Opening Reception: Friday, January 3, 4-7 PM</strong>',

@@ -15,7 +15,7 @@ export interface IEvent {
     date: Date;
     description: Array<string>;
     image?: IImage;
-    link: ILink;
+    link?: ILink;
 }
 
 
@@ -23,9 +23,9 @@ const Event: React.FC<IEvent> = ({ title, description, image, link }) => {
     const navigateTo = useNavigate();
     const { getFullImagePath } = useImages();
 
-    const followLink = useCallback((link: ILink) => link.type === 'internal'
-        ? navigateTo(link.url)
-        : window.open(link.url, '_blank')
+    const followLink = useCallback((link: ILink) => link?.type === 'internal'
+        ? navigateTo(link?.url)
+        : window.open(link?.url, '_blank')
         , [link]);
 
     return (

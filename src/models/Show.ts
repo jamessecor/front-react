@@ -1,4 +1,4 @@
-import { IImage } from './Artist';
+import { IImage, IVideo } from './Artist';
 
 export interface IShow {
     name: string;
@@ -8,5 +8,6 @@ export interface IShow {
     startDate?: Date;
     endDate?: Date;
     images?: Array<IImage>;
+    videos?: Array<IVideo>;
     featuredImage?: IImage;
 };

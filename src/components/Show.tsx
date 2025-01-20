@@ -9,6 +9,7 @@ import Stepper from './Stepper';
 import './Artists.css';
 import useImages from '../hooks/useImages';
 import { BiArrowBack } from 'react-icons/bi';
+import { Box, Divider, Stack } from '@mui/material';
 
 const Show = () => {
     const { name } = useParams();
@@ -73,23 +74,44 @@ const Show = () => {
                             ))}
                         </Grid>
                     )}
-
                 </Grid>
-                {show?.images?.length && (
-                    <Grid
-                        justifyContent={'center'}
-                        alignItems={'stretch'}
-                        size={12}
-                        sx={{ pr: 2 }}
-                    >
-                        <Stepper
-                            images={show.images}
-                            imageFolder='shows'
-                            numberToDisplay={2.2}
-                            spacing={45}
-                        />
-                    </Grid>
-                )}
+                <Grid direction={'row'}>
+                    {show?.images?.length && (
+                        <Grid
+                            justifyContent={'center'}
+                            alignItems={'stretch'}
+                            size={12}
+                            sx={{ pr: 2 }}
+                        >
+                            <Stepper
+                                images={show.images}
+                                imageFolder='shows'
+                                numberToDisplay={2.2}
+                                spacing={45}
+                            />
+                        </Grid>
+                    )}
+                    {show?.videos && (
+                        show?.videos.map((video) => (
+                            <Grid
+                                key={video.src}
+                                sx={{
+                                    padding: 2
+                                }}
+                            >
+                                <video
+                                    controls={true}
+                                    src={video.src}
+                                    width={'100%'}
+                                    height={'355px'}
+                                    autoPlay={true}
+                                    loop={true}
+                                    muted={true}
+                                />
+                            </Grid>
+                        ))
+                    )}
+                </Grid>
             </Grid>
         </Container>
     )

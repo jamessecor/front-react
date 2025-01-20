@@ -117,6 +117,7 @@ const Artist = () => {
                                     artist.videos.map((video) => (
                                         <Box key={video.src}>
                                             <video
+                                                controls={true}
                                                 src={getFullImagePath(video.src, 'artists')}
                                                 width={'100%'}
                                                 autoPlay={true}
