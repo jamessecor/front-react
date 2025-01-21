@@ -47,7 +47,7 @@ export const shows: Array<IShow> = [
     {
         name: 'human-family-works-2013-2024',
         number: 63.1,
-        displayName: 'Human Family: Works 2013-2024',
+        displayName: 'Melora Kennedy - Human Family: Works 2013-2024',
         startDate: new Date('2024-11-01T00:00:00'),
         endDate: new Date('2024-12-01T17:00:00'),
         description: [
