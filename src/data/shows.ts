@@ -2,6 +2,24 @@ import { IShow } from "../models/Show";
 
 export const shows: Array<IShow> = [
     {
+        name: 'show-65',
+        number: 65,
+        displayName: 'Show 65',
+        startDate: new Date('2025-02-07T12:00:00'),
+        endDate: new Date('2025-02-23T17:00:00'),
+        featuredImage: {
+            src: '2025-02/featured.jpg',
+            text: 'Antoinette - Pink Hair, Kate Ruddle, Watercolor Pastels on Cut Paper, 2014'
+        },
+        description: [
+            '<strong>February 7 - 23, 2025</strong>',
+            '<strong>Opening & Art Walk Reception: Friday February 7, 4-8 PM</strong>',
+            'Join us this Friday, February 7th, for the opening reception of Show 65, featuring work by all members at The Front.',
+            'Make an evening of it: Montpelier Art Walk runs this Friday between 4:00 and 8:00. Pick up a guidebook at any venue -- see <a href="https://www.facebook.com/MontpelierArtWalk" target="_blank">Montpelier Art Walk\'s Facebook page</a> for details!',
+            'If you can\'t be there on opening day, Show 65 will continue through Sunday, February 23rd, every Friday from 4 to 7 and Saturday-Sunday 11 to 5, or by appointment. <a href="/shows/show-65?open-contact-form=true">Contact Us</a>'
+        ]
+    },
+    {
         name: 'chaos-and-catharsis',
         number: 64.1,
         displayName: 'CHAOS AND CATHARSIS: Works on a Continuum by Diane Sophrin',
