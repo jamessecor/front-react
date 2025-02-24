@@ -2,6 +2,28 @@ import { IShow } from "../models/Show";
 
 export const shows: Array<IShow> = [
     {
+        name: 'glen-coburn-hutcheson-solo-group-show',
+        number: 65.1,
+        displayName: 'Glen Coburn Hutcheson: Solo Group Show',
+        startDate: new Date('2025-03-07T12:00:00'),
+        endDate: new Date('2025-03-30T17:00:00'),
+        featuredImage: {
+            src: '2025-03/featured.jpeg'
+        },
+        description: [
+            '<strong>March 7 - 30, 2025</strong>',
+            '<strong>Opening Reception: Friday, March 7, 4-8 PM</strong>',
+            '<strong>Artist\'s Talk: March 20, 6 PM</strong>',
+            'So which is it, Glen, solo show or group show? That, indeed, is the question raised by the  exhibit at The Front in Montpelier. Hutcheson is the founding member of the artist-owned  cooperative gallery. This is his solo show, but it includes work he prompted in collaboration  with other member artists, swapping panels back and forth. Solo or group, the exhibit is an  exploration of the artistic self.',
+            'Roughly half of the show is work by Hutcheson, in a multitude of media—paintings,  sculptures, assemblages. That’s the solo show.  ',
+            'The other half is work he created with other member artists of the collaborative. He proposed  the process a year ago—pairs of artists would work on two panels simultaneously, swapping  them back and forth once a month. The results—that’s the group show.',
+            'The exhibit includes canvases, reconfigured household objects, and used clothing.  Hutcheson’s choices are experimental, uncertain, rough, tentative. “What I love in the  collaborative stuff is when I don’t recognize my work or my colleague’s work,” he says. “Where  did this come from?” He describes this collaborative process as “the most reliable means I’ve  found toward creating something that I don’t recognize as coming from me—and yet is  beautiful and satisfying.”',
+            'The juxtaposition of the solo work and the collaborative work blurs the line between individual  and community and raises interesting questions of authorship and identity. In a philosophical  mood, Hutcheson reflects on the Buddhist idea of no-self. Looking at his own work—“so  scattered, so many media and ideas, all chaotic, no coherence,” he laments, laughing at  himself. “So what is the self anyway?”',
+            'Hutcheson is well known in many roles in Montpelier, from the Drawing Board to City Hall.',
+            'He has a Fine Arts degree in painting from Haverford College, where he studied with Ying Li,  and he has an MFA in sculpture from the New York Studio School (2009), where he studied  with Bruce Gagnier and Garth Evans.',
+        ]
+    },
+    {
         name: 'show-65',
         number: 65,
         displayName: 'Show 65',
