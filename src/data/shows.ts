@@ -21,6 +21,22 @@ export const shows: Array<IShow> = [
             'The juxtaposition of the solo work and the collaborative work blurs the line between individual  and community and raises interesting questions of authorship and identity. In a philosophical  mood, Hutcheson reflects on the Buddhist idea of no-self. Looking at his own work—“so  scattered, so many media and ideas, all chaotic, no coherence,” he laments, laughing at  himself. “So what is the self anyway?”',
             'Hutcheson is well known in many roles in Montpelier, from the Drawing Board to City Hall.',
             'He has a Fine Arts degree in painting from Haverford College, where he studied with Ying Li,  and he has an MFA in sculpture from the New York Studio School (2009), where he studied  with Bruce Gagnier and Garth Evans.',
+        ],
+        images: [
+            { src: '2025-03/01.jpg' },
+            { src: '2025-03/02.jpg' },
+            { src: '2025-03/03.jpg' },
+            { src: '2025-03/04.jpg' },
+            { src: '2025-03/05.jpg' },
+            { src: '2025-03/06.jpg' },
+            { src: '2025-03/07.jpg' },
+            { src: '2025-03/08.jpg' },
+            { src: '2025-03/09.jpg' },
+            { src: '2025-03/10.jpg' },
+            { src: '2025-03/11.jpg' },
+            { src: '2025-03/12.jpg' },
+            { src: '2025-03/13.jpg' },
+            { src: '2025-03/14.jpg' }
         ]
     },
     {
