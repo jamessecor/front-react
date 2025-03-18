@@ -13,7 +13,7 @@ export const shows: Array<IShow> = [
         description: [
             '<strong>March 7 - 30, 2025</strong>',
             '<strong>Opening Reception: Friday, March 7, 4-8 PM</strong>',
-            '<strong>Artist\'s Talk: March 20, 6 PM</strong>',
+            '<strong>Artist\'s Talk <em>at The Savoy Theater</em>, March 20, 6 PM</strong><br />There will be an informal gathering before and after at The Front.',
             'So which is it, Glen, solo show or group show? That, indeed, is the question raised by the  exhibit at The Front in Montpelier. Hutcheson is the founding member of the artist-owned  cooperative gallery. This is his solo show, but it includes work he prompted in collaboration  with other member artists, swapping panels back and forth. Solo or group, the exhibit is an  exploration of the artistic self.',
             'Roughly half of the show is work by Hutcheson, in a multitude of media—paintings,  sculptures, assemblages. That’s the solo show.  ',
             'The other half is work he created with other member artists of the collaborative. He proposed  the process a year ago—pairs of artists would work on two panels simultaneously, swapping  them back and forth once a month. The results—that’s the group show.',

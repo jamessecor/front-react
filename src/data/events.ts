@@ -2,6 +2,24 @@ import { IEvent } from "../components/Event";
 
 export const events: Array<IEvent> = [
     {
+        title: 'Glen Coburn Hutcheson\'s Artist Talk',
+        date: new Date('2025-03-20T18:00:00'),
+        description: [
+            'Please join us for a conversation with Glen Coburn Hutcheson, whose exhibit "Solo Group Show" is on display through March 30.',
+            'For a more comfortable gathering, we\'ve decided to hold the talk at the Savoy Theater, near the corner across Main Street from The Front. The gallery will open early in the evening, around 5 o\'clock, for in-person viewing. At 6:00 we\'ll walk over to the Savoy for Glen\'s talk and Q&A, then reconvene at The Front afterward with anyone who\'d like to linger.',
+            'While in the gallery, you\'re encouraged to add marks and color to the Free Draw panel just inside the door. This is a collaborative acrylic-marker painting open to all, and a fundraising effort for the Central Vermont Refugee Action Network, whose March Arts Marathon runs through the month.'
+        ],
+        link: {
+            type: 'internal',
+            text: 'Click here to visit the show page for Glen\'s Solo Group Show',
+            url: '/shows/glen-coburn-hutcheson-solo-group-show'
+        },
+        image: {
+            src: '2025/self-portrait.jpg',
+            text: 'image: Self Portrait, 2025, oil on linen shirt scrap'
+        }
+    },
+    {
         title: 'Rabbit & Wolf Poetry Reading',
         date: new Date('2025-11-13T18:00:00'),
         description: [

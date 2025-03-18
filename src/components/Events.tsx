@@ -46,7 +46,7 @@ const Events = () => {
                 <Stack>
                     {futureEvents.length
                         ? (
-                            <Typography variant={'h6'}>
+                            <Typography variant={'h4'}>
                                 {'Upcoming events'}
                             </Typography>
                         )
@@ -65,7 +65,7 @@ const Events = () => {
                     ))}
                     {pastEvents.length
                         ? (
-                            <Typography variant={'h6'}>
+                            <Typography variant={'h4'} sx={{ paddingTop: 3 }}>
                                 {'Past events:'}
                             </Typography>
                         )

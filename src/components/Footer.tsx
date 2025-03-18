@@ -42,7 +42,7 @@ const Footer = () => {
                 </Button>
             </Box>
             <Box justifyContent={'right'}>
-                <div>{'© the Front 2024'}</div>
+                <div>{'© the Front 2025'}</div>
             </Box>
             <ContactForm
                 isOpen={isContactFormOpen}
