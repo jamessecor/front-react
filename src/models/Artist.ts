@@ -13,6 +13,7 @@ export interface IImage {
 export interface IVideo {
     src: string;
     text?: string;
+    type: 'YouTube' | 'File';
 }
 
 export interface IArtist {

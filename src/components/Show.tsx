@@ -91,26 +91,39 @@ const Show = () => {
                             />
                         </Grid>
                     )}
-                    {show?.videos && (
-                        show?.videos.map((video) => (
-                            <Grid
-                                key={video.src}
-                                sx={{
-                                    padding: 2
-                                }}
-                            >
-                                <video
-                                    controls={true}
-                                    src={video.src}
-                                    width={'100%'}
-                                    height={'355px'}
-                                    autoPlay={true}
-                                    loop={true}
-                                    muted={true}
-                                />
-                            </Grid>
-                        ))
-                    )}
+                    {show?.videos?.map((video) => (
+                        <Grid
+                            key={video.src}
+                            sx={{
+                                padding: 2
+                            }}
+                        >
+                            {video.type === 'YouTube'
+                                ? (
+                                    <iframe
+                                        width={'100%'}
+                                        height={'355px'}
+                                        src={video.src}
+                                        title={video.text}
+                                        allow={'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'}
+                                        referrerPolicy={'strict-origin-when-cross-origin'}
+                                        allowFullScreen={true}
+                                    />
+                                )
+                                : (
+
+                                    <video
+                                        controls={true}
+                                        src={video.src}
+                                        width={'100%'}
+                                        height={'355px'}
+                                        autoPlay={true}
+                                        loop={true}
+                                        muted={true}
+                                    />
+                                )}
+                        </Grid>
+                    ))}
                 </Grid>
             </Grid>
         </Container>

@@ -37,7 +37,14 @@ export const shows: Array<IShow> = [
             { src: '2025-03/12.jpg' },
             { src: '2025-03/13.jpg' },
             { src: '2025-03/14.jpg' }
-        ]
+        ],
+        videos: [
+            {
+                src: 'https://www.youtube.com/embed/F8ypUpMrrqU',
+                text: 'Solo Group Show slide talk',
+                type: 'YouTube'
+            }
+        ],
     },
     {
         name: 'show-65',
@@ -78,7 +85,8 @@ export const shows: Array<IShow> = [
         videos: [
             {
                 src: 'https://storage.googleapis.com/front-the/Diane%20Sophrin\'s%20talk%20(1.18.25)%20-%20Trim.mp4',
-                text: 'Diane Sophrin\'s artist talk'
+                text: 'Diane Sophrin\'s artist talk',
+                type: 'File'
             }
         ],
         images: [
