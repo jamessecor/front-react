@@ -40,7 +40,7 @@ export const shows: Array<IShow> = [
         ],
         videos: [
             {
-                src: 'https://www.youtube.com/embed/F8ypUpMrrqU',
+                src: 'https://www.youtube.com/embed/WDY0mR_y2JQ',
                 text: 'Solo Group Show slide talk',
                 type: 'YouTube'
             }
