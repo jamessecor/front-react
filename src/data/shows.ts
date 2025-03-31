@@ -2,6 +2,24 @@ import { IShow } from "../models/Show";
 
 export const shows: Array<IShow> = [
     {
+        name: 'show-66',
+        number: 66,
+        displayName: 'Show 66',
+        startDate: new Date('2025-04-04T12:00:00'),
+        endDate: new Date('2025-04-27T17:00:00'),
+        featuredImage: {
+            src: '2025-04/featured.jpeg',
+            text: 'Daniel Marcus, Moving Seas/Winter, pastel'
+        },
+        description: [
+            '<strong>April 4 - 27, 2025</strong>',
+            '<strong>Opening & Art Walk Reception: Friday April 4, 4-8 PM</strong>',
+            'Join us this Friday, April 4th, for the opening reception of Show 66, featuring work by all members at The Front.',
+            'Make an evening of it: Montpelier Art Walk runs this Friday between 4:00 and 8:00. Pick up a guidebook at any venue -- see <a href="https://www.facebook.com/MontpelierArtWalk" target="_blank">Montpelier Art Walk\'s Facebook page</a> for details!',
+            'If you can\'t be there on opening day, Show 66 will continue through Sunday, February 23rd, every Friday from 4 to 7 and Saturday-Sunday 11 to 5, or by appointment. <a href="/shows/show-66?open-contact-form=true">Contact Us</a>'
+        ]
+    },
+    {
         name: 'glen-coburn-hutcheson-solo-group-show',
         number: 65.1,
         displayName: 'Glen Coburn Hutcheson: Solo Group Show',
