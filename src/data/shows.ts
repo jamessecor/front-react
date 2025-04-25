@@ -2,6 +2,34 @@ import { IShow } from "../models/Show";
 
 export const shows: Array<IShow> = [
     {
+        name: 'new-memory-landscapes-ghosts-machines',
+        number: 66.1,
+        displayName: 'new memory: landscapes, ghosts, machines',
+        startDate: new Date('2025-05-02T12:00:00'),
+        endDate: new Date('2025-06-01T17:00:00'),
+        featuredImage: {
+            src: '2025-05/featured.jpg',
+            text: 'untitled [shore], oil pastel on engraved glass, tablet screen backlight and lens, 6.5" x 4", 2025'
+        },
+        description: [
+            '<strong>May 2 - June 1, 2025</strong>',
+            '<strong>Opening Reception: Friday, May 2, 4-7 PM</strong>',
+            '<strong>Artist\'s Talk, May 17, 5:30 PM</strong>',
+            'In this collection of recent work, Richardson extends his exploration of the connection between natural and digital landscapes to consider the connection between human and machine learning, memory and perception.',
+            '‘new memory’ refers to the process of adding physical memory to a computer, as well as invitations to nostalgia from the AI agents on our phones (“You have a new memory!”), and ultimately the idea that one might build new memory through new perception.',
+            'After working for several years generating images via Generative Adversarial Networks (GANs) trained on his own landscape work, Richardson now incorporates these images into constructions where they are sometimes the central element, and sometimes barely visible. These constructions vary considerably but can be roughly categorized as mostly landscape, mostly ghost, or mostly machine.',
+            'The ghosts are multiple - traces of humanity, relics of history, and a possible consciousness growing in ‘the machine.’',
+            'The machine models are constructions that look back on the ghosts (or the ghost landscape) through disassembled laptop and tablet screens with elements of slide rules and logarithmic scales built into them.  The most direct view of these ghosts may be through a series of layered transparent stereograms, for which there will be a viewer available.',
+            'Richardson has been a member of the Front since 2018. He exhibits locally and also at Galerie Arnaud Lefebvre in Paris.',
+            'Richardson received a BA in Creative Writing from the University of Michigan in 1982. Aside from a semester at the Art Students League in New York, he is ‘self taught’.'
+        ],
+        images: [
+            { src: '2025-05/01.jpg', text: 'stereogram [Lady Curzon], Scanned and digitally altered vintage stereograms printed on transparency, engraved glass, 35mm film splicing tape, 7" x 3", 2025' },
+            { src: '2025-05/02.jpg', text: 'untitled [logscale glass], Assembly including wood, paint, digitizer, tablet parts, pigment print on paper with cold wax and glass dust, engraved glass, acrylic (lexan), fasteners., 16.5" x 11.5" x 2.5", 2025' },
+            { src: '2025-05/03.jpg', text: 'untitled [logscale glass 2] - angled view, Assembly including wood, paint, tablet screen parts, mat board, engraved glass., 12.5" x 6" x 1.25", 2025' }
+        ]
+    },
+    {
         name: 'show-66',
         number: 66,
         displayName: 'Show 66',
