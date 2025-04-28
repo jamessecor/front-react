@@ -25,6 +25,13 @@ const Home = () => {
       <Stack alignItems={'center'} direction={'column'}>
         <ButtonBase onClick={() => navigateTo(`/shows/${currentShow.name}`)}>
           <Stack alignItems={'center'} direction={'column'}>
+            {currentShow?.superDisplayName
+              ? (
+                <Typography align={'center'} variant={'h5'}>
+                  {currentShow?.superDisplayName}
+                </Typography>
+              )
+              : null}
             <Typography textAlign={'center'} variant={'h4'}>
               {currentShow.displayName}
             </Typography>
