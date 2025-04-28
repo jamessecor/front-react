@@ -5,6 +5,7 @@ export const shows: Array<IShow> = [
         name: 'new-memory-landscapes-ghosts-machines',
         number: 66.1,
         displayName: 'new memory: landscapes, ghosts, machines',
+        superDisplayName: 'Ned Richardson',
         startDate: new Date('2025-05-02T12:00:00'),
         endDate: new Date('2025-06-01T17:00:00'),
         featuredImage: {

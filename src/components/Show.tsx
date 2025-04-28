@@ -36,7 +36,14 @@ const Show = () => {
                     <Button onClick={() => navigateTo('/shows')}>
                         <BiArrowBack />{'Back to shows'}
                     </Button>
-                    <Typography align={'center'} variant={'h4'} sx={{ color: 'black' }}>
+                    {show?.superDisplayName
+                        ? (
+                            <Typography align={'center'} variant={'h5'}>
+                                {show?.superDisplayName}
+                            </Typography>
+                        )
+                        : null}
+                    <Typography align={'center'} variant={'h4'}>
                         {show?.displayName}
                     </Typography>
                 </Grid>

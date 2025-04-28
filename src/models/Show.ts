@@ -4,6 +4,7 @@ export interface IShow {
     name: string;
     number: number;
     displayName: string;
+    superDisplayName?: string;
     description?: Array<string>;
     startDate?: Date;
     endDate?: Date;
