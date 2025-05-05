@@ -27,7 +27,23 @@ export const shows: Array<IShow> = [
         images: [
             { src: '2025-05/01.jpg', text: 'stereogram [Lady Curzon], Scanned and digitally altered vintage stereograms printed on transparency, engraved glass, 35mm film splicing tape, 7" x 3", 2025' },
             { src: '2025-05/02.jpg', text: 'untitled [logscale glass], Assembly including wood, paint, digitizer, tablet parts, pigment print on paper with cold wax and glass dust, engraved glass, acrylic (lexan), fasteners., 16.5" x 11.5" x 2.5", 2025' },
-            { src: '2025-05/03.jpg', text: 'untitled [logscale glass 2] - angled view, Assembly including wood, paint, tablet screen parts, mat board, engraved glass., 12.5" x 6" x 1.25", 2025' }
+            { src: '2025-05/03.jpg', text: 'untitled [logscale glass 2] - angled view, Assembly including wood, paint, tablet screen parts, mat board, engraved glass., 12.5" x 6" x 1.25", 2025' },
+            { src: '2025-05/04.jpg' },
+            { src: '2025-05/05.jpg' },
+            { src: '2025-05/06.jpg' },
+            { src: '2025-05/07.jpg' },
+            { src: '2025-05/08.jpg' },
+            { src: '2025-05/09.jpg' },
+            { src: '2025-05/10.jpg' },
+            { src: '2025-05/11.jpg' },
+            { src: '2025-05/12.jpg' },
+            { src: '2025-05/13.jpg' },
+            { src: '2025-05/14.jpg' },
+            { src: '2025-05/15.jpg' },
+            { src: '2025-05/16.jpg' },
+            { src: '2025-05/17.jpg' },
+            { src: '2025-05/18.jpg' },
+            { src: '2025-05/19.jpg' }
         ]
     },
     {

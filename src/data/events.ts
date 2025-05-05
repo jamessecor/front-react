@@ -2,6 +2,21 @@ import { IEvent } from "../components/Event";
 
 export const events: Array<IEvent> = [
     {
+        title: 'Ned Richardson\'s Artist Talk',
+        date: new Date('2025-05-17T17:30:00'),
+        description: [
+            'Please join us for Ned Richardson\'s artist talk. His show, new memory: landscapes, ghosts, machines, is on display through June 1st.'
+        ],
+        link: {
+            type: 'internal',
+            text: 'Click here to visit the show page for Ned\'s new memory: landscapes, ghosts, machines',
+            url: '/shows/new-memory-landscapes-ghosts-machines'
+        },
+        image: {
+            src: '2025/ned-talk.jpg'
+        }
+    },
+    {
         title: 'Glen Coburn Hutcheson\'s Artist Talk',
         date: new Date('2025-03-20T18:00:00'),
         description: [
