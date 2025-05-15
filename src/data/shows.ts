@@ -2,6 +2,38 @@ import { IShow } from "../models/Show";
 
 export const shows: Array<IShow> = [
     {
+        name: 'show-67',
+        number: 67,
+        displayName: 'SUPER Group Show 67',
+        startDate: new Date('2025-06-06T12:00:00'),
+        endDate: new Date('2025-06-29T17:00:00'),
+        featuredImage: {
+            src: '2025-06/featured.jpg'
+        },
+        description: [
+            '<strong>June 6 - 29, 2025</strong>',
+            '<strong>SUPER Group Show #67 celebrating The Front\'s 10th anniversary</strong>',
+            '<strong>Opening reception June 6 for Montpelier Art Walk, 4-8PM</strong>',
+            '<em>Events TBA throughout the month</em>',
+            'The Front gallery celebrates 10 years in existence this June with a "SUPER Group Show," including work by many former and all current gallery members. This event, the 67th group exhibit presented by the gallery, expresses the members\' gratitude and joy in making it through 10 interesting years in Montpelier.',
+            'The Front is a member-owned, cooperatively managed business founded in the spring of 2015. More than 50 artist members over the years have provided funds, artwork, and labor to keep the space active and vibrant. Community members, visitors, and collectors have all contributed.',
+            'For its first 5 years, The Front focused entirely on group shows, presenting 8 shows each year on average. In 2020, members increased the tempo to 12 shows per year and began alternating between all-member group shows and single-person solo shows. The gallery\'s first solo show featured work by the late, much-admired painter Ray Brown, opening in March 2020 only to be shuttered by the COVID-19 pandemic. Since then, the gallery has persisted, with a total of 67 group shows and 30 solo shows so far.',
+            'To celebrate the 10th anniversary, the current 23 member-owners of The Front have invited all 36 former members to submit one piece of artwork each for a joyfully crowded, vibrant display of creativity and cooperative energy. The gallery will host events throughout the month (dates TBA) to highlight the exhibit, including poetry, music, discussion and more.'
+        ],
+        images: [
+            { src: '2025-06/01.jpg' },
+            { src: '2025-06/02.jpg' },
+            { src: '2025-06/03.jpg' },
+            { src: '2025-06/04.jpg' },
+            { src: '2025-06/05.jpg' },
+            { src: '2025-06/06.jpg' },
+            { src: '2025-06/07.jpg' },
+            { src: '2025-06/08.jpg' },
+            { src: '2025-06/09.jpg' },
+            { src: '2025-06/10.jpg' }
+        ]
+    },
+    {
         name: 'new-memory-landscapes-ghosts-machines',
         number: 66.1,
         displayName: 'new memory: landscapes, ghosts, machines',

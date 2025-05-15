@@ -53,12 +53,14 @@ const Event: React.FC<IEvent> = ({ title, description, image, link }) => {
                         : null}
                 </Grid>
                 <Grid size={{ xs: 12, md: 7 }}>
-                    {description.map((descriptionLine) => (
-                        <Typography key={descriptionLine.substring(0, 15)}>
-                            {/* ONLY HARD-CODED SAFE HTML */}
-                            <div dangerouslySetInnerHTML={{ __html: descriptionLine }} />
-                        </Typography>
-                    ))}
+                    <Stack gap={1}>
+                        {description.map((descriptionLine) => (
+                            <Typography key={descriptionLine.substring(0, 15)}>
+                                {/* ONLY HARD-CODED SAFE HTML */}
+                                <div dangerouslySetInnerHTML={{ __html: descriptionLine }} />
+                            </Typography>
+                        ))}
+                    </Stack>
                     {link
                         ? (
                             <Button

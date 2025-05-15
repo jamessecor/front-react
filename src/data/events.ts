@@ -2,6 +2,22 @@ import { IEvent } from "../components/Event";
 
 export const events: Array<IEvent> = [
     {
+        title: 'SUPER Group Show #67 celebrating The Front\'s 10th anniversary',
+        date: new Date('2025-06-06T16:00:00'),
+        description: [
+            'Opening reception June 6 for Montpelier Art Walk, 4-8PM',
+            'The Front gallery celebrates 10 years in existence this June with a "SUPER Group Show," including work by many former and all current gallery members. This event, the 67th group exhibit presented by the gallery, expresses the members\' gratitude and joy in making it through 10 interesting years in Montpelier.'
+        ],
+        link: {
+            type: 'internal',
+            text: 'Click here to visit the SUPER Group Show page',
+            url: '/shows/show-67'
+        },
+        image: {
+            src: '../shows/2025-06/03.jpg'
+        }
+    },
+    {
         title: 'Ned Richardson\'s Artist Talk',
         date: new Date('2025-05-17T17:30:00'),
         description: [
