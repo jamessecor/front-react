@@ -76,6 +76,12 @@ export const shows: Array<IShow> = [
             { src: '2025-05/17.jpg' },
             { src: '2025-05/18.jpg' },
             { src: '2025-05/19.jpg' }
+        ],
+        videos: [
+            {
+                src: 'https://www.youtube.com/embed/JIRBVAxxsAw',
+                type: 'YouTube'
+            }
         ]
     },
     {
