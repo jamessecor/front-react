@@ -8,9 +8,12 @@ import useImages from '../hooks/useImages';
 export const NavItemEvents = 'Events';
 
 const Events = () => {
-    const sortedEvents = events.sort((a, b) => a.date.getSeconds() - b.date.getSeconds());
-    const futureEvents = sortedEvents.filter((event) => event.date >= new Date());
-    const pastEvents = sortedEvents.filter((event) => event.date < new Date());
+    const futureEvents = events
+        .sort((a, b) => a.date.getTime() - b.date.getTime())
+        .filter((event) => event.date >= new Date());
+    const pastEvents = events
+        .sort((a, b) => b.date.getTime() - a.date.getTime())
+        .filter((event) => event.date < new Date());
 
     const { getFullImagePath } = useImages();
 

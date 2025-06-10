@@ -2,6 +2,42 @@ import { IEvent } from "../components/Event";
 
 export const events: Array<IEvent> = [
     {
+        title: 'Book Discussion on Baudelaire with Sam Thurston',
+        date: new Date('2025-06-29T15:30:00'),
+        description: [
+            'June 29th at 3:30 pm',
+            'Join us for a panel discussion on a text by Baudelaire.',
+            'This event is free. (Donations accepted.)'
+        ]
+    },
+    {
+        title: 'Live Music by chanterelle',
+        date: new Date('2025-06-21T17:00:00'),
+        description: [
+            'June 21st at 5pm - Join us for an evening of music at the Front.',
+            'chanterelle, featuring Front member James Secor, have been creating music together for several years, but have rarely played out in public (so far). Buckle up for a rare (to date) performance by the group.',
+            'chanterelle\'s debut album <em>the big event</em> came out in May.',
+            'This event is free. (Donations accepted.)'
+        ],
+        image: {
+            src: '2025/chanterelle.jpg'
+        },
+        link: {
+            text: 'Listen to the big event here.',
+            type: 'external',
+            url: 'https://chanterellevt.bandcamp.com'
+        }
+    },
+    {
+        title: 'Ekphrasis Poetry Workshop with Baron Wormser',
+        date: new Date('2025-06-11T18:00:00'),
+        description: [
+            'June 11th at 6 pm - Join us for an evening of poetry.',
+            'Baron Wormser is the author of twenty books and has received fellowships from the National Endowment for the Arts and the John Simon Guggenheim Memorial Foundation. From 2000 to 2005 he served as poet laureate of the state of Maine. Essays of his were included in Best American Essays.',
+            'This event is free. (Donations accepted.)'
+        ]
+    },
+    {
         title: 'SUPER Group Show #67 celebrating The Front\'s 10th anniversary',
         date: new Date('2025-06-06T16:00:00'),
         description: [
