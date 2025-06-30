@@ -2,6 +2,18 @@ import { IEvent } from "../components/Event";
 
 export const events: Array<IEvent> = [
     {
+        title: 'Jonathan Rose - Solo Show at AVA Gallery',
+        date: new Date('2025-07-11T17:00:00'),
+        description: [
+            'Announcing member Jonathan Rose\'s Solo Show at AVA Gallery in Lebanon, NH',
+            'July 11 to August 9, 2025',
+            'Opening Reception is July 11th, 5-7 pm'
+        ],
+        image: {
+            src: '2025/rose-ava-solo.jpeg'
+        }
+    },
+    {
         title: 'Book Discussion on Baudelaire with Sam Thurston',
         date: new Date('2025-06-29T15:30:00'),
         description: [
