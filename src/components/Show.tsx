@@ -79,6 +79,18 @@ const Show = () => {
                                     <div dangerouslySetInnerHTML={{ __html: paragraph }}></div>
                                 </Typography>
                             ))}
+                            {show.artistParamName
+                                ? (
+                                    <Button
+                                        onClick={() => navigateTo(`/artists/${show.artistParamName}`)}
+                                        sx={{ paddingX: 0 }}
+                                    >
+                                        <Typography variant={'body1'}>
+                                            {'More about the artist'}
+                                        </Typography>
+                                    </Button>
+                                )
+                                : null}
                         </Grid>
                     )}
                 </Grid>

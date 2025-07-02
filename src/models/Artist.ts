@@ -5,6 +5,7 @@ interface IInstagram {
 
 export interface IImage {
     src: string;
+    directory?: string;
     text?: string;
     scale?: number;
     position?: string;

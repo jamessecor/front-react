@@ -2,6 +2,26 @@ import { IShow } from "../models/Show";
 
 export const shows: Array<IShow> = [
     {
+        name: 'of-the-earth',
+        number: 67.1,
+        displayName: '… of the earth',
+        superDisplayName: 'Hasso Ewing, with Bob Hannan',
+        startDate: new Date('2025-07-04T12:00:00'),
+        endDate: new Date('2025-07-27T17:00:00'),
+        artistParamName: 'hasso-ewing',
+        featuredImage: {
+            src: '2025-07/featured.jpg'
+        },
+        description: [
+            '<strong>July 4-27, 2025</strong>',
+            '<strong>Opening Reception: Friday, July 4, 4-7 PM</strong>',
+            '<strong>Artist\'s Talk: July 18, 5-6 PM</strong>',
+            'the Front gallery presents the clay and fiber sculptures of Hasso Ewing.  The show, titled ‘… of the Earth’, celebrates Ewing’s love and connection with the simple beauty and enchantment found in nature. Bob Hannan, her partner of almost 50 years, has created a unique soundtrack to complement the show with photographs featuring her work.',
+            'Over the past two years Ewing has been exploring new materials and following her intuition to develop a series of work inspired by the themes of natural design, place and belonging. As a collector of natural objects Ewing has made an assemblage of detailed specimens of pods, shells and seeds in clay.  She has also pursued an interest in cordage, weaving and fiber. With this new interest she will be showing a large scale looped sculpture made with fishing line, as well as baskets of cloth, paper, dried seaweed and spruce root.  A recent development in her work has been a trio of hand painted clay sculptures honoring our female ancestors and their stewardship of the intrinsic powers of plants and animals.',
+            'There will be an opportunity to watch and speak with Ewing, who will be creating a looping project in a front window of the gallery (dates to be determined). During her artist\'s talk she will be teaching interested attendees how to make cordage with wild collected materials, while sharing her new artistic passions and process.',
+        ]
+    },
+    {
         name: 'show-67',
         number: 67,
         displayName: 'SUPER Group Show 67',
@@ -40,6 +60,7 @@ export const shows: Array<IShow> = [
         superDisplayName: 'Ned Richardson',
         startDate: new Date('2025-05-02T12:00:00'),
         endDate: new Date('2025-06-01T17:00:00'),
+        artistParamName: 'ned-richardson',
         featuredImage: {
             src: '2025-05/featured.jpg',
             text: 'untitled [shore], oil pastel on engraved glass, tablet screen backlight and lens, 6.5" x 4", 2025'

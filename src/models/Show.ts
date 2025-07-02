@@ -8,6 +8,7 @@ export interface IShow {
     description?: Array<string>;
     startDate?: Date;
     endDate?: Date;
+    artistParamName?: string;
     images?: Array<IImage>;
     videos?: Array<IVideo>;
     featuredImage?: IImage;

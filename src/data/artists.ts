@@ -394,7 +394,8 @@ export const artists: Array<IArtist> = [
         name: 'Hasso Ewing',
         videos: [
             {
-                src: 'hasso-ewing/video.mov'
+                src: 'hasso-ewing/video.mov',
+                type: 'File'
             }
         ],
         thumbnail: {

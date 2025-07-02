@@ -42,7 +42,7 @@ const Event: React.FC<IEvent> = ({ title, description, image, link }) => {
                         ? (
                             <img
                                 width={'100%'}
-                                src={getFullImagePath(image.src, 'events')}
+                                src={getFullImagePath(image.src, image.directory ? image.directory : 'events')}
                                 alt={image.text ?? 'Image unavailable'}
                                 style={{
                                     transform: image.scale ? `scale(${image.scale})` : '',

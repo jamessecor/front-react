@@ -2,6 +2,24 @@ import { IEvent } from "../components/Event";
 
 export const events: Array<IEvent> = [
     {
+        title: 'Hasso Ewing - Solo Show and Talk',
+        date: new Date('2025-07-04T16:00:00'),
+        description: [
+            'Join us at the Front for the opening of <em>… of the earth</em> by Hasso Ewing, with Bob Hannan.',
+            'Opening Reception: July 4, 2025, 4-7 pm',
+            'Artist\'s Talk: July 18, 5-6 PM'
+        ],
+        image: {
+            src: 'featured.jpg',
+            directory: 'shows/2025-07'
+        },
+        link: {
+            type: 'internal',
+            text: 'Click here for show details',
+            url: '/shows/of-the-earth'
+        }
+    },
+    {
         title: 'Jonathan Rose - Solo Show at AVA Gallery',
         date: new Date('2025-07-11T17:00:00'),
         description: [
