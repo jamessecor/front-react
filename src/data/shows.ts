@@ -2,6 +2,24 @@ import { IShow } from "../models/Show";
 
 export const shows: Array<IShow> = [
     {
+        name: 'show-68',
+        number: 68,
+        displayName: 'Show 68',
+        startDate: new Date('2025-08-01T12:00:00'),
+        endDate: new Date('2025-08-31T17:00:00'),
+        featuredImage: {
+            src: '2025-08/featured.jpg'
+        },
+        description: [
+            '<strong>August 1-31, 2025</strong>',
+            '<strong>Show 68</strong>',
+            '<strong>Opening reception August 1 for Montpelier Art Walk, 4-8PM</strong>',
+            'Join us this Friday, August 1st, for the opening reception of Show 68, featuring work by all members at The Front.',
+            'Make an evening of it: Montpelier Art Walk runs this Friday between 4:00 and 8:00. Pick up a guidebook at any venue -- see <a href="https://www.facebook.com/MontpelierArtWalk" target="_blank">Montpelier Art Walk\'s Facebook page</a> for details!',
+            'If you can\'t be there on opening day, Show 68 will continue through Sunday, August 31st, every Friday from 4 to 7 and Saturday-Sunday 11 to 5, or by appointment. <a href="/shows/show-68?open-contact-form=true">Contact Us</a>'
+        ]
+    },
+    {
         name: 'of-the-earth',
         number: 67.1,
         displayName: '… of the earth',
