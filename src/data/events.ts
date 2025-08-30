@@ -2,6 +2,24 @@ import { IEvent } from "../components/Event";
 
 export const events: Array<IEvent> = [
     {
+        title: 'Cheryl Betz - Opening Reception and Informal Tour with Q & A',
+        date: new Date('2025-09-05T16:00:00'),
+        description: [
+            'Join us at the Front for the opening of <em>From the Mud</em> by Cheryl Betz.',
+            'Opening Reception: September 5, 2025, 4-7 pm',
+            'Informal exhibit tour with Q & A: Friday September 19, 6 PM'
+        ],
+        image: {
+            src: 'featured.jpg',
+            directory: 'shows/2025-09'
+        },
+        link: {
+            type: 'internal',
+            text: 'Click here for show details',
+            url: '/shows/from-the-mud'
+        }
+    },
+    {
         title: 'Hasso Ewing - Solo Show and Talk',
         date: new Date('2025-07-04T16:00:00'),
         description: [
