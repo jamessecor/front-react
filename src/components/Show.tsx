@@ -61,38 +61,45 @@ const Show = () => {
                             <img className={'image-rounded'} width={'100%'} src={getFullImagePath(show.featuredImage.src, 'shows')} />
                         </Grid>
                     )}
-                    {show?.description?.length && (
-                        <Grid
-                            size={{
-                                xs: 12,
-                                md: 8
-                            }}
-                            sx={{ pl: 3 }}
-                        >
-                            {show.description.map((paragraph) => (
-                                <Typography
-                                    key={paragraph.substring(10)}
-                                    variant={'body1'}
-                                    sx={{ pb: 2 }}
+                    <Grid
+                        size={{
+                            xs: 12,
+                            md: 8
+                        }}
+                        sx={{ pl: 3 }}
+                    >
+                        {show?.descriptionBold?.map((paragraph) => (
+                            <Typography
+                                key={paragraph.substring(10)}
+                                variant={'body1'}
+                                sx={{ pb: 2, fontWeight: 'bold' }}
+                            >
+                                {paragraph}
+                            </Typography>
+                        ))}
+                        {show?.description?.map((paragraph) => (
+                            <Typography
+                                key={paragraph.substring(10)}
+                                variant={'body1'}
+                                sx={{ pb: 2 }}
+                            >
+                                {/* ONLY HARD-CODED SAFE HTML */}
+                                <div dangerouslySetInnerHTML={{ __html: paragraph }}></div>
+                            </Typography>
+                        ))}
+                        {show?.artistParamName
+                            ? (
+                                <Button
+                                    onClick={() => navigateTo(`/artists/${show.artistParamName}`)}
+                                    sx={{ paddingX: 0 }}
                                 >
-                                    {/* ONLY HARD-CODED SAFE HTML */}
-                                    <div dangerouslySetInnerHTML={{ __html: paragraph }}></div>
-                                </Typography>
-                            ))}
-                            {show.artistParamName
-                                ? (
-                                    <Button
-                                        onClick={() => navigateTo(`/artists/${show.artistParamName}`)}
-                                        sx={{ paddingX: 0 }}
-                                    >
-                                        <Typography variant={'body1'}>
-                                            {'More about the artist'}
-                                        </Typography>
-                                    </Button>
-                                )
-                                : null}
-                        </Grid>
-                    )}
+                                    <Typography variant={'body1'}>
+                                        {'More about the artist'}
+                                    </Typography>
+                                </Button>
+                            )
+                            : null}
+                    </Grid>
                 </Grid>
                 <Grid direction={'row'}>
                     {show?.images?.length && (

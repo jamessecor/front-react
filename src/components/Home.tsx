@@ -35,6 +35,14 @@ const Home = () => {
             <Typography textAlign={'center'} variant={'h4'}>
               {currentShow.displayName}
             </Typography>
+            {currentShow.descriptionBold
+              ? (
+                currentShow.descriptionBold.map((line) => (
+                  <Typography variant={'h6'}>
+                    {line}
+                  </Typography>
+                )))
+              : null}
             <img
               className={'image-rounded'}
               src={getFullImagePath(currentShowFeaturedImage?.src ?? '', 'shows')}
@@ -47,7 +55,8 @@ const Home = () => {
                 <Typography variant={'body2'}>
                   {currentShowFeaturedImage.text}
                 </Typography>
-              ) : null}
+              )
+              : null}
             <Link textAlign={'center'} variant={'body1'} sx={{ py: 1 }}>
               {'Click to see more'}
             </Link>

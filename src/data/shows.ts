@@ -12,10 +12,12 @@ export const shows: Array<IShow> = [
         featuredImage: {
             src: '2025-09/featured.jpg'
         },
+        descriptionBold: [
+            'September 5-28, 2025',
+            'Opening Reception: Friday, September 5, 4-7 PM',
+            'Informal exhibit tour with Q & A: Friday September 19, 6 PM',
+        ],
         description: [
-            '<strong>September 5-28, 2025</strong>',
-            '<strong>Opening Reception: Friday, September 5, 4-7 PM</strong>',
-            '<strong>Informal exhibit tour with Q & A: Friday September 19, 6 PM</strong>',
             'Cheryl Betz’s September exhibit, From the Mud, consists of mixed-media paintings and large drawings completed during this year of divisiveness, uncertainty, and imposed change in our country.',
             'The artist builds imagery based on experiential memories on top of photographs and objects with textual or symbolic references, underlining the importance of the unseen. Reoccurring images in this body of work, such as the lotus and bamboo, appear as restorative qualities of transformation, resilience, strength, and hope in the face of adversity.',
             'Betz exhibits her work in both public and commercial venues throughout the northeast and holds a BFA in painting. Her work is in numerous private and corporate collections, and has been carried by Morpeth Contemporary in New Jersey since 1996 and by the Front Gallery since 2018.'
