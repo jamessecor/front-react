@@ -7,6 +7,7 @@ import ButtonBase from '@mui/material/ButtonBase';
 import Stack from '@mui/material/Stack';
 import Link from '@mui/material/Link';
 import Hours from './Hours';
+import { Divider } from '@mui/material';
 
 export const NavItemHome = 'Home';
 
@@ -23,45 +24,50 @@ const Home = () => {
           : `Opening ${currentShow.startDate?.toLocaleDateString('en-us', { weekday: 'long', month: 'long', day: 'numeric' })}`}
       </Typography>
       <Stack alignItems={'center'} direction={'column'}>
-        <ButtonBase onClick={() => navigateTo(`/shows/${currentShow.name}`)}>
-          <Stack alignItems={'center'} direction={'column'}>
-            {currentShow?.superDisplayName
-              ? (
-                <Typography align={'center'} variant={'h5'}>
-                  {currentShow?.superDisplayName}
-                </Typography>
-              )
-              : null}
-            <Typography textAlign={'center'} variant={'h4'}>
-              {currentShow.displayName}
-            </Typography>
-            {currentShow.descriptionBold
-              ? (
-                currentShow.descriptionBold.map((line) => (
+        <Stack alignItems={'center'} direction={'column'}>
+          {currentShow?.superDisplayName
+            ? (
+              <Typography align={'center'} variant={'h5'}>
+                {currentShow?.superDisplayName}
+              </Typography>
+            )
+            : null}
+          <Typography textAlign={'center'} variant={'h4'}>
+            {currentShow.displayName}
+          </Typography>
+          {currentShow.descriptionBold
+            ? (
+              currentShow.descriptionBold.map((line, index, array) => (
+                <Stack key={line}>
                   <Typography variant={'h6'}>
                     {line}
                   </Typography>
-                )))
-              : null}
-            <img
-              className={'image-rounded'}
-              src={getFullImagePath(currentShowFeaturedImage?.src ?? '', 'shows')}
-              style={{
-                width: '100%'
-              }}
-            />
-            {currentShowFeaturedImage?.text
-              ? (
-                <Typography variant={'body2'}>
-                  {currentShowFeaturedImage.text}
-                </Typography>
-              )
-              : null}
-            <Link textAlign={'center'} variant={'body1'} sx={{ py: 1 }}>
-              {'Click to see more'}
-            </Link>
-          </Stack>
-        </ButtonBase>
+                  {index !== array.length - 1 ? <Divider variant={'middle'} /> : null}
+                </Stack>
+              )))
+            : null}
+          <ButtonBase onClick={() => navigateTo(`/shows/${currentShow.name}`)}>
+            <Stack>
+              <img
+                className={'image-rounded'}
+                src={getFullImagePath(currentShowFeaturedImage?.src ?? '', 'shows')}
+                style={{
+                  width: '100%'
+                }}
+              />
+              {currentShowFeaturedImage?.text
+                ? (
+                  <Typography variant={'body2'}>
+                    {currentShowFeaturedImage.text}
+                  </Typography>
+                )
+                : null}
+              <Link textAlign={'center'} variant={'body1'} sx={{ py: 1 }}>
+                {'Click to see more'}
+              </Link>
+            </Stack>
+          </ButtonBase>
+        </Stack>
       </Stack>
       <Hours alignment={'center'} />
     </Container>
