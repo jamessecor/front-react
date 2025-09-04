@@ -39,7 +39,7 @@ const Home = () => {
             ? (
               currentShow.descriptionBold.map((line, index, array) => (
                 <Stack key={line}>
-                  <Typography variant={'h6'}>
+                  <Typography align={'center'} variant={'h6'}>
                     {line}
                   </Typography>
                   {index !== array.length - 1 ? <Divider variant={'middle'} /> : null}
