@@ -68,15 +68,21 @@ const Show = () => {
                         }}
                         sx={{ pl: 3 }}
                     >
-                        {show?.descriptionBold?.map((paragraph) => (
-                            <Typography
-                                key={paragraph.substring(10)}
-                                variant={'body1'}
-                                sx={{ pb: 2, fontWeight: 'bold' }}
-                            >
-                                {paragraph}
-                            </Typography>
-                        ))}
+                        <Stack gap={1} marginBottom={3}>
+                            {show?.descriptionBold?.map((paragraph) => (
+                                <Typography
+                                    key={paragraph.substring(10)}
+                                    variant={'body1'}
+                                    sx={{
+                                        fontWeight: 'bold',
+                                        textUnderlineOffset: 5,
+                                        textDecoration: 'underline'
+                                    }}
+                                >
+                                    {paragraph}
+                                </Typography>
+                            ))}
+                        </Stack>
                         {show?.description?.map((paragraph) => (
                             <Typography
                                 key={paragraph.substring(10)}
