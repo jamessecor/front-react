@@ -2,6 +2,26 @@ import { IShow } from "../models/Show";
 
 export const shows: Array<IShow> = [
     {
+        name: 'show-69',
+        number: 69,
+        displayName: 'Show 69',
+        superDisplayName: 'SALON-STYLE',
+        startDate: new Date('2025-10-03T12:00:00'),
+        endDate: new Date('2025-11-02T17:00:00'),
+        featuredImage: {
+            src: '2025-10/featured.jpg',
+            text: 'image: Elizabeth Nelson Revnisfjara Beach II acrylic 24" x 36"'
+        },
+        description: [
+            '<strong>October 3 - November 2, 2025</strong>',
+            '<strong>Show 69</strong>',
+            '<strong>Opening reception October 3 for Montpelier Art Walk, 4-8PM</strong>',
+            'Join us this Friday, October 3rd, for the opening reception of Show 69, featuring work by members at The Front. We\'re trying something a little different this time, inviting our members to submit larger and/or more pieces than usual, for a dense, full exhibit. It may not be quite floor-to-ceiling at all points but we\'re describing it as our first "Salon-Style" show.',
+            'Make an evening of it: Montpelier Art Walk runs this Friday between 4:00 and 8:00. Pick up a guidebook at any venue -- see <a href="https://www.facebook.com/MontpelierArtWalk" target="_blank">Montpelier Art Walk\'s Facebook page</a> for details!',
+            'If you can\'t be there on opening day, Show 69 will continue through Sunday, November 2nd, every Friday from 4 to 7 and Saturday-Sunday 11 to 5, or by appointment. <a href="/shows/show-68?open-contact-form=true">Contact Us</a>'
+        ]
+    },
+    {
         name: 'from-the-mud',
         number: 68.1,
         displayName: 'From the Mud',

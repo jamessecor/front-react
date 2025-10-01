@@ -2,6 +2,22 @@ import { IEvent } from "../components/Event";
 
 export const events: Array<IEvent> = [
     {
+        title: 'Art Walk reception for Salon-style Group Show 69',
+        date: new Date('2025-10-03T16:00:00'),
+        description: [
+            'Join us this Friday, October 3rd, for the opening reception of Show 69, featuring work by members at The Front. We\'re trying something a little different this time, inviting our members to submit larger and/or more pieces than usual, for a dense, full exhibit. It may not be quite floor-to-ceiling at all points but we\'re describing it as our first "Salon-Style" show.',
+        ],
+        image: {
+            src: 'featured.jpg',
+            directory: 'shows/2025-10'
+        },
+        link: {
+            type: 'internal',
+            text: 'Click here for show details',
+            url: '/shows/show-69'
+        }
+    },
+    {
         title: 'Cheryl Betz - Opening Reception and Informal Tour with Q & A',
         date: new Date('2025-09-05T16:00:00'),
         description: [
