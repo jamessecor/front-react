@@ -2,6 +2,30 @@ import { IShow } from "../models/Show";
 
 export const shows: Array<IShow> = [
     {
+        name: 'memories-and-dreams',
+        number: 69.1,
+        displayName: 'Memories and Dreams',
+        superDisplayName: 'Kathy Stark',
+        startDate: new Date('2025-11-07T12:00:00'),
+        endDate: new Date('2025-11-30T17:00:00'),
+        artistParamName: 'kathy-stark',
+        featuredImage: {
+            src: '2025-11/featured.jpg'
+        },
+        descriptionBold: [
+            'November 7-30, 2025',
+            'Opening Reception: Friday, November 7, 4-7 PM',
+            'Artist\'s Talk: Sunday, November 23 at 4 PM',
+        ],
+        description: [
+            'Kathy Stark is an abstract artist living in the Northeast Kingdom of Vermont. She has lived in Vermont for over 25 years while still retaining her New York connections. She exhibits regionally, nationally and internationally and is represented by SOHO20 in New York City, besides the Front Gallery in Vermont. Her work is in numerous public and private collections.',
+            '“I am an abstract artist; I consider myself a mark-maker. My works consist of repeated marks (lines, words, symbols, dots) applied to create a pattern. I work towards making a rhythmic modulating surface. I began using repeat marks in my work in New York City during the late 1970s.',
+            '“I have used various means to make marks; rubber stamps, words, checker boards, runes, lines and dots. I incorporate various materials and mediums in the works; collage, encaustic, watercolor, decorative papers, markers, oil paint, acrylic paint, wallpaper, and rice paper.',
+            '“I grew up in a very small town along the Hudson River. For me it was a bucolic existence. I was an only child; there were no other children nearby. My companions were a dog and a cat. My parents worked in NYC and I had lots of alone time. "I had art lessons at an early age and all through middle school and high school. I attended the University of New Mexico and NYU. I studied at the Art Students League and worked at the Printmaking Workshop, both in NYC. I have traveled extensively, which has been a great influence in my life. I am inspired by the natural beauty around me and by music.',
+            '“I moved from New York City to Nantucket Island in 1985, and then on to Vermont in 2000 where I have lived since.”'
+        ]
+    },
+    {
         name: 'show-69',
         number: 69,
         displayName: 'Show 69',

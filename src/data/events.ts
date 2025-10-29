@@ -2,6 +2,24 @@ import { IEvent } from "../components/Event";
 
 export const events: Array<IEvent> = [
     {
+        title: 'Kathy Stark - Opening Reception and Artist\'s Talk',
+        date: new Date('2025-11-07T16:00:00'),
+        description: [
+            'Join us at the Front for the opening of <em>Memories and Dreams</em> by Kathy Stark.',
+            'Opening Reception: November 7, 2025, 4-7 pm',
+            'Artist\'s Talk: Sunday, November 23 at 4 PM'
+        ],
+        image: {
+            src: 'featured.jpg',
+            directory: 'shows/2025-11'
+        },
+        link: {
+            type: 'internal',
+            text: 'Click here for show details',
+            url: '/shows/memories-and-dreams'
+        }
+    },
+    {
         title: 'Art Walk reception for Salon-style Group Show 69',
         date: new Date('2025-10-03T16:00:00'),
         description: [
