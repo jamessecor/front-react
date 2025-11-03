@@ -182,7 +182,8 @@ export const events: Array<IEvent> = [
             '<br>'
         ],
         image: {
-            src: '2025/rabbit&wolf.jpg'
+            src: '2025/rabbit&wolf.jpg',
+            directory: 'events'
         }
     },
     {

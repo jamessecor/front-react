@@ -25,58 +25,70 @@ const Home = () => {
     .slice(0, 3);
 
   return (
-    <Container maxWidth={'md'}>
-      <Typography textAlign={'center'} variant={'h6'}>
-        {currentShow.startDate && currentShow.startDate <= today
-          ? 'Currently on view at the Front: '
-          : `Opening ${currentShow.startDate?.toLocaleDateString('en-us', { weekday: 'long', month: 'long', day: 'numeric' })}`}
-      </Typography>
-      <Stack alignItems={'center'} direction={'column'}>
-        <Stack alignItems={'center'} direction={'column'}>
-          {currentShow?.superDisplayName
-            ? (
-              <Typography align={'center'} variant={'h5'}>
-                {currentShow?.superDisplayName}
+    <Container maxWidth={'md'} sx={{ py: 4 }}>
+      {/* Current Show Section */}
+      <Box sx={{ mb: 6 }}>
+        <Typography textAlign={'center'} variant={'h5'} component="h1" sx={{ mb: 3 }}>
+          {currentShow.startDate && currentShow.startDate <= today
+            ? 'Currently on view at the Front: '
+            : `Opening ${currentShow.startDate?.toLocaleDateString('en-us', { weekday: 'long', month: 'long', day: 'numeric' })}:`}
+        </Typography>
+
+        <Card sx={{ display: 'flex', flexDirection: { xs: 'column', md: 'row' }, mb: 4 }}>
+          {currentShowFeaturedImage?.src && (
+            <CardMedia
+              component="img"
+              sx={{
+                width: { xs: '100%', md: 300 },
+                height: { xs: 250, md: 'auto' },
+                objectFit: 'cover'
+              }}
+              image={getFullImagePath(currentShowFeaturedImage.src, 'shows')}
+              alt={currentShow.displayName}
+            />
+          )}
+
+          <Box sx={{ display: 'flex', flexDirection: 'column', flex: 1 }}>
+            <CardContent>
+              {currentShow?.superDisplayName && (
+                <Typography variant="h6" gutterBottom>
+                  {currentShow.superDisplayName}
+                </Typography>
+              )}
+
+              <Typography variant="h4" component="h2" gutterBottom>
+                {currentShow.displayName}
               </Typography>
-            )
-            : null}
-          <Typography textAlign={'center'} variant={'h4'}>
-            {currentShow.displayName}
-          </Typography>
-          {currentShow.descriptionBold
-            ? (
-              currentShow.descriptionBold.map((line, index, array) => (
-                <Stack key={line}>
-                  <Typography align={'center'} variant={'h6'}>
+
+              {currentShow.descriptionBold?.map((line, index) => (
+                <Stack
+                  key={index}
+                  divider={<Divider sx={{ my: 1 }} />}
+                >
+                  <Typography variant="h6" component="p">
                     {line}
                   </Typography>
-                  {index !== array.length - 1 ? <Divider variant={'middle'} /> : null}
                 </Stack>
-              )))
-            : null}
-          <ButtonBase onClick={() => navigateTo(`/shows/${currentShow.name}`)}>
-            <Stack>
-              <img
-                src={getFullImagePath(currentShowFeaturedImage?.src ?? '', 'shows')}
-                style={{
-                  width: '100%'
-                }}
-              />
-              {currentShowFeaturedImage?.text
-                ? (
-                  <Typography variant={'body2'}>
-                    {currentShowFeaturedImage.text}
-                  </Typography>
-                )
-                : null}
-              <Link textAlign={'center'} variant={'body1'} sx={{ py: 1 }}>
-                {'Click to see more'}
-              </Link>
-            </Stack>
-          </ButtonBase>
-        </Stack>
-      </Stack>
-      <Hours alignment={'center'} />
+              ))}
+
+              <Box sx={{ mt: 3, textAlign: 'center' }}>
+                <Button
+                  variant="contained"
+                  color="primary"
+                  onClick={() => navigateTo(`/shows/${currentShow.name}`)}
+                  size="large"
+                >
+                  View Exhibition Details
+                </Button>
+              </Box>
+            </CardContent>
+          </Box>
+        </Card>
+
+        <Box sx={{ textAlign: 'center', mt: 3 }}>
+          <Hours alignment={'center'} />
+        </Box>
+      </Box>
 
       {/* Upcoming Events Section */}
       {upcomingEvents.length > 0 && (
