@@ -8,20 +8,25 @@ import Typography from '@mui/material/Typography';
 import { shows } from '../data/shows';
 import './Artists.css';
 import useImages from '../hooks/useImages';
-import { useState } from 'react';
 import { Stack } from '@mui/material';
+import usePagination from '../hooks/usePagination';
 
 export const NavItemShows = 'Shows';
 
 const Shows = () => {
     const navigateTo = useNavigate();
     const { getFullImagePath } = useImages();
-    const [displayTotal, setDisplayTotal] = useState(8);
+    const {
+        paginatedItems: displayedShows,
+        hasMore,
+        loadMore,
+        showAll
+    } = usePagination(shows, { initialItemsPerPage: 8, incrementBy: 8 });
 
     return (
         <Container>
             <Grid justifyContent={'center'} container={true} spacing={2}>
-                {shows.slice(0, displayTotal).map((show) => {
+                {displayedShows.map((show) => {
                     return (
                         <Grid
                             key={show.number}
@@ -60,24 +65,36 @@ const Shows = () => {
                         </Grid>
                     );
                 })}
-                {displayTotal < shows.length
-                    ? (
-                        <Stack direction={'row'} gap={1}>
+                {hasMore && (
+                    <Grid
+                        justifyContent={'center'}
+                        alignItems={'stretch'}
+                        size={{
+                            xs: 12,
+                            sm: 6,
+                            md: 3
+                        }}
+                        sx={{
+                            display: 'flex',
+                            flexDirection: 'column'
+                        }}
+                    >
+                        <Stack direction={'row'} gap={2}>
                             <Button
                                 variant={'outlined'}
-                                onClick={() => setDisplayTotal(displayTotal + 8)}
+                                onClick={loadMore}
                             >
-                                {'Load More'}
+                                Load More Past Shows
                             </Button>
                             <Button
                                 variant={'contained'}
-                                onClick={() => setDisplayTotal(shows.length)}
+                                onClick={showAll}
                             >
-                                {'Show All'}
+                                Show All Past Shows
                             </Button>
                         </Stack>
-                    )
-                    : null}
+                    </Grid>
+                )}
             </Grid>
         </Container>
     )
