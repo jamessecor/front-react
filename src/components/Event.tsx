@@ -1,7 +1,16 @@
 import React, { useCallback } from 'react';
 import { IImage } from '../models/Artist';
-import { Box, Button, Stack, Typography } from '@mui/material';
-import Grid from '@mui/material/Grid2';
+import {
+    Box,
+    Button,
+    Card,
+    CardActionArea,
+    CardActions,
+    CardContent,
+    CardMedia,
+    Stack,
+    Typography
+} from '@mui/material';
 import { useNavigate } from 'react-router-dom';
 import useImages from '../hooks/useImages';
 
@@ -20,60 +29,91 @@ export interface IEvent {
 }
 
 
-const Event: React.FC<IEvent> = ({ title, description, image, link }) => {
+const Event: React.FC<IEvent> = ({ title, date, description, image, link }) => {
     const navigateTo = useNavigate();
     const { getFullImagePath } = useImages();
-    const followLink = useCallback((link: ILink) => link?.type === 'internal'
-        ? navigateTo(link?.url)
-        : window.open(link?.url, '_blank')
-        , [link]);
+
+    const followLink = useCallback((link: ILink) => {
+        if (!link) return;
+        return link.type === 'internal'
+            ? navigateTo(link.url)
+            : window.open(link.url, '_blank');
+    }, [navigateTo]);
+
+    const handleCardClick = useCallback(() => {
+        if (link) {
+            followLink(link);
+        }
+    }, [link, followLink]);
 
     return (
-        <Stack>
-            <Typography variant={'h6'}>
-                {title}
-            </Typography>
-            <Grid
-                container={true}
-                gap={1}
-            >
-                <Grid size={{ xs: 12, md: 4 }}>
-                    {image
-                        ? (
-                            <img
-                                width={'100%'}
-                                src={getFullImagePath(image.src, image.directory ? image.directory : 'events')}
-                                alt={image.text ?? 'Image unavailable'}
-                                style={{
-                                    transform: image.scale ? `scale(${image.scale})` : '',
-                                    objectPosition: image.position ?? ''
-                                }}
+        <Card
+            sx={{
+                display: 'flex',
+                flexDirection: { xs: 'column', md: 'row' },
+                height: '100%',
+                '&:hover': {
+                    boxShadow: 3,
+                },
+            }}
+        >
+            {image && (
+                <CardMedia
+                    component="img"
+                    sx={{
+                        width: { xs: '100%', md: 300 },
+                        height: { xs: 200, md: 'auto' },
+                        objectFit: 'cover',
+                        transform: image.scale ? `scale(${image.scale})` : 'none',
+                        objectPosition: image.position || 'center',
+                    }}
+                    image={getFullImagePath(image.src, image.directory || 'events')}
+                    alt={image.text || title}
+                />
+            )}
+
+            <Box sx={{ display: 'flex', flexDirection: 'column', flex: 1 }}>
+                <CardContent sx={{ flex: '1 0 auto' }}>
+                    <Typography component="div" variant="h6" gutterBottom>
+                        {title}
+                    </Typography>
+                    {date && (
+                        <Typography variant="subtitle2" color="text.secondary" gutterBottom>
+                            {new Date(date).toLocaleDateString('en-US', {
+                                weekday: 'long',
+                                year: 'numeric',
+                                month: 'long',
+                                day: 'numeric',
+                                hour: '2-digit',
+                                minute: '2-digit',
+                            })}
+                        </Typography>
+                    )}
+                    <Stack spacing={1}>
+                        {description.map((descriptionLine, index) => (
+                            <Typography
+                                key={`${index}-${descriptionLine.substring(0, 15)}`}
+                                variant="body2"
+                                component="div"
+                                sx={{ '& p': { margin: 0 } }}
+                                dangerouslySetInnerHTML={{ __html: descriptionLine }}
                             />
-                        )
-                        : null}
-                </Grid>
-                <Grid size={{ xs: 12, md: 7 }}>
-                    <Stack gap={1}>
-                        {description.map((descriptionLine) => (
-                            <Typography key={descriptionLine.substring(0, 15)}>
-                                {/* ONLY HARD-CODED SAFE HTML */}
-                                <div dangerouslySetInnerHTML={{ __html: descriptionLine }} />
-                            </Typography>
                         ))}
                     </Stack>
-                    {link
-                        ? (
-                            <Button
-                                variant={'text'}
-                                onClick={() => followLink(link)}
-                            >
-                                {link.text}
-                            </Button>
-                        )
-                        : null}
-                </Grid>
-            </Grid>
-        </Stack>
+                </CardContent>
+                {link && (
+                    <CardActions sx={{ justifyContent: 'flex-end', p: 2 }}>
+                        <Button
+                            size="small"
+                            color="primary"
+                            onClick={() => followLink(link)}
+                        >
+                            {link.text}
+                        </Button>
+                    </CardActions>
+                )}
+            </Box>
+        </Card>
     );
 };
 
