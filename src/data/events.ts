@@ -3,7 +3,7 @@ import { IEvent } from "../components/Event";
 export const events: Array<IEvent> = [
     {
         title: 'Kathy Stark - Opening Reception and Artist\'s Talk',
-        date: new Date('2025-11-07T16:00:00'),
+        date: new Date('2025-11-23T16:00:00'),
         description: [
             'Join us at the Front for the opening of <em>Memories and Dreams</em> by Kathy Stark.',
             'Opening Reception: November 7, 2025, 4-7 pm',

@@ -47,7 +47,6 @@ const Home = () => {
               alt={currentShow.displayName}
             />
           )}
-
           <Box sx={{ display: 'flex', flexDirection: 'column', flex: 1 }}>
             <CardContent>
               {currentShow?.superDisplayName && (
@@ -70,18 +69,16 @@ const Home = () => {
                   </Typography>
                 </Stack>
               ))}
-
-              <Box sx={{ mt: 3, textAlign: 'center' }}>
-                <Button
-                  variant="contained"
-                  color="primary"
-                  onClick={() => navigateTo(`/shows/${currentShow.name}`)}
-                  size="large"
-                >
-                  View Exhibition Details
-                </Button>
-              </Box>
             </CardContent>
+            <Box sx={{ display: 'flex', justifyContent: 'flex-end', p: 2, mt: 'auto' }}>
+              <Button
+                size="small"
+                color="primary"
+                onClick={() => navigateTo(`/shows/${currentShow.name}`)}
+              >
+                View Exhibition Details
+              </Button>
+            </Box>
           </Box>
         </Card>
 
