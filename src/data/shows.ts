@@ -16,7 +16,7 @@ export const shows: Array<IShow> = [
             'Opening reception December 5 for Montpelier Art Walk, 4-8PM',
         ],
         description: [
-            'Join us this Friday, December 5th, for the opening reception of Show 70, featuring work by members at The Front. We\'re trying something a little different this time, inviting our members to submit larger and/or more pieces than usual, for a dense, full exhibit. It may not be quite floor-to-ceiling at all points but we\'re describing it as our first "Salon-Style" show.',
+            'Join us this Friday, December 5th, for the opening reception of Show 70, featuring work by members at The Front.',
             'Make an evening of it: Montpelier Art Walk runs this Friday between 4:00 and 8:00. Pick up a guidebook at any venue -- see <a href="https://www.facebook.com/MontpelierArtWalk" target="_blank">Montpelier Art Walk\'s Facebook page</a> for details!',
             'If you can\'t be there on opening day, Show 70 will continue through Sunday, December 28th, every Friday from 4 to 7 and Saturday-Sunday 11 to 5, or by appointment. <a href="/shows/show-70?open-contact-form=true">Contact Us</a>'
         ]
