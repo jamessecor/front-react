@@ -69,6 +69,12 @@ const Home = () => {
                   </Typography>
                 </Stack>
               ))}
+
+              {currentShowFeaturedImage?.text && (
+                <Typography variant="body2" color="text.secondary" sx={{ mt: 1 }}>
+                  {currentShowFeaturedImage.text}
+                </Typography>
+              )}
             </CardContent>
             <Box sx={{ display: 'flex', justifyContent: 'flex-end', p: 2, mt: 'auto' }}>
               <Button
