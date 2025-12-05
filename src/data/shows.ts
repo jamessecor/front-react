@@ -32,6 +32,18 @@ export const shows: Array<IShow> = [
         featuredImage: {
             src: '2025-11/featured.jpg'
         },
+        images: [
+            { src: '2025-11/01.jpg' },
+            { src: '2025-11/02.jpg' },
+            { src: '2025-11/03.jpg' },
+            { src: '2025-11/04.jpg' },
+            { src: '2025-11/05.jpg' },
+            { src: '2025-11/06.jpg' },
+            { src: '2025-11/07.jpg' },
+            { src: '2025-11/08.jpg' },
+            { src: '2025-11/09.jpg' },
+            { src: '2025-11/10.jpg' }
+        ],
         descriptionBold: [
             'November 7-30, 2025',
             'Opening Reception: Friday, November 7, 4-7 PM',
