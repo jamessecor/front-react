@@ -2,6 +2,32 @@ import { IShow } from "../models/Show";
 
 export const shows: Array<IShow> = [
     {
+        name: 'meanwhile',
+        displayName: 'Meanwhile',
+        superDisplayName: 'Elizabeth Nelson',
+        number: 70.1,
+        startDate: new Date('2026-01-02T12:00:00'),
+        endDate: new Date('2026-02-01T17:00:00'),
+        artistParamName: 'elizabeth-nelson',
+        featuredImage: {
+            src: '2026-01/featured.jpg'
+        },
+        descriptionBold: [
+            'January 2-February 1, 2026',
+            'Opening Reception: Friday January 2, 4:00-7:00',
+            'Artist\'s Talk: Sunday January 25th, 4:00'
+        ],
+        description: [
+            'Elizabeth Nelson’s paintings reveal to her, as she’s working, how they would like to be made. At completion, they’re objects “with their own life,” she says, as hard for her to change as it would be to change another living person.',
+            'Nelson’s work is broad in format, theme and media. In “Meanwhile,” she shares hand-size and wall-size pieces, abstracts and landscapes, oils and acrylics and collage. A recurring subject is water: crashing in waves and rivers, rippling in fjords, finding and revealing to us its own path. That action of seeking and revealing is echoed in paintings based on the I Ching, in which questions are answered sidelong by consulting the chance patterns made by a series of coin tosses or divination from nature. Perhaps the answers are not so much given as revealed: by a new slant of light, the questioner sees what was there all along.',
+            'The show’s title refers to the local and global situation. “We\'re all waiting and unsure and disturbed. Nothing is solid anymore. And meanwhile, we are all still making art,” Nelson says. “The essential philosophy is that everything changes. The other part is that everything is connected.”',
+            'Elizabeth Nelson was born in New York City, graduated from Rhode Island School of Design and received a master’s degree in art at the University of North Carolina at Chapel Hill. She moved to a farm in northern Vermont and was part of that working farm for forty years. She has won two Vermont Public Art commissions for eight paintings and her work is part of the Vermont State Art Collection. Nelson has been a member of The Front since 2021.',
+        ],
+        images: [
+            { src: '2026-01/01.jpg' }
+        ]
+    },
+    {
         name: 'show-70',
         number: 70,
         displayName: 'Show 70',
@@ -18,7 +44,8 @@ export const shows: Array<IShow> = [
         description: [
             'Join us this Friday, December 5th, for the opening reception of Show 70, featuring work by members at The Front.',
             'Make an evening of it: Montpelier Art Walk runs this Friday between 4:00 and 8:00. Pick up a guidebook at any venue -- see <a href="https://www.facebook.com/MontpelierArtWalk" target="_blank">Montpelier Art Walk\'s Facebook page</a> for details!',
-            'If you can\'t be there on opening day, Show 70 will continue through Sunday, December 28th, every Friday from 4 to 7 and Saturday-Sunday 11 to 5, or by appointment. <a href="/shows/show-70?open-contact-form=true">Contact Us</a>'
+            'If you can\'t be there on opening day, Show 70 will continue through Sunday, December 28th, every Friday from 4 to 7 and Saturday-Sunday 11 to 5, or by appointment. <a href="/shows/show-70?open-contact-form=true">Contact Us</a>',
+            'To see some press about the show, click <a href="https://www.rutlandherald.com/features/vermont_arts/vermont-visual-arts/article_3ab4d8ed-1504-4e29-b2df-294b382371f8.html" target="_blank">this link</a>'
         ]
     },
     {

@@ -123,7 +123,7 @@ const Show = () => {
                             <Stepper
                                 images={show.images}
                                 imageFolder='shows'
-                                numberToDisplay={2.2}
+                                numberToDisplay={show?.images?.length > 2 ? 2.2 : 1}
                                 spacing={45}
                             />
                         </Grid>
