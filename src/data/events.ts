@@ -2,6 +2,25 @@ import { IEvent } from "../components/Event";
 
 export const events: Array<IEvent> = [
     {
+        title: 'Opening Reception for New Hitzig Show!',
+        date: new Date('2026-01-09T16:30:00'),
+        description: [
+            'Rob Hitzig\'s new show <em>Planting Confusion, Sowing Doubt</em> opens January 9th at 4:30 pm at the Vermont Supreme Court Gallery.',
+            'Artist Remarks at 6 pm.',
+            'The show runs January 9th - March 27th, 2026.',
+            '<em>This show is at the Vermont Supreme Court Gallery, not the Front.</em>'
+        ],
+        image: {
+            src: 'hitzig_supreme_court_flyer.jpg',
+            directory: 'events/2025'
+        },
+        link: {
+            type: 'external',
+            text: 'Click here for full flyer',
+            url: '/images/events/2025/hitzig_supreme_court_flyer.jpg'
+        }
+    },
+    {
         title: 'Art Walk reception for Group Show 70',
         date: new Date('2025-12-05T16:00:00'),
         description: [

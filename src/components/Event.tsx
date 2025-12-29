@@ -61,8 +61,8 @@ const Event: React.FC<IEvent> = ({ title, date, description, image, link }) => {
                 <CardMedia
                     component="img"
                     sx={{
-                        width: { xs: '100%', md: 300 },
-                        height: { xs: 200, md: 'auto' },
+                        width: { xs: '100%', md: 250 },
+                        height: 250,
                         objectFit: 'cover',
                         transform: image.scale ? `scale(${image.scale})` : 'none',
                         objectPosition: image.position || 'center',
@@ -84,7 +84,7 @@ const Event: React.FC<IEvent> = ({ title, date, description, image, link }) => {
                                 year: 'numeric',
                                 month: 'long',
                                 day: 'numeric',
-                                hour: '2-digit',
+                                hour: 'numeric',
                                 minute: '2-digit',
                             })}
                         </Typography>
