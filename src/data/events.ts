@@ -2,6 +2,23 @@ import { IEvent } from "../components/Event";
 
 export const events: Array<IEvent> = [
     {
+        title: 'Elizabeth Nelson - Opening Reception and Artist\'s Talk',
+        date: new Date('2026-01-02T16:00:00'),
+        description: [
+            'Opening Reception: Friday January 2, 4:00-7:00',
+            'Artist\'s Talk: Sunday January 25th, 4:00'
+        ],
+        image: {
+            src: 'featured.jpg',
+            directory: 'shows/2026-01'
+        },
+        link: {
+            type: 'internal',
+            text: 'Click here for show details',
+            url: '/shows/meanwhile'
+        }
+    },
+    {
         title: 'Opening Reception for New Hitzig Show!',
         date: new Date('2026-01-09T16:30:00'),
         description: [
