@@ -2,6 +2,20 @@ import { IEvent } from "../components/Event";
 
 export const events: Array<IEvent> = [
     {
+        title: 'Rabbit & Wolf Poetry Readings',
+        date: new Date('2026-01-08T18:30:00'),
+        description: [
+            'The Front is pleased to host Rabbit & Wolf for an ongoing series of live poetry.',
+            'Please join us on any or all of the following dates:',
+            'Jan 8, April 9, May 14',
+            'Thursdays, at 6:30-8 PM',
+        ],
+        image: {
+            src: '2026/rabbit&wolf2026.png',
+            directory: 'events'
+        }
+    },
+    {
         title: 'Elizabeth Nelson - Opening Reception and Artist\'s Talk',
         date: new Date('2026-01-02T16:00:00'),
         description: [
