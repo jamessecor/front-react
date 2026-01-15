@@ -24,7 +24,18 @@ export const shows: Array<IShow> = [
             'Elizabeth Nelson was born in New York City, graduated from Rhode Island School of Design and received a master’s degree in art at the University of North Carolina at Chapel Hill. She moved to a farm in northern Vermont and was part of that working farm for forty years. She has won two Vermont Public Art commissions for eight paintings and her work is part of the Vermont State Art Collection. Nelson has been a member of The Front since 2021.',
         ],
         images: [
-            { src: '2026-01/01.jpg' }
+            { src: '2026-01/01.jpg' },
+            { src: '2026-01/02.jpg' },
+            { src: '2026-01/03.jpg' },
+            { src: '2026-01/04.jpg' },
+            { src: '2026-01/05.jpg' },
+            { src: '2026-01/06.jpg' },
+            { src: '2026-01/07.jpg' },
+            { src: '2026-01/08.jpg' },
+            { src: '2026-01/09.jpg' },
+            { src: '2026-01/10.jpg' },
+            { src: '2026-01/11.jpg' },
+            { src: '2026-01/12.jpg' },
         ]
     },
     {
