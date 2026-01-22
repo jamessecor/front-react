@@ -2,6 +2,26 @@ import { IShow } from "../models/Show";
 
 export const shows: Array<IShow> = [
     {
+        name: 'show-71',
+        number: 71,
+        displayName: 'Show 71',
+        startDate: new Date('2026-02-06T12:00:00'),
+        endDate: new Date('2026-03-01T17:00:00'),
+        featuredImage: {
+            src: '2026-02/featured.jpg',
+            text: 'image: Melora Kennedy The Son, oil on canvas, 2025'
+        },
+        descriptionBold: [
+            'February 6 - March 1, 2026',
+            'Opening reception February 6 for Montpelier Art Walk, 4-8PM',
+        ],
+        description: [
+            'Join us this Friday, February 6th, for the opening reception of Show 71, featuring work by members at The Front.',
+            'Make an evening of it: Montpelier Art Walk runs this Friday between 4:00 and 8:00. Pick up a guidebook at any venue -- see <a href="https://www.facebook.com/MontpelierArtWalk" target="_blank">Montpelier Art Walk\'s Facebook page</a> for details!',
+            'If you can\'t be there on opening day, Show 71 will continue through Sunday, March 1st, every Friday from 4 to 7 and Saturday-Sunday 11 to 5, or by appointment. <a href="/shows/show-71?open-contact-form=true">Contact Us</a>'
+        ]
+    },
+    {
         name: 'meanwhile',
         displayName: 'Meanwhile',
         superDisplayName: 'Elizabeth Nelson',
