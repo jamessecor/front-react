@@ -19,10 +19,22 @@ const useImages = () => {
     const currentShowImages = useMemo(() => currentShow.images, [currentShow]);
     const currentShowFeaturedImage = useMemo(() => currentShow.featuredImage, [currentShow]);
 
+    const getNextShow = useCallback(() => {
+        const nextShow = shows.find((show) => (show.startDate && show.startDate >= new Date()));
+        return nextShow?.number !== currentShow.number
+            ? nextShow
+            : undefined;
+    }, []);
+
+    const nextShow = useMemo(() => getNextShow(), [getCurrentShow]);
+    const nextShowFeaturedImage = useMemo(() => nextShow?.featuredImage, [currentShow]);
+
     return {
         currentShow,
         currentShowImages,
         currentShowFeaturedImage,
+        nextShow,
+        nextShowFeaturedImage,
         getFullImagePath,
         getShowByName
     };
