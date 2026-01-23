@@ -8,7 +8,7 @@ export const events: Array<IEvent> = [
             'Join us on Friday, February 6th, for the opening reception of Show 71, featuring work by members at The Front.'
         ],
         image: {
-            src: 'featured.jpg',
+            src: '01.jpeg',
             directory: 'shows/2026-02'
         },
         link: {
@@ -33,13 +33,13 @@ export const events: Array<IEvent> = [
     },
     {
         title: 'Elizabeth Nelson - Opening Reception and Artist\'s Talk',
-        date: new Date('2026-01-02T16:00:00'),
+        date: new Date('2026-01-25T16:00:00'),
         description: [
             'Opening Reception: Friday January 2, 4:00-7:00',
             'Artist\'s Talk: Sunday January 25th, 4:00'
         ],
         image: {
-            src: 'featured.jpg',
+            src: '01.jpg',
             directory: 'shows/2026-01'
         },
         link: {
