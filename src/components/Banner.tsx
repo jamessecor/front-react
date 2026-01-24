@@ -1,6 +1,5 @@
 import React from 'react';
-import { Box, IconButton, Snackbar, SnackbarCloseReason } from '@mui/material';
-import { FaTimes } from 'react-icons/fa';
+import { Snackbar, SnackbarCloseReason, Alert } from '@mui/material';
 
 interface IBannerProps {
     message: string;
@@ -25,23 +24,15 @@ const Banner: React.FC<IBannerProps> = ({ message }) => {
             open={open}
             onClose={handleClose}
             message={message}
-            sx={{
-                '& .MuiSnackbarContent-root': {
-                    backgroundColor: 'warning.light',
-                    color: 'black',
-                },
-            }}
-            action={(
-                <IconButton
-                    size="small"
-                    aria-label="close"
-                    color="inherit"
-                    onClick={handleClose}
-                >
-                    <FaTimes />
-                </IconButton>
-            )}
-        />
+        >
+            <Alert
+                onClose={handleClose}
+                severity="info"
+                variant="filled"
+            >
+                <div dangerouslySetInnerHTML={{ __html: message }} />
+            </Alert>
+        </Snackbar>
     );
 };
 

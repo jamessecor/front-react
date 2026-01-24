@@ -10,12 +10,12 @@ export const NavItemEvents = 'Events';
 
 const Events = () => {
     const today = new Date();
-    
+
     // Separate future and past events
     const futureEvents = events
         .filter((event) => event.date >= today)
         .sort((a, b) => a.date.getTime() - b.date.getTime());
-        
+
     const pastEvents = events
         .filter((event) => event.date < today)
         .sort((a, b) => b.date.getTime() - a.date.getTime());
@@ -86,14 +86,14 @@ const Events = () => {
                             ))}
                             {hasMoreFutureEvents && (
                                 <Box sx={{ display: 'flex', justifyContent: 'center', gap: 2, mt: 2 }}>
-                                    <Button 
-                                        variant="outlined" 
+                                    <Button
+                                        variant="outlined"
                                         onClick={loadMoreFutureEvents}
                                     >
                                         Load More Upcoming
                                     </Button>
-                                    <Button 
-                                        variant="contained" 
+                                    <Button
+                                        variant="contained"
                                         onClick={showAllFutureEvents}
                                     >
                                         Show All Upcoming
@@ -122,14 +122,14 @@ const Events = () => {
                             ))}
                             {hasMorePastEvents && (
                                 <Box sx={{ display: 'flex', justifyContent: 'center', gap: 2, mt: 2, mb: 4 }}>
-                                    <Button 
-                                        variant="outlined" 
+                                    <Button
+                                        variant="outlined"
                                         onClick={loadMorePastEvents}
                                     >
                                         Load More Past Events
                                     </Button>
-                                    <Button 
-                                        variant="contained" 
+                                    <Button
+                                        variant="contained"
                                         onClick={showAllPastEvents}
                                     >
                                         Show All Past Events

@@ -6,9 +6,9 @@ interface IMessage {
 
 const messages: Array<IMessage> = [
     {
-        banner: "Rescheduled: Elizabeth Nelson's Artist Talk will be held on Sunday, February 1st at 3:00 PM.",
+        banner: "<em>Rescheduled:</em> Elizabeth Nelson's Artist's Talk will be held on <br/> <div style='text-align: center; font-weight: bold;'>Sunday, February 1st at 3:00 PM</div>",
         begin: new Date('2026-01-24T00:00:00'),
-        end: new Date('2026-02-01T20:00:00')
+        end: new Date('2026-02-01T16:00:00')
     }
 ];
 
