@@ -35,8 +35,8 @@ export const events: Array<IEvent> = [
         title: 'Elizabeth Nelson - Opening Reception and Artist\'s Talk',
         date: new Date('2026-01-25T16:00:00'),
         description: [
-            'Opening Reception: Friday January 2, 4:00-7:00',
-            'Artist\'s Talk: Sunday January 25th, 4:00'
+            'Artist\'s Talk: <strike>Sunday January 25th, 4:00</strike> Sunday February 1st, 3:00 PM',
+            'Opening Reception: Friday January 2, 4:00-7:00'
         ],
         image: {
             src: '01.jpg',

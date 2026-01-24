@@ -23,6 +23,9 @@ import { NavItemAboutUs } from './AboutUs';
 import { NavItemApply } from './Apply';
 import Footer from './Footer';
 import { BsInstagram } from 'react-icons/bs';
+import Banner from './Banner';
+import messages from '../data/messages';
+import { useMemo } from 'react';
 
 const pages: Array<string> = [NavItemHome, NavItemEvents, NavItemArtists, NavItemShows, NavItemVisit, NavItemAboutUs];
 
@@ -72,6 +75,8 @@ const Navbar = () => {
             <BsInstagram />
         </MenuItem>
     );
+    
+    const message = useMemo(() => messages.filter(m => m.begin <= new Date() && m.end >= new Date())?.[0] || null, [])
 
     return (
         <Box
@@ -164,6 +169,9 @@ const Navbar = () => {
                     </Toolbar>
                 </Container>
             </AppBar>
+            {message
+            ? <Banner message={message.banner}/>
+            : null}
             <Box sx={{ m: 2 }}>
                 <Outlet />
             </Box>

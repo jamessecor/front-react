@@ -83,9 +83,12 @@ const Home = () => {
                       })}
                     </Typography>
                     {event.description && event.description[0] && (
-                      <Typography variant="body2" color="text.secondary" sx={{ mt: 1 }}>
-                        {event.description[0].replace(/<[^>]*>?/gm, '')}
-                      </Typography>
+                      <Typography
+                        variant="body2"
+                        color="text.secondary"
+                        sx={{ mt: 1 }}
+                        dangerouslySetInnerHTML={{ __html: event.description[0] }}
+                      />
                     )}
                   </CardContent>
                   <Box sx={{ display: 'flex', justifyContent: 'flex-end', p: 2 }}>

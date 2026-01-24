@@ -35,7 +35,7 @@ export const shows: Array<IShow> = [
         descriptionBold: [
             'January 2-February 1, 2026',
             'Opening Reception: Friday January 2, 4:00-7:00',
-            'Artist\'s Talk: Sunday January 25th, 4:00'
+            'Artist\'s Talk: Sunday February 1st, 3:00 PM'
         ],
         description: [
             'Elizabeth Nelson’s paintings reveal to her, as she’s working, how they would like to be made. At completion, they’re objects “with their own life,” she says, as hard for her to change as it would be to change another living person.',

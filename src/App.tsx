@@ -13,6 +13,7 @@ import Show from './components/Show';
 import AboutUs from './components/AboutUs';
 // import Apply from './components/Apply';
 import './App.css';
+import Banner from './components/Banner';
 
 const App = () => {
   return (
@@ -36,7 +37,7 @@ const App = () => {
           </Routes>
         </BrowserRouter>
       </AppThemeProvider>
-    </React.StrictMode>
+    </React.StrictMode >
   );
 }
 
