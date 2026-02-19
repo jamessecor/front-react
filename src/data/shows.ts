@@ -2,6 +2,35 @@ import { IShow } from "../models/Show";
 
 export const shows: Array<IShow> = [
     {
+        name: 'just-more-self-sabotage-+-purple',
+        displayName: '“Just More Self Sabotage + Purple”',
+        superDisplayName: 'CHIP HAGGERTY:',
+        number: 71.1,
+        startDate: new Date('2026-03-06T12:00:00'),
+        endDate: new Date('2026-03-29T17:00:00'),
+        artistParamName: 'chip-haggerty',
+        featuredImage: {
+            src: '2026-03/featured.jpg'
+        },
+        descriptionBold: [
+            'CHIP HAGGERTY: “Just More Self Sabotage + Purple”',
+            'March 6-March 29, 2026',
+            'Opening Reception: Friday March 6, 2026, 4:00-7:00',
+            'Artist’s Talk: TBD'
+        ],
+        description: [
+            'Chip Haggerty’s work, described as a blend of art brut, outsider art, and folk art, draws heavily from a lifetime of observation. Like many of those who are self-taught, Haggerty’s work harkens to that of French art brut pioneer Jean Dubuffet’s with its primary color palette, its reliance on experimental materials and techniques, and its raw expressionism. Haggerty transforms ordinary paper bags into vivid reflections of his memories, daily life and inner dialogues. Mixing humor, nostalgia and unfiltered honesty, his work invites viewers to pause, reflect and oftentimes relate to the wild ride of being human. With patient, gradual progression over many years Haggerty’s work has been well received in the recent past, with participation in exhibits at Julia Seabrook Gallery, NY, Burlington City Arts, VT, Front Four Gallery, VT and The Kent, VT. “One of my earliest memories is standing on a stool at an old porcelain utility sink in murky fluorescence holding paint brushes under running water as a preschooler at City and Country in Greenwich Village in the late ‘50s. It took me six decades of wandering to get back to painting, but back to it I got,” says Haggerty.',
+            'About Chip Haggerty',
+            'Chip Haggerty, an emerging self-taught, closet artist, has been on a slow yet steady pace expanding his creativity when time and space allow. Writing, painting and spoken word have each contributed to interpreting life as viewed through his lens. Whether a poem, a radio show or a painting is the outlet, there is no lack of his humor, deep thought and passion that goes into crafting the end result. Pulling from childhood experiences, parenting, work life, random social gatherings, literature and every day encounters, Chip takes slices of past and present interactions to formulate the foundation of each piece produced.'
+        ],
+        images: [
+            { src: '2026-03/01.jpg' },
+            { src: '2026-03/02.jpg' },
+            { src: '2026-03/03.jpg' },
+            { src: '2026-03/04.jpg' },
+        ]
+    },
+    {
         name: 'show-71',
         number: 71,
         displayName: 'Show 71',
