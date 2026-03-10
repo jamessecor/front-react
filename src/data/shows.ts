@@ -3,7 +3,7 @@ import { IShow } from "../models/Show";
 export const shows: Array<IShow> = [
     {
         name: 'just-more-self-sabotage-+-purple',
-        displayName: '“Just More Self Sabotage + Purple”',
+        displayName: 'Just More Self Sabotage + Purple',
         superDisplayName: 'CHIP HAGGERTY:',
         number: 71.1,
         startDate: new Date('2026-03-06T12:00:00'),
@@ -13,7 +13,7 @@ export const shows: Array<IShow> = [
             src: '2026-03/featured.jpg'
         },
         descriptionBold: [
-            'CHIP HAGGERTY: “Just More Self Sabotage + Purple”',
+            'CHIP HAGGERTY: Just More Self Sabotage + Purple',
             'March 6-March 29, 2026',
             'Opening Reception: Friday March 6, 2026, 4:00-7:00',
             'Artist’s Talk: TBD'
