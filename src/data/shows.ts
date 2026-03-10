@@ -16,7 +16,7 @@ export const shows: Array<IShow> = [
             'CHIP HAGGERTY: Just More Self Sabotage + Purple',
             'March 6-March 29, 2026',
             'Opening Reception: Friday March 6, 2026, 4:00-7:00',
-            'Artist’s Talk: TBD'
+            'Artist’s Talk: Thursday, March 12th, 6 PM'
         ],
         description: [
             'Chip Haggerty’s work, described as a blend of art brut, outsider art, and folk art, draws heavily from a lifetime of observation. Like many of those who are self-taught, Haggerty’s work harkens to that of French art brut pioneer Jean Dubuffet’s with its primary color palette, its reliance on experimental materials and techniques, and its raw expressionism. Haggerty transforms ordinary paper bags into vivid reflections of his memories, daily life and inner dialogues. Mixing humor, nostalgia and unfiltered honesty, his work invites viewers to pause, reflect and oftentimes relate to the wild ride of being human. With patient, gradual progression over many years Haggerty’s work has been well received in the recent past, with participation in exhibits at Julia Seabrook Gallery, NY, Burlington City Arts, VT, Front Four Gallery, VT and The Kent, VT. “One of my earliest memories is standing on a stool at an old porcelain utility sink in murky fluorescence holding paint brushes under running water as a preschooler at City and Country in Greenwich Village in the late ‘50s. It took me six decades of wandering to get back to painting, but back to it I got,” says Haggerty.',
