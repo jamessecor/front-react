@@ -2,6 +2,26 @@ import { IShow } from "../models/Show";
 
 export const shows: Array<IShow> = [
     {
+        name: 'show-72',
+        number: 72,
+        displayName: 'Show 72',
+        startDate: new Date('2026-04-03T12:00:00'),
+        endDate: new Date('2026-04-26T17:00:00'),
+        featuredImage: {
+            src: '2026-04/featured.jpg',
+            text: 'Jonathan Rose: Little Rabbit, pastel, 17” x 22”'
+        },
+        descriptionBold: [
+            'April 3-26, 2026',
+            'Opening reception April 3 for Montpelier Art Walk, 4-8PM',
+        ],
+        description: [
+            'Join us this Friday, April 3rd, for the opening reception of Show 72, featuring work by members at The Front.',
+            'Make an evening of it: Montpelier Art Walk runs this Friday between 4:00 and 8:00. Pick up a guidebook at any venue -- see <a href="https://www.facebook.com/MontpelierArtWalk" target="_blank">Montpelier Art Walk\'s Facebook page</a> for details!',
+            'If you can\'t be there on opening day, Show 72 will continue through Sunday, March 1st, every Friday from 4 to 7 and Saturday-Sunday 11 to 5, or by appointment. <a href="/shows/show-72?open-contact-form=true">Contact Us</a>'
+        ]
+    },
+    {
         name: 'just-more-self-sabotage-+-purple',
         displayName: 'Just More Self Sabotage + Purple',
         superDisplayName: 'CHIP HAGGERTY:',
