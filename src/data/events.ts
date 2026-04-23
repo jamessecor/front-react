@@ -2,6 +2,23 @@ import { IEvent } from "../components/Event";
 
 export const events: Array<IEvent> = [
     {
+        title: 'Kate Ruddle - Opening Reception and Artist\'s Talk',
+        date: new Date('2026-05-23T18:00:00'),
+        description: [
+            'Opening Reception: Friday, May 1, 4-7pm',
+            'Artist talk: Saturday, May 23, 6pm'
+        ],
+        image: {
+            src: 'featured.jpg',
+            directory: 'shows/2026-05'
+        },
+        link: {
+            type: 'internal',
+            text: 'Click here for show details',
+            url: '/shows/hortus-conclusus'
+        }
+    },
+    {
         title: 'Art Walk reception for Group Show 72',
         date: new Date('2026-04-03T16:00:00'),
         description: [

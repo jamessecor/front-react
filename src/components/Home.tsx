@@ -12,6 +12,7 @@ import { events } from '../data/events';
 import { MdEvent } from 'react-icons/md';
 import { IShow } from '../models/Show';
 import { IImage } from '../models/Artist';
+import Event from './Event';
 
 interface IShowCard {
   show: IShow;
@@ -59,49 +60,13 @@ const Home = () => {
 
           <Stack spacing={3}>
             {upcomingEvents.map((event, index) => (
-              <Card key={index} sx={{ display: 'flex', flexDirection: { xs: 'column', md: 'row' } }}>
-                {event.image && (
-                  <CardMedia
-                    component="img"
-                    sx={{ width: { xs: '100%', md: 200 }, height: 200, objectFit: 'cover' }}
-                    image={getFullImagePath(event.image.src, event.image.directory)}
-                    alt={event.title}
-                  />
-                )}
-                <Box sx={{ display: 'flex', flexDirection: 'column', flex: 1 }}>
-                  <CardContent sx={{ flex: '1 0 auto' }}>
-                    <Typography component="div" variant="h6">
-                      {event.title}
-                    </Typography>
-                    <Typography variant="subtitle1" color="text.secondary" component="div">
-                      {event.date.toLocaleDateString('en-us', {
-                        weekday: 'long',
-                        month: 'long',
-                        day: 'numeric',
-                        hour: 'numeric',
-                        minute: '2-digit'
-                      })}
-                    </Typography>
-                    {event.description && event.description[0] && (
-                      <Typography
-                        variant="body2"
-                        color="text.secondary"
-                        sx={{ mt: 1 }}
-                        dangerouslySetInnerHTML={{ __html: event.description[0] }}
-                      />
-                    )}
-                  </CardContent>
-                  <Box sx={{ display: 'flex', justifyContent: 'flex-end', p: 2 }}>
-                    <Button
-                      size="small"
-                      color="primary"
-                      onClick={() => navigateTo('/events')}
-                    >
-                      View All Events
-                    </Button>
-                  </Box>
-                </Box>
-              </Card>
+              <Event
+                title={event.title}
+                date={event.date}
+                description={event.description}
+                image={event.image}
+                link={event.link}
+              />
             ))}
           </Stack>
 

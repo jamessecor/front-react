@@ -2,6 +2,29 @@ import { IShow } from "../models/Show";
 
 export const shows: Array<IShow> = [
     {
+        name: 'hortus-conclusus',
+        number: 72.1,
+        displayName: 'Hortus Conclusus',
+        superDisplayName: 'Kate Ruddle',
+        startDate: new Date('2026-05-01T16:00:00'),
+        endDate: new Date('2026-05-31T17:00:00'),
+        featuredImage: {
+            src: '2026-05/featured.jpg',
+            text: 'Adrift, installation, 2022'
+        },
+        descriptionBold: [
+            'Opening Reception: Friday, May 1, 4-7pm',
+            'Artist talk: Saturday, May 23, 6pm',
+            'Exhibition Dates: May 1 - May 31, 2026'
+        ],
+        description: [
+            'The Front Gallery of Montpelier, VT is proud to announce Kate Ruddle’s solo exhibition, Hortus Conclusus, running May 1st to May 31st. An artist reception will take place on May 1st from 4-7pm, with an artist talk on Saturday May 23rd at 6pm. All events are open to the public.',
+            'Hortus Conclusus, the title of Kate Ruddle’s May exhibit, is a Latin term meaning “enclosed garden.” Historically, the term references an innermost sacred garden. For this exhibit, Ruddle intertwines a series of multi-media installations to explore both wild and bounded spaces.',
+            'Ruddle’s conceptual installations use fabric, paraphernalia, architectural elements, and projections to explore how “society’s fabric” can reveal, define, protect or control social position. Her artworks often draw from multilayered historical sources and explore socially formative norms that are almost invisible.',
+            'Kate Ruddle holds a BFA in Painting and an MFA in Sculpture. Her work has been shown at the Icelandic Textile Center and venues including: Studio Place Arts, Fair Housing of Burlington VT, The San Pablo Art Gallery, and Marin Museum of Contemporary Art. She has had artworks delivered to Congress with The Violet Protest and won a conceptual architecture design challenge for her Drive-Thru Vegetable Garden. Her work has been carried by The Front Gallery since 2023.'
+        ]
+    },
+    {
         name: 'show-72',
         number: 72,
         displayName: 'Show 72',
