@@ -2,6 +2,26 @@ import { IShow } from "../models/Show";
 
 export const shows: Array<IShow> = [
     {
+        name: 'show-73',
+        number: 73,
+        displayName: 'Show 73',
+        startDate: new Date('2026-06-05T12:00:00'),
+        endDate: new Date('2026-06-28T17:00:00'),
+        featuredImage: {
+            src: '2026-06/featured.jpg',
+            text: 'Daniel Marcus: Approaching Provincetown on a Hazy Day, Small Waves Gather and Break, pastel 12x12”'
+        },
+        descriptionBold: [
+            'June 5-28, 2026',
+            'Opening reception June 5th for Montpelier Art Walk, 4-8PM',
+        ],
+        description: [
+            'Join us Friday, June 5th, for the opening reception of Show 73, featuring work by members at The Front.',
+            'Make an evening of it: Montpelier Art Walk runs Friday June 5th between 4:00 and 8:00. Pick up a guidebook at any venue -- see <a href="https://www.facebook.com/MontpelierArtWalk" target="_blank">Montpelier Art Walk\'s Facebook page</a> for details!',
+            'If you can\'t be there on opening day, Show 73 will continue through Sunday, June 28th, every Friday from 4 to 7 and Saturday-Sunday 11 to 5, or by appointment. <a href="/shows/show-73?open-contact-form=true">Contact Us</a>'
+        ]
+    },
+    {
         name: 'hortus-conclusus',
         number: 72.1,
         displayName: 'Hortus Conclusus',
