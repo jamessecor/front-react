@@ -2,6 +2,32 @@ import { IShow } from "../models/Show";
 
 export const shows: Array<IShow> = [
     {
+        name: 'paintings-then-and-now',
+        number: 73.1,
+        displayName: 'Paintings - Then and Now',
+        superDisplayName: 'Marjorie Kramer',
+        startDate: new Date('2026-05-01T16:00:00'),
+        endDate: new Date('2026-05-31T17:00:00'),
+        featuredImage: {
+            src: '2026-07/featured.jpeg',
+            text: 'Portrait of Lois Dodd, 1974, oil on canvas, 34"x28"'
+        },
+        descriptionBold: [
+            'Opening Reception: Friday, July 3, 4-7pm',
+            'Talk by Sam Thurston, Sunday July 26, 4pm',
+            'Exhibition Dates: July 3 - August 2, 2026'
+        ],
+        description: [
+            'Marjorie Kramer exhibits a selection of work from 50 years of painting, at the Front Gallery at 6 Barre Street in Montpelier, Vermont, opening Friday, July 3rd from 4:00 to 7:00 pm. Come and meet the artist.  ',
+            'Kramer’s paintings draw on a vitality or ‘spirit resonance’ palpable to the viewer that comes from working directly from life. ',
+            'She will show landscapes, flowers, portraits and still lives.',
+            'Ms. Kramer started her artistic life in New York City. She earned her BFA at Cooper Union and was a founding student of the New York Studio School. She moved to Vermont in her early 30s where she raised a family and continued to paint what was important to her. ',
+            'Some highlights from the show include a portrait from many years ago of the painter Lois Dodd (they traded portraits), a majestic wide summer landscape done near Kramer’s Vermont home which could be coupled with a winter landscape that could only be Vermont with its bright February raking light, and intimate still lives that show the meaningful in nature’s everyday acts. ',
+            'There will be an art talk by Sam Thurston on the history of artist-run galleries and associations in America on Sunday, July 26 at 4 PM.',
+            'Marjorie Kramer, Paintings - Then and Now runs through August 2nd.'
+        ]
+    },
+    {
         name: 'show-73',
         number: 73,
         displayName: 'Show 73',

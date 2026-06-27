@@ -2,6 +2,23 @@ import { IEvent } from "../components/Event";
 
 export const events: Array<IEvent> = [
     {
+        title: 'Marjorie Kramer - Opening Reception and Talk',
+        date: new Date('2026-07-26T16:00:00'),
+        description: [
+            'Opening Reception: Friday, July 3, 4-7pm',
+            'Talk by Sam Thurston, Sunday July 26, 4pm'
+        ],
+        image: {
+            src: 'featured.jpeg',
+            directory: 'shows/2026-07'
+        },
+        link: {
+            type: 'internal',
+            text: 'Click here for show details',
+            url: '/shows/paintings-then-and-now'
+        }
+    },
+    {
         title: 'Art Walk reception for Group Show 73',
         date: new Date('2026-06-05T16:00:00'),
         description: [

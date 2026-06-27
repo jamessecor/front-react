@@ -1,7 +1,6 @@
 
 import React from 'react';
 // import Swiper core and required modules
-import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 // Import Swiper styles
@@ -26,7 +25,6 @@ const Stepper: React.FC<IStepperProps> = ({ images, numberToDisplay = 1, imageFo
 
   return (
     <Swiper
-      modules={[Navigation, Pagination, Scrollbar, A11y]}
       spaceBetween={spacing}
       slidesPerView={numberToDisplay}
       navigation={true}

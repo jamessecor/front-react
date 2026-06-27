@@ -59,6 +59,11 @@ const Show = () => {
                             }}
                         >
                             <img className={'image-rounded'} width={'100%'} src={getFullImagePath(show.featuredImage.src, 'shows')} />
+                            {show?.featuredImage?.text && (
+                                <Typography variant="body2" color="text.secondary" sx={{ mt: 1 }}>
+                                    {show.featuredImage.text}
+                                </Typography>
+                            )}
                         </Grid>
                     )}
                     <Grid
@@ -93,11 +98,6 @@ const Show = () => {
                                 <div dangerouslySetInnerHTML={{ __html: paragraph }}></div>
                             </Typography>
                         ))}
-                        {show?.featuredImage?.text && (
-                            <Typography variant="body2" color="text.secondary" sx={{ mt: 1 }}>
-                                {show.featuredImage.text}
-                            </Typography>
-                        )}
                         {show?.artistParamName
                             ? (
                                 <Button
