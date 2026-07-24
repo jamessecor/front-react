@@ -2,12 +2,32 @@ import { IShow } from "../models/Show";
 
 export const shows: Array<IShow> = [
     {
+        name: 'show-74',
+        number: 74,
+        displayName: 'Show 74',
+        startDate: new Date('2026-08-07T12:00:00'),
+        endDate: new Date('2026-08-30T17:00:00'),
+        featuredImage: {
+            src: '2026-08/featured.jpeg',
+            text: 'Sam Thurston: Two Trees (detail), oil on canvas, 2026'
+        },
+        descriptionBold: [
+            'August 7-30, 2026',
+            'Opening reception August 7th for Montpelier Art Walk, 4-8PM',
+        ],
+        description: [
+            'Join us Friday, August 7th, for the opening reception of Show 74, featuring work by members at The Front.',
+            'Make an evening of it: Montpelier Art Walk runs Friday August 7th between 4:00 and 8:00. Pick up a guidebook at any venue -- see <a href="https://www.facebook.com/MontpelierArtWalk" target="_blank">Montpelier Art Walk\'s Facebook page</a> for details!',
+            'If you can\'t be there on opening day, Show 74 will continue through Sunday, August 30th, every Friday from 4 to 7 and Saturday-Sunday 11 to 5, or by appointment. <a href="/shows/show-74?open-contact-form=true">Contact Us</a>'
+        ]
+    },
+    {
         name: 'paintings-then-and-now',
         number: 73.1,
         displayName: 'Paintings - Then and Now',
         superDisplayName: 'Marjorie Kramer',
-        startDate: new Date('2026-05-01T16:00:00'),
-        endDate: new Date('2026-05-31T17:00:00'),
+        startDate: new Date('2026-07-03T16:00:00'),
+        endDate: new Date('2026-08-02T17:00:00'),
         featuredImage: {
             src: '2026-07/featured.jpeg',
             text: 'Portrait of Lois Dodd, 1974, oil on canvas, 34"x28"'
