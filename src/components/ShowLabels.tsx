@@ -1,4 +1,4 @@
-import { Box, Button, Container, Stack, TextField } from '@mui/material';
+import { Box, Button, Container, Snackbar, Stack, TextField } from '@mui/material';
 import * as React from 'react';
 import { useRef, useState } from 'react';
 
@@ -50,6 +50,7 @@ const formatText = (input: string): Array<ILabel> => {
 }
 
 const ShowLabels = () => {
+    const [toastMessage, setToastMessage] = useState('');
     const [text, setText] = useState('')
     const [labels, setLabels] = useState<Array<ILabel>>([]);
 
@@ -67,8 +68,7 @@ const ShowLabels = () => {
 
             const data = [new ClipboardItem({ 'text/html': blobHtml, 'text/plain': blobText })];
             await navigator.clipboard.write(data);
-
-            alert('Formatted labels copied!');
+            setToastMessage('Labels Copied!');
         } catch (err) {
             console.error('Failed to copy: ', err);
         }
@@ -81,6 +81,13 @@ const ShowLabels = () => {
 
     return (
         <Container>
+            <Snackbar
+                message={toastMessage}
+                anchorOrigin={{ vertical: 'top', horizontal: 'right' }}
+                open={toastMessage !== ''}
+                autoHideDuration={1500}
+                onClose={() => setToastMessage('')}
+            />
             <Stack>
                 <Stack alignItems={'end'}>
                     <Button onClick={() => handleCopy()}>
