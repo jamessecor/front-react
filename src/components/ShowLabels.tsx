@@ -107,11 +107,14 @@ const ShowLabels = () => {
                             {labels.map((label) => {
                                 return (
                                     <React.Fragment key={label.key}>
-                                        {label.name}{'\t'} {label.date}
-                                        <br /><strong>{label.title}</strong>
-                                        <br />{label.medium}
-                                        <br />{label.price.match(/[^0-9.]/) ? label.price : `$${label.price}`}
-                                        <br /><br /><br />
+                                        {label.name}{'\t'}{label.date}
+                                        <br />
+                                        <strong>{label.title}</strong>
+                                        <br />
+                                        {label.medium}
+                                        <br />
+                                        {label.price.match(/[^0-9.]/) ? label.price : `$${label.price}`}
+                                        <br /><br /><br /><br />
                                     </React.Fragment>
                                 )
                             })}
