@@ -2,6 +2,26 @@ import { IShow } from "../models/Show";
 
 export const shows: Array<IShow> = [
     {
+        name: 'mind-machines',
+        number: 74.1,
+        displayName: 'Mind Machines',
+        superDisplayName: 'Rob Hitzig',
+        startDate: new Date('2026-09-04T12:00:00'),
+        endDate: new Date('2026-09-27T17:00:00'),
+        featuredImage: {
+            src: '2026-09/featured.jpg',
+            text: 'Bus Candy, 2026, acrylic, gesso, tinted shellac, graphite, and shellac on MDO and OSB, 36"x36"'
+        },
+        descriptionBold: [
+            'September 4-27, 2026',
+            'Opening Reception: Friday 9/4, 4-7pm',
+            'Artist\'s Talk: Saturday 9/19, 5pm'
+        ],
+        description: [
+            '<em>Show details coming soon</em>'
+        ]
+    },
+    {
         name: 'show-74',
         number: 74,
         displayName: 'Show 74',

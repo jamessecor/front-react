@@ -2,6 +2,23 @@ import { IEvent } from "../components/Event";
 
 export const events: Array<IEvent> = [
     {
+        title: 'Rob Hitzig - Opening Reception and Talk',
+        date: new Date('2026-09-19T17:00:00'),
+        description: [
+            'Opening Reception: Friday, September 4, 4-7pm',
+            'Artist\'s Talk: Saturday September 19, 5pm'
+        ],
+        image: {
+            src: 'featured.jpg',
+            directory: 'shows/2026-09'
+        },
+        link: {
+            type: 'internal',
+            text: 'Click here for show details',
+            url: '/shows/mind-machines'
+        }
+    },
+    {
         title: 'Art Walk reception for Group Show 74',
         date: new Date('2026-08-07T16:00:00'),
         description: [

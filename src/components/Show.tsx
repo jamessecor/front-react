@@ -112,7 +112,7 @@ const Show = () => {
                             : null}
                     </Grid>
                 </Grid>
-                <Grid direction={'row'}>
+                <Grid container direction={'row'}>
                     {show?.images?.length && (
                         <Grid
                             justifyContent={'center'}
