@@ -18,7 +18,9 @@ export const shows: Array<IShow> = [
             'Artist\'s Talk: Saturday 9/19, 5pm'
         ],
         description: [
-            '<em>Show details coming soon</em>'
+            'The Front is pleased to announce Rob Hitzig’s first solo show at the gallery, <em>Mind Machines</em>. The title is designed to counteract the idea that art doesn’t “do anything.” Hitzig believes his paintings have the power to move minds much like mechanical machinery moves physical matter. The work is designed to create space for wonder, questions, and dialogue. As such, it has the potential power to break down hardened beliefs in absolutes to help people see the world in a multitude of colors, thereby breaking through constrictions or blockages in minds, opening them.',
+            'Rob Hitzig is a self-taught artist whose work evolved out of a furniture making practice he developed while working for the U.S. Environmental Protection Agency in Washington, DC. Though starting with his love of the natural beauty of wood, his work has evolved to include paintings and painted sculpture where he explores color and movement through linear patterns. Consistent through his years of making furniture and art is his use of shellac to create depth and radiance on a flat surface.',
+            '<em>Mind Machines</em> opens September 4 with an artist reception from 4:00 to 7:00. There will be an artist talk on Saturday, September 19 at 5:00. The exhibit will be on view until Sunday, September 27.'
         ]
     },
     {
