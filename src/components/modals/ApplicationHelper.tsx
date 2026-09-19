@@ -7,6 +7,7 @@ import {
     Divider,
     FormControlLabel,
     IconButton,
+    Snackbar,
     Stack,
     TextField,
     Typography,
@@ -74,6 +75,8 @@ const defaultValues: FormValues = {
 // --- Draft persistence -----------------------------------------------------
 // Drafts are saved to localStorage so a user doesn't lose their answers if
 // they accidentally close the drawer, refresh, or navigate away mid-form.
+// Saving is always allowed on partial/incomplete data — validation only
+// gates the "Copy for Email" action, not persistence.
 
 const STORAGE_KEY = "front-gallery-membership-draft";
 const AUTOSAVE_DELAY_MS = 500;
@@ -135,10 +138,10 @@ const ApplicationHelper = ({
 }: ApplicationHelperProps) => {
     const [copied, setCopied] = useState(false);
     const [draftRestored, setDraftRestored] = useState(false);
+    const [saveConfirmationOpen, setSaveConfirmationOpen] = useState(false);
 
     const {
         control,
-        handleSubmit,
         watch,
         reset,
         formState: { errors },
@@ -246,11 +249,13 @@ MEMBERSHIP EXPECTATIONS
         }
     };
 
-    const submit = (data: FormValues) => {
-        onSubmitApplication?.(data, formattedApplication);
-        // The application has been handed off, so the local draft is no longer
-        // needed.
-        clearDraft();
+    // Saving is intentionally NOT gated by form validation — someone should
+    // be able to save partial progress (e.g. half-finished answers) and come
+    // back later. Validation only matters for "Copy for Email".
+    const handleSave = () => {
+        saveDraft(values);
+        onSubmitApplication?.(values, formattedApplication);
+        setSaveConfirmationOpen(true);
     };
 
     const discardDraft = () => {
@@ -341,7 +346,12 @@ MEMBERSHIP EXPECTATIONS
         >
             <Box
                 component="form"
-                onSubmit={handleSubmit(submit)}
+                onSubmit={(event) => {
+                    // Enter-key submission just saves progress too — no
+                    // validation gate, same as clicking the Save button.
+                    event.preventDefault();
+                    handleSave();
+                }}
                 sx={{
                     height: "100%",
                     display: "flex",
@@ -674,18 +684,41 @@ MEMBERSHIP EXPECTATIONS
                                 copied ? <CheckCircleOutlineIcon /> : <ContentCopyIcon />
                             }
                             onClick={copyApplication}
-                            disabled={!values.firstName || !values.email}
                             fullWidth
                         >
                             {copied ? "Copied!" : "Copy for Email"}
                         </Button>
 
-                        <Button type="submit" variant="outlined" sx={{ minWidth: 120 }}>
+                        {/* type="button" (not "submit") so this never runs
+                            react-hook-form's required-field validation — it
+                            just persists whatever has been filled in so far. */}
+                        <Button
+                            type="button"
+                            variant="outlined"
+                            sx={{ minWidth: 120 }}
+                            onClick={handleSave}
+                        >
                             Save
                         </Button>
                     </Stack>
                 </Box>
             </Box>
+
+            <Snackbar
+                open={saveConfirmationOpen}
+                autoHideDuration={2500}
+                onClose={() => setSaveConfirmationOpen(false)}
+                anchorOrigin={{ vertical: "bottom", horizontal: "center" }}
+            >
+                <Alert
+                    severity="success"
+                    variant="filled"
+                    onClose={() => setSaveConfirmationOpen(false)}
+                    sx={{ width: "100%" }}
+                >
+                    Saved
+                </Alert>
+            </Snackbar>
         </SwipeableDrawer>
     );
 }
