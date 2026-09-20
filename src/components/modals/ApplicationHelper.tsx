@@ -137,8 +137,10 @@ const ApplicationHelper = ({
     onSubmitApplication,
 }: ApplicationHelperProps) => {
     const [copied, setCopied] = useState(false);
+    const [copyFailed, setCopyFailed] = useState(false);
     const [draftRestored, setDraftRestored] = useState(false);
     const [saveConfirmationOpen, setSaveConfirmationOpen] = useState(false);
+    const previewRef = useRef<HTMLPreElement | null>(null);
 
     const {
         control,
@@ -236,16 +238,71 @@ MEMBERSHIP EXPECTATIONS
 `;
     }, [values]);
 
-    const copyApplication = async () => {
-        try {
-            await navigator.clipboard.writeText(formattedApplication);
-            setCopied(true);
+    const selectPreviewTextForManualCopy = () => {
+        const node = previewRef.current;
+        if (!node || typeof window === "undefined") return;
+        const selection = window.getSelection();
+        if (!selection) return;
+        const range = document.createRange();
+        range.selectNodeContents(node);
+        selection.removeAllRanges();
+        selection.addRange(range);
+    };
 
-            window.setTimeout(() => {
-                setCopied(false);
-            }, 2500);
+    const copyApplication = async () => {
+        let succeeded = false;
+
+        // 1) Plain-text async Clipboard API.
+        try {
+            if (
+                typeof window !== "undefined" &&
+                Boolean(navigator.clipboard) &&
+                "writeText" in navigator.clipboard
+            ) {
+                await navigator.clipboard.writeText(formattedApplication);
+                succeeded = true;
+            }
         } catch (error) {
-            console.error("Unable to copy application:", error);
+            console.error(
+                "navigator.clipboard.writeText failed, falling back:",
+                error
+            );
+        }
+
+        // 2) Legacy fallback: hidden textarea + execCommand('copy'). This
+        // works in a much wider range of mobile browsers/webviews than the
+        // async Clipboard API, and doesn't require a secure (HTTPS) origin —
+        // useful when the async API throws (e.g. "Document is not focused"
+        // on Android Chrome) or isn't exposed at all.
+        if (!succeeded && typeof document !== "undefined") {
+            try {
+                const textarea = document.createElement("textarea");
+                textarea.value = formattedApplication;
+                textarea.style.position = "fixed";
+                textarea.style.top = "0";
+                textarea.style.left = "0";
+                textarea.style.opacity = "0";
+                document.body.appendChild(textarea);
+                textarea.focus();
+                textarea.select();
+                succeeded = document.execCommand("copy");
+                document.body.removeChild(textarea);
+            } catch (error) {
+                console.error("execCommand('copy') fallback failed:", error);
+            }
+        }
+
+        if (succeeded) {
+            setCopyFailed(false);
+            setCopied(true);
+            window.setTimeout(() => setCopied(false), 2500);
+        } else {
+            // Every automatic method failed — don't leave the user with a
+            // button that silently did nothing. Select the preview text so
+            // they can copy it themselves with a long-press.
+            setCopied(false);
+            setCopyFailed(true);
+            selectPreviewTextForManualCopy();
         }
     };
 
@@ -642,10 +699,12 @@ MEMBERSHIP EXPECTATIONS
 
                             <Typography variant="body2" color="text.secondary" mb={2}>
                                 Your responses will be formatted as plain text so you can
-                                paste them directly into an email.
+                                paste them directly into an email. Attach your images to
+                                the email yourself once you've pasted this in.
                             </Typography>
 
                             <Box
+                                ref={previewRef}
                                 component="pre"
                                 sx={{
                                     whiteSpace: "pre-wrap",
@@ -717,6 +776,23 @@ MEMBERSHIP EXPECTATIONS
                     sx={{ width: "100%" }}
                 >
                     Saved
+                </Alert>
+            </Snackbar>
+
+            <Snackbar
+                open={copyFailed}
+                autoHideDuration={5000}
+                onClose={() => setCopyFailed(false)}
+                anchorOrigin={{ vertical: "bottom", horizontal: "center" }}
+            >
+                <Alert
+                    severity="error"
+                    variant="filled"
+                    onClose={() => setCopyFailed(false)}
+                    sx={{ width: "100%" }}
+                >
+                    Couldn't copy automatically — we've selected the text
+                    above for you, so you can copy it with a long-press.
                 </Alert>
             </Snackbar>
         </SwipeableDrawer>

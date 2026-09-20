@@ -4,8 +4,7 @@ import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import { Box, Divider, List, ListItem, ListItemIcon, ListItemText } from '@mui/material';
-import { BsBrushFill, BsBuilding, BsCash, BsEnvelopeFill, BsHouseFill, BsInstagram, BsPersonFill, BsTelephoneFill } from 'react-icons/bs';
-import { FaPeopleCarry } from 'react-icons/fa';
+import { BsBrushFill, BsCash, BsEnvelopeFill, BsImages, BsPersonFill } from 'react-icons/bs';
 import { IoIosPeople } from 'react-icons/io';
 import ApplicationHelper from './modals/ApplicationHelper';
 
@@ -15,137 +14,84 @@ const Apply = () => {
     const [showApplicationHelper, setShowApplicationHelper] = useState(false);
     return (
         <Container>
-            <ApplicationHelper open={showApplicationHelper} onOpen={() => setShowApplicationHelper(false)} onClose={() => setShowApplicationHelper(false)} />
+            <ApplicationHelper
+                open={showApplicationHelper}
+                onOpen={() => setShowApplicationHelper(true)}
+                onClose={() => setShowApplicationHelper(false)}
+            />
+            <img src={`${import.meta.env.VITE_URL}/images/apply/sunnywindow.jpg`} style={{
+                position: 'fixed',
+                width: '100vw',
+                top: 0,
+                left: 0,
+                zIndex: -1,
+                opacity: 0.15,
+                objectFit: 'none',
+                objectPosition: '70% 150%'
+            }}
+            />
             <Stack justifyContent={'center'} sx={{ marginX: { xs: 1, sm: 2, md: 28 } }}>
                 <Typography align={'center'} variant={'h3'} sx={{ pb: 1 }}>
                     {'Join Us!'}
                 </Typography>
                 <Stack direction={{ xs: 'column', md: 'row' }} alignItems={'center'}>
-                    <Box sx={{ width: '100%' }}>
-                        <img width={'100%'} src={`${import.meta.env.VITE_URL}/images/apply/sunnywindow.jpg`} />
-                    </Box>
-                    <Box>
-                        <Typography align={'center'} variant={'h6'}>
+                    <Box textAlign={'center'}>
+                        <Typography variant={'h6'}>
                             {'Thanks for considering membership at The Front!'}
                         </Typography>
-                        <Typography align={'center'} variant={'h6'} sx={{ pb: 4 }}>
-                            {'To apply, please send an email to'}
+                        <Typography variant={'body1'} sx={{ pb: 1 }}>
+                            {'The easiest way to apply is our Application Helper below — it walks you through everything we need and formats it so you can paste it straight into an email.'}
+                        </Typography>
+                        <Typography variant={'body1'} sx={{ pb: 4 }}>
+                            {'Prefer to write the email yourself? Send it to'}
                             <Button variant={'text'} onClick={() => window.open('mailto:apply@thefrontvt.com')}>
                                 {'apply@thefrontvt.com'}
                             </Button>
-                            {'with the information below.'}
+                            {'— see the checklist below for what to include.'}
                         </Typography>
-                        <Button onClick={() => setShowApplicationHelper(true)}>
-                            {'Open Application Helper'}
-                        </Button>
-                        <Typography align={'center'} variant={'body1'} sx={{ pb: 4 }}>
+                        <Typography variant={'body1'} sx={{ pb: 4 }}>
                             {'The deadline to apply is June 17th.'}
                         </Typography>
+                        <Button variant={'contained'} size={'large'} onClick={() => setShowApplicationHelper(true)}>
+                            {'Open the Application Helper'}
+                        </Button>
                     </Box>
                 </Stack>
-
-                <Divider />
-                <Stack direction={'column'}>
+                <Divider sx={{ paddingTop: 3 }} />
+                <Stack direction={'column'} sx={{ paddingTop: 2 }}>
                     <Typography align={'left'} variant={'h6'}>
-                        {'Contact'}
+                        {'What to include'}
+                    </Typography>
+                    <Typography align={'left'} variant={'body2'} sx={{ pb: 1 }}>
+                        {'The Application Helper covers all of this in detail — this is just a quick reference if you\'re writing the email yourself.'}
                     </Typography>
                     <List>
                         <ListItem disableGutters>
                             <ListItemIcon><BsPersonFill /></ListItemIcon>
-                            <ListItemText>{'Name (first and last)'}</ListItemText>
-                        </ListItem>
-                        <ListItem disableGutters>
-                            <ListItemIcon><BsEnvelopeFill /></ListItemIcon>
-                            <ListItemText>{'Email address'}</ListItemText>
-                        </ListItem>
-                        <ListItem disableGutters>
-                            <ListItemIcon><BsTelephoneFill /></ListItemIcon>
-                            <ListItemText>{'Phone number'}</ListItemText>
-                        </ListItem>
-                        <ListItem disableGutters>
-                            <ListItemIcon><BsHouseFill /></ListItemIcon>
-                            <ListItemText>{'Town or city of residence'}</ListItemText>
-                        </ListItem>
-                        <ListItem disableGutters>
-                            <ListItemIcon><BsInstagram /></ListItemIcon>
-                            <ListItemText>{'Online presence if relevant (instagram, website, etc)'}</ListItemText>
-                        </ListItem>
-                    </List>
-                </Stack>
-
-                <Divider />
-                <Stack direction={'row'}>
-                    <Stack direction={'column'}>
-                        <Typography align={'left'} variant={'h6'}>
-                            {'Statement'}
-                        </Typography>
-                        <Typography align={'left'} variant={'body1'}>
-                            {'Tell us briefly about your art practice.'}
-                        </Typography>
-                    </Stack>
-                </Stack>
-
-                <Divider sx={{ paddingTop: 3 }} />
-                <Stack direction={'row'}>
-                    <Stack direction={'column'}>
-                        <Typography align={'left'} variant={'h6'}>
-                            {'Bio'}
-                        </Typography>
-                        <Typography align={'left'} variant={'body1'}>
-                            {'Tell us a little about yourself.'}
-                        </Typography>
-                    </Stack>
-                </Stack>
-
-                <Divider sx={{ paddingTop: 3 }} />
-                <Stack direction={'column'}>
-                    <Typography align={'left'} variant={'h6'}>
-                        {'Membership in the Cooperative'}
-                    </Typography>
-                    <Typography align={'left'} variant={'body1'}>
-                        {'The Front relies on members\' energy and collaboration to keep going. Specifically, member-owners are expected to:'}
-                    </Typography>
-                    <List>
-                        <ListItem disableGutters>
-                            <ListItemIcon><BsBuilding /></ListItemIcon>
-                            <ListItemText>{'Spend at least one 3-hour shift staffing the gallery every month'}</ListItemText>
-
+                            <ListItemText>{'Contact info: name, email, phone, town/city, and online presence if relevant'}</ListItemText>
                         </ListItem>
                         <ListItem disableGutters>
                             <ListItemIcon><BsBrushFill /></ListItemIcon>
-                            <ListItemText>{'Submit work for group shows every 2 months'}</ListItemText>
+                            <ListItemText>{'A brief statement about your art practice, plus a short bio'}</ListItemText>
                         </ListItem>
                         <ListItem disableGutters>
                             <ListItemIcon><IoIosPeople /></ListItemIcon>
-                            <ListItemText>{'Attend all-member meetings once every 2 months (usually ~2 hours)'}</ListItemText>
+                            <ListItemText>{'What excites and concerns you about membership, and whether you can fulfill the membership expectations (shifts, shows, meetings, committees, dues)'}</ListItemText>
                         </ListItem>
                         <ListItem disableGutters>
-                            <ListItemIcon><FaPeopleCarry /></ListItemIcon>
-                            <ListItemText>{'Work on gallery committees (eg Events, Finance, Installation) with fellow members'}</ListItemText>
+                            <ListItemIcon><BsImages /></ListItemIcon>
+                            <ListItemText>{'Up to 6 images of your work — JPEG preferred, max 1MB each, but send what you have'}</ListItemText>
                         </ListItem>
                         <ListItem disableGutters>
                             <ListItemIcon><BsCash /></ListItemIcon>
-                            <ListItemText>{'Contribute dues (nominally $50/month) as feasible'}</ListItemText>
+                            <ListItemText>{'You do not need to share anything about your finances — no one is turned away for inability to pay dues'}</ListItemText>
                         </ListItem>
                     </List>
-                    <Typography align={'left'} variant={'body1'}>
-                        {'Tell us what excites you most about gallery membership, and what concerns you most. Do you think you can fulfill the expectations above?'}
-                    </Typography>
-                    <Typography align={'left'} variant={'body2'}>
-                        {'(Note that we will not turn away applicants for lack of ability to pay dues; you DO NOT need to tell us about your finances.)'}
-                    </Typography>
-                </Stack>
-
-                <Divider sx={{ paddingTop: 3 }} />
-                <Stack direction={'row'}>
-                    <Stack direction={'column'}>
-                        <Typography align={'left'} variant={'h6'}>
-                            {'Images'}
-                        </Typography>
-                        <Typography align={'left'} variant={'body1'}>
-                            {'Attach 6 images of work. Preferred format: JPEG, max size 1MB per image. But send what you have and we\'ll follow up as needed.'}
-                        </Typography>
-                    </Stack>
+                    <Box sx={{ pt: 1 }}>
+                        <Button variant={'outlined'} startIcon={<BsEnvelopeFill />} onClick={() => setShowApplicationHelper(true)}>
+                            {'Open the Application Helper'}
+                        </Button>
+                    </Box>
                 </Stack>
 
                 <Typography align={'center'} variant={'h4'} sx={{ paddingTop: 3 }}>

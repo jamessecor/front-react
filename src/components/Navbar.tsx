@@ -27,7 +27,7 @@ import Banner from './Banner';
 import messages from '../data/messages';
 import { useMemo } from 'react';
 
-const pages: Array<string> = [NavItemHome, NavItemEvents, NavItemArtists, NavItemShows, NavItemVisit, NavItemAboutUs];
+const pages: Array<string> = [NavItemHome, NavItemEvents, NavItemArtists, NavItemShows, NavItemVisit, NavItemAboutUs, NavItemApply];
 
 const getRouteFromPage = (page: string) => {
     switch (page) {
@@ -75,7 +75,7 @@ const Navbar = () => {
             <BsInstagram />
         </MenuItem>
     );
-    
+
     const message = useMemo(() => messages.filter(m => m.begin <= new Date() && m.end >= new Date())?.[0] || null, [])
 
     return (
@@ -83,7 +83,7 @@ const Navbar = () => {
             justifyContent={'space-between'}
             sx={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}
         >
-            <AppBar position="static" color={'transparent'}>
+            <AppBar position="static" color={'transparent'} sx={{ zIndex: 1000 }}>
                 <Container maxWidth="xl">
                     <Toolbar disableGutters>
                         <ButtonBase
@@ -170,8 +170,8 @@ const Navbar = () => {
                 </Container>
             </AppBar>
             {message
-            ? <Banner message={message.banner}/>
-            : null}
+                ? <Banner message={message.banner} />
+                : null}
             <Box sx={{ m: 2 }}>
                 <Outlet />
             </Box>
