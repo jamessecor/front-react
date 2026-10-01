@@ -4,30 +4,26 @@ import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import { Box, Divider, List, ListItem, ListItemIcon, ListItemText } from '@mui/material';
-import { BsBrushFill, BsCash, BsEnvelopeFill, BsImages, BsPersonFill } from 'react-icons/bs';
+import { BsBrushFill, BsCameraVideoFill, BsCash, BsImages, BsPersonFill } from 'react-icons/bs';
 import { IoIosPeople } from 'react-icons/io';
-import ApplicationHelper from './modals/ApplicationHelper';
+import { MdOutlineOpenInNew } from 'react-icons/md';
 
 export const NavItemApply = 'Apply';
+export const MEMBER_APPLICATION_URL = 'https://form.jotform.com/262623264314048';
 
 const Apply = () => {
-    const [showApplicationHelper, setShowApplicationHelper] = useState(false);
     return (
         <Container>
-            <ApplicationHelper
-                open={showApplicationHelper}
-                onOpen={() => setShowApplicationHelper(true)}
-                onClose={() => setShowApplicationHelper(false)}
-            />
             <img src={`${import.meta.env.VITE_URL}/images/apply/sunnywindow.jpg`} style={{
                 position: 'fixed',
                 width: '100vw',
+                height: '100vh',
                 top: 0,
                 left: 0,
                 zIndex: -1,
                 opacity: 0.15,
-                objectFit: 'none',
-                objectPosition: '70% 150%'
+                objectFit: 'cover',
+                objectPosition: '70% 80%'
             }}
             />
             <Stack justifyContent={'center'} sx={{ marginX: { xs: 1, sm: 2, md: 28 } }}>
@@ -40,20 +36,19 @@ const Apply = () => {
                             {'Thanks for considering membership at The Front!'}
                         </Typography>
                         <Typography variant={'body1'} sx={{ pb: 1 }}>
-                            {'The easiest way to apply is our Application Helper below — it walks you through everything we need and formats it so you can paste it straight into an email.'}
+                            <div dangerouslySetInnerHTML={{ __html: 'See below for guidelines, a link to the application form, and helpful information. Contact <a target="_blank" href="mailto:apply@thefrontvt.com">apply@thefrontvt.com</a> with questions.' }} />
                         </Typography>
                         <Typography variant={'body1'} sx={{ pb: 4 }}>
-                            {'Prefer to write the email yourself? Send it to'}
-                            <Button variant={'text'} onClick={() => window.open('mailto:apply@thefrontvt.com')}>
-                                {'apply@thefrontvt.com'}
-                            </Button>
-                            {'— see the checklist below for what to include.'}
+                            {'The deadline to apply is November 30th. You’ll hear from us with a decision by January 4th.'}
                         </Typography>
-                        <Typography variant={'body1'} sx={{ pb: 4 }}>
-                            {'The deadline to apply is June 17th.'}
-                        </Typography>
-                        <Button variant={'contained'} size={'large'} onClick={() => setShowApplicationHelper(true)}>
-                            {'Open the Application Helper'}
+                        <Button variant={'contained'} size={'large'} onClick={() => window.open(MEMBER_APPLICATION_URL, '_blank')}>
+                            <Stack
+                                direction={'row'}
+                                alignItems={'center'}
+                                gap={1}
+                            >
+                                <MdOutlineOpenInNew />{'Apply Now'}
+                            </Stack>
                         </Button>
                     </Box>
                 </Stack>
@@ -63,7 +58,7 @@ const Apply = () => {
                         {'What to include'}
                     </Typography>
                     <Typography align={'left'} variant={'body2'} sx={{ pb: 1 }}>
-                        {'The Application Helper covers all of this in detail — this is just a quick reference if you\'re writing the email yourself.'}
+                        {'The form will prompt you for the following responses. Consider collecting this information before you start the application.'}
                     </Typography>
                     <List>
                         <ListItem disableGutters>
@@ -80,18 +75,17 @@ const Apply = () => {
                         </ListItem>
                         <ListItem disableGutters>
                             <ListItemIcon><BsImages /></ListItemIcon>
-                            <ListItemText>{'Up to 6 images of your work — JPEG preferred, max 1MB each, but send what you have'}</ListItemText>
+                            <ListItemText>{'Up to 6 images of your work — 2MB max each, PNG (.png), JPEG (.jpg) or GIF(.gif) formats'}</ListItemText>
+                        </ListItem>
+                        <ListItem disableGutters>
+                            <ListItemIcon><BsCameraVideoFill /></ListItemIcon>
+                            <ListItemText>{'Up to 1 video submission (time-based artwork only; please don’t submit videos of your non-video art practice). Videos can be up to 50MB in mp4, avi, or mov formats.'}</ListItemText>
                         </ListItem>
                         <ListItem disableGutters>
                             <ListItemIcon><BsCash /></ListItemIcon>
                             <ListItemText>{'You do not need to share anything about your finances — no one is turned away for inability to pay dues'}</ListItemText>
                         </ListItem>
                     </List>
-                    <Box sx={{ pt: 1 }}>
-                        <Button variant={'outlined'} startIcon={<BsEnvelopeFill />} onClick={() => setShowApplicationHelper(true)}>
-                            {'Open the Application Helper'}
-                        </Button>
-                    </Box>
                 </Stack>
 
                 <Typography align={'center'} variant={'h4'} sx={{ paddingTop: 3 }}>
@@ -106,10 +100,10 @@ const Apply = () => {
                         </Typography>
                         <Stack spacing={1}>
                             <Typography align={'left'} variant={'body1'}>
-                                <div dangerouslySetInnerHTML={{ __html: 'We\'ll send a confirmation of receipt within a day of your email submission. If you don\'t see a confirmation, contact Glen at <a target="_blank" href="mailto:glen@glencoburnhutcheson.com">glen@glencoburnhutcheson.com</a> to check in. Please don\'t assume your application has been received without confirmation.' }} />
+                                {'We\'ll send a confirmation of receipt when you submit the form.'}
                             </Typography>
                             <Typography align={'left'} variant={'body1'}>
-                                {'Once all applications are in, current members will meet in person to select invitees. A minimum of ¾ of current members must vote in favor for an applicant to be admitted. Since we have a broad variety of preference, this means it\'s difficult - and unpredictable - for any given applicant to be accepted. You can expect a final response by July 8th; successful applicants will be encouraged to submit work for our Group Show opening August 4th. Thanks very much for your interest and the time spent applying; we really appreciate the work and feeling that goes in.'}
+                                {'Once all applications are in, current members will meet in person to select invitees. A minimum of ¾ of current members must vote in favor for an applicant to be admitted. Since we have a broad variety of preference, this means it\'s difficult - and unpredictable - for any given applicant to be accepted. You can expect a final response by January 4th; successful applicants will be encouraged to submit work for our Group Show opening February 5th. Thanks very much for your interest and the time spent applying; we really appreciate the work and feeling that goes in.'}
                             </Typography>
                         </Stack>
                     </Stack>
@@ -123,16 +117,16 @@ const Apply = () => {
                         </Typography>
                         <Stack spacing={1}>
                             <Typography align={'left'} variant={'body2'}>
-                                {'None of the following is necessary for applicants, but may help answer some likely questions. If you want to know more or need help, please do write to apply@thefrontvt.com or call (802) 552-0877; we\'ll do our best to respond quickly.'}
+                                {'The following may help answer some likely questions. If you want to know more, please write to apply@thefrontvt.com or call (802) 552-0877.'}
                             </Typography>
                             <Typography align={'left'} variant={'body2'}>
-                                {'Previous applicants are warmly encouraged to re-apply: the jury pool is always changing.'}
+                                {'Previous applicants are encouraged to re-apply: the jury pool is always changing.'}
                             </Typography>
                             <Typography align={'left'} variant={'body2'}>
                                 {'The Front Gallery started in its present form in May 2015 as an artist-run co-op gallery. Before then the space was shared by [current member] Glen Coburn Hutcheson\'s studio and a visual art space called Gallery 6, both of which gave way to The Front. At first, there were only group shows, first every six weeks, then every month. Then in the spring of 2020 we started alternating one-person shows with group shows.'}
                             </Typography>
                             <Typography align={'left'} variant={'body2'}>
-                                {'The space features two large street-facing windows and plenty of walk-in traffic, and is always lively during Montpelier Art Walks. Since the early days of the pandemic, we\'ve put up a new show every month, featuring all members\' work in six group exhibitions alternating with six solo shows each year. With membership ranging between 12 and 24 members, we schedule solo shows up to 3 years out. Members also use the gallery as desired for events including artist talks, performances, movie nights, and critiques. New members meet soon after admission to schedule their one-person shows, which may be booked 1-3 years out.'}
+                                {'The space features two large street-facing windows and plenty of walk-in traffic, and is always lively during Montpelier Art Walks. Since the pandemic, we\'ve put up a new show every month, featuring all members\' work in six group exhibitions alternating with six solo shows each year. With membership ranging to 24 members, we schedule solo shows up to 4 years out. Members also use the gallery as desired for events including artist talks, performances, movie nights, and critiques. New members meet soon after admission to schedule their one-person shows, which may be booked 1-4 years out.'}
                             </Typography>
                             <Typography align={'left'} variant={'body2'}>
                                 {'The gallery is well integrated into the area arts world and solo shows are well received.'}
@@ -142,39 +136,6 @@ const Apply = () => {
                             </Typography>
                         </Stack>
                     </Stack>
-                </Stack>
-
-                <Divider sx={{ paddingTop: 3 }} />
-                <Stack>
-                    <Typography align={'left'} variant={'h6'}>
-                        {'Our show schedule for 2023:'}
-                    </Typography>
-                    <List>
-                        <ListItem disableGutters>
-                            <ListItemText>{'Chip Haggerty opening May 5, 4-7pm'}</ListItemText>
-                        </ListItem>
-                        <ListItem disableGutters>
-                            <ListItemText>{'Group Show #55 opening June 2, 4-8pm'}</ListItemText>
-                        </ListItem>
-                        <ListItem disableGutters>
-                            <ListItemText>{'Diane Sophrin opening July 7, 4-7pm'}</ListItemText>
-                        </ListItem>
-                        <ListItem disableGutters>
-                            <ListItemText>{'Group Show #56 opening August 4, 4-8pm'}</ListItemText>
-                        </ListItem>
-                        <ListItem disableGutters>
-                            <ListItemText>{'Marjorie Kramer opening September 1, 4-7pm'}</ListItemText>
-                        </ListItem>
-                        <ListItem disableGutters>
-                            <ListItemText>{'Group Show #57 opening October 6, 4-8pm'}</ListItemText>
-                        </ListItem>
-                        <ListItem disableGutters>
-                            <ListItemText>{'Delia Robinson opening November  3, 4-7pm'}</ListItemText>
-                        </ListItem>
-                        <ListItem disableGutters>
-                            <ListItemText>{'Group Show #58 opening Dec 1, 4-8pm'}</ListItemText>
-                        </ListItem>
-                    </List>
                 </Stack>
             </Stack>
         </Container >
