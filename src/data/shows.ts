@@ -2,6 +2,26 @@ import { IShow } from "../models/Show";
 
 export const shows: Array<IShow> = [
     {
+        name: 'show-75',
+        number: 75,
+        displayName: 'Show 75',
+        startDate: new Date('2026-10-02T12:00:00'),
+        endDate: new Date('2026-11-02T17:00:00'),
+        featuredImage: {
+            src: '2026-10/featured.jpeg',
+            text: 'Kate Fetherston: Autumn Shadow, 2026, encaustic and mixed media, 8 x 8"'
+        },
+        descriptionBold: [
+            'October 2 - November 2, 2026',
+            'Opening reception October 2nd for Montpelier Art Walk, 4-8PM',
+        ],
+        description: [
+            'Join us Friday, October 2nd, for the opening reception of Show 75, featuring work by members at The Front.',
+            'Make an evening of it: Montpelier Art Walk runs Friday October 2nd between 4:00 and 8:00. Pick up a guidebook at any venue -- see <a href="https://www.facebook.com/MontpelierArtWalk" target="_blank">Montpelier Art Walk\'s Facebook page</a> for details!',
+            'If you can\'t be there on opening day, Show 75 will continue through Sunday, November 2nd, every Friday from 4 to 7 and Saturday-Sunday 11 to 5, or by appointment. <a href="/shows/show-75?open-contact-form=true">Contact Us</a>'
+        ]
+    },
+    {
         name: 'mind-machines',
         number: 74.1,
         displayName: 'Mind Machines',
