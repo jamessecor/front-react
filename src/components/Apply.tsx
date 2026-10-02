@@ -14,18 +14,6 @@ export const MEMBER_APPLICATION_URL = 'https://form.jotform.com/262623264314048'
 const Apply = () => {
     return (
         <Container>
-            <img src={`${import.meta.env.VITE_URL}/images/apply/sunnywindow.jpg`} style={{
-                position: 'fixed',
-                width: '100vw',
-                height: '100vh',
-                top: 0,
-                left: 0,
-                zIndex: -1,
-                opacity: 0.15,
-                objectFit: 'cover',
-                objectPosition: '70% 80%'
-            }}
-            />
             <Stack justifyContent={'center'} sx={{ marginX: { xs: 1, sm: 2, md: 28 } }}>
                 <Typography align={'center'} variant={'h3'} sx={{ pb: 1 }}>
                     {'Join Us!'}
@@ -124,6 +112,9 @@ const Apply = () => {
                             </Typography>
                             <Typography align={'left'} variant={'body2'}>
                                 {'The Front Gallery started in its present form in May 2015 as an artist-run co-op gallery. Before then the space was shared by [current member] Glen Coburn Hutcheson\'s studio and a visual art space called Gallery 6, both of which gave way to The Front. At first, there were only group shows, first every six weeks, then every month. Then in the spring of 2020 we started alternating one-person shows with group shows.'}
+                            </Typography>
+                            <Typography align={'left'} variant={'body2'}>
+                                {'All members of The Front are equal co-owners of the gallery business and work closely together to support and promote each other\'s work, and to provoke curiosity and community engagement with visual art. Group decisions are made by consensus in person whenever possible. Members each spend at least one 3-hour shift staffing the gallery every month, submit work for group shows every 2 months, attend all-member meetings once every 2 months (usually ~2 hours), work on gallery committees with fellow members (e.g. Events, Finance, Installation), and contribute dues as feasible (nominally $50/month; some members pay more so that no one is excluded for financial reasons). The gallery takes a 15% commission on all sales. Six solo shows are scheduled per year; new members can expect to wait one to four years for a solo exhibit.'}
                             </Typography>
                             <Typography align={'left'} variant={'body2'}>
                                 {'The space features two large street-facing windows and plenty of walk-in traffic, and is always lively during Montpelier Art Walks. Since the pandemic, we\'ve put up a new show every month, featuring all members\' work in six group exhibitions alternating with six solo shows each year. With membership ranging to 24 members, we schedule solo shows up to 4 years out. Members also use the gallery as desired for events including artist talks, performances, movie nights, and critiques. New members meet soon after admission to schedule their one-person shows, which may be booked 1-4 years out.'}
