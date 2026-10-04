@@ -2,6 +2,23 @@ import { IEvent } from "../components/Event";
 
 export const events: Array<IEvent> = [
     {
+        title: 'Member Application Open',
+        date: new Date('2026-11-30T23:59:59'),
+        description: [
+            'The Front is now accepting applications for membership',
+            'The deadline to apply is November 30th. We look forward to hearing from you!'
+        ],
+        image: {
+            src: 'sunnywindow.jpg',
+            directory: 'apply'
+        },
+        link: {
+            type: 'internal',
+            text: 'Click here for more information and to apply',
+            url: '/apply'
+        }
+    },
+    {
         title: 'Rob Hitzig - Opening Reception and Talk',
         date: new Date('2026-09-19T17:00:00'),
         description: [
