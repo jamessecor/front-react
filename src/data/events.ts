@@ -2,6 +2,22 @@ import { IEvent } from "../components/Event";
 
 export const events: Array<IEvent> = [
     {
+        title: 'Mark Lorah - Opening Reception',
+        date: new Date('2026-11-06T16:00:00'),
+        description: [
+            'Opening Reception: Friday, November 6, 4-7pm'
+        ],
+        image: {
+            src: '01.jpg',
+            directory: 'shows/2026-11'
+        },
+        link: {
+            type: 'internal',
+            text: 'Click here for show details',
+            url: '/shows/invention-of-intention'
+        }
+    },
+    {
         title: 'Member Application Open',
         date: new Date('2026-11-30T23:59:59'),
         description: [

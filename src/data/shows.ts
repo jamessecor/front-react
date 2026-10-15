@@ -2,6 +2,35 @@ import { IShow } from "../models/Show";
 
 export const shows: Array<IShow> = [
     {
+        name: 'invention-of-intention',
+        number: 75.1,
+        displayName: 'The Invention of Intention',
+        superDisplayName: 'Mark Lorah',
+        startDate: new Date('2026-11-06T12:00:00'),
+        endDate: new Date('2026-11-29T17:00:00'),
+        featuredImage: {
+            src: '2026-11/featured.jpg',
+            text: 'Untitled, Mark Lorah'
+        },
+        images: [
+            { src: '2026-11/01.jpg' }
+        ],
+        descriptionBold: [
+            'November 6 - November 29, 2026',
+            'Opening Reception: Friday, November 6, 4:00-7:00'
+        ],
+        description: [
+            'The Front is pleased to announce Mark Lorah’s first solo show at the gallery, The Invention of Intention: sculpture and painting exploring the generative relationship between material, form and impulsive divergence.',
+            'From the artist:',
+            '"I go to work to feed myself. There, I run across corrugated plastic boxes out of which I must create something. I bring them home. I play with them. What does the plastic like to do? I hate that the world is made of plastic. I love the opportunity. There is something going on which I am not in charge of.',
+            '"I explore the aftermath of a car crash where someone seemingly drove into a super-collider and smashed apart the greater automobile into sub-auto-mic pieces. There is data here about the true nature of reality. It needs to be sorted out.',
+            '"I’m doing some construction. My neighbor hires guys with equipment to bury his electric line. They are slobs. Suddenly there is lots of wire left all over the place. Picasso did some cool stuff with wire. I gather it up. I spend hours and days tying knots in it. That’s what it wanted.',
+            '"I like to paint. What is a painting? A painting is a picture. Or is it an object? Or is it a picture of an object? There is a long conversation that painting is. It’s something. What is its true nature? What would be a generic painting? Maybe a portrait. But that’s a picture. I decide to use the structure of the face as a way to organize a painting object. I can’t make a painting unless I make it a sculpture.',
+            '"I have some ideas about what this is, but I’m not sure who is in charge here. I’m just doing it."',
+            'The Invention of Intention opens November 6 with an artist reception from 4:00 to 7:00. The exhibit will be on view until Sunday, November 29.'
+        ]
+    },
+    {
         name: 'show-75',
         number: 75,
         displayName: 'Show 75',
