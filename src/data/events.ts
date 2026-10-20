@@ -3,9 +3,10 @@ import { IEvent } from "../components/Event";
 export const events: Array<IEvent> = [
     {
         title: 'Mark Lorah - Opening Reception',
-        date: new Date('2026-11-06T16:00:00'),
+        date: new Date('2026-11-17T18:00:00'),
         description: [
-            'Opening Reception: Friday, November 6, 4-7pm'
+            'Opening Reception: Friday, November 6, 4-7pm',
+            'Artist\'s Talk: Tuesday, November 17, 6pm'
         ],
         image: {
             src: '01.jpg',

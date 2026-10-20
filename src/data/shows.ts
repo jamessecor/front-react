@@ -17,7 +17,8 @@ export const shows: Array<IShow> = [
         ],
         descriptionBold: [
             'November 6 - November 29, 2026',
-            'Opening Reception: Friday, November 6, 4:00-7:00'
+            'Opening Reception: Friday, November 6, 4:00-7:00',
+            'Artist\'s Talk: Tuesday, November 17, 6pm'
         ],
         description: [
             'The Front is pleased to announce Mark Lorah’s first solo show at the gallery, The Invention of Intention: sculpture and painting exploring the generative relationship between material, form and impulsive divergence.',

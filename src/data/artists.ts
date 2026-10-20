@@ -714,6 +714,21 @@ export const artists: Array<IArtist> = [
         // ]
     },
     {
+        paramName: 'mark-lorah',
+        name: 'Mark Lorah',
+        thumbnail: {
+            src: 'mark-lorah/01.jpg'
+        },
+        images: [
+            { src: 'mark-lorah/01.jpg' }
+        ],
+        bio: [
+            'I am interested in the intersection of order, chaos, and intention. Every piece has a plan, a crises and a reaction. The endpoint is not so much a resolution as a trajectory.',
+            'In recent years I have incorporated a variety of materials into paintings and have taken to using manufactured materials and cast off industrial artifacts for sculpture. The physicality of surface and the incorporation of everyday mundane elements is one way to attempt to elicit the presence of the here and now. In that sense everything is an object versus an idea. Process follows material, and form follows process.',
+            'I am interested in the phenomenon of emergence how the way things come into being are the things themselves. Nouns are really verbs. I want to allow the materials to guide me and respond intuitively to their inherent qualities and to embrace the revelations that result from this interplay. In this way everything is intended and at the same time unexpected.'
+        ]
+    },
+    {
         paramName: 'melora-kennedy',
         name: "Melora Kennedy",
         thumbnail: {
