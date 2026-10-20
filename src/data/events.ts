@@ -2,7 +2,7 @@ import { IEvent } from "../components/Event";
 
 export const events: Array<IEvent> = [
     {
-        title: 'Mark Lorah - Opening Reception',
+        title: 'Mark Lorah - Opening Reception and Talk',
         date: new Date('2026-11-17T18:00:00'),
         description: [
             'Opening Reception: Friday, November 6, 4-7pm',
