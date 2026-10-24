@@ -117,7 +117,7 @@ const Show = () => {
                         <Grid
                             justifyContent={'center'}
                             alignItems={'stretch'}
-                            size={12}
+                            size={show.images.length > 2 ? 12 : 11}
                             sx={{ pr: 2 }}
                         >
                             <Stepper
