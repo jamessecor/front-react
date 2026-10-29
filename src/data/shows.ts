@@ -10,7 +10,7 @@ export const shows: Array<IShow> = [
         endDate: new Date('2026-11-29T17:00:00'),
         featuredImage: {
             src: '2026-11/featured.jpg',
-            text: 'Untitled, Mark Lorah'
+            text: 'Already Here, 2026, Mark Lorah'
         },
         images: [
             { src: '2026-11/01.jpg' }
