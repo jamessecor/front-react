@@ -2,6 +2,23 @@ import { IEvent } from "../components/Event";
 
 export const events: Array<IEvent> = [
     {
+        title: 'Art Walk reception for Group Show 76',
+        date: new Date('2026-12-04T16:00:00'),
+        description: [
+            'Join us on Friday, December 4th, for the opening reception of Show 76, featuring work by members at The Front.'
+        ],
+        image: {
+            src: '01.jpg',
+            text: 'Łódź: the Returning - III, Diane Sophrin, 2008, mixed-media on paper, 12" x 9"',
+            directory: 'shows/2026-12'
+        },
+        link: {
+            type: 'internal',
+            text: 'Click here for show details',
+            url: '/shows/show-76'
+        }
+    },
+    {
         title: 'Mark Lorah - Opening Reception and Talk',
         date: new Date('2026-11-17T18:00:00'),
         description: [

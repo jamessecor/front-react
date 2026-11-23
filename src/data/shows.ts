@@ -2,6 +2,31 @@ import { IShow } from "../models/Show";
 
 export const shows: Array<IShow> = [
     {
+        name: 'show-76',
+        number: 76,
+        displayName: 'Show 76',
+        startDate: new Date('2026-12-04T12:00:00'),
+        endDate: new Date('2027-01-10T17:00:00'),
+        featuredImage: {
+            src: '2026-12/featured.jpg',
+            text: 'James Secor: Studio with cat, 2026, acrylic, 20" x 16"'
+        },
+        images: [
+            { src: '2026-12/01.jpg', text: 'Łódź: the Returning - III, Diane Sophrin, 2008, mixed-media on paper, 12" x 9"' },
+            { src: '2026-12/02.jpg', text: 'So Much Do We Love, Melora Kennedy, oil on paper' },
+            { src: '2026-12/03.jpg', text: 'Trouble in Halifax, West Yorkshire, 1937, Daniel Marcus, Digital Collage, 11" x 14"' }
+        ],
+        descriptionBold: [
+            'December 4, 2026 - January 10, 2027',
+            'Opening reception December 4th for Montpelier Art Walk, 4-8PM',
+        ],
+        description: [
+            'Join us Friday, December 4th, for the opening reception of Show 76, featuring work by members at The Front.',
+            'Make an evening of it: Montpelier Art Walk runs Friday December 4th between 4:00 and 8:00. Pick up a guidebook at any venue -- see <a href="https://www.facebook.com/MontpelierArtWalk" target="_blank">Montpelier Art Walk\'s Facebook page</a> for details!',
+            'If you can\'t be there on opening day, Show 76 will continue through Sunday, November 2nd, every Friday from 4 to 7 and Saturday-Sunday 11 to 5, or by appointment. <a href="/shows/show-76?open-contact-form=true">Contact Us</a>'
+        ]
+    },
+    {
         name: 'invention-of-intention',
         number: 75.1,
         displayName: 'The Invention of Intention',
