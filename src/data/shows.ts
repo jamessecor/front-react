@@ -38,7 +38,10 @@ export const shows: Array<IShow> = [
             text: 'Already Here, 2026, Mark Lorah'
         },
         images: [
-            { src: '2026-11/01.jpg' }
+            { src: '2026-11/01.jpg' },
+            { src: '2026-11/02.jpeg' },
+            { src: '2026-11/03.jpeg' },
+            { src: '2026-11/04.jpeg' }
         ],
         descriptionBold: [
             'November 6 - November 29, 2026',
